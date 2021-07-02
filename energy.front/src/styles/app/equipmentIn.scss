@@ -1,0 +1,108 @@
+.equipmentIn {
+	.table-info td, 
+	.table-info th {
+		padding: 15px;
+
+		@media screen and (min-width: $changeWidth) {
+			padding: 20px 27px;
+		}
+	}
+
+	.equipmentIn-descr {
+		padding: 31px 23px 23px;
+		margin-top: 20px;
+
+		background-color: #2E2E2E;
+
+		@media screen and (min-width: $changeWidth) {
+			margin-top: 28px;
+		}
+	}
+
+	.equipmentIn-descr:empty,
+	.two-buttons-wrapper:empty {
+		display: none;
+	}
+
+	.equipmentIn-descr__text {
+		text-align: left;
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.two-buttons-wrapper + .equipmentIn-descr__text {
+		margin-top: 24px;
+	}
+
+	.two-buttons-wrapper:empty + .equipmentIn-descr__text {
+		margin-top: 0;
+	}
+
+	.two-buttons-wrapper {
+		.button--medium {
+			min-width: 165px;
+
+			@media (min-width: 768px) {
+				min-width: 48%;
+			}
+		
+			@media screen and (min-width: $changeWidth) {
+				min-width: 165px;
+			}
+		}
+	}
+
+	.tariff-footer {
+		margin: 0;
+		padding-top: 0;
+		border: 0;
+	}
+
+	.tariff-footer .icomoon {
+		@media screen and (min-width: $changeWidth) {
+			margin-top: 15px;
+		}
+	}
+
+	.tariff-footer__text {
+		@media screen and (min-width: 1400px) {
+			margin-left: 27px;
+		}
+	}
+
+	.tariff-footer-wrap:first-child {
+		@media screen and (min-width: $changeWidth) {
+			margin-right: 42px;
+		}
+	}
+
+	.banner-advantages--tariff {
+		padding: 20px 0;
+
+		@media screen and (min-width: $changeWidth) {
+			padding: 60px 0 40px;
+		}
+	}
+
+	.banner-third {
+		display: flex;
+    flex-direction: column;
+		align-items: center;
+		
+		background: #000;
+
+		@media screen and (min-width: $changeWidth) {
+			display: block;
+
+			padding: 70px 0 100px;
+
+			.button + .button {
+				margin-left: 20px;
+			}
+		}
+
+		.icomoon {
+			color: #2E2E2E;
+		}
+	}
+}

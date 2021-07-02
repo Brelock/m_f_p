@@ -1,0 +1,2102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Microsoft Tiles -->
+<meta name="msapplication-config" content="browserconfig.xml">
+
+<link rel="icon" type="image/png" href="favicon.ico">
+
+<!-- Font Awesome -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet"> -->
+
+<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+<link rel="stylesheet" href="/css/jquery-ui.min.css">
+<link rel="stylesheet" href="/css/chosen.min.css">
+<link rel="stylesheet" href="/css/main.min.css">
+
+
+
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      <header id="mainHeader" class="mainHeader 1home-page">
+	<div class="headerContainer">
+		<div class="top-section">
+			<div class="mcontainer">
+				
+				<div class="content-wrapper flex center">
+					<div class="headerSectionBlock firstPartBlock flex center mcol-lg-hide">
+						<div class="buttonWrapper section-element">
+							<button id="burgerButton" type="button" class="burgerButton mobileMenuButton">
+								<div class=""><i class="icomoon icon-menu-burger"></i></div>
+								<!-- <div class="closeIcon"><i class="icomoon icon-cross"></i></div> -->
+							</button>
+						</div>
+
+						<div class="logoBlock section-element">
+							<div class="logo-wrapper">
+								<a href="/index.html" class="">
+									<img src="/img/technostok-logo.svg" alt="logo">
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="headerSectionBlock secondPartBlock flex">
+						<div class="pusher mcol-lg-hide"></div>
+						<!-- <div class="section-element searchBlock">
+							<form id="searchBlock" action="/" class="relative">
+								<input type="text" class="shadowInput" placeholder="поиск ..." >
+								<i class="icomoon icon-search inner-icon right gradientIcon"></i>
+								<button type="submit" class="js_hidden"></button>
+							</form>
+						</div> -->
+
+						<!-- <div class="section-element searchButton mcol-md-hide">
+							<button type="button" class="icomoon icon-search gradientIcon openButton"
+								data-target="mobileSearchBlock" data-class="js_showSlide" data-action="open"></button>
+						</div> -->
+
+						<div class="section-element langBlock menu">
+							<span class="menu-button">
+								<span>RU</span>
+								<i class="icomoon icon-arrow2"></i>
+							</span>
+
+							<div class="sub-menu">
+								<ul class="links-list">
+									<li><a href="#">RU</a></li>
+									<li><a href="#">EN</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="section-element accountBlock menu">
+							<span class="login-button">
+								<i class="icomoon icon-user"></i>
+								<a href="#" class="accountButton">Вход</a>
+								<a href="#" class="accountButton">Регистрация</a>
+							</span>
+
+							<a href="/cabinet.html" class="menu-button js_hide">
+								<i class="icomoon icon-user"></i>
+								<span>Личный кабинет</span>
+							</a>
+														
+							<div class="sub-menu js_hide">
+								<ul class="links-list">
+									<li><a href="/cabinet.html">Персональные данные</a></li>
+									<li><a href="#">Адреса доставки</a></li>
+									<li><a href="#">Мои заказы</a></li>
+									<li><a href="#">Избранное <span class="higlighted fourth">(2)</span></a></li>
+									<li><a href="#">Подписка на новости</a></li>
+									<li><a href="#">Выйти</a></li>
+								</ul>
+
+								<!-- <a href="#" class="">
+									<i class="icomoon icon-exit1"></i>
+									<span>Выйти</span>
+								</a> -->
+							</div>
+						</div>
+
+						<div class="section-element phoneBlock">
+							<div class="menu">
+								<span class="menu-button">
+									<span>(067) 618-67-17</span>
+									<i class="icomoon icon-arrow2"></i>
+								</span>
+								<div class="sub-menu">
+									<ul class="links-list">
+										<li><a href="#">(067) 618-67-17</a></li>
+										<li><a href="#">(067) 618-67-17</a></li>
+										<li><a href="#">(067) 618-67-17</a></li>
+										<li><a href="#">(067) 618-67-17</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="phoneLinkBlock">
+								<a href="#" class="higlighted primary phone-link element-title">Заказать звонок</a>
+							</div>
+						</div>
+
+						<div class="section-element switchBlock">
+							<div class="customSwitcher">
+								<label class="label-text" for="daySwitch">Ночь</label>
+								<label class="switch">
+								  <input id="daySwitch" type="checkbox">
+								  <span class="slider round"></span>
+								</label>
+								<label class="label-text" for="daySwitch">День</label>
+							</div>
+						</div>
+
+						<div class="section-element socialMediaBlock">
+							<ul class="social-media-list">
+								<li class=""><a href="#" class="icomoon icon-FB" target="_blank"></a></li>
+								<li class=""><a href="#" class="icomoon icon-insta" target="_blank"></a></li>
+								<li class=""><a href="#" class="icomoon icon-telegram-logo" target="_blank"></a></li>
+							</ul>
+						</div>
+
+						
+						<div class="section-element likesBlock menu">
+							<a href="#" class="menu-button">
+								<i class="icomoon icon-hearth1"></i>
+								<!-- <span>Избранное</span> -->
+							</a>
+						</div>
+						
+						<div class="section-element cartBlock menu 1active">
+							<a href="#" class="menu-button">
+								<i class="icomoon gradientIcon icon-basket relative">
+									<div class="quantity-tip"><span>1</span></div>								
+								</i>
+								<!-- <span>Корзина <br> пустая</span> -->
+							</a>
+
+							<div class="sub-menu">
+								<div class="menu-header contentRow">
+									<div class="">В корзине <span class="higlighted red">2</span> товара</div>
+									<div class="">На сумму <span class="higlighted fourth">15 999</span> грн</div>
+								</div>
+
+								<div class="wrapperBlock contentRow">
+									<a href="#" class="button secondary_btn">оформить заказ</a>
+								</div>
+
+								<div class="menu-footer">
+									<a href="/basket.html" class="link-with-icon">
+										<i class="icomoon icon-basket"></i>
+										<span>Перейти в корзину</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div id="mobileSearchBlock" class="mobile-searchBlock hiddenContent top">
+				
+					<div class="mobileSearch-container">
+						<div class="buttonWrapper">
+							<button type="button" class="closeMenuButton openButton" 
+								data-target="mobileSearchBlock" data-class="js_showSlide" data-action="close">
+								<i class="icomoon icon-cross"></i>
+							</button>
+						</div>
+						
+						<form action="/" class="relative">
+							<input type="text" class="shadowInput" placeholder="поиск ...">
+							<i class="icomoon icon-search inner-icon right gradientIcon"></i>
+							<button type="submit" class="js_hidden"></button>
+						</form>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="bottom-section relative">
+			<div class="mcontainer">
+				<div class="menuMainWrapper">
+					<div class="logoBlock section-element">
+						<div class="logo-wrapper">
+							<a href="/index.html" class="">
+								<img src="/img/technostok-logo.svg" alt="logo">
+							</a>
+						</div>
+					</div>
+				
+					<div class="menuBlock relative 1secondPartBlock">
+				
+						<nav id="navMenuWrapper" class="navMenuWrapper sectionBlock hiddenContent left">
+							<div id="navMenuContainer" class="navMenuContainer 1mcontainer backgroundMock">
+								<div class="menuButtonsContainer flex spaceBetween mcol-lg-hide">
+									<button data-title="Каталог товаров" id="prevMenuButton" type="button" class="prevMenuButton">
+										<i class="icomoon icon-arrow2"></i>
+									</button>
+									<div class="menuButtonsContainer__title">Abba</div>
+									<button id="closeMenuButton" type="button" class="closeMenuButton" >
+										<i class="icomoon icon-cross"></i>
+									</button>
+								</div>
+				
+								<ul id="navMenu" class="navMenu menu-section">
+									<li class="mobileClientSection">
+										<div class="mobileClient-wrap-list">
+
+											<div class="section-element accountBlock menu">
+												<!-- <a href="/cabinet.html" class="menu-button">
+													<i class="icomoon icon-user"></i>
+													<div class="mobileClient-title"><p>Вход</p> <p>Регистрация</p></div>
+												</a> -->
+
+												<div class="menu-button">
+													<a href="#"><i class="icomoon icon-user"></i></a>
+													<div class="mobileClient-title">
+															<a href="#" class="accountButton">Вход</a>
+															<a href="#" class="accountButton">Регистрация</a>
+													</div>
+												</div>
+											</div>
+
+											<!-- <div class="section-element likesBlock menu">
+												<a href="#" class="menu-button">
+													<i class="icomoon icon-hearth1"></i>
+													<div class="mobileClient-title">Избраное</div>
+												</a>
+											</div> -->
+										
+											
+											<div class="section-element likesBlock menu">
+												<div class="menu-button">
+													<a href="#"><i class="icomoon icon-hearth1"></i></a>
+													<div class="quantity-tip"><span>1</span></div>
+													<div class="mobileClient-title">
+														<span>Избраное</span>
+													</div>
+												</div>
+											</div>
+
+											<!-- <div class="section-element cartBlock menu 1active">
+												<div class="sub-menu">
+													<div class="menu-footer">
+														<a href="/basket.html" class="link-with-icon">
+															<i class="icomoon icon-basket"></i>
+															<div class="mobileClient-title">Корзина</div>
+														</a>
+													</div>
+												</div>
+											</div> -->
+
+										</div>
+									</li>
+									<li class="pusher mcol-xs-hide mcol-lg-show"></li>
+									<li class="mobileMenu-home gravity">
+										<a href="../index.html" class="flex mob_link_home"> 
+											<span class="mobileMenu-icon"></span> 
+											<span>Главная</span> 
+										</a>
+									</li>
+									<li class="firstPartBlock productsDropdownMenu gravity">
+										<!-- <div class="mcontainer"> -->
+											<div id="headerOverlay" class="pageOverlay"></div>
+
+											<div class="productsDropdownMenu_button">
+												<i class="icomoon icon-menu-burger descBurgerIcon"></i>
+													<a href="/products-categories.html" class="flex has-sub-menu mob_link_tovars">
+														<span class="mobileMenu-icon"></span> 
+														<span>Каталог товаров</span> 
+													</a>
+												<i class="icomoon icon-arrow2 subMenuButton mcol-lg-hide"></i>
+											</div>
+												<!-- <div class="closeIcon"><i class="icomoon icon-cross"></i></div> -->
+											<div class="submenuWrapper hiddenContent right">
+												<ul class="submenu">
+													<li><span class="iconWrapper"><img src="/img/icons/telephone-contact.png" alt="icon"></span>
+														<a href="/categoriesList.html" class="has-sub-menu">Смартфоны и телефоны</a>
+														<i class="icomoon icon-arrow2 subMenuButton"></i>
+														<div class="submenuWrapper hiddenContent right">
+															<ul class="submenu">
+																<li class="prod-category">
+																	<div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+																	<ul class="prod-list">
+																		<li class=""><a href="">Смартфон 1 Смартфон 1Смартфон 1Смартфон 1Смартфон 1</a></li>
+																		<li class=""><a href="">Смартфон 2</a></li>
+																		<li><a href="#">Телефон 3</a></li>
+																		<li class=""><a href="">Смартфон 4</a></li>
+																		<li class=""><a href="">Смартфон 5</a></li>
+																		<li><a href="#">Телефон 6</a></li>
+																		<li class=""><a href="">Смартфон 7</a></li>
+																		<li class=""><a href="">Смартфон 8</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																	</ul>
+																</li>
+																<li class="prod-category">
+																	<div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+																	<ul class="prod-list">
+																		<li class=""><a href="">Смартфон 2</a></li>
+																		<li class=""><a href="">Смартфон 3</a></li>
+																		<li><a href="#">Телефон 1</a></li>
+																		<li class=""><a href="">Смартфон 2</a></li>
+																		<li class=""><a href="">Смартфон 3</a></li>
+																	</ul>
+																</li>
+																<li class="prod-category">
+																	<div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+																	<ul class="prod-list">
+																		<li class=""><a href="">Смартфон 2</a></li>
+																		<li class=""><a href="">Смартфон 3</a></li>
+																		<li><a href="#">Телефон 1</a></li>
+																		<li class=""><a href="">Смартфон 2</a></li>
+																		<li class=""><a href="">Смартфон 3</a></li>
+																		<li><a href="#">Телефон 1</a></li>
+																	</ul>
+																</li>
+																<li class="prod-category">
+																	<div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+																	<ul class="prod-list">
+																		<li class=""><a href="">Смартфон 1</a></li>
+																		<li class=""><a href="">Смартфон 2</a></li>
+																		<li><a href="#">Телефон 3</a></li>
+																		<li class=""><a href="">Смартфон 4</a></li>
+																		<li class=""><a href="">Смартфон 5</a></li>
+																		<li><a href="#">Телефон 6</a></li>
+																		<li class=""><a href="">Смартфон 7</a></li>
+																		<li class=""><a href="">Смартфон 8</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																		<li><a href="#">Телефон 6</a></li>
+																		<li class=""><a href="">Смартфон 7</a></li>
+																		<li class=""><a href="">Смартфон 8</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																		<li><a href="#">Телефон 6</a></li>
+																		<li class=""><a href="">Смартфон 7</a></li>
+																		<li class=""><a href="">Смартфон 8</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																		<li><a href="#">Телефон 6</a></li>
+																		<li class=""><a href="">Смартфон 7</a></li>
+																		<li class=""><a href="">Смартфон 8</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																	</ul>
+																</li>
+																<li class="prod-category">
+																	<div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+																	<ul class="prod-list">
+																		<li class=""><a href="">Смартфон 1</a></li>
+																		<li class=""><a href="">Смартфон 2</a></li>
+																		<li><a href="#">Телефон 3</a></li>
+																		<li class=""><a href="">Смартфон 4</a></li>
+																		<li class=""><a href="">Смартфон 5</a></li>
+																		<li><a href="#">Телефон 6</a></li>
+																		<li class=""><a href="">Смартфон 7</a></li>
+																		<li class=""><a href="">Смартфон 8</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																		<li><a href="#">Телефон 6</a></li>
+																		<li class=""><a href="">Смартфон 7</a></li>
+																		<li class=""><a href="">Смартфон 8</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																		<li><a href="#">Телефон 6</a></li>
+																		<li class=""><a href="">Смартфон 7</a></li>
+																		<li class=""><a href="">Смартфон 8</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																		<li><a href="#">Телефон 6</a></li>
+																		<li class=""><a href="">Смартфон 7</a></li>
+																		<li class=""><a href="">Смартфон 8</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																	</ul>
+																</li>
+																<li class="prod-category">
+																	<div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+																	<ul class="prod-list">
+																		<li class=""><a href="">Смартфон 1</a></li>
+																		<li class=""><a href="">Смартфон 2</a></li>
+																		<li><a href="#">Телефон 3</a></li>
+																		<li class=""><a href="">Смартфон 4</a></li>
+																		<li class=""><a href="">Смартфон 5</a></li>
+																		<li><a href="#">Телефон 6</a></li>
+																		<li class=""><a href="">Смартфон 7</a></li>
+																		<li class=""><a href="">Смартфон 8</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																		<li><a href="#">Телефон 6</a></li>
+																		<li class=""><a href="">Смартфон 7</a></li>
+																		<li class=""><a href="">Смартфон 8</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																		<li><a href="#">Телефон 6</a></li>
+																		<li class=""><a href="">Смартфон 7</a></li>
+																		<li class=""><a href="">Смартфон 8</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																		<li><a href="#">Телефон 6</a></li>
+																		<li class=""><a href="">Смартфон 7</a></li>
+																		<li class=""><a href="">Смартфон 8</a></li>
+																		<li><a href="#">Телефон 9</a></li>
+																		<li class=""><a href="">Смартфон 10</a></li>
+																		<li class=""><a href="">Смартфон 11</a></li>
+																		<li><a href="#">Телефон 12</a></li>
+																	</ul>
+																</li>
+															</ul>
+															<div class="product-card-wrapper">
+																<article class="product-card">
+																	<header class="product-card__header">
+																		<img src="/img/tovar4.jpg" alt="" class="product-card__img">
+																		<div class="sticker sticker--new">Новый</div>
+																		<a href="#" class="sticker sticker--favorits">
+																			<i class="icomoon icon-hearth1"></i>
+																			<i class="icomoon icon-hearth2"></i>
+																		</a>
+																		<div class="info-label-sell">-20%</div>
+																	</header>
+																	<div class="two-buttons-wrapper">
+																		<button class="button">Купить</button>
+																		<button class="button button--inverse">Подробнее</button>
+																	</div>
+																	<footer class="product-card__footer">
+																		<div class="product-card__prices">
+																			<div class="product-card__price"><span>4 899</span> грн</div>
+																		</div>
+																		<h3 class="product-card__title">Mirta LD-32T2HD</h3>
+																		<div class="info-label info-label--new">Новинка</div>
+																	</footer>
+																</article>
+															</div>
+														</div>
+													</li>
+													<li class="@@special"><span class="iconWrapper"><img src="/img/icons/devices.png" alt="icon"></span>
+														<a href="/specialPage.html">Ноутбуки, Компьютеры, Планшеты</a></li>
+													<li class="@@tariffs"><span class="iconWrapper"><img src="/img/icons/television.png" alt="icon"></span>
+														<a href="/tariffsPage.html" class="has-sub-menu">ТВ, Фото, Видео, Аудио</a>
+														<i class="icomoon icon-arrow2 subMenuButton"></i>
+														<div class="submenuWrapper hiddenContent right">
+															<ul class="submenu">
+																<li><a href="#">Под Категория 3.1</a></li>
+																<li><a href="/specialPage.html">Под Категория 3.2</a></li>
+																<li><a href="/tariffsPage.html">Под Категория 3.3</a></li>
+																<li><a href="/tariffsPage.html">Под Категория 3.3</a></li>
+																<li><a href="/tariffsPage.html">Под Категория 3.3</a></li>
+																<li><a href="/tariffsPage.html">Под Категория 3.3</a></li>
+																<li><a href="/tariffsPage.html">Под Категория 3.3</a></li>
+																<li><a href="/tariffsPage.html">Под Категория 3.3</a></li>
+																<li><a href="/tariffsPage.html">Под Категория 3.3</a></li>
+																<li><a href="/tariffsPage.html">Под Категория 3.3</a></li>
+															</ul>
+														</div>
+													</li>
+													<li class="@@special"><span class="iconWrapper"><img src="/img/icons/drill.png" alt="icon"></span>
+														<a href="/specialPage.html">Инструмент и оборудование</a></li>
+					
+													<li class=""><span class="iconWrapper"><img src="/img/icons/plus.png" alt="icon"></span>
+														<a href="#" class="higlighted green">Новинки</a>
+														<i class="icomoon icon-arrow2 subMenuButton"></i>
+														<div class="submenuWrapper hiddenContent right">
+															<ul class="submenu">
+																<li><a href="#">Новинка 1</a></li>
+															</ul>
+														</div>
+													</li>
+													<li class=""><span class="iconWrapper"><img src="/img/icons/percentage.png" alt="icon"></span>
+														<a href="#" class="higlighted red">Скидки</a>
+														<i class="icomoon icon-arrow2 subMenuButton"></i>
+														<div class="submenuWrapper hiddenContent right">
+															<ul class="submenu">
+																<li><a href="#">Скидка 1</a></li>
+															</ul>
+														</div>
+													</li>
+												</ul>
+											</div>
+
+											<div class="search">
+												<div class="pageOverlay searchOverlay"></div>
+												<form action="#" class="search-form chosen-wrapper">
+													<div class="block-with-icon">
+														<i class="icomoon icon-search"></i>
+														<input name="itemName" type="text" placeholder="Поиск товаров">
+														<button type="button" class="button-close button-close--in-input"></button>
+													</div>
+													<!-- <select class="search-form__select md-show" name="categories">
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+													</select> -->
+													<button class="button button--mob-small">найти</button>
+												</form>
+											</div>
+										<!-- </div> -->
+									</li>
+				 								<!-- ======================== -->
+									<!-- <li class="catalog-link"><a href="/products-categories.html">Каталог товаров</a></li> -->
+									<li class="@@departments gravity2 descNavMargin">
+										<a href="/departments.html" class="flex mob_link_store"> 
+											<span class="mobileMenu-icon"></span> 
+											<span>Магазины</span>
+										</a>
+									</li>
+									<li class="@@stocks gravity2 descNavMargin">
+										<a href="/stocks.html" class="flex mob_link_action"> 
+											<span class="mobileMenu-icon"></span> 
+											<span>Акции</span>
+										</a>
+									</li>
+									<li class="@@contacts gravity2 descNavMargin">
+										<a href="/delivery.html" class="flex mob_link_delivery"> 
+											<span class="mobileMenu-icon"></span> 
+											<span>Оплата и доставка</span>
+										</a>
+									</li>
+									<li class="company-about-list gravity2 active">
+										<div class="company-about_btn-name">
+										  <a href="#" class="dropdown-menu-link has-sub-menu">О компании</a>	
+											<i class="subMenuButton icon-arrow2 icomoon"></i>
+										</div>
+										<div class="submenuWrapper hiddenContent right ">
+											<ul class="submenu">
+												<li class="@@news"><a href="/news.html">Блог</a></li>
+												<li class="@@clients"><a href="/clientsInfoList.html">Как купить</a></li>
+												<li class="@@about"><a href="/about.html">О компании</a></li>
+												<li class="@@vacancies"><a href="/vacancies.html">Вакансии</a></li>
+												<li class="@@reviews"><a href="/reviews.html">Отзывы</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="@@contacts bgc-hover gravity1 mobileBorderLine">
+										<a href="/contacts.html" class="button-nav_link mob_link_news flex">
+											<span class="mobileMenu-icon"></span> 
+											<span>Новинки</span>
+										</a>
+									</li>
+									<li class="@@contacts bgc-hover gravity">
+										<a href="/contacts.html" class="button-nav_link mob_link_save flex">
+											<span class="mobileMenu-icon"></span> 
+											<span>Скидки</span>
+										</a>
+									</li>
+									<li class="navMenu__phone gravity3">
+										<a href="tel:+380676186717">(067) 618-67-17</a>
+										<button data-form="form-contact-call" class="higlighted primary phone-link element-title button-contact-js">Замовити дзвінок</button>
+									</li>
+									<li class="navMenu__media gravity3">
+										<ul class="social-media-list">
+											<li class=""><a href="#" class="icomoon icon-FB"></a></li>
+											<li class=""><a href="#" class="icomoon icon-insta"></a></li>
+											<li class=""><a href="#" class="icomoon icon-telegram-logo"></a></li>
+										</ul>
+									</li>
+								</ul>
+								<!--  -->
+				
+								<!-- <div class="menu-section phoneBlock rightBlock">
+									<a href="tel:+38(800)7004343">+38 (800) 700-43-43</a>
+								</div> -->
+							
+							</div>
+						</nav>
+				
+						
+				
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="search search--mob">
+		<div class="mcontainer">
+			<div class="pageOverlay searchOverlay"></div>
+			<form action="#" class="search-form chosen-wrapper">
+				<div class="block-with-icon">
+					<i class="icomoon icon-search"></i>
+					<input name="itemName" type="text" placeholder="Поиск товаров">
+					<button type="button" class="button-close button-close--in-input"></button>
+				</div>
+				<!-- <select class="search-form__select md-show" name="categories">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select> -->
+				<button class="button button--mob-small">найти</button>
+			</form>
+		</div>
+	</div>
+	<div class="switchBlock mobile cb-show-mob">
+		<div class="mcontainer">
+			<div class="customSwitcher">
+				<label for="daySwitchHeaderMob" class="label-text">Ніч</label> 
+				<label class="switch">
+					<input id="daySwitchHeaderMob" type="checkbox"> 
+					<span class="slider round"></span>
+				</label> 
+				<label for="daySwitchHeaderMob" class="label-text">День</label>
+			</div>
+		</div>
+	</div>
+</header>
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="product" class="product page">
+        
+        <div class="breadcrumbsSection">
+          <div class="mcontainer">
+            <ul class="breadcrumbs sectionHeaderItem js_animate">
+              <li><a href="/index.html">Главная</a></li>
+              <li><a href="#">Мобильные телефоны</a></li>
+              <li><a href="#">Apple Iphone</a></li>
+              <li class="active">iPhone 8 Plus</li>
+            </ul>  
+          </div>
+        </div>
+
+        <div class="pageSection">
+          <div class="mcontainer">
+            <div class="prod">
+
+              <header class="prod-header pageSection-title-wrap flex spaceBetween center">
+                <div class="pageSection-title-container flex center">
+                  <h2 class="pageSection-title">iPhone 8 Plus</h2>
+                </div>
+
+                <div class="prod-header__info">
+                  <div class="prod-header__labels-wrap">
+                    <div class="info-label info-label--new info-label--big">Новинка</div>
+                    <div class="info-label info-label--hit info-label--big">Хит</div>
+                  </div>
+                  <span class="text-common">Код товара: 123456</span>
+                </div>
+              </header>
+
+              <div class="prod-main">
+
+                <div class="prod-main__left">
+                  <div class="prod-slider-nav">
+                    <div class="prod-slider__item">
+                      <div class="prod-slider__img-wrap">
+                        <div class="product-card__img--blur-wrap">
+                            <img src="/img/tovar1.jpg" alt="" class="product-card__img--blur">
+                          </div>
+                        <img src="/img/tovar1.jpg" alt="" class="prod-slider__img">
+                      </div>
+                    </div>
+                    <div class="prod-slider__item">
+                      <div class="prod-slider__img-wrap">
+                        <div class="product-card__img--blur-wrap">
+                            <img src="/img/tovar1.jpg" alt="" class="product-card__img--blur">
+                          </div>
+                        <img src="/img/tovar2.jpg" alt="" class="prod-slider__img">
+                      </div>
+                    </div>
+                    <div class="prod-slider__item">
+                      <div class="prod-slider__img-wrap">
+                        <div class="product-card__img--blur-wrap">
+                            <img src="/img/tovar1.jpg" alt="" class="product-card__img--blur">
+                          </div>
+                        <img src="/img/tovar1.jpg" alt="" class="prod-slider__img">
+                      </div>
+                    </div>
+                    <div class="prod-slider__item">
+                      <div class="prod-slider__img-wrap">
+                        <div class="product-card__img--blur-wrap">
+                            <img src="/img/tovar1.jpg" alt="" class="product-card__img--blur">
+                          </div>
+                        <img src="/img/tovar2.jpg" alt="" class="prod-slider__img">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="prod-slider">
+                    <div class="product-card product-card--wo-hover prod-slider__item">
+                      <a href="/img/tovar1.jpg" class="gallery">
+                        <div class="prod-slider__img-wrap">
+                          <div class="product-card__img--blur-wrap">
+                            <img src="/img/tovar1.jpg" alt="" class="product-card__img--blur">
+                          </div>
+                          <img src="/img/tovar1.jpg" alt="" class="prod-slider__img">
+                        </div>
+                        <div class="sticker sticker--medium">Комис.</div>
+                        <div class="info-label-sell">-20%</div>
+                      </a>
+                    </div>
+                    <div class="product-card product-card--wo-hover prod-slider__item">
+                      <a href="/img/tovar2.jpg" class="gallery">
+                        <div class="prod-slider__img-wrap">
+                          <div class="product-card__img--blur-wrap">
+                            <img src="/img/tovar1.jpg" alt="" class="product-card__img--blur">
+                          </div>
+                          <img src="/img/tovar2.jpg" alt="" class="prod-slider__img">
+                        </div>
+                        <div class="sticker sticker--medium">Комис.</div>
+                      </a>
+                    </div>
+                    <div class="product-card product-card--wo-hover prod-slider__item">
+                      <a href="/img/tovar1.jpg" class="gallery">
+                        <div class="prod-slider__img-wrap">
+                          <div class="product-card__img--blur-wrap">
+                            <img src="/img/tovar1.jpg" alt="" class="product-card__img--blur">
+                          </div>
+                          <img src="/img/tovar1.jpg" alt="" class="prod-slider__img">
+                        </div>
+                        <div class="sticker sticker--medium">Комис.</div>
+                      </a>
+                    </div>
+                    <div class="product-card product-card--wo-hover prod-slider__item">
+                      <a href="/img/tovar2.jpg" class="gallery">
+                        <div class="prod-slider__img-wrap">
+                          <div class="product-card__img--blur-wrap">
+                            <img src="/img/tovar1.jpg" alt="" class="product-card__img--blur">
+                          </div>
+                          <img src="/img/tovar2.jpg" alt="" class="prod-slider__img">
+                        </div>
+                        <div class="sticker sticker--medium">Комис.</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="prod-main__right">
+                  <div class="prod-descr">
+                    <div class="prod-descr-top">
+                      <div class="prod-descr__prices">
+                        <!-- <div class="title-big prod-descr__price">2300 грн</div> -->
+                        <div class="title-big prod-descr__price prod-descr__price--red">2300 грн</div>
+                        <div class="prod-descr__price-old crossed-out">3500 грн</div>
+                      </div>
+                      <div class="prod-descr-wrap">
+                        <button class="button">купить</button>
+                        <button type="button" href="#" class="sticker sticker--favorits sticker--button">
+                          <i class="icomoon icon-hearth1"></i>
+                          <i class="icomoon icon-hearth2"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="prod-descr-bot">
+
+                      <div class="prod-guarantee">
+                        <div class="checkbox-item">
+                          <label class="checkbox-label">
+                            <input value="" name="guarantee" type="checkbox" class="form-checkbox form-checkbox--hidden">
+                            <span class="checkboxbtn checkboxbtn--wo-bg"><i class="icomoon icon-check2"></i></span>
+                            <span class="form-checkbox-subtitle">
+                              <b>Гарантия</b>  - 
+                              <span class="prod-guarantee__val">150 грн</span>
+                              <span class="prod-guarantee__time">1 месяц</span>
+                            </span>
+                          </label>
+                        </div>
+
+                        <div class="checkbox-item">
+                          <label class="checkbox-label">
+                            <input value="" name="guarantee" type="checkbox" class="form-checkbox form-checkbox--hidden">
+                            <span class="checkboxbtn checkboxbtn--wo-bg"><i class="icomoon icon-check2"></i></span>
+                            <span class="form-checkbox-subtitle">
+                              <b>Гарантия</b>  - 
+                              <span class="prod-guarantee__val">250 грн</span>
+                              <span class="prod-guarantee__time">2 месяцa</span>
+                            </span>
+                          </label>
+                        </div>
+
+                        <div class="quality-assurance">
+                          
+                          <a href="#">
+                            <span class="icon-faq-link"></span>
+                            <span>О гарантии</span> 
+                          </a>
+                        </div>
+                      </div>
+                      
+                      <div class="prod-descr-bot__text">
+                        <b>Apple iPhone 8 64Gb Space Gray (MQ6G2)</b>
+                        <br><br>
+                        iPhone 8 — новое поколение iPhone. Передняя и задняя панели выполнены из самого прочного стекла, когда-либо созданного для iPhone, а рамка — из алюминия, применяемого в аэрокосмической отрасли. iPhone 8 заряжается без проводов. Защищён от воды и пыли. Оснащён дисплеем Retina HD 4,7 дюйма с технологией True Tone. 
+                        <br><br>
+                        <b>Наличие:</b> <br>
+                        г. Запорожье, ул. Бородинская, 20б
+                      </div>
+
+                      <div class="prod-descr-bot__export">
+                        <i class="icomoon icon-delivery"></i>
+                        <div class="prod-descr-bot__export-text">
+                          <b class="prod-descr-bot__export-title yellow-blue">Самовывоз</b>
+                          <p class="prod-descr-bot__export-descr">Данный товар можно только забрать из магазина</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <footer class="prod-footer">
+                <div class="prod-tabs tabsNav tabButtons">
+                  <button data-target="feature" class="tab tabButton button-tab active">Характеристики</button>
+                  <button data-target="equipment" class="tab tabButton button-tab">Комплектация</button>
+                  <button data-target="details" class="tab tabButton button-tab">Нюансы</button>
+                </div>
+
+                <div class="prod-toggleBlocks toggleBlocks-list">
+                  <div id="feature" class="toggleBlock active">
+                    <div class="prod-group">
+                      <h3 class="prod-group__title">Дисплей</h3>
+                      <div class="prod-group__info">
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">6.1</div>
+                        </div>
+
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">6.1</div>
+                        </div>
+
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">6.1</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="prod-group">
+                      <h3 class="prod-group__title">Дисплей</h3>
+                      <div class="prod-group__info">
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">6.1</div>
+                        </div>
+
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">6.1</div>
+                        </div>
+
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">
+                            Широкоугольная камера: 12 Мп с технологией DualPixel / диафрагма: f/1.5-f/2.4 / угол обзора: 77° / OIS
+                            Телефотографическая камера: 12 Мп / диафрагма f/2.4 / угол обзора: 45° / OIS
+                            Ультраширокоугольная камера: 16 Мп / диафрагма: f/2.2 / угол обзора: 123°
+                            Оптический зум с кратностью 0.5x/2x
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="equipment" class="toggleBlock">
+                    <div class="prod-group">
+                      <h3 class="prod-group__title">Дисплей</h3>
+                      <div class="prod-group__info">
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">6.1</div>
+                        </div>
+
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">6.1</div>
+                        </div>
+
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">6.1</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="prod-group">
+                      <h3 class="prod-group__title">Дисплей</h3>
+                      <div class="prod-group__info">
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">6.1</div>
+                        </div>
+
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">6.1</div>
+                        </div>
+
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">
+                            Широкоугольная камера: 12 Мп с технологией DualPixel / диафрагма: f/1.5-f/2.4 / угол обзора: 77° / OIS
+                            Телефотографическая камера: 12 Мп / диафрагма f/2.4 / угол обзора: 45° / OIS
+                            Ультраширокоугольная камера: 16 Мп / диафрагма: f/2.2 / угол обзора: 123°
+                            Оптический зум с кратностью 0.5x/2x
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="details" class="toggleBlock">
+                    <div class="prod-group">
+                      <h3 class="prod-group__title">Дисплей</h3>
+                      <div class="prod-group__info">
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">6.1</div>
+                        </div>
+
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">6.1</div>
+                        </div>
+
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">6.1</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="prod-group">
+                      <h3 class="prod-group__title">Дисплей</h3>
+                      <div class="prod-group__info">
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">6.1</div>
+                        </div>
+
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">6.1</div>
+                        </div>
+
+                        <div class="prod-group__row">
+                          <div class="prod-group__subtitle">Диагональ экрана</div>
+                          <div class="prod-group__descr">
+                            Широкоугольная камера: 12 Мп с технологией DualPixel / диафрагма: f/1.5-f/2.4 / угол обзора: 77° / OIS
+                            Телефотографическая камера: 12 Мп / диафрагма f/2.4 / угол обзора: 45° / OIS
+                            Ультраширокоугольная камера: 16 Мп / диафрагма: f/2.2 / угол обзора: 123°
+                            Оптический зум с кратностью 0.5x/2x
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+
+        <div class="pageSection">
+          <div class="mcontainer">
+            <div class="pageSection-title-wrap">
+              <h2 class="pageSection-title">
+                Вместе дешевле
+              </h2>
+            </div>
+
+            <div class="complects-sale complects-sale-slider">
+              <div class="complects-sale__item">
+                <div class="complects-sale__wrap flex">
+
+                  <div class="complects-sale__prod">
+                    <a href="#" class="complects-sale__link">
+                      <img src="/img/tovar1.jpg" alt="" class="complects-sale__img">
+                    </a>
+                    <div class="complects-sale__prod-info">
+                      <div class="complects-sale__prices flex">
+                        <div class="complects-sale__price title-small">3 900 грн</div>
+                      </div>
+                      <div class="complects-sale__text text-small">
+                        <a href="#" class="complects-sale__text-link">
+                          Motorola Moto G5 Plus XT1685
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="complects-sale__prod">
+                    <a href="#" class="complects-sale__link">
+                      <img src="/img/tovar1.jpg" alt="" class="complects-sale__img">
+                      <span class="info-label-sell info-label-sell--small">-20%</span>
+                    </a>
+                    <div class="complects-sale__prod-info">
+                      <div class="complects-sale__prices flex">
+                        <div class="complects-sale__price title-small red">3 900 грн</div>
+                        <div class="complects-sale__price complects-sale__price-old title-small crossed-out">3 900 грн</div>
+                      </div>
+                      <div class="complects-sale__text text-small">
+                        <a href="#" class="complects-sale__text-link">
+                          Motorola Moto G5 Plus XT1685
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="complects-sale__result">
+                  <div class="red complects-sale__result-title">3 999 грн</div>
+                  <button class="button button--fluid">купить комплект</button>
+                </div>
+              </div>
+
+              <div class="complects-sale__item">
+                <div class="complects-sale__wrap flex">
+                  <div class="complects-sale__prod">
+                    <a href="#" class="complects-sale__link">
+                      <img src="/img/tovar1.jpg" alt="" class="complects-sale__img">
+                    </a>
+                    <div class="complects-sale__prod-info">
+                      <div class="complects-sale__prices flex">
+                        <div class="complects-sale__price title-small">3 900 грн</div>
+                      </div>
+                      <div class="complects-sale__text text-small">
+                        <a href="#" class="complects-sale__text-link">
+                          Motorola Moto G5 Plus XT1685
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="complects-sale__prod">
+                    <a href="#" class="complects-sale__link">
+                      <img src="/img/tovar1.jpg" alt="" class="complects-sale__img">
+                      <span class="info-label-sell info-label-sell--small">-20%</span>
+                    </a>
+                    <div class="complects-sale__prod-info">
+                      <div class="complects-sale__prices flex">
+                        <div class="complects-sale__price title-small red">3 900 грн</div>
+                        <div class="complects-sale__price complects-sale__price-old title-small crossed-out">3 900 грн</div>
+                      </div>
+                      <div class="complects-sale__text text-small">
+                        <a href="#" class="complects-sale__text-link">
+                          Motorola Moto G5 Plus XT1685
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="complects-sale__result">
+                  <div class="red title-big">3 999 грн</div>
+                  <button class="button button--fluid">купить комплект</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pageSection">
+          <div class="mcontainer">
+            <div class="pageSection-title-wrap">
+              <h2 class="pageSection-title">
+                Похожие товары
+                <div class="pageSection-arrows"></div>
+              </h2>
+            </div>
+
+            <div class="another-prod another-prod-slider">
+              <article class="product-card product-card--small">
+  <a href="#" class="absolute-link"></a>
+  <header class="product-card__header">
+    <img src="/img/tovar1.jpg" alt="" class="product-card__img">
+    <div class="sticker sticker--new">Новый</div>
+    <button href="#" class="sticker sticker--favorits sticker--small">
+      <i class="icomoon icon-hearth1"></i>
+      <i class="icomoon icon-hearth2"></i>
+    </button>
+    <div class="info-label-sell">-20%</div>
+  </header>
+  <div class="two-buttons-wrapper">
+    <a href="#" class="button button--small">Купить</a>
+    <a href="/product.html" class="button button--inverse button--small">Подробнее</a>
+  </div>
+  <footer class="product-card__footer">
+    <div class="product-card__footer-top">
+      <div class="product-card__prices">
+        <div class="title-small yellow"><span>4 899</span> грн</div>
+      </div>
+      <div class="product-card__labels">
+        <div class="info-label info-label--new">Новинка</div>
+        <div class="info-label info-label--hit">Хит</div>
+      </div>
+    </div>
+    <div class="product-card__footer-bottom">
+      <h3 class="text-small white">Mirta LD-32T2HDDDDDDD DDDDDDDDDDDD DDDDDDDDDDDDDDD</h3>
+    </div>
+  </footer>
+</article>
+              <article class="product-card product-card--small">
+  <a href="#" class="absolute-link"></a>
+  <header class="product-card__header">
+    <img src="/img/tovar1.jpg" alt="" class="product-card__img">
+    <div class="sticker sticker--new">Новый</div>
+    <button href="#" class="sticker sticker--favorits sticker--small">
+      <i class="icomoon icon-hearth1"></i>
+      <i class="icomoon icon-hearth2"></i>
+    </button>
+    <div class="info-label-sell">-20%</div>
+  </header>
+  <div class="two-buttons-wrapper">
+    <a href="#" class="button button--small">Купить</a>
+    <a href="/product.html" class="button button--inverse button--small">Подробнее</a>
+  </div>
+  <footer class="product-card__footer">
+    <div class="product-card__footer-top">
+      <div class="product-card__prices">
+        <div class="title-small yellow"><span>4 899</span> грн</div>
+      </div>
+      <div class="product-card__labels">
+        <div class="info-label info-label--new">Новинка</div>
+        <div class="info-label info-label--hit">Хит</div>
+      </div>
+    </div>
+    <div class="product-card__footer-bottom">
+      <h3 class="text-small white">Mirta LD-32T2HDDDDDDD DDDDDDDDDDDD DDDDDDDDDDDDDDD</h3>
+    </div>
+  </footer>
+</article>
+              <article class="product-card product-card--small">
+  <a href="#" class="absolute-link"></a>
+  <header class="product-card__header">
+    <img src="/img/tovar1.jpg" alt="" class="product-card__img">
+    <div class="sticker sticker--new">Новый</div>
+    <button href="#" class="sticker sticker--favorits sticker--small">
+      <i class="icomoon icon-hearth1"></i>
+      <i class="icomoon icon-hearth2"></i>
+    </button>
+    <div class="info-label-sell">-20%</div>
+  </header>
+  <div class="two-buttons-wrapper">
+    <a href="#" class="button button--small">Купить</a>
+    <a href="/product.html" class="button button--inverse button--small">Подробнее</a>
+  </div>
+  <footer class="product-card__footer">
+    <div class="product-card__footer-top">
+      <div class="product-card__prices">
+        <div class="title-small yellow"><span>4 899</span> грн</div>
+      </div>
+      <div class="product-card__labels">
+        <div class="info-label info-label--new">Новинка</div>
+        <div class="info-label info-label--hit">Хит</div>
+      </div>
+    </div>
+    <div class="product-card__footer-bottom">
+      <h3 class="text-small white">Mirta LD-32T2HDDDDDDD DDDDDDDDDDDD DDDDDDDDDDDDDDD</h3>
+    </div>
+  </footer>
+</article>
+              <article class="product-card product-card--small">
+  <a href="#" class="absolute-link"></a>
+  <header class="product-card__header">
+    <img src="/img/tovar1.jpg" alt="" class="product-card__img">
+    <div class="sticker sticker--new">Новый</div>
+    <button href="#" class="sticker sticker--favorits sticker--small">
+      <i class="icomoon icon-hearth1"></i>
+      <i class="icomoon icon-hearth2"></i>
+    </button>
+    <div class="info-label-sell">-20%</div>
+  </header>
+  <div class="two-buttons-wrapper">
+    <a href="#" class="button button--small">Купить</a>
+    <a href="/product.html" class="button button--inverse button--small">Подробнее</a>
+  </div>
+  <footer class="product-card__footer">
+    <div class="product-card__footer-top">
+      <div class="product-card__prices">
+        <div class="title-small yellow"><span>4 899</span> грн</div>
+      </div>
+      <div class="product-card__labels">
+        <div class="info-label info-label--new">Новинка</div>
+        <div class="info-label info-label--hit">Хит</div>
+      </div>
+    </div>
+    <div class="product-card__footer-bottom">
+      <h3 class="text-small white">Mirta LD-32T2HDDDDDDD DDDDDDDDDDDD DDDDDDDDDDDDDDD</h3>
+    </div>
+  </footer>
+</article>
+              <article class="product-card product-card--small">
+  <a href="#" class="absolute-link"></a>
+  <header class="product-card__header">
+    <img src="/img/tovar1.jpg" alt="" class="product-card__img">
+    <div class="sticker sticker--new">Новый</div>
+    <button href="#" class="sticker sticker--favorits sticker--small">
+      <i class="icomoon icon-hearth1"></i>
+      <i class="icomoon icon-hearth2"></i>
+    </button>
+    <div class="info-label-sell">-20%</div>
+  </header>
+  <div class="two-buttons-wrapper">
+    <a href="#" class="button button--small">Купить</a>
+    <a href="/product.html" class="button button--inverse button--small">Подробнее</a>
+  </div>
+  <footer class="product-card__footer">
+    <div class="product-card__footer-top">
+      <div class="product-card__prices">
+        <div class="title-small yellow"><span>4 899</span> грн</div>
+      </div>
+      <div class="product-card__labels">
+        <div class="info-label info-label--new">Новинка</div>
+        <div class="info-label info-label--hit">Хит</div>
+      </div>
+    </div>
+    <div class="product-card__footer-bottom">
+      <h3 class="text-small white">Mirta LD-32T2HDDDDDDD DDDDDDDDDDDD DDDDDDDDDDDDDDD</h3>
+    </div>
+  </footer>
+</article>
+              <article class="product-card product-card--small">
+  <a href="#" class="absolute-link"></a>
+  <header class="product-card__header">
+    <img src="/img/tovar1.jpg" alt="" class="product-card__img">
+    <div class="sticker sticker--new">Новый</div>
+    <button href="#" class="sticker sticker--favorits sticker--small">
+      <i class="icomoon icon-hearth1"></i>
+      <i class="icomoon icon-hearth2"></i>
+    </button>
+    <div class="info-label-sell">-20%</div>
+  </header>
+  <div class="two-buttons-wrapper">
+    <a href="#" class="button button--small">Купить</a>
+    <a href="/product.html" class="button button--inverse button--small">Подробнее</a>
+  </div>
+  <footer class="product-card__footer">
+    <div class="product-card__footer-top">
+      <div class="product-card__prices">
+        <div class="title-small yellow"><span>4 899</span> грн</div>
+      </div>
+      <div class="product-card__labels">
+        <div class="info-label info-label--new">Новинка</div>
+        <div class="info-label info-label--hit">Хит</div>
+      </div>
+    </div>
+    <div class="product-card__footer-bottom">
+      <h3 class="text-small white">Mirta LD-32T2HDDDDDDD DDDDDDDDDDDD DDDDDDDDDDDDDDD</h3>
+    </div>
+  </footer>
+</article>
+              <article class="product-card product-card--small">
+  <a href="#" class="absolute-link"></a>
+  <header class="product-card__header">
+    <img src="/img/tovar1.jpg" alt="" class="product-card__img">
+    <div class="sticker sticker--new">Новый</div>
+    <button href="#" class="sticker sticker--favorits sticker--small">
+      <i class="icomoon icon-hearth1"></i>
+      <i class="icomoon icon-hearth2"></i>
+    </button>
+    <div class="info-label-sell">-20%</div>
+  </header>
+  <div class="two-buttons-wrapper">
+    <a href="#" class="button button--small">Купить</a>
+    <a href="/product.html" class="button button--inverse button--small">Подробнее</a>
+  </div>
+  <footer class="product-card__footer">
+    <div class="product-card__footer-top">
+      <div class="product-card__prices">
+        <div class="title-small yellow"><span>4 899</span> грн</div>
+      </div>
+      <div class="product-card__labels">
+        <div class="info-label info-label--new">Новинка</div>
+        <div class="info-label info-label--hit">Хит</div>
+      </div>
+    </div>
+    <div class="product-card__footer-bottom">
+      <h3 class="text-small white">Mirta LD-32T2HDDDDDDD DDDDDDDDDDDD DDDDDDDDDDDDDDD</h3>
+    </div>
+  </footer>
+</article>
+
+              <!-- <div class="product-card another-prod__item">
+                <a href="#" class="absolute-link"></a>
+                <img src="/img/tovar1.jpg" alt="" class="another-prod__item-image">
+                <div class="sticker sticker--small sticker--new">Новый</div>
+                <div class="another-prod__item-info">
+                  <div class="title-small yellow">2 900 грн</div>
+                  <div class="text-small white">Motorola Moto G5 Plus XT1685</div>
+                </div>
+              </div>
+
+              <div class="product-card another-prod__item">
+                <a href="#" class="absolute-link"></a>
+                <img src="/img/tovar1.jpg" alt="" class="another-prod__item-image">
+                <div class="sticker  sticker--small">Комис.</div>
+                <div class="another-prod__item-info">
+                  <div class="title-small yellow">2 900 грн</div>
+                  <div class="text-small white">Motorola Moto G5 Plus XT1685</div>
+                </div>
+              </div>
+
+              <div class="product-card another-prod__item">
+                <a href="#" class="absolute-link"></a>
+                <img src="/img/tovar2.jpg" alt="" class="another-prod__item-image">
+                <div class="sticker  sticker--small">Комис.</div>
+                <div class="another-prod__item-info">
+                  <div class="title-small yellow">3 900 грн</div>
+                  <div class="text-small white">Motorola Moto G5 Plus XT1685</div>
+                </div>
+              </div>
+
+              <div class="product-card another-prod__item">
+                <a href="#" class="absolute-link"></a>
+                <img src="/img/tovar1.jpg" alt="" class="another-prod__item-image">
+                <div class="sticker sticker--small sticker--new">Новый</div>
+                <div class="another-prod__item-info">
+                  <div class="title-small yellow">2 900 грн</div>
+                  <div class="text-small white">Motorola Moto G5 Plus XT1685</div>
+                </div>
+              </div>
+
+              <div class="product-card another-prod__item">
+                <a href="#" class="absolute-link"></a>
+                <img src="/img/tovar1.jpg" alt="" class="another-prod__item-image">
+                <div class="sticker  sticker--small">Комис.</div>
+                <div class="another-prod__item-info">
+                  <div class="title-small yellow">2 900 грн</div>
+                  <div class="text-small white">Motorola Moto G5 Plus XT1685</div>
+                </div>
+              </div>
+
+              <div class="product-card another-prod__item">
+                <a href="#" class="absolute-link"></a>
+                <img src="/img/tovar1.jpg" alt="" class="another-prod__item-image">
+                <div class="sticker  sticker--small">Комис.</div>
+                <div class="another-prod__item-info">
+                  <div class="title-small yellow">2 900 грн</div>
+                  <div class="text-small white">Motorola Moto G5 Plus XT1685</div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="pageSection">
+  <div class="mcontainer">
+    <div class="pageSection-title-wrap">
+      <h2 class="pageSection-title">Вы смотрели</h2>
+    </div>
+
+    <div class="history">
+      <div class="history__item">
+        <article class="product-card product-card--small">
+  <a href="#" class="absolute-link"></a>
+  <header class="product-card__header">
+    <img src="/img/tovar1.jpg" alt="" class="product-card__img">
+    <div class="sticker sticker--new">Новый</div>
+    <button href="#" class="sticker sticker--favorits sticker--small">
+      <i class="icomoon icon-hearth1"></i>
+      <i class="icomoon icon-hearth2"></i>
+    </button>
+    <div class="info-label-sell">-20%</div>
+  </header>
+  <div class="two-buttons-wrapper">
+    <a href="#" class="button button--small">Купить</a>
+    <a href="/product.html" class="button button--inverse button--small">Подробнее</a>
+  </div>
+  <footer class="product-card__footer">
+    <div class="product-card__footer-top">
+      <div class="product-card__prices">
+        <div class="title-small yellow"><span>4 899</span> грн</div>
+      </div>
+      <div class="product-card__labels">
+        <div class="info-label info-label--new">Новинка</div>
+        <div class="info-label info-label--hit">Хит</div>
+      </div>
+    </div>
+    <div class="product-card__footer-bottom">
+      <h3 class="text-small white">Mirta LD-32T2HDDDDDDD DDDDDDDDDDDD DDDDDDDDDDDDDDD</h3>
+    </div>
+  </footer>
+</article>
+      </div>
+      <div class="history__item">
+        <article class="product-card product-card--small">
+  <a href="#" class="absolute-link"></a>
+  <header class="product-card__header">
+    <img src="/img/tovar1.jpg" alt="" class="product-card__img">
+    <div class="sticker sticker--new">Новый</div>
+    <button href="#" class="sticker sticker--favorits sticker--small">
+      <i class="icomoon icon-hearth1"></i>
+      <i class="icomoon icon-hearth2"></i>
+    </button>
+    <div class="info-label-sell">-20%</div>
+  </header>
+  <div class="two-buttons-wrapper">
+    <a href="#" class="button button--small">Купить</a>
+    <a href="/product.html" class="button button--inverse button--small">Подробнее</a>
+  </div>
+  <footer class="product-card__footer">
+    <div class="product-card__footer-top">
+      <div class="product-card__prices">
+        <div class="title-small yellow"><span>4 899</span> грн</div>
+      </div>
+      <div class="product-card__labels">
+        <div class="info-label info-label--new">Новинка</div>
+        <div class="info-label info-label--hit">Хит</div>
+      </div>
+    </div>
+    <div class="product-card__footer-bottom">
+      <h3 class="text-small white">Mirta LD-32T2HDDDDDDD DDDDDDDDDDDD DDDDDDDDDDDDDDD</h3>
+    </div>
+  </footer>
+</article>
+      </div>
+      <div class="history__item">
+        <article class="product-card product-card--small">
+  <a href="#" class="absolute-link"></a>
+  <header class="product-card__header">
+    <img src="/img/tovar1.jpg" alt="" class="product-card__img">
+    <div class="sticker sticker--new">Новый</div>
+    <button href="#" class="sticker sticker--favorits sticker--small">
+      <i class="icomoon icon-hearth1"></i>
+      <i class="icomoon icon-hearth2"></i>
+    </button>
+    <div class="info-label-sell">-20%</div>
+  </header>
+  <div class="two-buttons-wrapper">
+    <a href="#" class="button button--small">Купить</a>
+    <a href="/product.html" class="button button--inverse button--small">Подробнее</a>
+  </div>
+  <footer class="product-card__footer">
+    <div class="product-card__footer-top">
+      <div class="product-card__prices">
+        <div class="title-small yellow"><span>4 899</span> грн</div>
+      </div>
+      <div class="product-card__labels">
+        <div class="info-label info-label--new">Новинка</div>
+        <div class="info-label info-label--hit">Хит</div>
+      </div>
+    </div>
+    <div class="product-card__footer-bottom">
+      <h3 class="text-small white">Mirta LD-32T2HDDDDDDD DDDDDDDDDDDD DDDDDDDDDDDDDDD</h3>
+    </div>
+  </footer>
+</article>
+      </div>
+      <div class="history__item">
+        <article class="product-card product-card--small">
+  <a href="#" class="absolute-link"></a>
+  <header class="product-card__header">
+    <img src="/img/tovar1.jpg" alt="" class="product-card__img">
+    <div class="sticker sticker--new">Новый</div>
+    <button href="#" class="sticker sticker--favorits sticker--small">
+      <i class="icomoon icon-hearth1"></i>
+      <i class="icomoon icon-hearth2"></i>
+    </button>
+    <div class="info-label-sell">-20%</div>
+  </header>
+  <div class="two-buttons-wrapper">
+    <a href="#" class="button button--small">Купить</a>
+    <a href="/product.html" class="button button--inverse button--small">Подробнее</a>
+  </div>
+  <footer class="product-card__footer">
+    <div class="product-card__footer-top">
+      <div class="product-card__prices">
+        <div class="title-small yellow"><span>4 899</span> грн</div>
+      </div>
+      <div class="product-card__labels">
+        <div class="info-label info-label--new">Новинка</div>
+        <div class="info-label info-label--hit">Хит</div>
+      </div>
+    </div>
+    <div class="product-card__footer-bottom">
+      <h3 class="text-small white">Mirta LD-32T2HDDDDDDD DDDDDDDDDDDD DDDDDDDDDDDDDDD</h3>
+    </div>
+  </footer>
+</article>
+      </div>
+      <div class="history__item">
+        <article class="product-card product-card--small">
+  <a href="#" class="absolute-link"></a>
+  <header class="product-card__header">
+    <img src="/img/tovar1.jpg" alt="" class="product-card__img">
+    <div class="sticker sticker--new">Новый</div>
+    <button href="#" class="sticker sticker--favorits sticker--small">
+      <i class="icomoon icon-hearth1"></i>
+      <i class="icomoon icon-hearth2"></i>
+    </button>
+    <div class="info-label-sell">-20%</div>
+  </header>
+  <div class="two-buttons-wrapper">
+    <a href="#" class="button button--small">Купить</a>
+    <a href="/product.html" class="button button--inverse button--small">Подробнее</a>
+  </div>
+  <footer class="product-card__footer">
+    <div class="product-card__footer-top">
+      <div class="product-card__prices">
+        <div class="title-small yellow"><span>4 899</span> грн</div>
+      </div>
+      <div class="product-card__labels">
+        <div class="info-label info-label--new">Новинка</div>
+        <div class="info-label info-label--hit">Хит</div>
+      </div>
+    </div>
+    <div class="product-card__footer-bottom">
+      <h3 class="text-small white">Mirta LD-32T2HDDDDDDD DDDDDDDDDDDD DDDDDDDDDDDDDDD</h3>
+    </div>
+  </footer>
+</article>
+      </div>
+    </div>
+  </div>
+</div>
+                
+        <div class="pageSection pageSection-connect">
+  <div class="mcontainer">
+    <div class="connect">
+      <div class="pageSection-title white">
+        Заявка на подбор товара
+      </div>
+      <img src="/img/h-app.png" alt="" class="connect__img">
+      <button class="button button--fluid button--fluid-pd20 button--mob-small-fz button-contact-js" data-form="form-contact-message">связаться с менеджером</button>
+    </div>
+  </div>
+</div>
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      
+    </div>
+    <!--  -->
+    <div id="pageOverlay" class="pageOverlay"></div>
+<!--  -->
+<div id="popupBasket" class="popupBasket popup">
+	<div class="popupWrapper">
+		<div class="popupContentWrapper">
+			<div class="mcontainer">
+  <div class="pageSection-title-wrap pageSection-title-wrap--border">
+    <h2 class="pageSection-title">Корзина</h2>
+  </div>
+
+  <div class="products-categories products-categories--basket">
+    <div class="layout-basket">
+      <div class="fav__table-mobile">
+        <div class="fav__item-mob">
+          <div class="fav__row-mob relative">
+            <div class="fav__th-mob">
+              <div class="bold">Информация о товаре</div>
+              <div class="fav__prod">
+                <a href="#" class="fav__prod-img-wrap">
+                  <img src="/img/tovar1.jpg" alt="" class="fav__prod-img">
+                </a>
+                <a href="#">
+                  <span class="fav__prod-title">Ноутбук Acer Aspire V3-551</span>
+                </a>
+              </div>
+            </div>
+            <div class="fav__th-mob">
+              <div class="bold">Количество</div>
+              <div class="flex center grow-1">
+                <div class="counter-el">
+                  <button class="counter-el__inc">+</button>
+                  <input type="number" value="1">
+                  <button class="counter-el__dec">-</button>
+                </div>
+              </div>
+            </div>
+            <div class="fav__th-mob">
+              <div class="bold">Цена</div>
+              <div class="fav__td-mob fav__td-mob--price">5800 грн</div>
+            </div>
+
+            <div class="prod-guarantee">
+              <div class="checkbox-item">
+                <label class="checkbox-label">
+                  <input value="" name="guarantee" type="checkbox" class="form-checkbox form-checkbox--hidden">
+                  <span class="checkboxbtn checkboxbtn--wo-bg"><i class="icomoon icon-check2"></i></span>
+                  <span class="form-checkbox-subtitle">
+                    <b>Гарантия</b>  - 
+                    <span class="prod-guarantee__time">1 месяц</span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="checkbox-item">
+                <label class="checkbox-label">
+                  <input value="" name="guarantee" type="checkbox" class="form-checkbox form-checkbox--hidden">
+                  <span class="checkboxbtn checkboxbtn--wo-bg"><i class="icomoon icon-check2"></i></span>
+                  <span class="form-checkbox-subtitle">
+                    <b>Гарантия</b>  - 
+                    <span class="prod-guarantee__time">2 месяцa</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+            <button class="button-close button-close--second"></button>
+          </div>
+        </div>
+
+        <div class="fav__item-mob fav__item--gather fav__item--gather-mob">
+          <div class="fav__row-mob relative">
+            <div class="fav__row-mob">
+                <div class="fav__th-mob">
+                  <div class="bold">Информация о товаре</div>
+                  <div class="fav__prod">
+                    <a href="#" class="fav__prod-img-wrap">
+                      <img src="/img/tovar1.jpg" alt="" class="fav__prod-img">
+                    </a>
+                    <a href="#">
+                      <span class="fav__prod-title">Ноутбук Acer Aspire V3-551</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="fav__th-mob flex center">
+                  <div class="bold">Цена</div>
+                  <div class="fav__td-mob fav__td-mob--price">5800 грн</div>
+                </div>
+            </div>
+
+            <div class="fav__row-mob">
+              <div class="fav__th-mob">
+                <div class="bold">Информация о товаре</div>
+                <div class="fav__prod">
+                  <a href="#" class="fav__prod-img-wrap">
+                    <img src="/img/tovar1.jpg" alt="" class="fav__prod-img">
+                  </a>
+                  <a href="#">
+                    <span class="fav__prod-title">Ноутбук Acer Aspire V3-551</span>
+                  </a>
+                </div>
+              </div>
+              <div class="fav__th-mob flex center">
+                <div class="bold">Цена</div>
+                <div class="fav__td-mob fav__td-mob--price">5800 грн</div>
+              </div>
+            </div>  
+
+            <div class="fav__row-mob">
+              <div class="fav__td-mob">
+                <div class="fav__row-mob">
+                  <div class="fav__th-mob">
+                    <div class="bold">Количество</div>
+                    <div class="counter-el">
+                      <button class="counter-el__inc">+</button>
+                      <input type="number" value="1">
+                      <button class="counter-el__dec">-</button>
+                    </div>
+                  </div>
+                  <div class="fav__th-mob flex center">
+                    <div class="bold">Итого:</div>
+                    <div class="fav__td-mob flex center">31 002 грн</div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+            
+            <button class="button-close button-close--second"></button>
+          </div>
+        </div>
+      </div>
+        
+      <div class="fav__table">
+        <div class="fav__item">
+          <div class="fav__row">
+            <div class="fav__th bold">Информация о товаре</div>
+            <div class="fav__th bold">Количество</div>
+            <div class="fav__th bold">Цена</div>
+          </div>
+          
+          <div class="fav__row relative">
+            <div class="fav__td">
+              <div class="fav__prod">
+                <div class="fav__td--num">
+                  1.
+                </div>
+                <a href="#" class="fav__prod-img-wrap">
+                  <img src="/img/tovar1.jpg" alt="" class="fav__prod-img">
+                </a>
+                <a href="#">
+                  <span class="fav__prod-title">Ноутбук Acer Aspire V3-551</span>
+                </a>
+              </div>
+            </div>
+            <div class="fav__td flex center">
+              <div class="counter-el">
+                <button class="counter-el__inc">+</button>
+                <input type="number" value="1">
+                <button class="counter-el__dec">-</button>
+              </div>
+            </div>
+            <div class="fav__td flex center fav__td--stock">
+              <span>5800 грн</span>
+              <span>5800 грн</span>
+            </div>
+            <button class="button-close button-close--second"></button>
+          </div>
+
+          <div class="fav__row fav__row-guarantee">
+            <div class="fav__td">
+              <div class="prod-guarantee">
+                <div class="checkbox-item">
+                  <label class="checkbox-label">
+                    <input value="" name="guarantee" type="checkbox" class="form-checkbox form-checkbox--hidden">
+                    <span class="checkboxbtn checkboxbtn--wo-bg"><i class="icomoon icon-check2"></i></span>
+                    <span class="form-checkbox-subtitle">
+                      <b>Гарантия</b>  - 
+                      <span class="prod-guarantee__time">1 месяц</span>
+                    </span>
+                  </label>
+                </div>
+
+                <div class="checkbox-item">
+                  <label class="checkbox-label">
+                    <input value="" name="guarantee" type="checkbox" class="form-checkbox form-checkbox--hidden">
+                    <span class="checkboxbtn checkboxbtn--wo-bg"><i class="icomoon icon-check2"></i></span>
+                    <span class="form-checkbox-subtitle">
+                      <b>Гарантия</b>  - 
+                      <span class="prod-guarantee__time">2 месяцa</span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="fav__td"></div>
+            <div class="fav__td grey flex center">250 грн</div>
+          </div>
+        </div>
+
+        <div class="fav__item fav__item--gather">
+          <div class="fav__row relative">
+            <div class="fav__td fav__td--num flex center">
+              1.
+            </div>
+            <div class="fav__td">
+              <div class="fav__row-inner">
+                <div class="fav__td-inner">
+                  <div class="fav__prod">
+                    <a href="#" class="fav__prod-img-wrap">
+                      <img src="/img/tovar1.jpg" alt="" class="fav__prod-img">
+                    </a>
+                    <a href="#">
+                      <span class="fav__prod-title">Ноутбук Acer Aspire V3-551</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="fav__td-inner"></div>
+                <div class="fav__td-inner flex center">5800 грн</div>
+              </div>
+
+              <div class="fav__row-inner">
+                <div class="fav__td-inner">
+                  <div class="fav__prod">
+                    <a href="#" class="fav__prod-img-wrap">
+                      <img src="/img/tovar1.jpg" alt="" class="fav__prod-img">
+                    </a>
+                    <a href="#">
+                      <span class="fav__prod-title">Ноутбук Acer Aspire V3-551</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="fav__td-inner"></div>
+                <div class="fav__td-inner flex center">5800 грн</div>
+              </div>                     
+            </div>
+            
+            <button class="button-close button-close--second"></button>
+          </div>
+
+          <div class="fav__row">
+            <div class="fav__td"></div>
+            <div class="fav__td">
+              <div class="fav__row-inner">
+                <div class="fav__td-inner"></div>
+                <div class="fav__td-inner">
+                  <div class="counter-el">
+                    <button class="counter-el__inc">+</button>
+                    <input type="number" value="1">
+                    <button class="counter-el__dec">-</button>
+                  </div>
+                </div>
+                <div class="fav__td-inner flex center">31 002 грн</div>
+              </div>                
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="basket-nav">
+        <div class="basket-nav__left">
+          <a class="button button--fluid-xl button--inverse">Продолжить покупки</a>
+        </div>
+        <div class="basket-nav__right">
+          <div class="basket-total title-common">
+            <span>Сумма:</span>
+            <span class="yellow-blue">5 950 грн</span>
+          </div>
+          <a class="button button--fluid-xl">Оформить заказ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal-message modal-stock">
+	<div class="modal-content-wrap">
+		 <div class="button-close button-close--blue"></div>
+		 <div class="modal_content">
+			<div class="modal__content-title">Отправить сообщение</div>
+			<form method="POST" action="#" class="form form-contact-call form-val-js">
+				<div class="form-row-secondary">
+					<input name="email" type="text" class="form-item" placeholder="a-mail" autocomplete="off" data-validate="required" data-error-text="Необходимо заполнить поле">
+				</div>
+				<div class="form-row-secondary">
+					<input name="phone" type="tel" class="form-item input_mask_phone" placeholder="Контактный телефон" autocomplete="off" data-validate="required" data-error-text="Необходимо заполнить поле">
+				</div>
+				<div class="form-row-secondary">
+					<textarea name="message" type="text" class="form-item" placeholder="Текст сообщение" autocomplete="off" data-validate="required" data-error-text="Необходимо заполнить поле"></textarea>
+				</div>
+				<div class="form-row-secondary">
+					<button type="submit" class="button button--small secondary_btn">Отправить</button>
+				</div>
+			</form> 
+		 </div>
+	</div>
+	<div class="modal-overlay"></div>
+</div>
+
+<div class="modal-callback modal-stock">
+	<div class="modal-content-wrap">
+		<div class="button-close button-close--blue"></div>
+		<div class="modal_content">
+		 <div class="modal__content-title">Перезвоните мне</div>
+		 <form method="POST" action="#" class="form form-contact-call form-val-js">
+			 <div class="form-row-secondary">
+				 <input name="name" type="text" class="form-item" placeholder="Имя" autocomplete="off" data-validate="required" data-error-text="Необходимо заполнить поле">
+			 </div>
+			 <div class="form-row-secondary">
+				<input name="phone" type="tel" class="form-item input_mask_phone" placeholder="Контактный телефон" autocomplete="off" data-validate="required" data-error-text="Необходимо заполнить поле">
+			</div>
+			 <div class="form-row-secondary">
+				 <button type="submit" class="button button--small secondary_btn">Отправить</button>
+			 </div>
+		 </form> 
+		</div>
+ </div>
+ <div class="modal-overlay"></div>
+</div>
+    <div class="contacts-wrapper">
+  <div class="forms-contacts-wrapper">
+    <div class="item-contactValue btn_modal-message">
+      <i class="icon-item-contactValue"></i>
+      <div><p class="item-contactValue_title">Отправить сообщение</p></div>
+    </div>
+    <div class="item-contactValue btn_modal-callback">
+      <i class="icon-item-contactValue"></i>
+      <div><p class="item-contactValue_title"> Перезвоните мне</p></div>
+    </div>
+    <div class="item-contactValue">
+      <i class="icon-item-contactValue btn_phone"></i>
+      <div>
+        <p class="item-contactValue_title">Позвонить</p>
+        <div class="item-contactValue-links">
+          <a href="tel:+380800301313">0800 30-13-13</a>
+          <a href="tel:+380976301313">(097) 630-13-13</a>
+          <a href="tel:+380666301313">(066) 630-13-13</a>
+          <a href="tel:+380636301313">(063) 630-13-13</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- <span class="contact-icon_messages"></span> -->
+  <button class="button button--small button-contact button-contact-js" data-form="form-contact-message"> 
+    <span class="contact-icon_btn"></span> 
+    <span class="contact-title_btn"> связь</span> 
+  </button>
+  <div class="button-close button-close--blue"></div>
+</div>
+
+<!-- 
+<form method="POST" action="#" class="form form-contact-message form-val-js active">
+  <div class="form-row-secondary form-row--two-items">
+    <div class="form-item-wrap">
+      <input name="name" type="text" class="form-item" placeholder="Ваше имя" data-validate="required" data-error-text="Необходимо заполнить поле">
+    </div>
+    <div class="form-item-wrap">
+      <input name="phone" type="tel" class="form-item" placeholder="Ваш телефон" data-validate="required" data-error-text="Необходимо заполнить поле">
+    </div>
+  </div>
+  <div class="form-row-secondary">
+    <input name="message" type="text" class="form-item" placeholder="Ваше сообщение" data-validate="required" data-error-text="Необходимо заполнить поле">
+  </div>
+  <div class="form-row-secondary">
+    <button type="submit" class="button button--small secondary_btn">Отправить</button>
+  </div>
+</form>
+
+<form method="POST" action="#" class="form form-contact-call form-val-js">
+  <div class="form-row-secondary">
+    <input name="name" type="text" class="form-item" placeholder="Ваше имя" data-validate="required" data-error-text="Необходимо заполнить поле">
+  </div>
+  <div class="form-row-secondary">
+    <input name="phone" type="tel" class="form-item" placeholder="Ваш телефон" data-validate="required" data-error-text="Необходимо заполнить поле">
+  </div>
+  <div class="form-row-secondary">
+    <button type="submit" class="button button--small secondary_btn">Отправить</button>
+  </div>
+</form> -->
+    <!--  -->
+    <footer class="mainFooter">
+	<div class="top-footer text-common">
+		<div class="mcontainer">
+			<div class="footer-containers">
+				<div class="footer-container footer-contacts">
+					<h3 class="title-common yellow">Наши контакты</h3>
+					<a href="tel:+380676186717">(067) 618-67-17</a>
+					<a href="tel:+380676235396">(067) 623-53-96</a>
+					<a href="tel:+380504507103">(050) 450-71-03</a>
+					<a href="tel:+380800301313">0800 30-13-13</a>
+					<span>*Пн-Вс: 09-18</span>
+					<button class="button button--small button-contact-js" data-form="form-contact-call">заказать звонок</button>
+				</div>
+				<div class="footer-container footer-mail">
+					<h3 class="title-common yellow">Будьте в курсе</h3>
+					<div class="footer-mail__descr">Подпишитесь на последние обновления и узнавайте о новинках и специальных предложениях первыми</div>
+					<form action="#" class="form form-footer-mail form-val-js">
+						<div class="form-row form-row--two-items">
+							<div class="form-item-wrap">
+								<input 
+								class="form-item" 
+								type="email" 
+								name="mail" 
+								placeholder="Адрес электронной почты" 
+								data-validate="required" 
+								data-error-text="Необходимо заполнить поле">
+							</div>
+							<button class="button button--small">подписаться</button>
+						</div>
+						<div class="form-row">
+							<div class="checkbox-item">
+								<label class="checkbox-label checkbox-label--column">
+									<input 
+										value=""
+										name="confirm"
+										type="checkbox"
+										class="form-checkbox form-checkbox--hidden"
+										data-validate="requiredRadio" 
+										data-error-text="Необходимо дать согласие"
+									>
+									<div class="checkboxbtn-wrap">
+										<span class="checkboxbtn checkboxbtn--checked-yellow"><i class="icomoon icon-check2"></i></span>
+										<span class="form-checkbox-subtitle">
+											Я согласен на обработку 
+											<a href="#">персональных данных</a>
+											, а также с 
+											<a href="#">условиями подписки</a>
+										</span>
+									</div>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="footer-container footer-news">
+					<h3 class="title-common yellow">Наш партнер</h3>
+
+					<div class="footer-partners-icon">
+						<img src="./img/logo-partner-kapital.svg" alt="">
+					</div>
+					<!-- <time class="footer-news__date">29 июля 2019 г.</time>
+					<div class="footer-news__text">Официальные условия проведения конкурса “Дарим подарки”</div> -->
+
+					<button class="button button--small button--with-icon">
+						<i class="icomoon icon-exchange"></i>
+						<span>Как я могу сдать технику?</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hr md-show"></div>
+	<div class="mcontainer">
+		<div class="bottom-footer">
+			<h4 class="mainFooter-descr">
+				© Technostock 2010
+			</h4>
+		
+			<a href="https://zengineers.company/" target="_blank" class="developers">
+				<span>Разработано в</span>
+				<i class="icomoon icon-logo_Z"></i>
+			</a>	
+		</div>
+	</div>
+</footer>
+    <!--  -->
+  </div>
+  <!--  -->
+  <!--________SCRIPTS______-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script> -->
+<script type="text/javascript" src="js/dotdotdot.min.js"></script>
+<!-- <script type="text/javascript" src="js/chosen.jquery.min.js"></script> -->
+
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="js/cleave.min.js"></script>
+<script type="text/javascript" src="js/jquery.colorbox.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+<script type="text/javascript" src="js/index.min.js"></script>
+  <!--  -->
+</body>
+
+</html>

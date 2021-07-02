@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "clients": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="clientsInfoList" class="clientsInfoList page">
+
+        <section class="pageSection white-bg">
+          <div class="mcontainer">
+            
+            <div class="sectionBlock sectionHeader">
+              <div class="animated-border-block section-title sectionHeaderItem">
+                <div class="svg-container">
+                  <svg class="rect-container">
+                    <rect x="0" y="0" class="animatedBlock"/>
+                    <rect x="0" y="0" stroke-width="4" class="overlappingBlock"/>                
+                  </svg>
+                  <h1 class="title">Клиентам</h1>
+                </div>
+              </div>
+
+              <ul class="breadcrumbs sectionHeaderItem">
+                <li><a href="/index.html">Главная</a></li>
+                <li class="active"><a href="#">Клиентам</a></li>
+              </ul>
+            </div>
+
+            <div class="sectionBlock">
+              <div class="clients-info-list mrow flex wrap">
+                <article class="clients-item mcol-xs-12 mcol-md-4">
+                  <div class="item-container flex column">
+                    <div class="imgWrapper relative more-button overlayed">
+                      <a href="/clientsInfoPage.html" class="absolute stretch overlay-link"></a>
+                      <div class="darkOverlay"></div>
+
+                      <div class="more-button-wrapper">
+                        <div class="more-button-container">
+                          <a href="/clientsInfoPage.html" class="title semi-bold">Подробнее</a>
+                          <i class="icomoon standard-arrow-icon"></i>
+                        </div>
+                      </div>
+
+                      <img src="img/image_mock.jpg" alt="action">
+                    </div>       
+
+                    <div class="description-container flex column">
+                      <h2 class="title article-title"><a href="/clientsInfoPage.html">Оценка залогового имущества</a></h2>
+                      <div class="description">
+                        <p class="">Компанія «Капітал» видає споживчі кредити під заставу техніки. Перш ніж видати готівку клієнту, фахівець оцінює заставне майно. Що включає в себе експертиза техніки, скільки часу вона забирає, як проводиться…</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="clients-item mcol-xs-12 mcol-md-4">
+                  <div class="item-container flex column">
+                    <div class="imgWrapper relative more-button overlayed">
+                      <a href="/clientsInfoPage.html" class="absolute stretch overlay-link"></a>
+                      <div class="darkOverlay"></div>
+
+                      <div class="more-button-wrapper">
+                        <div class="more-button-container">
+                          <a href="/clientsInfoPage.html" class="title semi-bold">Подробнее</a>
+                          <i class="icomoon standard-arrow-icon"></i>
+                        </div>
+                      </div>
+
+                      <img src="img/image_mock.jpg" alt="action">
+                    </div>       
+
+                    <div class="description-container flex column">
+                      <h2 class="title article-title"><a href="/clientsInfoPage.html">Как осуществляется пропил изделия</a></h2>
+                      <div class="description">
+                        <p class="">Компанія «Капітал» видає споживчі кредити під заставу техніки. Перш ніж видати готівку клієнту, фахівець оцінює заставне майно. Що включає в себе експертиза техніки…</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+
+  
+          </div>
+        </section>   
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <div class="mcontainer relative scrollTopContainer">
+        <div id="scrollTopButton" class="icomoon standard-arrow-icon navigateIcon up"></div>
+      </div>
+
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

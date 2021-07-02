@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html')
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="tariffsPage" class="tariffsPage page">
+
+        <section class="pageSection white-bg">
+          <div class="mcontainer">
+
+            <div class="sectionBlock">
+              <div class="sectionHeader">
+                <div class="animated-border-block section-title sectionHeaderItem">
+                  <div class="svg-container">
+                    <svg class="rect-container">
+                      <rect x="0" y="0" class="animatedBlock"/>
+                      <rect x="0" y="0" stroke-width="4" class="overlappingBlock"/>                
+                    </svg>
+                    <h1 class="title">Тарифные планы</h1>
+                  </div>
+                </div>
+
+                <ul class="breadcrumbs sectionHeaderItem">
+                  <li><a href="/index.html">Главная</a></li>
+                  <li class="active"><a href="#">Тарифные планы</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="sectionBlock">
+              <div class="tariffsCategoryNavBar categoryNavBar tabsNav">
+                <div class="mobileButtonsWrapper showButton " 
+                     data-button-type="button" data-menu-type="drop-down" data-target="categoriesMenu">
+                  <div class="arrow-button-container">
+                    <i class="icomoon icon-angle"></i>
+                  </div>
+                  <div class="active-category-container">
+                    <span class="">Под золото</span>
+                  </div>
+                </div>
+
+                <div id="categoriesMenu" class="hiddenContent height tabButtons">
+                  <div class="content-container">
+                    <button data-target="tabBlock1" class="category tab active">Под золото</button>
+                    <button data-target="tabBlock2" class="category tab">под технику</button>
+                    <button data-target="tabBlock3" class="category tab">под серебро</button>
+                    <button data-target="tabBlock2" class="category tab">кредиты на 1 день</button>
+                    <button data-target="tabBlock1" class="category tab">кредиты на 2 день</button>
+                    <button data-target="tabBlock2" class="category tab">кредиты на 3 день</button>
+                    <button data-target="tabBlock1" class="category tab">кредиты на 4 день</button>
+                    <button data-target="tabBlock2" class="category tab">кредиты на 5 день</button>
+                    <button data-target="tabBlock1" class="category tab">кредиты на 6 день</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sectionBlock toggleBlocks-list animation">
+              <div id="tabBlock1" class="toggleBlock active">
+                <div class="category-description description contentRow mcol-md-9">
+                  <p>У будь-якому з відділень мережі ломбардів "Партнер" ви можете взяти кредит під заставу електроніки, побутової техніки, будівельних та музичних інструментів. Ми розробили для вас 3 тарифних плани:</p>
+                </div>
+
+                <div class="tariffs-list mrow flex wrap contentRow">
+                  <article class="tariff-item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                    <div class="item-container flex column">
+                      <h3 class="title article-title">Тарифний план "ПРОСТИЙ"</h3>
+
+                      <div class="firstLevelWrapper">
+                        <div class="image-block">
+                          <div class="img-header">
+                            <span class="price">вiд 301 грн</span>
+                            <span>Cума застави</span>
+                          </div>
+                        
+                          <div class="imgWrapper">
+                            <img src="img/image_mock.jpg" alt="img">
+                          </div>
+                        </div>
+                        
+                        <div class="description-container flex column">
+                          <div class="description">
+                            <p>Для клієнтів, орієнтованих на низькі ставки відсотків</p>
+                            <ul class="conditions">
+                              <li><b>ставка 0.629 %</b></li>
+                              <li><b>14 днiв</b></li>
+                              <li>максимальний термін кредитування</li>
+                            </ul>
+                          </div>
+                        
+                          <div class="more-button inversed">
+                            <div class="more-button-wrapper">
+                              <div class="more-button-container">
+                                <a href="#" class="title semi-bold">Рассчитать мой кредит</a>
+                                <i class="icomoon standard-arrow-icon inversed"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="link">
+                            <a href="#">link link link</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </article>
+
+                  <article class="tariff-item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                    <div class="item-container flex column">
+                      <h3 class="title article-title">Тарифний план "ПРОСТИЙ" sdfsd werwe xcxczxc</h3>
+
+                      <div class="firstLevelWrapper">
+                        <div class="image-block">
+                          <div class="img-header">
+                            <span class="price">вiд 301 грн</span>
+                            <span>Cума застави</span>
+                          </div>
+                        
+                          <div class="imgWrapper">
+                            <img src="img/image_mock.jpg" alt="img">
+                          </div>
+                        </div>
+                        
+                        <div class="description-container flex column">
+                          <div class="description">
+                            <p>Процентная ставка 0,01% в день. Возможно оформить договор под залог золота, серебра или техники, сроком до 15 дней. Один клиент может оформить только одну операцию по акционному ТП «Нулевой»</p>
+                            <ul class="conditions">
+                              <li><b>ставка 0.629 %</b></li>
+                              <li><b>14 днiв</b></li>
+                              <li>максимальний термін кредитування</li>
+                            </ul>
+                          </div>
+                        
+                          <div class="more-button inversed">
+                            <div class="more-button-wrapper">
+                              <div class="more-button-container">
+                                <a href="#" class="title semi-bold">Рассчитать мой кредит</a>
+                                <i class="icomoon standard-arrow-icon inversed"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </article>
+
+                  <article class="tariff-item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                    <div class="item-container flex column">
+                      <h3 class="title article-title">Тарифний план "ПРОСТИЙ"</h3>
+
+                      <div class="firstLevelWrapper">
+                        <div class="image-block">
+                          <div class="img-header">
+                            <span class="price">вiд 301 грн</span>
+                            <span>Cума застави</span>
+                          </div>
+                        
+                          <div class="imgWrapper">
+                            <img src="img/image_mock.jpg" alt="img">
+                          </div>
+                        </div>
+                        
+                        <div class="description-container flex column">
+                          <div class="description">
+                            <p>Для клієнтів, орієнтованих на низькі ставки відсотків</p>
+                            <ul class="conditions">
+                              <li><b>ставка 0.629 %</b></li>
+                              <li><b>14 днiв</b></li>
+                              <li>максимальний термін кредитування</li>
+                            </ul>
+                          </div>
+                        
+                          <div class="more-button inversed">
+                            <div class="more-button-wrapper">
+                              <div class="more-button-container">
+                                <a href="#" class="title semi-bold">Рассчитать мой кредит</a>
+                                <i class="icomoon standard-arrow-icon inversed"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </article>
+
+                  <article class="tariff-item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                    <div class="item-container flex column">
+                      <h3 class="title article-title">Тарифний план "ПРОСТИЙ"</h3>
+
+                      <div class="firstLevelWrapper">
+                        <div class="image-block">
+                          <div class="img-header">
+                            <span class="price">вiд 301 грн</span>
+                            <span>Cума застави</span>
+                          </div>
+                        
+                          <div class="imgWrapper">
+                            <img src="img/image_mock.jpg" alt="img">
+                          </div>
+                        </div>
+                        
+                        <div class="description-container flex column">
+                          <div class="description">
+                            <p>Для клієнтів, орієнтованих на низькі ставки відсотків</p>
+                            <ul class="conditions">
+                              <li><b>ставка 0.629 %</b></li>
+                              <li><b>14 днiв</b></li>
+                              <li>максимальний термін кредитування</li>
+                            </ul>
+                          </div>
+                        
+                          <div class="more-button inversed">
+                            <div class="more-button-wrapper">
+                              <div class="more-button-container">
+                                <a href="#" class="title semi-bold">Рассчитать мой кредит</a>
+                                <i class="icomoon standard-arrow-icon inversed"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </article>
+
+                  <article class="tariff-item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                    <div class="item-container flex column">
+                      <h3 class="title article-title">Тарифний план "ПРОСТИЙ"</h3>
+
+                      <div class="firstLevelWrapper">
+                        <div class="image-block">
+                          <div class="img-header">
+                            <span class="price">вiд 301 грн</span>
+                            <span>Cума застави</span>
+                          </div>
+                        
+                          <div class="imgWrapper">
+                            <img src="img/image_mock.jpg" alt="img">
+                          </div>
+                        </div>
+                        
+                        <div class="description-container flex column">
+                          <div class="description">
+                            <p>Для клієнтів, орієнтованих на низькі ставки відсотків</p>
+                            <ul class="conditions">
+                              <li><b>ставка 0.629 %</b></li>
+                              <li><b>14 днiв</b></li>
+                              <li>максимальний термін кредитування</li>
+                            </ul>
+                          </div>
+                        
+                          <div class="more-button inversed">
+                            <div class="more-button-wrapper">
+                              <div class="more-button-container">
+                                <a href="#" class="title semi-bold">Рассчитать мой кредит</a>
+                                <i class="icomoon standard-arrow-icon inversed"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <div id="tabBlock2" class="toggleBlock">
+                <div class="category-description description contentRow mcol-md-9">
+                  <p>Tab 2 У будь-якому з відділень мережі ломбардів "Партнер" ви можете взяти кредит під заставу електроніки:</p>
+                </div>
+
+                <div class="tariffs-list mrow flex wrap contentRow">
+                  <article class="tariff-item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                    <div class="item-container flex column">
+                      <h3 class="title article-title">Тарифний план "ПРОСТИЙ 2"</h3>
+
+                      <div class="firstLevelWrapper">
+                        <div class="image-block">
+                          <div class="img-header">
+                            <span class="price">вiд 301 грн</span>
+                            <span>Cума застави</span>
+                          </div>
+                        
+                          <div class="imgWrapper">
+                            <img src="img/image_mock.jpg" alt="img">
+                          </div>
+                        </div>
+                        
+                        <div class="description-container flex column">
+                          <div class="description">
+                            <ul class="conditions">
+                              <li>Для клієнтів, орієнтованих на низькі ставки відсотків</li>
+                              <li><b>ставка 0.629 %</b></li>
+                              <li><b>14 днiв</b></li>
+                              <li>максимальний термін кредитування</li>
+                            </ul>
+                          </div>
+                        
+                          <div class="more-button inversed">
+                            <div class="more-button-wrapper">
+                              <div class="more-button-container">
+                                <a href="#" class="title semi-bold">Рассчитать мой кредит</a>
+                                <i class="icomoon standard-arrow-icon inversed"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </article>
+
+                  <article class="tariff-item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                    <div class="item-container flex column">
+                      <h3 class="title article-title">Тарифний план "ПРОСТИЙ 2"</h3>
+
+                      <div class="firstLevelWrapper">
+                        <div class="image-block">
+                          <div class="img-header">
+                            <span class="price">вiд 301 грн</span>
+                            <span>Cума застави</span>
+                          </div>
+                        
+                          <div class="imgWrapper">
+                            <img src="img/image_mock.jpg" alt="img">
+                          </div>
+                        </div>
+                        
+                        <div class="description-container flex column">
+                          <div class="description">
+                            <ul class="conditions">
+                              <li>Для клієнтів, орієнтованих на низькі ставки відсотків</li>
+                              <li><b>ставка 0.629 %</b></li>
+                              <li><b>14 днiв</b></li>
+                              <li>максимальний термін кредитування</li>
+                            </ul>
+                          </div>
+                        
+                          <div class="more-button inversed">
+                            <div class="more-button-wrapper">
+                              <div class="more-button-container">
+                                <a href="#" class="title semi-bold">Рассчитать мой кредит</a>
+                                <i class="icomoon standard-arrow-icon inversed"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </article>
+
+                </div>
+              </div>
+
+              <div id="tabBlock3" class="toggleBlock">
+                <div class="category-description description contentRow mcol-md-9">
+                  <p>Tab 3 У будь-якому з відділень мережі ломбардів "Партнер" ви можете взяти кредит під заставу електроніки:</p>
+                </div>
+
+                <div class="tariffs-list mrow flex wrap contentRow">
+                  <article class="tariff-item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                    <div class="item-container flex column">
+                      <h3 class="title article-title">Тарифний план "ПРОСТИЙ 2"</h3>
+
+                      <div class="firstLevelWrapper">
+                        <div class="image-block">
+                          <div class="img-header">
+                            <span class="price">вiд 301 грн</span>
+                            <span>Cума застави</span>
+                          </div>
+                        
+                          <div class="imgWrapper">
+                            <img src="img/image_mock.jpg" alt="img">
+                          </div>
+                        </div>
+                        
+                        <div class="description-container flex column">
+                          <div class="description">
+                            <ul class="conditions">
+                              <li>Для клієнтів, орієнтованих на низькі ставки відсотків</li>
+                              <li><b>ставка 0.629 %</b></li>
+                              <li><b>14 днiв</b></li>
+                              <li>максимальний термін кредитування</li>
+                            </ul>
+                          </div>
+                        
+                          <div class="more-button inversed">
+                            <div class="more-button-wrapper">
+                              <div class="more-button-container">
+                                <a href="#" class="title semi-bold">Рассчитать мой кредит</a>
+                                <i class="icomoon standard-arrow-icon inversed"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </article>
+
+                  <article class="tariff-item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                    <div class="item-container flex column">
+                      <h3 class="title article-title">Тарифний план "ПРОСТИЙ 2 sdfs sdf sdfs s sdfsdfsdf"</h3>
+
+                      <div class="firstLevelWrapper">
+                        <div class="image-block">
+                          <div class="img-header">
+                            <span class="price">вiд 301 грн</span>
+                            <span>Cума застави</span>
+                          </div>
+                        
+                          <div class="imgWrapper">
+                            <img src="img/image_mock.jpg" alt="img">
+                          </div>
+                        </div>
+                        
+                        <div class="description-container flex column">
+                          <div class="description">
+                            <ul class="conditions">
+                              <li>Для клієнтів, орієнтованих на низькі ставки відсотків</li>
+                              <li><b>ставка 0.629 %</b></li>
+                              <li><b>14 днiв</b></li>
+                              <li>максимальний термін кредитування</li>
+                            </ul>
+                          </div>
+                        
+                          <div class="more-button inversed">
+                            <div class="more-button-wrapper">
+                              <div class="more-button-container">
+                                <a href="#" class="title semi-bold">Рассчитать мой кредит</a>
+                                <i class="icomoon standard-arrow-icon inversed"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </article>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </section>
+
+   
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <div class="mcontainer relative scrollTopContainer">
+        <div id="scrollTopButton" class="icomoon standard-arrow-icon navigateIcon up"></div>
+      </div>
+
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

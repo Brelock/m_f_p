@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>about</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "about": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="aboutPage" class="aboutPage page">
+        <div class="banner">
+          <picture>
+            <source srcset="/img/foto2.webp" type="image/webp">
+            <img src="/img/foto2.jpg" alt="">
+          </picture>
+        </div>
+        <div class="mcontainer">
+          <!-- wrapper -->
+          <div class="wrapper">
+            <article class="article article--secondary">
+              <h1 class="article-title article-body-title">О нас и нашем проекте</h1>
+              <p>
+                Грех был еще до наркотиков, и Бог показал мне киноленту, 
+                прокручивая ее и, останавливаясь на тех моментах, где я грешила… 
+                Никогда в жизни я так не рыдала, возле меня была настоящая лужа слез, 
+                я продолжала каяться за каждый этап своей жизни. Это продолжалось очень долго…
+                <br>
+                Утром я очнулась на полу. СОВЕРШЕННО ЗДОРОВАЯ И СВОБОДНАЯ! 
+                Мама боялась зайти ко мне в комнату – думала, что я умерла. 
+                Я взяла Библию и Бог начал ко мне говорить.
+                <br>
+                С того дня прошло восемь лет, и Господь многому меня научил и продолжает учить.
+                <br>
+                Бог поднял меня. Я закончила Московский институт психологии и психоанализа, 
+                занимаюсь серьезным бизнесом на руководящей должности, а вечерами, после работы, 
+                я еду на трассы и притоны и говорю этим искалеченным душам, что ВЫХОД ЕСТЬ!
+              </p>
+            </article>
+          </div>
+          <!-- end wrapper -->
+        </div>
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

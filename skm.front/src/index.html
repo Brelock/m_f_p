@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+<!--   <link rel="stylesheet" href="css/nivo_default.min.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/nivo-slider.min.css" type="text/css" media="screen" />
+ -->
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="homePage" class="homePage page">
+        <div class="page-container">
+          <div class="mcontainer">
+            <div class="aside-container">
+              <aside class="category-sidebar mcol-xs-12 mcol-md-3 absolutePosition descMenu">
+                @@include('templateHtml/categoriesMenu.html')
+              </aside>
+            </div>
+          </div>
+
+          <div class="page-content-container mcol-xs-12">
+            
+            <div class="mainSliderSection slider-wrapper pageSection theme-default relative">
+              <div id="mainSlider" class="mainSlider nivoSlider">
+                <a href="#" class="nivo-imageLink">                  
+                  <img class="imageResponsive" src="/img/Mainbanner1.jpg" alt="banner">
+                </a>
+
+                <a href="#" class="nivo-imageLink">                  
+                  <img class="imageResponsive" src="/img/Mainbanner2.jpg" alt="banner">
+                </a>
+
+                <a href="#" class="nivo-imageLink">                  
+                  <img class="imageResponsive" src="/img/Mainbanner3.jpg" alt="banner">
+                </a>       
+              </div>
+            </div>
+
+            <div class="pageSection services-section">
+              <div class="mcontainer">
+                <div class="content-container">
+                  <div class="mrow flex wrap services-list">
+                    <div class="mcol-xs-12 mcol-sm-4 service-item">
+                      <div class="service-item-container">
+                        <div class="image-block">
+                          <div class="imgWrapper img1">
+                            <img class="img" src="/img/services1-1.png" alt="service">
+                          </div>
+                          <div class="imgWrapper img2">
+                            <img class="img" src="/img/services1-2.png" alt="service">
+                          </div>
+                        </div>
+
+                        <div class="content-block">
+                          <h4 class="title article-title bold uppercase"><a href="#">FREE SHIPPING</a></h4>
+
+                          <div class="description">
+                            <p>Passage of Lorem Ipsum, you need to be sure embarrassing hidden</p>
+                          </div>
+                        </div>
+                      </div>                      
+                    </div>
+                    <div class="mcol-xs-12 mcol-sm-4 service-item">
+                      <div class="service-item-container">
+                        <div class="image-block">
+                          <div class="imgWrapper img1">
+                            <img class="img" src="/img/services2-1.png" alt="service">
+                          </div>
+                          <div class="imgWrapper img2">
+                            <img class="img" src="/img/services2-2.png" alt="service">
+                          </div>
+                        </div>
+
+                        <div class="content-block">
+                          <h4 class="title article-title bold uppercase"><a href="#">FREE RETURNS</a></h4>
+
+                          <div class="description">
+                            <p>Passage of Lorem Ipsum, you need to be sure embarrassing hidden</p>
+                          </div>
+                        </div>
+                      </div>                      
+                    </div>
+                    <div class="mcol-xs-12 mcol-sm-4 service-item support-item">
+                      <div class="service-item-container">
+                        <div class="image-block">
+                          <div class="imgWrapper img1">
+                            <img class="img" src="/img/services3-1.png" alt="service">
+                          </div>
+                          <div class="imgWrapper img2">
+                            <img class="img" src="/img/services3-2.png" alt="service">
+                          </div>
+                        </div>
+
+                        <div class="content-block">
+                          <h4 class="title article-title bold uppercase"><a href="#">CUSTOMER SUPPORT</a></h4>
+
+                          <div class="description">
+                            <p>Passage of Lorem Ipsum, you need to be sure embarrassing hidden</p>
+                          </div>
+                        </div>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pageSection featured-section">
+              <div class="mcontainer">
+                <div class="content-container">
+                  <div class="mrow flex wrap featured-list">
+                    <div class="mcol-xs-12 mcol-sm-4 featured-item">
+                      <div class="featured-item-container relative">
+                        <div class="collection-image">
+                          <a class="imgWrapper" href="#">
+                            <img src="img/catalog/feature1.jpg" alt="banner">
+                          </a>
+                        </div>
+                        <div class="collection-description description">
+                          <div class="collection-title"><a href="#">COLLECTION</a></div>
+                          <div class="collection-category"><a href="#">CHAIR</a></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mcol-xs-12 mcol-sm-4 featured-item">
+                      <div class="featured-item-container relative">
+                        <div class="collection-image">
+                          <a class="imgWrapper" href="#">
+                            <img src="img/catalog/feature2.jpg" alt="banner">
+                          </a>
+                        </div>
+                        <div class="collection-description description">
+                          <div class="collection-title"><a href="#">COLLECTION</a></div>
+                          <div class="collection-category"><a href="#">SOFA</a></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mcol-xs-12 mcol-sm-4 featured-item">
+                      <div class="featured-item-container relative">
+                        <div class="collection-image">
+                          <a class="imgWrapper" href="#">
+                            <img src="img/catalog/feature3.jpg" alt="banner">
+                          </a>
+                        </div>
+                        <div class="collection-description description">
+                          <div class="collection-title"><a href="#">COLLECTION</a></div>
+                          <div class="collection-category"><a href="#">DECOR</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pageSection our-products-section">
+              <div class="mcontainer">
+                <div class="content-container">
+                  <div class="title-block">
+                    <div class="decor-icon">
+                      <img src="/img/title-divider.png" alt="icon">
+                    </div>
+                    <h3 class="title section-title bold uppercase">OUR PRODUCTS</h3>
+                  </div>
+
+                  <div class="contentNavBar tabsNav flex justifyCenter">
+                    <div data-target="latest-tab" class="tabButton active capitlize"
+                      data-tabs-group="ourProdTab"
+                      data-tabs-container="ourProdTabsContainer"><span>Latest</span></div>
+                    <div data-target="bestseller-tab" class="tabButton capitlize"
+                      data-tabs-group="ourProdTab"
+                      data-tabs-container="ourProdTabsContainer"><span>Bestseller</span></div>
+                    <div data-target="special-tab" class="tabButton capitlize"
+                      data-tabs-group="ourProdTab"
+                      data-tabs-container="ourProdTabsContainer"><span>Special</span></div>
+                  </div>
+
+                  <div class="toggleBlocks-list ourProdTabsContainer fade-animation js_animate">
+                    <div id="latest-tab" class="toggleBlock ourProdTab active">
+                      <div class="mrow flex wrap">
+                        <div class="product-card mcol-xs-12 mcol-sm-4">
+                          <div class="product-card-container">
+                            <div class="image-block">
+                              <a href="#" class="img-link"></a>
+                              <div class="imgWrapper">
+                                <img src="/img/catalog/product2.jpg" alt="prod-img" class="prodImg startImg">
+                                <img src="/img/catalog/product3.jpg" alt="prod-img" class="prodImg hiddenImg">
+                              </div>
+
+                              <!--@@include('templateHtml/buttonsGroup.html') -->
+                              
+                            </div>
+
+                            <div class="content-block">
+                              <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                              <div class="price">
+                                <span>$123.23</span>
+                              </div>
+
+                              <!--<div class="ratingBar">
+                                <ul>
+                                  <li class="active"><i class="fas fa-star"></i></li>
+                                  <li class="active"><i class="fas fa-star"></i></li>
+                                  <li class="active"><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                </ul>
+                              </div> -->
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-card mcol-xs-12 mcol-sm-4">
+                          <div class="product-card-container">
+                            <div class="image-block">
+                              <a href="#" class="img-link"></a>
+                              <div class="imgWrapper">
+                                <img src="/img/catalog/product16.jpg" alt="prod-img" class="prodImg startImg">
+                                <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg hiddenImg">
+                              </div>
+
+                            </div>
+
+                            <div class="content-block">
+                              <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                              <div class="price">
+                                <span>$123.23</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-card mcol-xs-12 mcol-sm-4">
+                          <div class="product-card-container">
+                            <div class="image-block">
+                              <a href="#" class="img-link"></a>
+                              <div class="imgWrapper">
+                                <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg startImg">
+                                <img src="/img/catalog/product16.jpg" alt="prod-img" class="prodImg hiddenImg">
+                              </div>
+
+                            </div>
+
+                            <div class="content-block">
+                              <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                              <div class="price">
+                                <span>$123.23</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-card mcol-xs-12 mcol-sm-4">
+                          <div class="product-card-container">
+                            <div class="image-block">
+                              <a href="#" class="img-link"></a>
+                              <div class="imgWrapper">
+                                <img src="/img/catalog/product3.jpg" alt="prod-img" class="prodImg startImg">
+                                <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg hiddenImg">
+                              </div>
+
+                            </div>
+
+                            <div class="content-block">
+                              <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                              <div class="price">
+                                <span>$123.23</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-card mcol-xs-12 mcol-sm-4">
+                          <div class="product-card-container">
+                            <div class="image-block">
+                              <a href="#" class="img-link"></a>
+                              <div class="imgWrapper">
+                                <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg startImg">
+                                <img src="/img/catalog/product2.jpg" alt="prod-img" class="prodImg hiddenImg">
+                              </div>
+
+                            </div>
+
+                            <div class="content-block">
+                              <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                              <div class="price">
+                                <span>$123.23</span>
+                                <span class="old-price">150.55</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-card mcol-xs-12 mcol-sm-4">
+                          <div class="product-card-container">
+                            <div class="image-block">
+                              <a href="#" class="img-link"></a>
+                              <div class="imgWrapper">
+                                <img src="/img/catalog/product3.jpg" alt="prod-img" class="prodImg startImg">
+                                <img src="/img/catalog/product2.jpg" alt="prod-img" class="prodImg hiddenImg">
+                              </div>
+
+                            </div>
+
+                            <div class="content-block">
+                              <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                              <div class="price">
+                                <span>$123.23</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div id="bestseller-tab" class="toggleBlock ourProdTab">
+                      <div id="bestsellerSlider" class="ourProductsSlider bestsellerSlider slider-wrapper">
+                        <div class="product-card slide">
+                          <div class="product-card-container">
+                            <div class="image-block">
+                              <a href="#" class="img-link"></a>
+                              <div class="imgWrapper">
+                                <img src="/img/catalog/product2.jpg" alt="prod-img" class="prodImg startImg">
+                                <img src="/img/catalog/product3.jpg" alt="prod-img" class="prodImg hiddenImg">
+                              </div>
+
+                            </div>
+
+                            <div class="content-block">
+                              <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                              <div class="price">
+                                <span>$123.23</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-card slide">
+                          <div class="product-card-container">
+                            <div class="image-block">
+                              <a href="#" class="img-link"></a>
+                              <div class="imgWrapper">
+                                <img src="/img/catalog/product16.jpg" alt="prod-img" class="prodImg startImg">
+                                <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg hiddenImg">
+                              </div>
+
+                            </div>
+
+                            <div class="content-block">
+                              <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                              <div class="price">
+                                <span>$123.23</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-card slide">
+                          <div class="product-card-container">
+                            <div class="image-block">
+                              <a href="#" class="img-link"></a>
+                              <div class="imgWrapper">
+                                <img src="/img/catalog/product2.jpg" alt="prod-img" class="prodImg startImg">
+                                <img src="/img/catalog/product3.jpg" alt="prod-img" class="prodImg hiddenImg">
+                              </div>
+
+                            </div>
+
+                            <div class="content-block">
+                              <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                              <div class="price">
+                                <span>$123.23</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-card slide">
+                          <div class="product-card-container">
+                            <div class="image-block">
+                              <a href="#" class="img-link"></a>
+                              <div class="imgWrapper">
+                                <img src="/img/catalog/product16.jpg" alt="prod-img" class="prodImg startImg">
+                                <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg hiddenImg">
+                              </div>
+
+                            </div>
+
+                            <div class="content-block">
+                              <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                              <div class="price">
+                                <span>$123.23</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div id="special-tab" class="toggleBlock ourProdTab">
+                      <div id="specialSlider" class="ourProductsSlider specialSlider slider-wrapper">
+                        <div class="product-card slide">
+                          <div class="product-card-container">
+                            <div class="image-block">
+                              <a href="#" class="img-link"></a>
+                              <div class="imgWrapper">
+                                <img src="/img/catalog/product3.jpg" alt="prod-img" class="prodImg startImg">
+                                <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg hiddenImg">
+                              </div>
+
+                            </div>
+
+                            <div class="content-block">
+                              <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                              <div class="price">
+                                <span>$123.23</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-card slide">
+                          <div class="product-card-container">
+                            <div class="image-block">
+                              <a href="#" class="img-link"></a>
+                              <div class="imgWrapper">
+                                <img src="/img/catalog/product16.jpg" alt="prod-img" class="prodImg startImg">
+                                <img src="/img/catalog/product3.jpg" alt="prod-img" class="prodImg hiddenImg">
+                              </div>
+
+                            </div>
+
+                            <div class="content-block">
+                              <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                              <div class="price">
+                                <span>$123.23</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-card slide">
+                          <div class="product-card-container">
+                            <div class="image-block">
+                              <a href="#" class="img-link"></a>
+                              <div class="imgWrapper">
+                                <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg startImg">
+                                <img src="/img/catalog/product2.jpg" alt="prod-img" class="prodImg hiddenImg">
+                              </div>
+
+                            </div>
+
+                            <div class="content-block">
+                              <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                              <div class="price">
+                                <span>$123.23</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-card slide">
+                          <div class="product-card-container">
+                            <div class="image-block">
+                              <a href="#" class="img-link"></a>
+                              <div class="imgWrapper">
+                                <img src="/img/catalog/product16.jpg" alt="prod-img" class="prodImg startImg">
+                                <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg hiddenImg">
+                              </div>
+
+                            </div>
+
+                            <div class="content-block">
+                              <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                              <div class="price">
+                                <span>$123.23</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pageSection featured-slider-section">
+              <div class="mcontainer">
+                <div class="content-container">
+                  <div class="title-block">
+                    <div class="decor-icon">
+                      <img src="/img/title-divider.png" alt="icon">
+                    </div>
+                    <h3 class="title section-title bold uppercase">FEATURED</h3>
+                  </div>
+
+                  <div id="featuredSlider" class="ourProductsSlider featuredSlider slider-wrapper">
+                    <div class="product-card slide">
+                      <div class="product-card-container">
+                        <div class="image-block">
+                          <a href="#" class="img-link"></a>
+                          <div class="imgWrapper">
+                            <img src="/img/catalog/product3.jpg" alt="prod-img" class="prodImg startImg">
+                            <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg hiddenImg">
+                          </div>
+
+                        </div>
+
+                        <div class="content-block">
+                          <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                          <div class="price">
+                            <span>$123.23</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card slide">
+                      <div class="product-card-container">
+                        <div class="image-block">
+                          <a href="#" class="img-link"></a>
+                          <div class="imgWrapper">
+                            <img src="/img/catalog/product16.jpg" alt="prod-img" class="prodImg startImg">
+                            <img src="/img/catalog/product3.jpg" alt="prod-img" class="prodImg hiddenImg">
+                          </div>
+
+                        </div>
+
+                        <div class="content-block">
+                          <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                          <div class="price">
+                            <span>$123.23</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card slide">
+                      <div class="product-card-container">
+                        <div class="image-block">
+                          <a href="#" class="img-link"></a>
+                          <div class="imgWrapper">
+                            <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg startImg">
+                            <img src="/img/catalog/product2.jpg" alt="prod-img" class="prodImg hiddenImg">
+                          </div>
+
+                        </div>
+
+                        <div class="content-block">
+                          <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                          <div class="price">
+                            <span>$123.23</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card slide">
+                      <div class="product-card-container">
+                        <div class="image-block">
+                          <a href="#" class="img-link"></a>
+                          <div class="imgWrapper">
+                            <img src="/img/catalog/product16.jpg" alt="prod-img" class="prodImg startImg">
+                            <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg hiddenImg">
+                          </div>
+
+                        </div>
+
+                        <div class="content-block">
+                          <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                          <div class="price">
+                            <span>$123.23</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pageSection brands-slider-section">
+              <div class="mcontainer">
+                <div class="content-container">
+                  <div id="brandsSlider" class="brandsSlider slider-wrapper">
+                    <div class="slide">
+                      <img src="/img/catalog/brand-1.png" alt="brand">
+                    </div>
+                    <div class="slide">
+                      <img src="/img/catalog/brand-7.png" alt="brand">
+                    </div>
+                    <div class="slide">
+                      <img src="/img/catalog/brand-1.png" alt="brand">
+                    </div>
+                    <div class="slide">
+                      <img src="/img/catalog/brand-7.png" alt="brand">
+                    </div>
+                    <div class="slide">
+                      <img src="/img/catalog/brand-1.png" alt="brand">
+                    </div>
+                    <div class="slide">
+                      <img src="/img/catalog/brand-7.png" alt="brand">
+                    </div>
+                    <div class="slide">
+                      <img src="/img/catalog/brand-1.png" alt="brand">
+                    </div>
+                    <div class="slide">
+                      <img src="/img/catalog/brand-7.png" alt="brand">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>     
+        @@include('templateHtml/footer.nav.menu.html')
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      @@include('templateHtml/scrollToTopButton.html')
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

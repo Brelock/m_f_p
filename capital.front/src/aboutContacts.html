@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "about": "active", "contacts": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="aboutContactsPage" class="aboutContactsPage page">
+
+        <section class="pageSection white-bg">
+          <div class="mcontainer">
+
+            <div class="sectionBlock">
+              <div class="sectionHeader">
+                <div class="animated-border-block section-title sectionHeaderItem">
+                  <div class="svg-container">
+                    <svg class="rect-container">
+                      <rect x="0" y="0" class="animatedBlock"/>
+                      <rect x="0" y="0" stroke-width="4" class="overlappingBlock"/>                
+                    </svg>
+                    <h1 class="title">Контакты</h1>
+                  </div>
+                </div>
+
+                <ul class="breadcrumbs sectionHeaderItem">
+                  <li><a href="/index.html">Главная</a></li>
+                  <li ><a href="#">О компании</a></li>
+                  <li class="active"><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="sectionBlock contentBlock flex wrap">
+              
+              <div class="sectionBlockColumn_sm map-block mcol-xs-12 mcol-sm-6">
+                <div class="map-wrapper">
+                  <div id="officeMap" class="officeMap map-container" 
+                        data-lat="47.849521"
+                        data-lng="35.115707"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="sectionBlockColumn_sm mcol-xs-12 mcol-sm-6">
+                <div class="sectionBlock">
+                  <div class="description">
+                    <p>Если у вас есть предложения для нас, то обратитесь в нужный отдел:</p> 
+                  </div>
+                </div>
+
+                <div class="sectionBlock description">
+                  <ul class="contacts-list">
+                    <li>
+                      <span class="row-with-icon">
+                        <i class="icomoon icon-location-pin"></i>
+                        <span>м. Запоріжжя, вул.Сталеварів, 1</span>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="row-with-icon">
+                        <i class="icomoon icon-phone"></i> 
+                        <span>0 800 300 703</span>
+                      </span>
+                      <p class="sub-description">щодня 3 9:00 до 21:00</p>
+                    </li>
+                    <li>
+                      <span class="row-with-icon">
+                        <i class="icomoon icon-clock"></i>
+                        <span>9:00-21:00</span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="sectionBlock">
+                  <h3 class="title">Визначте приблизну вартість застави і залиште заявку на отримання кредиту</h3>
+
+                  <div class="more-button credit-button inversed">
+                    <div class="more-button-wrapper">
+                      <div class="more-button-container">
+                        <a href="#" class="title semi-bold">Рассчитать мой кредит</a>
+                        <i class="icomoon standard-arrow-icon inversed"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+   
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <div class="mcontainer relative scrollTopContainer">
+        <div id="scrollTopButton" class="icomoon standard-arrow-icon navigateIcon up"></div>
+      </div>
+
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+  <script type="text/javascript" src="js/office_map.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAor2gAXYMTj3AqHp0fBM0EjTKXrlEDavw&callback=initMap" async defer></script>
+</body>
+
+</html>

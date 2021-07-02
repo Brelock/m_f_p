@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div id="page-preloader" class="page-preloader js_animate">
+    <div class="transition-loader-inner">
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+    </div>
+  </div>
+  <!--  -->
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html')
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="newsListPage" class="newsListPage page">
+
+        <section class="pageSection white-bg">
+          <div class="mcontainer">
+            <div class="sectionHeader">
+              <div class="animated-border-block section-title sectionHeaderItem">
+                <div class="svg-container">
+                  <svg class="rect-container">
+                    <rect x="0" y="0" class="animatedBlock"/>
+                    <rect x="0" y="0" stroke-width="4" class="overlappingBlock"/>                
+                  </svg>
+                  <h2 class="title">Новости</h2>
+                </div>
+              </div>
+
+              <ul class="breadcrumbs sectionHeaderItem">
+                <li><a href="/index.html">Главная</a></li>
+                <li class="active"><a href="#">Новости</a></li>
+              </ul>
+            </div>
+
+            <div class="sectionBlock filter-block flex wrap center">
+              <div class="formRow chosen-wrapper mcol-xs-12 mcol-sm-6">
+                <label for="1" class="title mcol-xs-12 mcol-sm-4">Показать новости:</label>
+                <select name="test" id="1" data-placeholder="Всей Украины" class="mcol-xs-12 mcol-sm-4">
+                  <option value=""></option>
+                  <option value="1">Option 1</option>
+                  <option value="2" >Option 2</option>
+                  <option value="3" >Option 3</option>
+                </select>
+              </div>
+
+              <div class="formRow chosen-wrapper mcol-xs-12 mcol-sm-6">
+                <label for="2" class="title mcol-xs-12 mcol-sm-4">Еще один фильтр</label>
+                <select name="test" id="2" data-placeholder="Все" class="mcol-xs-12 mcol-sm-4">
+                  <option value=""></option>
+                  <option value="1">Option 1</option>
+                  <option value="2" >Option 2</option>
+                  <option value="3" >Option 3</option>
+                </select>
+              </div>
+            </div>
+
+          
+          </div>        
+
+          <!-- <div class="sectionBlock no-items-block">
+            <div class="mcontainer">
+              <h2 class="title text-center no-items-title">Нет новостей</h2>
+              <p class="text-center">Попробуйте применить другой фильтр</p>
+            </div>
+          </div> -->
+          <div class="sectionBlock month-block">
+            <div class="mcontainer">
+              <h3 class="title sectionBlock-title">Май</h3>
+
+              <div class="news-list mrow flex wrap">
+                <article class="news-item mcol-xs-12 mcol-md-4">
+                  <div class="item-container flex column">
+                    <div class="overlayed-date-container">
+                      <span>18 января 2018</span>
+                    </div>
+
+                    <div class="imgWrapper relative more-button overlayed">
+                      <a href="#" class="absolute stretch overlay-link"></a>
+                      <div class="darkOverlay"></div>
+
+                      <div class="more-button-wrapper">
+                        <div class="more-button-container">
+                          <a href="/newsPage.html" class="title semi-bold">Подробнее</a>
+                          <i class="icomoon standard-arrow-icon"></i>
+                        </div>
+                      </div>
+
+                      <img src="img/action-item1.jpg" alt="action">
+                    </div>       
+
+                    <div class="description-container flex column">
+                      <h4 class="title article-title"><a href="/newsPage.html">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
+                      <div class="description">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem totam architecto quo eveniet, eaque suscipit nesciunt eos.</p>
+                        <p>&nbsp;</p>
+                        <p>sdf</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="news-item mcol-xs-12 mcol-md-4">
+                  <div class="item-container flex column">
+                    <div class="overlayed-date-container">
+                      <span>18 января 2018</span>
+                    </div>
+                    
+                    <div class="imgWrapper relative more-button overlayed">
+                      <a href="#" class="absolute stretch overlay-link"></a>
+                      <div class="darkOverlay"></div>
+
+                      <div class="more-button-wrapper">
+                        <div class="more-button-container">
+                          <a href="#" class="title semi-bold">Подробнее</a>
+                          <i class="icomoon standard-arrow-icon"></i>
+                        </div>
+                      </div>
+
+                      <img src="img/action-item1.jpg" alt="action">
+                    </div>       
+
+                    <div class="description-container flex column">
+                      <h4 class="title article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
+                      <div class="description">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem totam architecto quo eveniet recusandae, molestiae, deserunt neque maiores, eaque suscipit nesciunt eos.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="news-item mcol-xs-12 mcol-md-4">
+                  <div class="item-container flex column">
+                    <div class="overlayed-date-container">
+                      <span>18 января 2018</span>
+                    </div>
+                    
+                    <div class="imgWrapper relative more-button overlayed">
+                      <a href="#" class="absolute stretch overlay-link"></a>
+                      <div class="darkOverlay"></div>
+
+                      <div class="more-button-wrapper">
+                        <div class="more-button-container">
+                          <a href="#" class="title semi-bold">Подробнее</a>
+                          <i class="icomoon standard-arrow-icon"></i>
+                        </div>
+                      </div>
+
+                      <img src="img/action-item1.jpg" alt="action">
+                    </div>       
+
+                    <div class="description-container flex column">
+                      <h4 class="title article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
+                      <div class="description">
+                        <p class="">Lorem ipsum dolor sit amet.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="sectionBlock smallSection">
+            <div class="mcontainer">
+              <div class="content-wrapper">
+                <h2 class="title section-title">Узнать все акции и новости первым</h2>
+
+                <form action="#" class="subscribe-form">
+                  <div class="formRow relative">
+                    <input class="border-decor" type="text" placeholder="Ваш email">
+                    <button class="standardButton black border-decor submitButton">Подписаться</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="sectionBlock month-block">
+            <div class="mcontainer">
+              <h3 class="title sectionBlock-title">Апрель</h3>
+
+              <div class="news-list mrow flex wrap">
+                <article class="news-item mcol-xs-12 mcol-md-4">
+                  <div class="item-container flex column">
+                    <div class="overlayed-date-container">
+                      <span>18 января 2018</span>
+                    </div>
+
+                    <div class="imgWrapper relative more-button overlayed">
+                      <a href="#" class="absolute stretch overlay-link"></a>
+                      <div class="darkOverlay"></div>
+
+                      <div class="more-button-wrapper">
+                        <div class="more-button-container">
+                          <a href="#" class="title semi-bold">Подробнее</a>
+                          <i class="icomoon standard-arrow-icon"></i>
+                        </div>
+                      </div>
+
+                      <img src="img/action-item1.jpg" alt="action">
+                    </div>       
+
+                    <div class="description-container flex column">
+                      <h4 class="title article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
+                      <div class="description">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem totam architecto quo eveniet, eaque suscipit nesciunt eos.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="news-item mcol-xs-12 mcol-md-4">
+                  <div class="item-container flex column">
+                    <div class="overlayed-date-container">
+                      <span>18 января 2018</span>
+                    </div>
+                    
+                    <div class="imgWrapper relative more-button overlayed">
+                      <a href="#" class="absolute stretch overlay-link"></a>
+                      <div class="darkOverlay"></div>
+
+                      <div class="more-button-wrapper">
+                        <div class="more-button-container">
+                          <a href="#" class="title semi-bold">Подробнее</a>
+                          <i class="icomoon standard-arrow-icon"></i>
+                        </div>
+                      </div>
+
+                      <img src="img/action-item1.jpg" alt="action">
+                    </div>       
+
+                    <div class="description-container flex column">
+                      <h4 class="title article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
+                      <div class="description">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem totam architecto quo eveniet recusandae, molestiae, deserunt neque maiores, eaque suscipit nesciunt eos.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+               
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="sectionBlock pagination">
+            <div class="mcontainer">
+              <ul role="navigation" class="pagination">
+                <li aria-disabled="true" aria-label="pagination.previous" class="page-item pagination-prev disabled">
+                  <span aria-hidden="true" class="page-link icomoon icon-angle"></span>
+                </li>
+                <li aria-current="page" class="page-item active">
+                  <span class="page-link">1</span>
+                </li>
+                <li class="page-item">
+                  <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                  <a href="#" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                  <a href="#" class="page-link">...</a>
+                </li>
+                <li class="page-item pagination-next">
+                  <a href="#" rel="next" aria-label="pagination.next" class="page-link icomoon icon-angle"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </section>   
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <div class="mcontainer relative scrollTopContainer">
+        <div id="scrollTopButton" class="icomoon standard-arrow-icon navigateIcon up"></div>
+      </div>
+
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

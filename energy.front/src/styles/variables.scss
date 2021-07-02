@@ -1,0 +1,122 @@
+// ======Main Options=======
+/* -----Color------- */
+$primaryColor: #000;  
+$secondaryColor: #FDEC06; 
+$tertiaryColor: #E8E8E8;	
+$fourthColor: #fff; 
+
+$black: #000;
+$white: #fff;
+
+
+/* -----Fonts-----*/
+$pageFontSize: 14px;
+$mainFont: 'ProximaNova';
+$secondaryFont: 'RussoOne-Regular', sans-serif;;
+
+$mainFontColor: #fff;
+$secondaryFontColor: #FDEC06;
+$thirdFontColor: #979797;
+$fourthFontColor: #999;
+$descriptionTextColor: $mainFontColor;
+$subDescriptionColor: rgba(13, 13, 15, 0.5);
+
+$titleFont: $mainFont;
+$titleFontSize: 2rem;
+$titleFontSizeLaptop: 2rem;
+$sectionTitleFontSize: 1.5rem;
+$sectionTitleFontSizeLaptop: 28px;
+$sectionTitleFontSizeDesktop: 40px;
+$sectionBlockTitleFontSize: 24px;
+$articleTitleFontSize: 24px;
+$descriptionTitleFontSize: 24px;
+
+$headerHeightMobile: 70px;
+
+/* ======Components Options======= */
+/* ------Color---------- */
+$mainBackgroundColor: #000;
+$mobileBgColor: #2a2a2a;
+$headerColor: $mainBackgroundColor;
+$headerFontColor: $white;
+
+$headerBottomColor: $white;
+$headerBottomFontColor: #161618;
+
+$footerColor: $mainBackgroundColor;
+$footerFontColor: $secondaryFontColor;
+
+$mobileMenuColor: $mainBackgroundColor;
+
+$formElementsBorderColor: $secondaryColor;
+$formElementsFocusBorderColor: $primaryColor;
+
+$linksColor: $fourthColor;
+
+$darkOverlayColor: rgb(0,0,0);
+
+
+/* ------Fonts----------*/
+// $h1FontSize: 40px;
+// $h2FontSize: 24px;
+// $h3FontSize: 20px;
+$smaller: 12px;
+$normal: 14px;
+$larger: 16px;
+$large: 18px;
+$big: 24px;
+
+$descriptionLineHeight: 1.5rem;
+$descriptionFontSize: 0.875rem;
+
+
+/* ------Sizes----------*/
+$headerHeight: 85px;
+$pageMaxWidth: 1920px;
+
+$formElementsHeight: 70px; 
+
+$standardButtonHeight: 40px;
+
+
+/* ------Margins/Paddings------ */
+
+// ---Optional (page-grid)-----
+$containerPadding: 8px;
+$containerPaddingDesktop: 15px;
+
+$containerWidth: 760px;
+$containerWidthTablet: 980px;
+$containerWidthLaptop: 1390px;
+$containerWidthDesktop: 1550px;
+
+$sectionMarginTopMobile: 20px;
+$sectionMarginTopTablet: 25px;
+$sectionMarginTopLaptop: 35px;
+$sectionMarginTopDesktop: 40px;
+
+$articleMarginMobile: 10px;
+$articleMarginTablet: 10px;
+$articleMarginLaptop: 16px;
+$articleMarginDesktop: 28px;
+
+// ---Optional (collapse menu)-----
+$changeWidth: 991px;  // page width when menu should collapse
+
+// ---Optional (form-grid)-----
+$formTitleFontSize: 1.25rem;
+$labelFontSize: 13px;
+
+/* ------Z-index-------- */
+$zMobileMenu: 1000;
+$zMobileMenuButton: $zMobileMenu + 10;
+
+$pageOverlayZIndex: $zMobileMenu - 50;
+$darkOverlayZIndex: $pageOverlayZIndex - 100;
+
+$zPopup: $zMobileMenu + 200;
+$zPopupDarkOverlay: $zPopup - 50;
+
+
+
+

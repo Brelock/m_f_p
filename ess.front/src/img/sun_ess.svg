@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1299px" height="662px" viewBox="0 0 1299 662" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.0038878%" y1="50%" x2="50.0038878%" y2="-0.256276833%" id="linearGradient-1">
+            <stop stop-color="#FF702B" offset="0%"></stop>
+            <stop stop-color="#FFDC3A" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="49.9993017%" cy="50.0305866%" fx="49.9993017%" fy="50.0305866%" r="49.9465084%" gradientTransform="translate(0.499993,0.500306),scale(1.000000,0.999586),translate(-0.499993,-0.500306)" id="radialGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="82.8%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="49.9776923%" cy="49.935641%" fx="49.9776923%" fy="49.935641%" r="49.9623077%" gradientTransform="translate(0.499777,0.499356),scale(1.000000,0.999586),translate(-0.499777,-0.499356)" id="radialGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="77.42%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50.1276435%" cy="49.9141946%" fx="50.1276435%" fy="49.9141946%" r="50.0671152%" gradientTransform="translate(0.501276,0.499142),scale(1.000000,0.999586),rotate(173.618591),translate(-0.501276,-0.499142)" id="radialGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="82.8%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50.0386833%" cy="50.1579523%" fx="50.0386833%" fy="50.1579523%" r="49.8268385%" gradientTransform="translate(0.500387,0.501580),scale(1.000000,0.999586),rotate(173.618591),translate(-0.500387,-0.501580)" id="radialGradient-5">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="77.42%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ESS-Спасибо" transform="translate(-310.000000, -418.000000)">
+            <g id="Group-3" transform="translate(310.000000, 417.000000)">
+                <path d="M0,650.712348 C0,291.971149 290.700081,1 649.5,1 C1008.12395,1 1299,291.795123 1299,650.712348 C1299,790.477074 1254.83189,920.032286 1179.69331,1026 L119.306692,1026 C44.1681116,920.032286 0,790.477074 0,650.712348 Z" id="Path" fill="url(#linearGradient-1)"></path>
+                <g id="ESS-Sun"></g>
+                <g id="Group-2" opacity="0.693940662" transform="translate(0.000000, 1.000000)">
+                    <path d="M195.26387,629.382847 C195.26387,372.266895 403.721245,163.723156 660.730717,163.723156 C917.740189,163.723156 1126.19756,372.266895 1126.19756,629.382847 C1126.19756,796.217839 1038.41678,942.638422 906.657645,1024.82401 L414.979702,1024.82401 C283.044655,942.638422 195.26387,796.393825 195.26387,629.382847 Z" id="Path" fill="#FFFFFF" opacity="0.2"></path>
+                    <path d="M101.150203,665.987993 C101.150203,339.357461 365.899865,74.4981132 692.395129,74.4981132 C1018.89039,74.4981132 1283.64005,339.357461 1283.64005,665.987993 C1283.64005,800.969468 1238.43031,925.21578 1162.43572,1024.82401 L222.530447,1024.82401 C146.359946,925.391767 101.150203,800.969468 101.150203,665.987993 Z" id="Path" fill="#FFFFFF" opacity="0.2"></path>
+                    <path d="M35.1826793,690.098113 C35.1826793,363.467581 299.932341,98.6082333 626.427605,98.6082333 C952.922869,98.6082333 1217.67253,363.467581 1217.67253,690.098113 C1217.67253,814.344425 1179.32341,929.615437 1113.88363,1024.82401 L138.971583,1024.82401 C73.5317997,929.615437 35.1826793,814.344425 35.1826793,690.098113 Z" id="Path" fill="#FFFFFF" opacity="0.2"></path>
+                    <path d="M0,649.621269 C0,290.961235 290.608931,0.0559176672 649.296346,0.0559176672 C1007.80785,0.0559176672 1298.59269,290.785249 1298.59269,649.621269 C1298.59269,789.354374 1254.43843,918.880274 1179.32341,1024.82401 L119.269283,1024.82401 C44.1542625,918.880274 0,789.354374 0,649.621269 Z" id="Path" fill="#FFFFFF" opacity="0.2"></path>
+                    <g id="Group" transform="translate(321.162382, 311.495712)" fill="#FFFFFF" opacity="0.1">
+                        <ellipse id="Oval" cx="327.078484" cy="326.862436" rx="326.495264" ry="326.630532"></ellipse>
+                        <ellipse id="Oval" cx="340.975643" cy="312.95952" rx="293.775372" ry="293.897084"></ellipse>
+                        <ellipse id="Oval" cx="335.346414" cy="325.454545" rx="293.775372" ry="293.897084"></ellipse>
+                        <ellipse id="Oval" cx="335.346414" cy="353.436364" rx="293.775372" ry="293.897084"></ellipse>
+                        <ellipse id="Oval" cx="335.346414" cy="325.454545" rx="293.775372" ry="293.897084"></ellipse>
+                        <ellipse id="Oval" cx="363.316644" cy="325.454545" rx="293.775372" ry="293.897084"></ellipse>
+                        <ellipse id="Oval" cx="297.700947" cy="335.309777" rx="214.086604" ry="214.1753"></ellipse>
+                        <ellipse id="Oval" cx="311.598106" cy="335.309777" rx="214.086604" ry="214.1753"></ellipse>
+                        <ellipse id="Oval" cx="367.538566" cy="363.291595" rx="214.086604" ry="214.1753"></ellipse>
+                        <ellipse id="Oval" cx="353.641407" cy="279.346141" rx="214.086604" ry="214.1753"></ellipse>
+                        <ellipse id="Oval" cx="339.568336" cy="279.346141" rx="214.086604" ry="214.1753"></ellipse>
+                        <ellipse id="Oval" cx="304.56157" cy="356.252144" rx="165.182679" ry="165.251115"></ellipse>
+                        <ellipse id="Oval" cx="332.5318" cy="286.385592" rx="165.182679" ry="165.251115"></ellipse>
+                        <ellipse id="Oval" cx="346.604871" cy="286.385592" rx="165.182679" ry="165.251115"></ellipse>
+                        <ellipse id="Oval" cx="346.604871" cy="300.288508" rx="165.182679" ry="165.251115"></ellipse>
+                        <ellipse id="Oval" cx="360.50203" cy="314.36741" rx="165.182679" ry="165.251115"></ellipse>
+                        <ellipse id="Oval" cx="374.575101" cy="258.403774" rx="165.182679" ry="165.251115"></ellipse>
+                        <ellipse id="Oval" cx="430.515562" cy="314.36741" rx="165.182679" ry="165.251115"></ellipse>
+                        <ellipse id="Oval" cx="301.922869" cy="303.104288" rx="106.427605" ry="106.471698"></ellipse>
+                        <ellipse id="Oval" cx="273.952639" cy="205.255918" rx="106.427605" ry="106.471698"></ellipse>
+                        <ellipse id="Oval" cx="357.863329" cy="359.067925" rx="106.427605" ry="106.471698"></ellipse>
+                        <ellipse id="Oval" cx="371.760487" cy="373.146827" rx="106.427605" ry="106.471698"></ellipse>
+                        <ellipse id="Oval" cx="371.760487" cy="345.165009" rx="106.427605" ry="106.471698"></ellipse>
+                        <ellipse id="Oval" cx="371.760487" cy="317.18319" rx="106.427605" ry="106.471698"></ellipse>
+                        <ellipse id="Oval" cx="357.863329" cy="317.18319" rx="106.427605" ry="106.471698"></ellipse>
+                        <ellipse id="Oval" cx="371.760487" cy="317.18319" rx="106.427605" ry="106.471698"></ellipse>
+                        <ellipse id="Oval" cx="371.760487" cy="275.12247" rx="106.427605" ry="106.471698"></ellipse>
+                        <ellipse id="Oval" cx="346.253045" cy="328.622298" rx="80.9201624" ry="80.9536878"></ellipse>
+                        <ellipse id="Oval" cx="388.296346" cy="342.701201" rx="80.9201624" ry="80.9536878"></ellipse>
+                        <ellipse id="Oval" cx="304.385656" cy="342.701201" rx="80.9201624" ry="80.9536878"></ellipse>
+                        <ellipse id="Oval" cx="276.415426" cy="412.567753" rx="80.9201624" ry="80.9536878"></ellipse>
+                    </g>
+                    <g id="Group" transform="translate(304.330176, 193.584906)" opacity="0.3">
+                        <ellipse id="Oval" fill="url(#radialGradient-2)" cx="550.081191" cy="205.60789" rx="62.9769959" ry="63.0030875"></ellipse>
+                        <ellipse id="Oval" fill="url(#radialGradient-3)" cx="634.167794" cy="90.864837" rx="34.3031123" ry="34.3173242"></ellipse>
+                        <ellipse id="Oval" fill="url(#radialGradient-4)" cx="65.9675237" cy="70.2744425" rx="31.488498" ry="31.5015437"></ellipse>
+                        <ellipse id="Oval" fill="url(#radialGradient-5)" cx="17.767253" cy="17.6545455" rx="17.2395129" ry="17.2466552"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,101 @@
+.customCheckboxContainer,
+.customRadioContainer {
+  position: relative;
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+    right: 200%;
+  }
+
+  input[type="checkbox"] + label,
+  input[type="radio"] + label {
+    display: inline-table;
+    cursor: pointer;
+    position: relative;
+
+    & > span {
+      display: table-cell;
+      padding-left: 12px;
+      vertical-align: middle;
+    }
+  }
+
+  input[type="checkbox"] + label::before,
+  input[type="radio"] + label::before {
+    content: "";
+    height: 23px;
+    width: 23px;
+    display: block;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #cbcbcb;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  input[type="radio"] + label::after,
+  input[type="checkbox"] + label::after {
+    content: "";
+    position: absolute;
+    background: transparent; 
+    transition: all 0.2s;
+  }
+
+  &.inverted {
+    input[type="checkbox"]:checked + label::before {
+      border-color: $primaryColor;
+      background-color: $primaryColor;
+    }
+    input[type="checkbox"]:checked + label::after {
+      border-color: #fff;
+    }
+  }
+}
+
+.customCheckboxContainer {
+
+  input[type="radio"] + label::after,
+  input[type="checkbox"] + label::after {
+    width: 14px;
+    height: 7px;
+    top: 6px;
+    left: 5px;
+    border: 2px solid transparent;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+  }
+
+  input:checked + label::after {
+    border-color: $primaryColor;
+  }
+}
+
+// ----Radio------
+.customRadioContainer {
+  input[type="radio"] + label:before  {
+    border-radius: 100%;
+    display: inline-block;
+  }
+  
+  input[type="radio"] + label:after {
+    width: 13px;
+    height: 13px;
+    background: $primaryColor;
+    top: 6px;
+    left: 6px;
+    border-radius: 100%;
+    transition: all 0.2s ease;
+  }
+  
+  input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+  }
+  input[type="radio"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+  } 
+}

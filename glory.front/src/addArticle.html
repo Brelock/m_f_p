@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>add article</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "about": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="addArticlePage" class="addArticlePage page">
+        <div class="mcontainer">
+          <!-- wrapper -->
+          <div class="wrapper">
+            <article class="article-third">
+              <h1 class="article-title-secondary article-body-title text-center">Добавить свидетельство</h1>
+              
+              <form action="#" class="form form-addArticle">
+                <div class="form-row">
+                  <select 
+                    name="category" 
+                    class="form-item form-item--secondary active-field-js" 
+                    data-validate="required" 
+                    data-error-text="Необходимо заполнить поле" 
+                  >
+                    <option value="">Выберите рубрику</option>
+                    <option value="Исцеление">Исцеление</option>
+                    <option value="Спасение">Спасение</option>
+                  </select>
+                </div>
+                <div class="form-row">
+                  <input 
+                    name="title" 
+                    type="text" 
+                    class="form-item form-item--secondary" 
+                    placeholder="Введите заголовок" 
+                    data-validate="required" 
+                    data-error-text="Необходимо заполнить поле"  
+                    disabled
+                  >
+                </div>
+                <div class="form-row form-row--message">
+                  <textarea 
+                    name="message" 
+                    cols="30" 
+                    rows="10" 
+                    class="form-item form-item--secondary" 
+                    placeholder="Текст свидетельства" 
+                    data-validate="required" 
+                    data-error-text="Необходимо заполнить поле"  
+                    disabled
+                  ></textarea>
+                </div>
+                <div class="form-row form-row--flex">
+
+                  <div class="drop-wrap">
+                    <input id="drop-img" 
+                      type="file" 
+                      name="file[]"
+                      class="inputfile" 
+                      multiple
+                      data-multiple-caption="count files"
+                    >
+                    <label class="filebtn" for="drop-img">
+                      <i class="icomoon icon-gallery"></i>         
+                      <span></span>                   
+                    </label>
+                  </div>
+
+                  <button type="submit" class="button button-first button--purple">Отправить</button>
+                </div>
+              </form>
+            </article>
+          </div>
+          <!-- end wrapper -->
+        </div>
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+.mainFooter {
+	background-color: $footerColor;
+	color: $footerFontColor;
+	font-weight: 500;
+	padding: 35px 0;
+
+	a {color: $footerFontColor;}
+
+	.sections-list {
+		margin: -15px;
+
+		& > div {
+			padding: 15px;
+			box-sizing: border-box;
+		}
+	}
+
+	.block-title {
+		font-size: 20px;
+		& + * {margin-top: 20px;}
+	}	
+
+	.footer-description {
+		margin-top: 10px;
+		color: #9A9A9A;
+		font-size: 12px;
+	}
+
+	.footer-menu {
+		a {
+			font-size: 12px;
+			&:hover {
+				text-decoration: underline
+			}
+		}
+
+		li {
+			& + li {margin-top: 12px;}
+		}
+	}
+
+
+
+	.hot-line {	font-size: 36px; }
+
+	.social-media-list {
+		.icomoon {
+			font-size: 15px;
+		}
+
+	}
+
+	.bottomFooter {
+		padding-top: 50px;
+		color: #9a9a9a;
+		font-size: 12px;
+		.rights {
+			// font-family: $tertiaryFont;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		.zengineers {
+			text-align: center;
+			margin-top: 15px;
+			color: inherit;
+			img {
+				width: 15px;
+				height: 15px;
+				vertical-align: middle;
+				margin-left: 10px;
+			}
+		}
+	}
+
+	@media (min-width: 767px) {
+		.bottomFooter {
+			.rights {text-align: left;}
+			.zengineers {margin-top: 0; text-align: right;}
+		}
+	}
+
+}

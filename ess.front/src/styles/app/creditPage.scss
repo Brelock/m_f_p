@@ -1,0 +1,836 @@
+.top-banner-credit-page{
+    height: 100%;
+    // max-height: 432px;
+    overflow: hidden;
+    .top-banner-credit-title{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5vw;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+        color: $white;
+    }
+    .content-top-banner{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner-img-credit{
+        height: 432px;
+        position: relative;
+        overflow: hidden;
+        img{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+            height: 100%;
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+        }
+        .ess-section-btn{
+            display: none;
+        }
+    }
+    .info-fo-bank{
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        p{
+            text-align: center;
+            font-size: 14px;
+            line-height: 19px;
+            margin: 0;
+            padding: 7px 20px;
+            &:first-child{
+                padding: 2px 20px;
+            }
+        }
+
+        .ess-section-btn{
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .acred-bank-icon{
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25px;
+        .bank-icon{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            img{
+                max-width: 216px;
+            }
+        }
+    }
+    @media (min-width: $containerWidthLaptop){
+        min-height: 431px;
+        height: 100vh;
+        // img{
+        //     height: 50vh;
+        // }
+        .acred-bank-icon{
+            flex-direction: row;
+            padding-top: 15px;
+            .bank-icon{
+                width: 33.3%;
+                padding: 0;
+                img{
+                    max-width: 140px;
+                }
+            }
+        }
+        
+        .info-fo-bank{
+            padding-top: 0px;
+            .ess-section-btn{
+                display: none;
+            }
+        }
+        .banner-img-credit{
+            height: 25vh;
+            img{
+                width: 100%;
+            }
+            .ess-section-btn{
+                display: block;
+                position: absolute;
+                top: 73%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .content-top-banner{
+            height: calc(100vh - 25vh - 198px);
+        }
+        .top-banner-credit-title{
+            font-size: 35px;
+            top: 30%;
+        }
+    }
+}
+.contentWrapper{
+    @media (min-width: $containerWidthDesktopXS){
+        .top-banner-credit-title{
+            font-size: 40px;
+            top: 50%;
+        }
+        .banner-img-credit{
+            .ess-section-btn{
+                display: none;
+            }
+        }
+        .info-fo-bank{
+            .ess-section-btn{
+                display: block;
+            }
+        }
+    }
+}
+
+.creditPage{
+    @media (min-width: $containerWidthDesktopL){
+        .acred-bank-icon{
+            .bank-icon{
+                img{
+                    max-width: 175px;
+                }
+            }
+        }
+    }
+}
+.creditPage.page{
+    @media (min-width: $containerWidthDesktopXL){
+        .top-banner-credit-page{
+            height: 100vh;
+            .info-fo-bank{
+                padding-top: 15px;
+            } 
+            .banner-img-credit{
+                height: 432px;
+              
+            }
+            .acred-bank-icon{
+                padding-top: 30px;
+                .bank-icon{
+                    img{
+                        max-width: 216px;
+                    }
+                }
+            }
+            .content-top-banner{
+                height: calc(100vh - 432px - 198px);
+            }
+            .info-fo-bank{
+                .ess-section-btn{
+                    margin: 25px auto 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+.acred-bank-title{
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+
+.section-inform-credit{
+    height: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    .inform-credit-content{
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        .ess-section-suptitle{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .ess-section-title{
+            color: $black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .ess-section-text{
+            
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .inform-credit-img{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        &::before{
+            display: none;
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 6;
+        }
+        img{
+            object-fit: cover;
+            height: 100%;
+            position: static;
+        }
+    }
+    @media (min-width: $containerWidthLaptop){
+        height: 100vh;
+        flex-direction: row;
+        position: relative;
+        .document-credit-list{
+            position: absolute;
+            right: 7%;
+            top: 12%;
+            transform: translate(-10%,-10%);
+            width: 100%;
+            max-width: 400px;
+            z-index: 10;
+            color: $white;
+            ul li::before{
+                background-color: #fff;
+            }
+        }
+        .inform-credit-content{
+            width: 50%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .inform-credit-img{
+            width: 50%;
+            height: auto;
+            position: relative;
+            overflow: hidden;
+            &::before{
+                display: block;
+            }
+            img{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                min-width: 100%;
+                width: fit-content;
+                z-index: 5;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.creditPage{
+    @media (min-width: $containerWidthDesktopXL){
+        .section-inform-credit{
+            min-height: 100vh;
+            height: 100%;
+            .document-credit-list{
+                position: static;
+                color: $black;
+                max-width: fit-content;
+                transform: translate(0, 0);
+                ul li::before{
+                    background-color: #000;
+                }
+            }
+            .inform-credit-content{
+                width: 27%;
+            }
+            .inform-credit-img{
+                width: 73%;
+                height: auto;  
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.paragraph-credit-list{
+    padding: 20px 0;
+    .paragraph-item{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .paragraph-item-bgc{
+            width: 70px;
+            height: 70px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background-color: $primaryColor;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                background-repeat: no-repeat;
+                background-size: 35px;
+                background-position: 50% 50%;
+                width: 40px;
+                height: 40px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &.item1 .paragraph-item-bgc::before{
+            background-image: url(../img/calendar-credit.svg);
+        }
+        &.item2 .paragraph-item-bgc::before{
+            background-image: url(../img/wallet.svg);
+        }
+        &.item3 .paragraph-item-bgc::before{
+            background-image: url(../img/percent.svg);
+        }
+        @media (min-width: $containerWidthLaptop){
+            padding: 10px 20px;
+        }
+    }
+  
+    .paragraph-item-text{
+        padding-left: 15px;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 21px;
+        span{
+            font-weight: 500;
+        }
+    }
+}
+
+.contentWrapper{
+    @media (min-width: $containerWidthDesktopXS){
+        .paragraph-credit-list{
+            .paragraph-item{
+                padding: 20px;
+            }
+        }
+    }
+}
+.document-credit-list{
+    padding-left: 20px;
+    padding-right: 20px;
+    position: static;
+    color: $black;
+    .document-credit-list-suptitle{
+        font-weight: 500;
+        padding: 20px 0;
+        &:first-child{
+            padding: 0 0 20px 0;
+        }
+    }
+    p{
+        padding: 0;
+        margin: 0;
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0 0 0 20px;
+        li{
+            position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                left: -20px;
+                width: 6px;
+                height: 2px;
+                top: 10px;
+                background-color: #000;
+            }
+        }
+    }
+}
+
+.banner-terms-credit{
+    position: relative;
+    min-height: 100vh;
+    height: 1560px;
+    overflow: hidden;
+    @media (min-width: $containerWidthTablet){
+        height: 1080px;
+    }
+    img{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, 0);
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+    }
+    .wrap-terms-content{
+        position: absolute;
+        top: 7vw;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        display: -ms-flexbox;
+        display: flex;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        max-width: 1370px;
+        width: 100%;
+        height: 93%;
+        .ess-section-title{
+            text-align: center;
+            span{
+                left: 50%;
+                transform: translate(-50%, -122%);
+            }
+        }
+    }
+    .banner-terms-credit-table{
+        justify-content: center;
+        padding-top: 0px;
+        @media (min-width: $containerWidth){
+            justify-content: end;
+        }
+    }
+    .terms-item{
+        color: $white;
+        font-size: 14px;
+        line-height: 22px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        border-top: 1px solid #fff;
+        padding: 5vw 0;
+        max-width: 450px;
+        margin: -1px -1px 0 0;
+
+        position: relative;
+        p{
+            margin: 0;
+            padding: 15px 40px 0 40px;
+        }
+        h4{
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 0;
+            font-weight: 500;
+            font-size: 4.5vw;
+            line-height: 120%;
+        }
+        &:first-child{
+            border-top: none;
+        }
+        
+        @media (min-width: 767px){
+            &:nth-child(2){
+                border-top: none;
+            }
+            &:nth-child(odd){
+                border-right: 1px solid #fff;
+            }
+            h4{
+                font-size: 3vw;
+            }
+        }
+    }
+    .wrap-terms-content .terms-item{
+        @media (min-width: 991px){
+             border-right: 1px solid #fff;
+             border-top: none;
+             h4{
+                 font-size: 18px;
+                 line-height: 25px;
+             }
+            &:nth-child(3n){
+                border-right: none;
+            }
+            &:nth-child(n+4){
+                border-top: 1px solid #fff;
+            }
+            
+        }
+    }
+    .wrap-terms-content .banner-terms-credit-table .terms-item{
+        @media (min-width: 1840px){
+            h4{
+
+                font-size: 28px;
+                line-height: 35px;
+            }
+        }
+    }
+    .ess-section-btn{
+        margin: 0 auto;
+    }
+    .inputfile{
+        margin-top: 21px;
+        text-transform: uppercase;
+        background-color: inherit;
+        display: inline-block;
+        width: 203px;
+        height: 40px;
+        border: 2px solid $white;
+        border-radius: 22px;
+        cursor: pointer;
+        font-family: $mainFont;
+    }
+    .inputfile  p {
+        font-size: 13px;
+        line-height: 40px;
+        font-weight: 300;
+        color: $white;
+        padding: 0;
+    }
+    .inputfile:focus,
+    .inputfile:hover {
+        background-color: #cacaca29;
+    }  
+}
+.creditPage{
+    @media (min-width: $containerWidthLaptop){
+        .banner-terms-credit{
+            height: 100vh;
+            .inputfile {
+                margin-top: 10px;
+            }
+            img{
+                width: fit-content;
+                min-width: 100%;
+            }
+            .wrap-terms-content{
+                top: 10px;
+                .ess-section-title{
+                    padding-bottom: 10px;
+                    span{
+                        transform: translate(-50%, -60%);
+                    }
+                }
+                .terms-item{
+                    padding: 15px 0;
+                    p{
+                        padding: 0px 15px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.creditPage.page{
+    @media (min-width: $containerWidthDesktopL){
+        .banner-terms-credit{
+            .inputfile {
+                margin-top: 21px;
+            }
+
+        }
+    }
+    @media (min-width: $containerWidthDesktopXL){
+        .banner-terms-credit{
+            .wrap-terms-content{
+                .terms-item{
+                    padding: 20px 0;
+                    p{
+                        font-size: 15px;
+                        line-height: 24px;
+                        padding: 10px 15px 0;
+                    }
+                }
+            }
+            .ess-section-btn{
+                margin: 0 auto 25px;
+            }
+        }
+    }
+}
+
+.creditPage.page{
+    @media (min-width: $containerWidthDesktopL){
+       .credit-page-wrap-section .banner-terms-credit{
+            .wrap-terms-content{
+                top: 3vw;
+            }
+        }
+    }
+}
+
+
+.creit-ready-made-solutions{
+    background-color: $secondaryColor;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    .mcontainer{
+        max-width: 1340px;
+        height: 100%;
+
+    }
+
+    .ess-section-title{
+        text-align: center;
+        span{
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -122%);
+        }
+    }
+
+    .ready-made-solutions-wrap {
+        margin: 0 -30px;
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+        @media (min-width: $containerWidthLaptop){
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .window-solution{
+        width: 100%;
+        display: block;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: fit-content;
+            opacity: .5;
+        }
+        &:hover{
+            img{
+                opacity: .5;
+            }
+        }
+    }
+   
+    .solution-item{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        position: relative;
+        cursor: pointer;
+        &:last-child{
+            cursor: auto;
+        }
+        @media (min-width: $containerWidth){
+            width: 33.33%;
+            padding: 10px;
+        }
+    }
+
+    .window-solution-content-wrap{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .window-solution-title{
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        padding-bottom: 30px;
+        max-width: 80%;
+    }
+
+    .value-item-solution{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: $primaryColor;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .value-num{
+            font-size: 24px;
+        }
+        p{
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .last-item-solution{
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+    }
+
+    .last-item-solution-content-wrap{
+        flex-direction: column;
+        padding: 50px;
+        a{
+            color: $primaryColor;
+            font-size: 14px;
+            margin-bottom: 27px;
+            font-weight: 500;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .last-item-solution-content__text{
+        padding-bottom: 40px;
+        margin: 0;
+        font-size: 14px;
+        line-height: 22px;
+        color: #fff;
+    }
+
+    @media (min-width: $containerWidthLaptop){
+        height: 100vh;
+        .ess-section-title{
+            padding-top: 15px;
+            span{
+                top: 50%;
+                left: 50%;
+                font-size: 60px;
+                transform: translate(-50%, -44%);
+            }
+        }
+        .last-item-solution-content__text{
+            padding-bottom: 20px;
+        }
+        .window-solution{
+            height: 215px;
+            img{
+                height: 215px;
+            }
+            &:hover{
+                img{
+                    opacity: 1;
+                }
+            }
+        }
+        .window-solution-title{
+            font-size: 24px;
+        }
+        .last-item-solution-content-wrap{
+            padding: 5px 15px;
+        }
+        .window-solution-content-wrap{
+            max-height: 240px;
+        }
+        .ready-made-solutions-wrap {
+            margin: 0;
+            position: absolute;
+            top: 53%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
+    }
+}
+.creditPage .creit-ready-made-solutions{
+    @media (min-width: $containerWidthDesktopXL){
+        .solution-item{
+            padding: 15px;
+        }
+        .ready-made-solutions-wrap {
+            margin: 0 -30px;
+            position: static;
+            transform: translate(0%, 0%);
+            width: 100%;
+        }
+        .last-item-solution-content-wrap{
+            padding: 50px;
+        }
+        .last-item-solution-content__text{
+            padding-bottom: 40px;
+        }
+        .window-solution-title{
+            font-size: 28px;
+        }
+        .window-solution-content-wrap{
+            max-height: 420px;
+        }
+        .ess-section-title{
+            padding-top: 77px;
+            span{
+                font-size: 100px;
+            }
+        }
+        .window-solution{
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

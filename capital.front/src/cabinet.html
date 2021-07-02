@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>cabinet</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div id="page-preloader" class="page-preloader js_animate">
+    <div class="transition-loader-inner">
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+    </div>
+  </div>
+  <!--  -->
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html')
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="cabinet" class="cabinet page">
+
+        <section class="pageSection white-bg">
+          <div class="mcontainer">
+            <div class="sectionHeader">
+              <div class="animated-border-block section-title sectionHeaderItem">
+                <div class="svg-container">
+                  <svg class="rect-container">
+                    <rect x="0" y="0" class="animatedBlock"/>
+                    <rect x="0" y="0" stroke-width="4" class="overlappingBlock"/>                
+                  </svg>
+                  <h2 class="title">Личный кабинет</h2>
+                </div>
+              </div>
+
+              <ul class="breadcrumbs sectionHeaderItem">
+                <li><a href="/index.html">Главная</a></li>
+                <li class="active"><a href="#">Личный кабинет</a></li>
+              </ul>
+            </div>
+
+            <div class="sectionBlock cabinet-wrapper flex">
+              <aside class="aside">
+                <div class="person-info">
+                  <div class="person-info__name">
+                    <span class="person-info__subtitle">Добро пожаловать,</span>
+                    <span class="person-info__title">Павліков Олег Романович</span>
+                  </div>
+                  <div class="person-info__login">
+                    <span class="person-info__subtitle">Логин:</span>
+                    <span class="person-info__title">0676144054</span>
+                  </div>
+                </div>
+
+                <select name="tabSelect" class="select-secondary tabSelect-js tabsNav tabButtons tabButtons--mobile">
+                  <option data-target="tabBlock1" value="1">Личный кабинет</option>
+                  <option data-target="tabBlock2" value="2">Договора</option>
+                  <option data-target="tabBlock3" value="3">Персональные данные</option>
+                  <option data-target="quit" value="4">Выйти</option>
+                </select>
+
+                <div class="tabsNav tabButtons tabButtons--desctop">
+                  <button data-target="tabBlock1" class="tab button-tab">Личный кабинет</button>
+                  <button data-target="tabBlock2" class="tab active button-tab">Договора</button>
+                  <button data-target="tabBlock3" class="tab button-tab">Персональные данные</button>
+    
+                  <form id="logout-form" action="#" method="POST">
+                    <button class="button button-tab button--quiet">Выйти</button>
+                  </form>
+                </div>
+
+                <div class="news-list mrow flex wrap desctop-flex">
+                  <article class="news-item mcol-xs-12">
+                    <div class="item-container flex column">
+                      <div class="overlayed-date-container">
+                        <span>18 января 2018</span>
+                      </div>
+  
+                      <div class="imgWrapper relative more-button overlayed">
+                        <a href="#" class="absolute stretch overlay-link"></a>
+                        <div class="darkOverlay"></div>
+  
+                        <div class="more-button-wrapper">
+                          <div class="more-button-container">
+                            <a href="/newsPage.html" class="title semi-bold">Подробнее</a>
+                            <i class="icomoon standard-arrow-icon"></i>
+                          </div>
+                        </div>
+  
+                        <img src="img/action-item1.jpg" alt="action">
+                      </div>       
+  
+                      <div class="description-container flex column">
+                        <h4 class="title article-title"><a href="/newsPage.html">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
+                        <div class="description">
+                          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem totam architecto quo eveniet, eaque suscipit nesciunt eos.</p>
+                          <p>&nbsp;</p>
+                          <p>sdf</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+  
+                  <article class="news-item mcol-xs-12">
+                    <div class="item-container flex column">
+                      <div class="overlayed-date-container">
+                        <span>18 января 2018</span>
+                      </div>
+                      
+                      <div class="imgWrapper relative more-button overlayed">
+                        <a href="#" class="absolute stretch overlay-link"></a>
+                        <div class="darkOverlay"></div>
+  
+                        <div class="more-button-wrapper">
+                          <div class="more-button-container">
+                            <a href="#" class="title semi-bold">Подробнее</a>
+                            <i class="icomoon standard-arrow-icon"></i>
+                          </div>
+                        </div>
+  
+                        <img src="img/action-item1.jpg" alt="action">
+                      </div>       
+  
+                      <div class="description-container flex column">
+                        <h4 class="title article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
+                        <div class="description">
+                          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem totam architecto quo eveniet recusandae, molestiae, deserunt neque maiores, eaque suscipit nesciunt eos.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>                
+
+              </aside>
+              <main class="cabinet-main">
+                <div class="toggleBlocks-list sectionBlock">
+                  <div id="tabBlock1" class="toggleBlock">
+                      <b>В личном кабинете есть возможность:</b> <br>
+                      - смотреть информацию по каждому Вашему договору (действующим и погашенным залоговым договорам); <br><br>
+                      
+                      - продлевать кредиты онлайн, без посещения ломбардного отделения. <br><br>
+                      
+                    <b>При возникновении просрочки платежа, сделать продление или закрытие договора возможно только в ломбардном отделении. <br><br>
+                      
+                      Первичная регистрация проводится в ломбардном отделении. <br><br>
+                      
+                      Если не прошел платеж необходимо позвонить по телефону горячей линии 0800 300 703</b>
+                  </div>
+                  <div id="tabBlock2" class="toggleBlock active">
+                    <div class="contracts">
+
+                      <div class="contracts-tabBlock active contracts-all" id="contracts-tabBlock1">
+                        <!-- begin contract -->
+                        <div class="contract">
+                          <div class="contract__items">
+                            <div class="contract__item">
+                              <div class="contract__item-header contract__item-header--always">Номер договора</div>
+                              <div class="contract__item-body contract__item-header--mobile">1800526599</div>
+                            </div>
+
+                            <div class="contract__item">
+                              <div class="contract__item-header">ID предмета залога</div>
+                              <div class="contract__item-body">0000123456</div>
+                            </div>
+
+                            <div class="contract__item">
+                              <div class="contract__item-header">Предмет залога</div>
+                              <div class="contract__item-body">Кольцо золотое</div>
+                            </div>
+
+                            <div class="contract__item">
+                              <div class="contract__item-header">Дата договора</div>
+                              <div class="contract__item-body">01.05.2018</div>
+                            </div>
+
+                            <div class="contract__item">
+                              <div class="contract__item-header">Дата окончания</div>
+                              <div class="contract__item-body">30.05.2018</div>
+                            </div>
+
+                            <div class="contract__item contract__item--credit">
+                              <div class="contract__item-header">Сумма кредита (грн)</div>
+                              <div class="contract__item-body">1500.00</div>
+                            </div>
+
+                            <div class="contract__item contract__item--debt">
+                              <div class="contract__item-header">Сумма долга (грн)</div>
+                              <div class="contract__item-body">2250.50</div>
+                            </div>
+
+                            <div class="contract__item contract__item--info">
+                              <div class="contract__item-header">Дополительная информация</div>
+                              <div class="contract__two-items-wrap">
+                                <div class="contract__item-body">
+                                  <button class="button-more">
+                                    <span>Подробнее</span>
+                                    <i class="icomoon icon-angle"></i>
+                                  </button>
+                                </div>
+                                <div class="contract__item-body desctop">
+                                  <button data-target="contracts-tabBlock2" class="button-extend button-step-js">Продлить</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="contract__items__hidden">
+                            <div class="contract__items--mobile">
+                              <div class="contract__item">
+                                <div class="contract__item-title">Уплата/Продление кредита</div>
+                                <div class="contract__item-data">
+                                  <time class="contract__item-date">14.03.2019 10:30</time>
+                                  <div class="contract__item-val">150.00 грн</div>
+                                </div>
+                                <div class="contract__item-loc">Личный кабинет</div>
+                              </div>
+                            </div>
+                            <div class="contract__items--mobile">
+                              <div class="contract__item">
+                                <div class="contract__item-title">Выдача кредита</div>
+                                <div class="contract__item-data">
+                                  <time class="contract__item-date">14.03.2019 10:30</time>
+                                  <div class="contract__item-val">1000.00 грн</div>
+                                </div>
+                                <div class="contract__item-loc">Личный кабинет</div>
+                              </div>
+                            </div>
+                            <div class="contract__items">
+                              <div class="contract__item">
+                                <div class="contract__item-header">Дата операции</div>
+                                <div class="contract__item-body">
+                                  <time>03.08.2017</time>  
+                                  <time>15:50</time>  
+                                </div>
+                              </div>
+
+                              <div class="contract__item">
+                                <div class="contract__item-header">Вид операции</div>
+                                <div class="contract__item-body">Уплата/Продление кредита</div>
+                              </div>
+
+                              <div class="contract__item">
+                                <div class="contract__item-header">Сумма операции (грн)</div>
+                                <div class="contract__item-body">150.00</div>
+                              </div>
+
+                              <div class="contract__item contract__item--location">
+                                <div class="contract__item-header">Локация</div>
+                                <div class="contract__item-body">Личный кабинет</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="contract__items__hidden">
+                            <div class="contract__items">
+                              <div class="contract__item">
+                                <div class="contract__item-header">Дата операции</div>
+                                <div class="contract__item-body">
+                                  <time>03.08.2017</time>  
+                                  <time>15:50</time>  
+                                </div>
+                              </div>
+
+                              <div class="contract__item">
+                                <div class="contract__item-header">Вид операции</div>
+                                <div class="contract__item-body">Выдыча кредита</div>
+                              </div>
+
+                              <div class="contract__item">
+                                <div class="contract__item-header">Сумма операции (грн)</div>
+                                <div class="contract__item-body">1000.00</div>
+                              </div>
+
+                              <div class="contract__item contract__item--location">
+                                <div class="contract__item-header">Локация</div>
+                                <div class="contract__item-body">Личный кабинет</div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mobile">
+                            <div class="contract__item contract__item--info">
+                              <div class="contract__item-body">
+                                <button data-target="contracts-tabBlock2" class="button-extend button-step-js">Продлить</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end contract -->
+                        <!-- begin contract -->
+                        <div class="contract">
+                          <div class="contract__items">
+                            <div class="contract__item">
+                              <div class="contract__item-header contract__item-header--always">Номер договора</div>
+                              <div class="contract__item-body contract__item-header--mobile">1800526599</div>
+                            </div>
+
+                            <div class="contract__item">
+                              <div class="contract__item-header">ID предмета залога</div>
+                              <div class="contract__item-body">0000123456</div>
+                            </div>
+
+                            <div class="contract__item">
+                              <div class="contract__item-header">Предмет залога</div>
+                              <div class="contract__item-body">Кольцо золотое</div>
+                            </div>
+
+                            <div class="contract__item">
+                              <div class="contract__item-header">Дата договора</div>
+                              <div class="contract__item-body">01.05.2018</div>
+                            </div>
+
+                            <div class="contract__item">
+                              <div class="contract__item-header">Дата окончания</div>
+                              <div class="contract__item-body">30.05.2018</div>
+                            </div>
+
+                            <div class="contract__item contract__item--credit">
+                              <div class="contract__item-header">Сумма кредита (грн)</div>
+                              <div class="contract__item-body">1500.00</div>
+                            </div>
+
+                            <div class="contract__item contract__item--debt">
+                              <div class="contract__item-header">Сумма долга (грн)</div>
+                              <div class="contract__item-body">2250.50</div>
+                            </div>
+
+                            <div class="contract__item contract__item--info">
+                              <div class="contract__item-header">Дополительная информация</div>
+                              <div class="contract__two-items-wrap">
+                                <div class="contract__item-body">
+                                  <button class="button-more">
+                                    <span>Подробнее</span>
+                                    <i class="icomoon icon-angle"></i>
+                                  </button>
+                                </div>
+                                <div class="contract__item-body desctop">
+                                  <button data-target="contracts-tabBlock2" class="button-extend button-extend--disabled button-step-js" disabled>
+                                    Продлить
+                                    <img class="mobile" src="img/icons/lock_icon.svg" alt="" title="В связи с просрочкой платежа, возможность сделать продление/закрытие договора только на ломбардном отделении">
+                                    <img class="desctop tooltip" src="img/icons/info-sign_icon.svg" alt="" title="В связи с просрочкой платежа, возможность сделать продление/закрытие договора только на ломбардном отделении">
+                                    <!-- <i class="icomoon icon-angle" title="В связи с просрочкой платежа, возможность сделать продление/закрытие договора только на ломбардном отделении"></i> -->
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="contract__items__hidden">
+                          <div class="contract__items--mobile">
+                              <div class="contract__item">
+                                <div class="contract__item-title">Уплата/Продление кредита</div>
+                                <div class="contract__item-data">
+                                  <time class="contract__item-date">14.03.2019 10:30</time>
+                                  <div class="contract__item-val">565.00 грн</div>
+                                </div>
+                                <div class="contract__item-loc">№156, м. Полтава, Соборності, буд. 76</div>
+                              </div>
+                            </div>
+                            <div class="contract__items--mobile">
+                              <div class="contract__item">
+                                <div class="contract__item-title">Выдача кредита</div>
+                                <div class="contract__item-data">
+                                  <time class="contract__item-date">14.03.2019 10:30</time>
+                                  <div class="contract__item-val">565.00 грн</div>
+                                </div>
+                                <div class="contract__item-loc">№156, м. Полтава, Соборності, буд. 76</div>
+                              </div>
+                            </div>
+                            <div class="contract__items--mobile">
+                              <div class="contract__item">
+                                <div class="contract__item-title">Выдача кредита</div>
+                                <div class="contract__item-data">
+                                  <time class="contract__item-date">14.03.2019 10:30</time>
+                                  <div class="contract__item-val">565.00 грн</div>
+                                </div>
+                                <div class="contract__item-loc">№156, м. Полтава, Соборності, буд. 76</div>
+                              </div>
+                            </div>
+                            <div class="contract__items">
+                              <div class="contract__item">
+                                <div class="contract__item-header">Дата операции</div>
+                                <div class="contract__item-body">
+                                  <time>03.08.2017</time>  
+                                  <time>15:50</time>  
+                                </div>
+                              </div>
+
+                              <div class="contract__item">
+                                <div class="contract__item-header">Вид операции</div>
+                                <div class="contract__item-body">Уплата/Продление кредита</div>
+                              </div>
+
+                              <div class="contract__item">
+                                <div class="contract__item-header">Сумма операции (грн)</div>
+                                <div class="contract__item-body">565.00</div>
+                              </div>
+
+                              <div class="contract__item contract__item--location">
+                                <div class="contract__item-header">Локация</div>
+                                <div class="contract__item-body">№156, м. Полтава, Соборності, буд. 76</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="contract__items__hidden">
+                            <div class="contract__items">
+                              <div class="contract__item">
+                                <div class="contract__item-header">Дата операции</div>
+                                <div class="contract__item-body">
+                                  <time>03.08.2017</time>  
+                                  <time>15:50</time>  
+                                </div>
+                              </div>
+
+                              <div class="contract__item">
+                                <div class="contract__item-header">Вид операции</div>
+                                <div class="contract__item-body">Выдыча кредита</div>
+                              </div>
+
+                              <div class="contract__item">
+                                <div class="contract__item-header">Сумма операции (грн)</div>
+                                <div class="contract__item-body">565.00</div>
+                              </div>
+
+                              <div class="contract__item contract__item--location">
+                                <div class="contract__item-header">Локация</div>
+                                <div class="contract__item-body">№156, м. Полтава, Соборності, буд. 76</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="contract__items__hidden">
+                            <div class="contract__items">
+                              <div class="contract__item">
+                                <div class="contract__item-header">Дата операции</div>
+                                <div class="contract__item-body">
+                                  <time>03.08.2017</time>  
+                                  <time>15:50</time>  
+                                </div>
+                              </div>
+
+                              <div class="contract__item">
+                                <div class="contract__item-header">Вид операции</div>
+                                <div class="contract__item-body">Выдыча кредита</div>
+                              </div>
+
+                              <div class="contract__item">
+                                <div class="contract__item-header">Сумма операции (грн)</div>
+                                <div class="contract__item-body">565.00</div>
+                              </div>
+
+                              <div class="contract__item contract__item--location">
+                                <div class="contract__item-header">Локация</div>
+                                <div class="contract__item-body">№156, м. Полтава, Соборності, буд. 76</div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mobile">
+                            <div class="contract__item contract__item--info">
+                              <div class="contract__item-body">
+                                <button data-target="contracts-tabBlock2" class="button-extend button-extend--disabled button-step-js" disabled>
+                                  Продлить
+                                  <img class="mobile" src="img/icons/lock_icon.svg" alt="" title="В связи с просрочкой платежа, возможность сделать продление/закрытие договора только на ломбардном отделении">
+                                  <img class="desctop tooltip" src="img/icons/info-sign_icon.svg" alt="" title="В связи с просрочкой платежа, возможность сделать продление/закрытие договора только на ломбардном отделении">
+                                  <!-- <i class="icomoon icon-angle" title="В связи с просрочкой платежа, возможность сделать продление/закрытие договора только на ломбардном отделении"></i> -->
+                                </button>
+
+                                <div class="button-extend--disabled-descr">
+                                  В связи с просрочкой платежа, возможность сделать продление/закрытие договора только на ломбардном отделении
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end contract -->
+                      </div>
+
+                      <div class="contracts-tabBlock contracts-extend-step1" id="contracts-tabBlock2">
+                        <h3 class="contracts-title">Продление</h3>
+                        <p class="contracts-descr">Договор 18002341233 от 09.03.217, ID 0002341255</p>
+                        <p class="contracts-descr">Предмет залога: Обручки (брухт), без характеристики, к-сть 1 шт., Золото 585, вага (заг.) 3,00 гр., вага (ч.) 3,00 гр.</p>
+
+                        <div class="steps-indicators">
+                          <div class="steps-indicator__item active">Шаг 1. Продление</div>
+                          <div class="steps-indicator__item">Шаг 2. Система оплаты</div>
+                          <div class="steps-indicator__item">Шаг 3. Оплата</div>
+                        </div>
+
+                        <div class="extends-sum">
+                          <div class="extends-sum__descr">Срок:</div>
+
+                          <div class="extends-sum__slider">
+                            <div class="slider-range-second"></div>
+                          </div>
+
+                          <div class="datepicker-container">
+                            <div class="extends-sum__date">
+                              <span>15 дней</span>
+                              <img class="extends-sum__date-img" src="img/icons/calendar_icon.svg" alt="">
+                            </div>
+                            <div id="datepicker"></div>
+                            <!-- <div id="datepicker" class="input-group date">
+                              <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                            </div> -->
+                            <!-- <input id="datepicker" type="text" class="form-control"> -->
+                            <!-- <textarea name="multipleDate" hidden></textarea> -->
+                            <input type="hidden" id="multipleDate">
+                          </div>
+
+                          <div class="extends-sum__value">
+                            <span class="extends-sum__result-descr">Сумма:</span>
+                            <span class="extends-sum__result">131,49 грн</span>
+                          </div>
+                        </div>
+
+                        <div class="operations-parameters">
+                          <strong class="title">Параметры операции:</strong>
+                          <div class="operations-parameters-list">
+                            <div class="operations-parameter__item"><span>Сумма кредита:</span><span>100.00</span></div>
+                            <div class="operations-parameter__item"><span>Срок продления:</span><span id="days2">11</span></div>
+                            <div class="operations-parameter__item"><span>Дата возврата:</span><span id="date_end">19 Июня 2019 (Среда)</span></div>
+                            <div class="operations-parameter__item"><span>Ставка % за продление в день:</span><span id="rate">1.499</span></div>
+                          </div>
+                          <div class="operations-parameter__footer">
+                            <div class="parameter__footer"><strong>Сумма за продление:</strong><strong id="summa_cred2">16.49</strong></div>
+                            <div class="parameter__footer"><span>Сумма на возврат:</span><span>113.99</span></div>
+                          </div>
+                        </div>
+
+                        <div class="btns-wrapper">
+                          <div class="more-button inversed">
+                            <div class="more-button-wrapper">
+                              <div class="more-button-container">
+                                <button class="title semi-bold seriesTab button-step-js" data-target="contracts-tabBlock3">Далее</button>
+                                <i class="icomoon standard-arrow-icon inversed"></i>
+                              </div>
+                            </div>
+                          </div>
+
+                          <button class="button-border button-step-js" data-target="contracts-tabBlock1">Вернуться назад</button>
+                        </div>
+
+                      </div>
+                      <div class="contracts-tabBlock contracts-extend-step2" id="contracts-tabBlock3">
+                        <h3 class="contracts-title">Системы оплаты:</h3>
+
+                        <div class="steps-indicators">
+                          <div class="steps-indicator__item">Шаг 1. Продление</div>
+                          <div class="steps-indicator__item active">Шаг 2. Система оплаты</div>
+                          <div class="steps-indicator__item">Шаг 3. Оплата</div>
+                        </div>
+
+                        <div class="payment-system-block">
+                          <div class="payment-system__item">
+                            <div class="custom-control custom-radio">
+                              <input id="customRadio1" type="radio" name="paymentRadio" class="custom-control-input" checked="">
+                              <label for="customRadio1" class="custom-control-label"><img src="img/w4p.png" alt="#">
+                                <span class="payment-system__text">
+                                  <strong>Платежная система WayForPay</strong>
+                                  <span><p>- Оплата осуществляется без комиссии для карт Visa/Mastercard;<br>
+                                    - сумма к погашению – начисленные проценты за указанный вами период по выбранному договору;<br>
+                                    - online оплата доступна только в период действия договора;<br>
+                                    - начиная с 1-го дня просрочки, оплата доступна только в отделении “Капитал“ Ломбард<br>
+                                    - для полного закрытия (погашения) кредита и выкупа изделия, необходимо совершить визит в отделение.</p>
+                                  </span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="btns-wrapper">
+                          <div class="more-button inversed">
+                            <div class="more-button-wrapper">
+                              <div class="more-button-container">
+                                <a href="#" class="title semi-bold seriesTab">Далее</a>
+                                <i class="icomoon standard-arrow-icon inversed"></i>
+                              </div>
+                            </div>
+                          </div>
+
+                          <button class="button-border button-step-js" data-target="contracts-tabBlock2">Вернуться назад</button>
+                        </div>
+                      </div>
+                      <div class="contracts-tabBlock contracts-extend-step3" id="contracts-tabBlock4">444</div>
+                      
+                    </div>
+                  </div>
+                  <div id="tabBlock3" class="toggleBlock">
+                    <div class="personal-info">
+                      <table>
+                        <tr>
+                          <th>ФИО</th>
+                          <td>Иванов Иван Иванович</td>
+                        </tr>
+                        <tr>
+                          <th>ИНН</th>
+                          <td>1234567890</td>
+                        </tr>
+                        <tr>
+                          <th>Дата рождения</th>
+                          <td>01.01.1990</td>
+                        </tr>
+                        <tr>
+                          <th>Телефон</th>
+                          <td>067-258-74-65</td>
+                        </tr>
+                        <tr>
+                          <th>Email</th>
+                          <td>abc@gmail.com</td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <form action="#" class="form form-personal-info" method="POST">
+                      <div class="formRow">
+                        <label for="personal-info-phone" class="label-main">Изменить телефон:</label>
+                        <div class="descr">Данный телефон является контактным и на него будут приходить все уведомления при работе с ЛК</div>
+                        <input 
+                          name="phone" 
+                          class="border-decor" 
+                          id="personal-info-phone"
+                          type="tel"
+                          placeholder="Контактный телефон" 
+                        >
+                      </div>
+
+                      <div class="formRow">
+                        <label for="personal-info-mail" class="label-main">Изменить e-mail:</label>
+                        <input 
+                          name="email" 
+                          class="border-decor" 
+                          id="personal-info-mail"
+                          type="email"
+                          placeholder="E-mail" 
+                        >
+                      </div>
+
+                      <div class="formRow">
+                        <label class="label-main">Изменить пароль:</label>
+                        <div class="form-item-wrap">
+                          <input 
+                            name="old_password" 
+                            class="border-decor" 
+                            type="password"
+                            placeholder="Старый пароль" 
+                          >
+                        </div>
+                        <div class="form-item-wrap">
+                          <input 
+                            name="new_password" 
+                            class="border-decor" 
+                            type="password"
+                            placeholder="Старый пароль" 
+                          >
+                        </div>
+                        <div class="form-item-wrap">
+                          <input 
+                            name="repeat_new_password" 
+                            class="border-decor" 
+                            type="password"
+                            placeholder="Повторите новый пароль" 
+                          >
+                        </div>
+                      </div>
+
+                      <button type="submit" class="standardButton secondary border-decor button-secondary">
+                        Применить
+                      </button>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="news-list mrow flex wrap mobile-flex">
+                  <article class="news-item mcol-xs-12">
+                    <div class="item-container flex column">
+                      <div class="overlayed-date-container">
+                        <span>18 января 2018</span>
+                      </div>
+  
+                      <div class="imgWrapper relative more-button overlayed">
+                        <a href="#" class="absolute stretch overlay-link"></a>
+                        <div class="darkOverlay"></div>
+  
+                        <div class="more-button-wrapper">
+                          <div class="more-button-container">
+                            <a href="/newsPage.html" class="title semi-bold">Подробнее</a>
+                            <i class="icomoon standard-arrow-icon"></i>
+                          </div>
+                        </div>
+  
+                        <img src="img/action-item1.jpg" alt="action">
+                      </div>       
+  
+                      <div class="description-container flex column">
+                        <h4 class="title article-title"><a href="/newsPage.html">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
+                        <div class="description">
+                          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem totam architecto quo eveniet, eaque suscipit nesciunt eos.</p>
+                          <p>&nbsp;</p>
+                          <p>sdf</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+  
+                  <article class="news-item mcol-xs-12">
+                    <div class="item-container flex column">
+                      <div class="overlayed-date-container">
+                        <span>18 января 2018</span>
+                      </div>
+                      
+                      <div class="imgWrapper relative more-button overlayed">
+                        <a href="#" class="absolute stretch overlay-link"></a>
+                        <div class="darkOverlay"></div>
+  
+                        <div class="more-button-wrapper">
+                          <div class="more-button-container">
+                            <a href="#" class="title semi-bold">Подробнее</a>
+                            <i class="icomoon standard-arrow-icon"></i>
+                          </div>
+                        </div>
+  
+                        <img src="img/action-item1.jpg" alt="action">
+                      </div>       
+  
+                      <div class="description-container flex column">
+                        <h4 class="title article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
+                        <div class="description">
+                          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem totam architecto quo eveniet recusandae, molestiae, deserunt neque maiores, eaque suscipit nesciunt eos.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>   
+              </main>
+            </div>
+
+          </div>     
+        </section>   
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <div class="mcontainer relative scrollTopContainer">
+        <div id="scrollTopButton" class="icomoon standard-arrow-icon navigateIcon up"></div>
+      </div>
+
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

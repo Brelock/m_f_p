@@ -1,0 +1,20 @@
+.homePage {
+	width: 100%;
+	height: auto;
+	min-height: 100vh;
+}
+
+.init-slick0slider{
+	height: 600px;
+}
+
+.item-slide {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+	min-height: 239px;
+	@media (min-width: $containerWidthTablet) {
+		min-height: 600px;
+	}
+}

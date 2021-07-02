@@ -1,0 +1,99 @@
+.capitalize { text-transform: capitalize; }
+.uppercase { text-transform: uppercase; }
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.bold {font-weight: 700;}
+.semi-bold {font-weight: 600; }
+.normal {font-weight: normal; }
+.light {font-weight: 300; }
+.ultra-light {font-weight: 200;}
+
+.page-title {	font-size: $titleFontSize; }
+.sectionBlock-title {	font-size: $sectionBlockTitleFontSize; }
+.article-title { font-size: $sectionTitleFontSize; }
+.title-description { font-size: $descriptionTitleFontSize; }
+
+.list-title {
+	& + ul,
+	& + ol {margin: 10px 0 0 0;}
+
+	&.label {
+		& + ul,
+		& + ol {margin: 0 0 0 10px;}
+	}
+}
+
+.text-first {
+	font-size: 18px;	
+	line-height: 22px;
+}
+
+.text-second {
+	font-size: 14px;	
+	line-height: 17px;
+}
+
+.text-third {
+  font-size: 18px;	
+	line-height: 24px;
+}
+
+.text-fourth {
+  font-size: 18px;	
+	line-height: 30px;
+}
+
+.title-first {
+	font-size: 26px;
+	line-height: 36px;
+
+	@media (min-width: 375px) {
+		font-size: 26px;
+		line-height: 38px;
+	}
+
+	@media (min-width: 768px) {
+		font-size: 30px;
+    line-height: 37px;
+	}
+}
+
+.title-banner {
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: normal;
+
+	@media screen and (min-width: $changeWidth) {
+		font-size: 30px;
+		line-height: 34px;
+	}
+}
+
+.section-title {
+	font-family: $secondaryFont;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.main-fcolor {
+	color: $mainFontColor;
+}
+
+.secondary-fcolor {
+	color: $secondaryColor;
+}
+
+.third-fcolor {
+	color: #000;
+}
+
+.fourth-fcolor {
+	color: #9b9b9b;
+}
+
+@media screen and (min-width: $changeWidth) {
+	.page-title {
+		font-size: $titleFontSizeLaptop;
+	}
+}

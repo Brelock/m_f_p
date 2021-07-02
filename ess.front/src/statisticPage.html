@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ESS</title>
+    <!--  -->
+    @@include('templateHtml/head.html')
+    <!--  -->
+  </head>
+
+  <body>
+    <div class="mainWrapper">
+      <div class="contentWrapper error static-header">
+        <!--  -->
+        @@include('templateHtml/header.html', { "home": "active" })
+        <!--  -->
+        <div id="analitics" class="statisticPage page">
+          <div class="mcontainer">
+
+            <div class="wrap-content-statistic">
+              <div class="top-section-statistic">
+                <div class="statistic-title">Спасибо !</div>
+                <div class="statistic-suptitle"> Мы получили вашу заявку, в ближайшее время наши специалисты свяжутся с вами </div>
+              </div>
+              <div class="bg-img-statistic">
+                <img src="img/sun_ess.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--  -->
+      @@include('templateHtml/bottomFooter.html')
+      <!--  -->
+      <!--  -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/scripts.html')
+
+  </body>
+</html>

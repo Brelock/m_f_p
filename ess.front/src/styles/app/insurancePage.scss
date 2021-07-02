@@ -1,0 +1,353 @@
+.insurance-top-section{
+    background-color: $secondaryColor;
+    height: 100%;
+    position: relative;
+    .item-img-banner{
+        height: 110vh;
+    }
+    .slick-slider{
+        margin-bottom: 0 !important;
+    }
+    .ess-section-btn.hidden-ess-btn{
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        
+    }
+    @media (min-width: $containerWidthLaptop) {
+        height: 100vh;
+        .ess-section-btn.hidden-ess-btn{display: none;}
+    }
+}
+.content-top-section-slide{
+    .ess-section-btn{
+     display: none;
+     @media (min-width: $containerWidthLaptop) {
+         display: block;
+     }
+    }
+}
+.ins-offer-img{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0%);
+  width: max-content;
+  min-width: 100%;
+  height: auto;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.page-insurance-reliability {
+    height: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    .ins-reliability_left{
+      background-color: #fff;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .ess-section-title{
+        color: #000;
+        padding-left: 20px;
+        max-width: 90%;
+        span{
+            top: 50%;
+            transform: translateY(-175%);
+        }
+    }
+    .ess-section-suptitle{
+        padding: 20px 20px 0;
+    }
+    .ess-section-text{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .ins-reliability_right{
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 70vh;
+        img{
+          position: absolute;
+          left: 50%;
+          bottom: 50%;
+          transform: translate(-50%, 50%);
+          width: max-content;
+          height: auto;
+          min-width: 100%;
+          object-fit: contain;
+        }
+    }
+    @media (min-width: $containerWidthLaptop) {
+        height: 100vh;
+        flex-direction: row;
+        .ess-section-suptitle{
+            padding: 50px 20px 0;
+        }
+        .ins-reliability_right{
+            width: 75%;
+            height: 100%;
+        }
+        .ins-reliability_left{
+            width: 25%;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.page-insurance-damage{
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    .ins-damage_banner{
+        height: 100%;
+        min-height: 400px;
+        position: relative;
+        img{
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%);
+            width: max-content;
+            min-width: 100%;
+            height: 100%;
+            z-index: 1;
+            object-fit: cover;
+        }
+    }
+    .ins-damage_content{
+        padding: 20px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .ess-section-title{
+            color: #000;
+        }
+    }
+    .ins-damage_content-left{
+        width: 100%;
+    }
+    .ins-damage_content-right{
+        width: 100%;
+    }
+    @media (min-width: $containerWidthLaptop) {
+        height: 100vh;
+        flex-direction: column;
+        .ins-damage_banner{
+            height: 70vh;
+        }
+        .ins-damage_content{
+            padding: 0;
+            height: 30vh;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .ess-section-title{
+                span{
+                    top: 50%;
+                    transform: translateY(-150%);
+                }
+            }
+        }
+        .ins-damage_content-left{
+            width: 35%;
+        }
+        .ins-damage_content-right{
+            width: 35%;
+        }
+    }
+}
+
+.page-insurance-offer{
+  height: 100%;
+  min-height: 900px;
+  position: relative;
+  overflow: hidden;
+  .ess-section-title{
+      text-align: center;
+      padding: 20px 20px 0;
+  }
+  .wrap-offer_content{
+    height: 100%;
+    min-height: 600px;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  .ins-offer_content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+  }
+  .ins-offer_el-title{
+    color: $white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .ins-offer_el-text{
+    color: $white;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .ins-offer_el-icon{
+    max-width: 125px;
+    max-height: 205px;
+    height: auto;
+  }
+  .ins-offer_el{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0;
+    &:nth-child(2){
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+    }
+  }
+  @media (min-width: $containerWidthLaptop) {
+    height: 100vh;
+    min-height: auto;
+    .ins-offer_content{
+      flex-direction: row;
+      justify-content: space-around;
+      max-width: 1340px;
+    }
+    .wrap-offer_content{
+        height: calc(100% - 95px);
+        align-items: center;
+        min-height: auto;
+        padding-bottom: 0;
+    }
+    // .ins-offer_el-icon{
+    //   max-width: 192px;
+    // }
+    .ins-offer_el{
+      width: 33.33%;
+      padding: 30px 0;
+      &:nth-child(2){
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        border-top: none;
+        border-bottom: none;
+      }
+    }
+    .ess-section-title{
+       padding-top: 50px;
+
+    }
+    .ins-offer_el-text{
+      max-width: 320px;
+      padding: 0;
+    }
+    .ins-offer_el-title{
+      padding-top: 20px;
+      padding-bottom: 10px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.page-insurance-sky{
+  height: 100%;
+  min-height: 385px;
+  overflow: hidden;
+  position: relative;
+  .ins-offer-img{
+    top: auto;
+    bottom: 0;
+  }
+  .ins-sky-wrap-content{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+
+    text-align: center;
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+  }
+  .ess-section-btn{
+    margin-top: 20px;
+  }
+  .ess-section-title{
+    padding: 20px 0;
+  }
+  @media (min-width: $containerWidthLaptop) {
+    height: 100vh;
+  }
+}
+
+
+// -------- desktopL ------
+.insurancePage {
+  @media (min-width: $containerWidthDesktopL){ 
+    // ---
+    .insurance-top-section {
+      .item-img-banner{ 
+        .img-el{
+          top: 42vh;
+          left: 25vw;
+          transform: translate(-25%, -50%);
+          max-width: 32vw;
+        }
+      }
+    }
+    // ---- 
+    .page-insurance-offer{
+      .ins-offer_content{
+        justify-content: space-evenly;
+        max-width: none;
+      }
+      .wrap-offer_content{
+        height: calc(100% - 150px);
+      }
+      .ins-offer_el-icon{
+        max-width: 192px;
+      }
+      .ins-offer_el-title{
+          padding-top: 30px;
+          padding-bottom: 20px;
+          font-size: 28px;
+          line-height: 38px;
+      }
+      .ins-offer_el-text{
+          font-size: 16px;
+          line-height: 25px;
+          max-width: 450px;
+      }
+      .ins-offer_el{
+        padding: 10vh 0;
+      }
+    }
+    // ----
+    .page-insurance-sky{
+      .ins-sky-wrap-content{
+        max-width: 1400px;
+      }
+      .ess-section-btn{
+        margin-top: 70px;
+      }
+    }
+
+  }
+}
+// ------- // --- desktopL ------

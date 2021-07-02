@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Email</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+
+	<style>
+		html{
+		  width: 100%;
+		  height: 100%;
+		  padding: 0;
+		  margin: 0;
+		}
+
+		body {
+		  padding: 0;
+		  margin: 0;
+		  font-family: 'Open Sans', sans-serif;
+		  font-size: 14px;
+		}
+
+		h1, h2, h3 {
+			margin: 0;
+			mso-line-height-rule: exactly;
+		}
+		p {margin: 0;}
+
+		.main-wrapper {
+			width: 100%;
+			max-width: 598px;
+			margin: 0 auto;
+		}
+		.main-content-container {
+			padding: 30px	15px;
+		}
+
+		/*----------------*/
+		.title + * {
+			margin-top: 15px;
+		}
+
+		.section-title {font-size: 18px;}
+
+		.description p + p {
+			margin-top: 6px;
+		}
+
+		.description p {font-weight: 600; color: #666666;}
+
+		.section + .section {margin-top: 20px;}
+
+		/*.img-section {}*/
+		.img-section img {
+			width: 100%;
+			border-radius: 8px;
+		}
+
+		/*-----------------*/
+		.group-item > div {display: inline-block; vertical-align: top;}
+		.group-item > div + div {margin-left: 10px;}
+
+		.group-item + .group-item {margin-top: 10px;}
+
+		.group-item .group-name {
+			width: 30%;
+			max-width: 180px;
+			color: #424242;
+			padding-top: 5px;
+		}
+
+		.group-item .icon {
+			padding-top: 8px;
+			width: 20px;
+		}
+
+		.group-item .problems-list {
+			width: 60%;
+		}
+
+		.group-item .problems-list > span + span {margin-left: 5px;}
+		.group-item .problems-list > span {font-weight: 600; line-height: 25px;}
+
+		.primary-button {
+			font-weight: 600;
+			text-transform: uppercase;
+			font-size: 17px;
+			color: #fff;
+			padding: 10px 40px;
+			border-radius: 4px;
+			border: 2px solid #BF1E2E;
+			background-color: #BF1E2E;
+			text-decoration: none;
+			-webkit-transition: all 0.2s;
+			-o-transition: all 0.2s;
+			transition: all 0.2s;
+			display: inline-block;
+		}
+
+		.primary-button:hover {
+			background-color: #fff;
+			color: #BF1E2E;
+		}
+
+		.bottom-section {margin-top: 25px;}
+
+	</style>
+</head>
+
+<body>
+	<div class="main-wrapper">
+	  <div class="main-content-container">
+			<div class="section">
+				<h1 class="title section-title">Hi {Name}</h1>
+				
+				<div class="description">
+					<p>Alarms has been detected on {Machine Name}</p>
+					<p>Asset: {Asset #} </p>
+					<p>Sensor: {Location}</p>
+				</div>
+			</div>
+
+			<div class="section img-section">
+				<img src="/img/canada/ELECTRIC_MOTOR1.png" alt="equipment type">
+			</div>
+
+			<div class="section">
+				<h2 class="title section-title">Possible problems</h2>
+				
+				<div class="problems-block">
+					<div class="group-list">
+						<div class="group-item">
+							<div class="group-name">X_AXIS_ACCELERATION:</div>
+
+							<div class="icon"><img src="/img/canada/acute.png" alt="ic"></div>
+							<div class="problems-list">
+								<span>problem number one,</span>
+								<span>problem number two very long name,</span>
+								<span>dfdfg dfgdfg,</span>
+								<span>dfdfg dfgdfg,</span>
+								<span>dfdfg dfgdfg</span>
+							</div>
+						</div>
+
+						<div class="group-item">
+							<div class="group-name">X-axis velocity:</div>
+
+							<div class="icon"><img src="/img/canada/chronic.png" alt="ic"></div>
+							<div class="problems-list">
+								<span>problem number one,</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom-section">
+				<a href="/" class="link primary-button">go to the charts</a>
+			</div>
+	  </div>
+	</div>
+</body>
+</html>

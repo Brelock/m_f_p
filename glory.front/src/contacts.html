@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>contacts</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "about": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="contactsPage" class="contactsPage page">
+        <div class="banner">
+          <picture>
+            <source srcset="/img/foto3.webp" type="image/webp">
+            <img src="/img/foto3.jpg" alt="">
+          </picture>
+        </div>
+        <div class="mcontainer">
+          <!-- wrapper -->
+          <div class="wrapper">
+            <article class="article article--secondary">
+              <h1 class="article-title article-body-title">Напишите нам</h1>
+              
+              <form action="#" class="form form-contacts">
+                <div class="form-row form-row--flex">
+                  <label class="form-label" for="name">Ваше имя</label>
+                  <input 
+                    name="name" 
+                    id="name" 
+                    type="text" 
+                    class="form-item" 
+                    data-validate="required" 
+                    data-error-text="Необходимо заполнить поле" 
+                  >
+                </div>
+                <div class="form-row form-row--flex">
+                  <label class="form-label" for="email">Ваш e-mail</label>
+                  <input 
+                    name="email" 
+                    id="email" 
+                    type="email" 
+                    class="form-item" 
+                    data-validate="required" 
+                    data-error-text="Необходимо заполнить поле" 
+                  >
+                </div>
+                <div class="form-row form-row--flex">
+                  <label class="form-label" for="message">Ваше сообщение</label>
+                  <textarea 
+                    name="message" 
+                    id="message" 
+                    cols="30" 
+                    rows="10" 
+                    class="form-item" 
+                    data-validate="required" 
+                    data-error-text="Необходимо заполнить поле" 
+                  ></textarea>
+                </div>
+                <div class="form-row form-row--flex">
+                  <button type="submit" class="button button-first button--purple">Отправить</button>
+                </div>
+              </form>
+            </article>
+          </div>
+          <!-- end wrapper -->
+        </div>
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

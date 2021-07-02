@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="cabinet" class="cabinet page">
+        <div class="banner">
+          <picture>
+            <source srcset="/img/foto1.webp" type="image/webp">
+            <img src="/img/foto1.jpg" alt="">
+          </picture>
+        </div>
+
+        <div class="mcontainer">
+          <!-- wrapper -->
+          <div class="wrapper">
+
+            <aside class="aside aside--top">
+              <article class="article article--fourth article-info">
+                <div class="article-header__avatar article-header__avatar--big">
+                  <img src="/img/avatar.jpg" alt="">
+                </div>
+
+                <div class="article-info-text text-center">
+                  <div class="article-title-secondary">Светлана Федориенко</div>
+                  <div class="article-header__log first-text-color">@SvetaF</div>
+
+                  <div class="article-header__team first-text-color">
+                    Служитель церкви “Скиния”
+                  </div>
+
+                  <div class="article-header__address first-text-color">
+                    <i class="icomoon icon-location"></i>
+                    Киев, Украина
+                  </div>
+                </div>
+
+                <ul class="info-list">
+                  <li class="info-list__item">
+                    <span>Свидетельства</span>
+                    <span>123</span>
+                  </li>
+                  <li class="info-list__item">
+                    <span>Понравившиеся</span>
+                    <span>4,234</span>
+                  </li>
+                  <li class="info-list__item">
+                    <span>Читает</span>
+                    <span>18</span>
+                  </li>
+                  <li class="info-list__item">
+                    <span>Читатели</span>
+                    <span>356</span>
+                  </li>
+                </ul>
+
+                <ul class="social-menu social-menu--fstart">
+                  <li class="social-menu__item social-menu__item--round">
+                    <a href="#" target="_blank" class="social-menu__link social-menu__link--flex">
+                      <i class="icomoon icon-twit"></i>
+                    </a>
+                  </li>
+                  <li class="social-menu__item social-menu__item--round">
+                    <a href="#" target="_blank" class="social-menu__link social-menu__link--flex">
+                      <i class="icomoon icon-inst"></i>
+                    </a>
+                  </li>
+                  <li class="social-menu__item social-menu__item--round">
+                    <a href="#" target="_blank" class="social-menu__link social-menu__link--flex">
+                      <i class="icomoon icon-fb"></i>
+                    </a>
+                  </li>
+                </ul>
+
+              </article>
+
+              <ul class="aside-menu tabsNav tabButtons">
+                <li class="aside-menu__item aside-menu__item--with-icon">
+                  <button data-target="myData" class="tab button-tab active">
+                    Личные данные
+                    <i class="icomoon icon-id"></i>
+                  </button>
+                </li>
+                <li class="aside-menu__item aside-menu__item--with-icon">
+                  <button data-target="myStories" class="tab button-tab">
+                    Мои свидетельства
+                    <i class="icomoon icon-text"></i>
+                  </button>
+                </li>
+                <li class="aside-menu__item aside-menu__item--with-icon">
+                  <form action="#" method="POST">
+                    <button>
+                      Выйти
+                      <i class="icomoon icon-exit"></i>
+                    </button>
+                  </form>
+                </li>
+              </ul>
+            </aside>
+
+            <main class="main">
+              <div class="filter">
+                <ul class="filter-list">
+                  <li class="filter-list__item active">
+                    <a href="#" class="filter-list__link">Самые новые</a>
+                  </li>
+                  <li class="filter-list__item">
+                    <a href="#" class="filter-list__link">Самые популярные</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="main-wrap">
+
+                <div class="toggleBlocks-list">
+                  <div id="myData" class="toggleBlock active">
+                    <article class="article article--six">
+                      <h2 class="article-title article-body-title">Контактная информация</h2>
+
+                      <form action="#" class="form form-my-contacts">
+                        <div class="form-row form-row--flex">
+                          <label class="form-label" for="email">Ваш e-mail</label>
+                          <input name="email" id="email" type="email" class="form-item form-item--third"
+                            data-validate="required" data-error-text="Необходимо заполнить поле">
+                        </div>
+                        <div class="form-row form-row--flex">
+                          <label class="form-label" for="password">Новый пароль</label>
+                          <input name="password" id="password" type="password" class="form-item form-item--third"
+                            data-validate="required" data-error-text="Необходимо заполнить поле">
+                        </div>
+                        <div class="form-row form-row--flex">
+                          <label class="form-label" for="country">Ваша страна</label>
+                          <select name="country" id="country" class="form-item form-item--third"
+                            data-validate="required" data-error-text="Необходимо заполнить поле">
+                            <option value="">Украина</option>
+                            <option value="Исцеление">USA</option>
+                            <option value="Спасение">URUGVAI</option>
+                          </select>
+                        </div>
+                        <div class="form-row form-row--flex">
+                          <label class="form-label" for="city">Ваш город</label>
+                          <select name="city" id="city" class="form-item form-item--third" data-validate="required"
+                            data-error-text="Необходимо заполнить поле">
+                            <option value="">Запорожье</option>
+                            <option value="Днепр">Днепр</option>
+                            <option value="Харьков">Харьков</option>
+                          </select>
+                        </div>
+                        <div class="form-row text-right">
+                          <button type="submit" class="button button-first button--purple">Cохранить</button>
+                        </div>
+                      </form>
+                    </article>
+
+                    <article class="article article--six">
+                      <h2 class="article-title article-body-title">Личные данные</h2>
+
+                      <form action="#" class="form form-my-contacts">
+                        <div class="form-row form-row--flex">
+                          <label class="form-label" for="name">ФИО</label>
+                          <input name="name" id="name" type="text" class="form-item form-item--third"
+                            data-validate="required" data-error-text="Необходимо заполнить поле">
+                        </div>
+                        <div class="form-row form-row--flex">
+                          <label class="form-label" for="login">Имя пользователя</label>
+                          <input name="login" id="login" type="text" class="form-item form-item--third"
+                            data-validate="required" data-error-text="Необходимо заполнить поле">
+                        </div>
+                        <div class="form-row form-row--flex">
+                          <label class="form-label" for="about">Информация о Вас</label>
+                          <input name="about" id="about" type="text" class="form-item form-item--third"
+                            data-validate="required" data-error-text="Необходимо заполнить поле">
+                        </div>
+                        <div class="form-row text-right">
+                          <button type="submit" class="button button-first button--purple">Cохранить</button>
+                        </div>
+                      </form>
+                    </article>
+                    
+                    <article class="article article--six">
+                      <h2 class="article-title article-body-title">Социальные сети</h2>
+
+                      <form action="#" class="form form-my-contacts">
+                        <div class="form-row form-row--flex">
+                          <label class="form-label" for="facebook">Facebook</label>
+                          <input name="facebook" id="facebook" type="text" class="form-item form-item--third"
+                            data-validate="required" data-error-text="Необходимо заполнить поле">
+                        </div>
+                        <div class="form-row form-row--flex">
+                          <label class="form-label" for="instagram">Instagram</label>
+                          <input name="instagram" id="instagram" type="text" class="form-item form-item--third"
+                            data-validate="required" data-error-text="Необходимо заполнить поле">
+                        </div>
+                        <div class="form-row form-row--flex">
+                          <label class="form-label" for="twitter">Twitter</label>
+                          <input name="twitter" id="twitter" type="text" class="form-item form-item--third"
+                            data-validate="required" data-error-text="Необходимо заполнить поле">
+                        </div>
+                        <div class="form-row text-right">
+                          <button type="submit" class="button button-first button--purple">Cохранить</button>
+                        </div>
+                      </form>
+                    </article>
+                  </div>
+                  <div id="myStories" class="toggleBlock">
+
+                    <article class="article">
+                      <header class="article-header article-header--redacting">
+
+                        <form action="#" method="POST">
+                          <button class="button button--second button--purple">Редактировать</button>
+                        </form>
+
+                        <div class="article-header__info">
+                          <time class="article-header__time">12.03.2019</time>
+                          <a href="#" class="article-header__info-link first-text-color">Свобода от зависимости
+                            греха</a>
+                        </div>
+
+                        <form action="#" method="POST">
+                          <button class="button-close"></button>
+                        </form>
+                      </header>
+
+                      <div class="article-body">
+                        <h2 class="article-title article-body-title">Для наркоманов тоже есть место в раю?</h2>
+
+                        <p>
+                          Грех был еще до наркотиков, и Бог показал мне киноленту,
+                          прокручивая ее и, останавливаясь на тех моментах, где я грешила…
+                          Никогда в жизни я так не рыдала, возле меня была настоящая лужа слез,
+                          я продолжала каяться за каждый этап своей жизни. Это продолжалось очень долго…
+                          <br>
+                          Утром я очнулась на полу. СОВЕРШЕННО ЗДОРОВАЯ И СВОБОДНАЯ!
+                          Мама боялась зайти ко мне в комнату – думала, что я умерла.
+                          Я взяла Библию и Бог начал ко мне говорить.
+                          <br>
+                          С того дня прошло восемь лет, и Господь многому меня научил и продолжает учить.
+                          <br>
+                          Бог поднял меня. Я закончила Московский институт психологии и психоанализа,
+                          занимаюсь серьезным бизнесом на руководящей должности, а вечерами, после работы,
+                          я еду на трассы и притоны и говорю этим искалеченным душам, что ВЫХОД ЕСТЬ!
+                        </p>
+                      </div>
+
+                      <footer class="article-footer">
+                        <div class="article-likes">
+                          <button class="article-like">
+                            <i class="icomoon icon-heart"></i>
+                          </button>
+                          <span>245</span>
+                        </div>
+                        <div class="article-media">
+                          <a href="#" class="article-media__link second-text-color">
+                            <i class="icomoon icon-fb"></i>
+                          </a>
+                          <a href="#" class="article-media__link third-text-color">
+                            <i class="icomoon icon-twit"></i>
+                          </a>
+                        </div>
+                      </footer>
+                    </article>
+
+                  </div>
+                </div>
+
+
+
+              </div>
+
+              <div class="pagination">
+                <nav>
+                  <ul role="navigation" class="">
+                    <li aria-disabled="true" aria-label="pagination.previous"
+                      class="page-item pagination-prev disabled">
+                      <span aria-hidden="true" class="page-link icomoon icon-arrow"></span>
+                    </li>
+                    <li aria-current="page" class="page-item active">
+                      <span class="page-link">1</span>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                      <div>...</div>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link">26</a>
+                    </li>
+                    <li class="page-item pagination-next">
+                      <a href="#" rel="next" aria-label="pagination.next" class="page-link icomoon icon-arrow"></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+            </main>
+
+          </div>
+          <!-- end wrapper -->
+        </div>
+      </div>
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

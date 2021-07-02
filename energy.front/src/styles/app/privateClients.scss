@@ -1,0 +1,8 @@
+.private {
+
+	.intro-section__text {
+		@media screen and (min-width: 1400px) {
+			max-width: 435px;
+		}
+	}
+}

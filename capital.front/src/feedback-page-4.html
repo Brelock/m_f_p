@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  @@include('templateHtml/preloader.html')  
+  <!--  -->
+
+  <div class="mainWrapper">
+    
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html')
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="feedbackPage" class="feedbackPage page">
+        <section class="pageSection white-bg">
+          <div class="mcontainer">
+            <div class="content-container ">
+              <h2 class="text sectionBlock article-title bold text-left">Выберите свой вариант</h2>
+
+              <form id="feedback-form" method="POST" action="http://127.0.0.2/uk/departments/evaluations/22" class="standard-form sectionBlock form-val-js">
+
+                  <input type="hidden" name="_token" value="8J4asFhushPucPlJRWh1t0FAVfR7Ki5kUwAm2N3q">
+                  <input type="hidden" name="_method" value="put">
+
+                  <div class="form-row">
+                    <div class="checkbox-item">
+                      <label class="checkbox-label">
+                        <input name="comment[]" type="checkbox" class="form-checkbox form-checkbox--hidden" value="Погана консультацiя" 
+                          data-validate-checkbox="required"
+                          data-error-text="Поле обязательно к заполнению"> 
+                        <span class="checkboxbtn">
+                          <i class="checkbox-item-icon-check"></i>
+                        </span> 
+                        <span>Погана консультацiя</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="checkbox-item">
+                      <label class="checkbox-label">
+                        <input name="comment[]" type="checkbox" class="form-checkbox form-checkbox--hidden" value="Низька оцiнка застави" 
+                          data-validate-checkbox="required"
+                          data-error-text="Поле обязательно к заполнению"> 
+                        <span class="checkboxbtn">
+                          <i class="checkbox-item-icon-check"></i>
+                        </span> 
+                        <span>Низька оцiнка застави</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="checkbox-item">
+                      <label class="checkbox-label checkbox-label--column">
+                        <input name="comment[]" type="checkbox" class="form-checkbox form-checkbox--hidden target-button--js" data-target="form-row--feedback" data-action-type="toggle" 
+                          data-validate-checkbox="required"
+                          data-error-text="Необходимо выбрать хотя бы один из пунктов">
+                        <div class="flex center">
+                          <span class="checkboxbtn">
+                            <i class="checkbox-item-icon-check"></i>
+                          </span> 
+                          <span>Iнше</span>
+                        </div> 
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-row form-row--feedback">
+                    <textarea name="feedback_descr" id="feedback" class="border-decor" type="text" placeholder="Напишiть свiй коментар..." rows="4"></textarea>
+                  </div>
+                  
+                  <div class="form-row">
+                      <input type="trackTel" name="phone" class="border-decor tracking" placeholder="Контактный телефон"  value="+38"
+                        data-validate="required"
+                        data-error-text="Поле обязательно к заполнению">
+
+                        <div class="er-courent-num" style="color: red;"></div>
+                  </div>
+
+                  <div class="submitButtonWrapper">
+                      <button disabled class="disabled title semi-bold standardButton secondary border-decor" type="submit">Оценить</button>
+                  </div>
+              </form>
+
+              <div class="section-element phone phone-evaluation mcol-md-auto">
+                <div class="phone-icon-round-bg">
+                  <i class="icomoon icon-phone"></i>
+                </div>
+                <button class="text dashed">Кнопка связи</button>
+                <div class="phone-evaluation-descr">
+                  Перезвоним через 25 сек.
+                </div>
+              </div>
+            </div>
+          </div>          
+        </section>
+      </div>  
+      <!-- End of page code insertion here -->
+
+      <div class="relative scrollTopContainer">
+        <div id="scrollTopButton" class="icomoon standard-arrow-icon navigateIcon up"></div>
+      </div>
+
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  @@include('templateHtml/preloader.html')  
+  <!--  -->
+
+  <div class="mainWrapper">
+    
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="homePage" class="homePage page">
+
+        <section class="pageSection banner-section">
+
+          <div id="mainSlider" class="standardSlider mainSlider">
+            <div class="slide">
+              <div class="flex wrap">
+                <div class="image-block imgWrapper mcol-xs-12 mcol-md-6">
+                  <img src="img/banner4.jpg" alt="banner">
+                </div>
+
+                <div class="caption-block mcol-xs-12 mcol-md-6" style="background-image: url('img/pattern.svg')">
+                  <div class="content-container">
+                    <h1 class="title caption-title">Деньги всем!</h1>
+                    <div class="description">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    </div>
+                    
+                    <div class="more-button inversed">
+                      <div class="more-button-wrapper">
+                        <div class="more-button-container">
+                          <a href="#" class="title semi-bold">Подробнее</a>
+                          <i class="icomoon standard-arrow-icon inversed"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="flex wrap">
+                <div class="image-block imgWrapper mcol-xs-12 mcol-md-6">
+                  <img src="img/banner2.jpg" alt="banner">
+                </div>
+
+                <div class="caption-block mcol-xs-12 mcol-md-6" style="background-image: url('img/pattern.svg')">
+                  <div class="content-container">
+                    <h1 class="title caption-title">Деньги всем!</h1>
+                    <div class="description">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    </div>
+                    
+                    <div class="more-button inversed">
+                      <div class="more-button-wrapper">
+                        <div class="more-button-container">
+                          <a href="#" class="title semi-bold">Подробнее</a>
+                          <i class="icomoon standard-arrow-icon inversed"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="flex wrap">
+                <div class="image-block imgWrapper mcol-xs-12 mcol-md-6">
+                  <img src="img/banner3.jpg" alt="banner">
+                </div>
+
+                <div class="caption-block mcol-xs-12 mcol-md-6" style="background-image: url('img/pattern.svg')">
+                  <div class="content-container">
+                    <h1 class="title caption-title">Деньги всем!</h1>
+                    <div class="description">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur hic, eligendi..</p>
+                    </div>
+                    
+                    <div class="more-button inversed">
+                      <div class="more-button-wrapper">
+                        <div class="more-button-container">
+                          <a href="#" class="title semi-bold">Подробнее</a>
+                          <i class="icomoon standard-arrow-icon inversed"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="manuals-container">
+            <div class="current-slide">
+              <span class="current">1</span>
+              <span class="all"></span>
+            </div>
+          </div>
+
+          <div class="mcontainer">
+            <div class="icomoon standard-arrow-icon navigateIcon down"></div>
+          </div>
+        </section>
+
+        <section class="pageSection pledgeSection white-bg">
+          <div class="mcontainer">
+            <div class="animated-border-block section-title">
+              <div class="svg-container">
+                <svg class="rect-container">
+                  <rect x="0" y="0" class="animatedBlock"/>
+                  <rect x="0" y="0" stroke-width="4" class="overlappingBlock"/>                
+                </svg>
+                <h2 class="title ">Под залог</h2>
+              </div>
+            </div>
+
+            <div class="sectionBlock mainBlock">
+              <div class="mrow flex wrap">
+                <article class="mcol-xs-12 mcol-sm-6 mcol-md-4">
+                  <div class="item pledge-item main">
+                    <a href="#" class="absolute stretch overlay-link"></a>
+                    <div class="default-icon imgWrapper absolute">
+                      <img src="img/icons/ring.svg" alt="ring">
+                    </div>
+
+                    <div class="color-icon imgWrapper absolute">
+                      <img src="img/icons/ring_2.png" alt="ring">
+                    </div>
+
+                    <div class="gold-container imgWrapper absolute">
+                      <img src="img/money.png" alt="money.png">
+                    </div>
+
+                    <div class="calculate-button-container">
+                      <span href="#" class="title">Расчитать <i class="icomoon standard-arrow-icon inversed"></i></span>
+                    </div>
+
+                    <div class="description-container">
+                      <h4 class="title article-title">Золото</h4>
+                      <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, optio, eum!</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="mcol-xs-12 mcol-sm-6 mcol-md-4">
+                  <div class="item pledge-item main">
+                    <a href="#" class="absolute stretch overlay-link"></a>
+                    <div class="default-icon imgWrapper absolute">
+                      <img src="img/icons/tablet.svg" alt="tablet">
+                    </div>
+
+                    <div class="color-icon imgWrapper absolute">
+                      <img src="img/icons/tablet.png" alt="tablet">
+                    </div>
+
+                    <div class="gold-container imgWrapper absolute">
+                      <img src="img/money.png" alt="money.png">
+                    </div>
+
+                    <div class="calculate-button-container">
+                      <span href="#" class="title">Расчитать <i class="icomoon standard-arrow-icon inversed"></i></span>
+                    </div>
+
+                    <div class="description-container">
+                      <h4 class="title article-title">Техника</h4>
+                      <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, optio, eum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, quidem.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="mcol-xs-12 mcol-sm-6 mcol-md-4">
+                  <div class="item pledge-item main">
+                    <a href="#" class="absolute stretch overlay-link"></a>
+                    <div class="default-icon imgWrapper absolute">
+                      <img src="img/icons/silver.svg" alt="silver">
+                    </div>
+
+                    <div class="color-icon imgWrapper absolute">
+                      <img src="img/icons/silver.png" alt="silver">
+                    </div>
+
+                    <div class="gold-container imgWrapper absolute">
+                      <img src="img/money.png" alt="money.png">
+                    </div>
+
+                    <div class="calculate-button-container">
+                      <span href="#" class="title semi-bold">Расчитать <i class="icomoon standard-arrow-icon inversed"></i></span>
+                    </div>
+
+                    <div class="description-container">
+                      <h4 class="title article-title">Серебро</h4>
+                      <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, optio, eum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, quidem. sdfsdfsdfs sdfsdfsdf sdfs sdfsdfsdfsdfs sdfsfsdf</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="sectionBlock">
+              <h3 class="title sectionBlock-title">Специальные возможности</h3>
+              <div class="mrow flex wrap">
+                <article class="mcol-xs-12 mcol-sm-6 mcol-md-3">
+                  <div class="item pledge-item special more-button overlayed">
+                    <a href="#" class="absolute stretch overlay-link"></a>
+                    <div class="darkOverlay"></div>
+
+                    <div class="more-button-wrapper">
+                      <div class="more-button-container">
+                        <span href="#" class="title semi-bold">Подробнее</span>
+                        <i class="icomoon standard-arrow-icon"></i>
+                      </div>
+                    </div>       
+
+                    <div class="default-icon imgWrapper absolute">
+                      <img src="img/icons/diamond.svg" alt="diamond">
+                    </div>
+
+                    <div class="description-container">
+                      <h4 class="title article-title">Бриллианты</h4>
+                      <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit minus tempora delectus labore fugit magnam.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="mcol-xs-12 mcol-sm-6 mcol-md-3">
+                  <div class="item pledge-item special more-button overlayed">
+                    <a href="#" class="absolute stretch overlay-link"></a>
+                    <div class="darkOverlay"></div>
+
+                    <div class="more-button-wrapper">
+                      <div class="more-button-container">
+                        <span href="#" class="title semi-bold">Подробнее</span>
+                        <i class="icomoon standard-arrow-icon"></i>
+                      </div>
+                    </div>       
+
+                    <div class="default-icon imgWrapper absolute">
+                      <img src="img/icons/diamond.svg" alt="diamond">
+                    </div>
+
+                    <div class="description-container">
+                      <h4 class="title article-title">Бриллианты</h4>
+                      <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit minus tempora delectus labore fugit magnam.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="mcol-xs-12 mcol-sm-6 mcol-md-3">
+                  <div class="item pledge-item special more-button overlayed">
+                    <a href="#" class="absolute stretch overlay-link"></a>
+                    <div class="darkOverlay"></div>
+
+                    <div class="more-button-wrapper">
+                      <div class="more-button-container">
+                        <span href="#" class="title semi-bold">Подробнее</span>
+                        <i class="icomoon standard-arrow-icon"></i>
+                      </div>
+                    </div>       
+
+                    <div class="default-icon imgWrapper absolute">
+                      <img src="img/icons/diamond.svg" alt="diamond">
+                    </div>
+
+                    <div class="description-container">
+                      <h4 class="title article-title">Бриллианты</h4>
+                      <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="mcol-xs-12 mcol-sm-6 mcol-md-3">
+                  <div class="item pledge-item special more-button overlayed">
+                    <a href="#" class="absolute stretch overlay-link"></a>
+                    <div class="darkOverlay"></div>
+
+                    <div class="more-button-wrapper">
+                      <div class="more-button-container">
+                        <span href="#" class="title semi-bold">Подробнее</span>
+                        <i class="icomoon standard-arrow-icon"></i>
+                      </div>
+                    </div>       
+
+                    <div class="default-icon imgWrapper absolute">
+                      <img src="img/icons/diamond.svg" alt="diamond">
+                    </div>
+
+                    <div class="description-container">
+                      <h4 class="title article-title">Бриллианты</h4>
+                      <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit minus tempora delectus labore fugit magnam. Lorem ipsum dolor sit amet.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section class="pageSection servicesSection ">
+          <div class="mcontainer">
+            <div class="animated-border-block section-title">
+              <div class="svg-container">
+                <svg class="rect-container">
+                  <rect x="0" y="0" class="animatedBlock"/>
+                  <rect x="0" y="0" stroke-width="4" class="overlappingBlock"/>                
+                </svg>
+                <h2 class="title ">Вы получаете</h2>
+              </div>
+            </div>
+
+            <div id="services-list" class="flex wrap services-list 1show">
+              <article class="service-item mcol-xs-12 mcol-md-3">
+                <div class="top-icon-container">
+                  <img src="img/icons/trophy_icon.svg" alt="icon">
+                </div>
+
+                <div class="arrow-container">
+                  <i class="icomoon standard-arrow-icon"></i>
+                </div>
+
+                <div class="item-wrapper">
+                  <div class="radius-clip top-clip"></div>
+                  <div class="radius-clip bottom-clip"></div>
+
+                  <div class="item-container">
+                    <h4 class="title article-title">Качество</h4>
+                    <div class="description">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="service-item mcol-xs-12 mcol-md-3">
+                <div class="top-icon-container">
+                  <img src="img/icons/trophy_icon.svg" alt="icon">
+                </div>
+
+                <div class="arrow-container">
+                  <i class="icomoon standard-arrow-icon"></i>
+                </div>
+
+                <div class="item-wrapper">
+                  <div class="radius-clip top-clip"></div>
+                  <div class="radius-clip bottom-clip"></div>
+
+                  <div class="item-container">
+                    <h4 class="title article-title">Качество</h4>
+                    <div class="description">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="service-item mcol-xs-12 mcol-md-3">
+                <div class="top-icon-container">
+                  <img src="img/icons/trophy_icon.svg" alt="icon">
+                </div>
+
+                <div class="arrow-container">
+                  <i class="icomoon standard-arrow-icon"></i>
+                </div>
+
+                <div class="item-wrapper">
+                  <div class="radius-clip top-clip"></div>
+                  <div class="radius-clip bottom-clip"></div>
+
+                  <div class="item-container">
+                    <h4 class="title article-title">Качество</h4>
+                    <div class="description">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="service-item mcol-xs-12 mcol-md-3">
+                <div class="top-icon-container">
+                  <img src="img/icons/trophy_icon.svg" alt="icon">
+                </div>
+
+                <div class="arrow-container">
+                  <i class="icomoon standard-arrow-icon"></i>
+                </div>
+
+                <div class="item-wrapper">
+                  <div class="radius-clip top-clip"></div>
+                  <div class="radius-clip bottom-clip"></div>
+
+                  <div class="item-container">
+                    <h4 class="title article-title">Качество</h4>
+                    <div class="description">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="pageSection actionsSection white-bg">
+          <div class="mcontainer relative">
+            <div class="animated-border-block section-title">
+              <div class="svg-container">
+                <svg class="rect-container">
+                  <rect x="0" y="0" class="animatedBlock"/>
+                  <rect x="0" y="0" stroke-width="4" class="overlappingBlock"/>                
+                </svg>
+                <h2 class="title ">Наши акции</h2>
+              </div>
+            </div>
+
+            <div class="show-all-button-wrapper">
+              <a href="/actionsList.html" class="standardButton secondary border-decor">Все акции</a>
+            </div>
+            
+            <div class="mrow flex wrap">
+              <article class="action-item mcol-xs-12 mcol-md-4">
+                <div class="item-container flex column">
+                  <div class="imgWrapper relative more-button overlayed">
+                    <a href="/actionPage.html" class="absolute stretch overlay-link"></a>
+                    <div class="darkOverlay"></div>
+
+                    <div class="more-button-wrapper">
+                      <div class="more-button-container">
+                        <a href="/actionPage.html" class="title semi-bold">Подробнее</a>
+                        <i class="icomoon standard-arrow-icon"></i>
+                      </div>
+                    </div>
+
+                    <img src="img/action-item1.jpg" alt="action">
+                  </div>       
+
+                  <div class="description-container">
+                    <div class="description">
+                      <p class="row-with-icon date">
+                        <i class="icomoon icon-calendar"></i>
+                        <span class="text semi-bold">c 30 марта по 18 апреля 2018</span>
+                      </p>
+                    </div>
+                    <h4 class="title article-title"><a href="/actionPage.html">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
+                  </div>
+                </div>
+              </article>
+
+              <article class="action-item mcol-xs-12 mcol-md-4">
+                <div class="item-container flex column">
+                  <div class="imgWrapper relative more-button overlayed">
+                    <a href="/actionPage.html" class="absolute stretch overlay-link"></a>
+                    <div class="darkOverlay"></div>
+
+                    <div class="more-button-wrapper">
+                      <div class="more-button-container">
+                        <a href="/actionPage.html" class="title semi-bold">Подробнее</a>
+                        <i class="icomoon standard-arrow-icon"></i>
+                      </div>
+                    </div>
+
+                    <img src="img/action-item1.jpg" alt="action">
+                  </div>       
+
+                  <div class="description-container">
+                    <div class="description">
+                      <p class="row-with-icon date">
+                        <i class="icomoon icon-calendar"></i>
+                        <span class="text semi-bold">c 30 марта по 18 апреля 2018</span>
+                      </p>
+                    </div>
+                    <h4 class="title article-title"><a href="/actionPage.html">Lorem ipsum dolor sit amet</a></h4>
+                  </div>
+                </div>
+              </article>
+
+              <article class="action-item mcol-xs-12 mcol-md-4">
+                <div class="item-container flex column">
+                  <div class="imgWrapper relative more-button overlayed">
+                    <a href="/actionPage.html" class="absolute stretch overlay-link"></a>
+                    <div class="darkOverlay"></div>
+
+                    <div class="more-button-wrapper">
+                      <div class="more-button-container">
+                        <a href="/actionPage.html" class="title semi-bold">Подробнее</a>
+                        <i class="icomoon standard-arrow-icon"></i>
+                      </div>
+                    </div>
+
+                    <img src="img/action-item1.jpg" alt="action">
+                  </div>       
+
+                  <div class="description-container">
+                    <div class="description">
+                      <p class="row-with-icon date">
+                        <i class="icomoon icon-calendar"></i>
+                        <span class="text semi-bold">c 30 марта по 18 апреля 2018</span>
+                      </p>
+                    </div>
+                    <h4 class="title article-title"><a href="/actionPage.html">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="pageSection smallSection">
+          <div class="mcontainer">
+            <div class="content-wrapper">
+              <h2 class="title section-title">Узнать все акции и новости первым</h2>
+
+              <form action="#" class="subscribe-form">
+                <div class="formRow relative">
+                  <input class="border-decor" type="text" placeholder="Ваш email" data-validate="isEmail" data-error-text="введите правильный email" value="t@t.com" data-text-color="white">
+                  <button type="submit" class="standardButton black border-decor submitButton">Подписаться</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="pageSection newsSection white-bg">
+          <div class="mcontainer relative">
+            <div class="animated-border-block section-title">
+              <div class="svg-container">
+                <svg class="rect-container">
+                  <rect x="0" y="0" class="animatedBlock"/>
+                  <rect x="0" y="0" stroke-width="4" class="overlappingBlock"/>                
+                </svg>
+                <h2 class="title ">Последние новости</h2>
+              </div>
+            </div>
+
+            <div class="show-all-button-wrapper">
+              <a href="/newsList.html" class="standardButton secondary border-decor">Все новости</a>
+            </div>
+            
+
+            <div class="mrow flex wrap">
+              <article class="news-item mcol-xs-12 mcol-md-4">
+                <div class="item-container flex column">
+                  <div class="overlayed-date-container">
+                    <span>18 января 2018</span>
+                  </div>
+              
+                  <div class="imgWrapper relative more-button overlayed">
+                    <a href="/newsPage.html" class="absolute stretch overlay-link"></a>
+                    <div class="darkOverlay"></div>
+
+                    <div class="more-button-wrapper">
+                      <div class="more-button-container">
+                        <a href="/newsPage.html" class="title semi-bold">Подробнее</a>
+                        <i class="icomoon standard-arrow-icon"></i>
+                      </div>
+                    </div>
+
+                    <img src="img/action-item1.jpg" alt="action">
+                  </div>       
+
+                  <div class="description-container flex column">
+                    <h4 class="title article-title"><a href="/newsPage.html">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
+                    <div class="description">
+                      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem totam architecto quo eveniet recusandae, molestiae, deserunt neque maiores, eaque suscipit nesciunt eos.</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="news-item mcol-xs-12 mcol-md-4">
+                <div class="item-container flex column">
+                  <div class="overlayed-date-container">
+                    <span>18 января 2018</span>
+                  </div>
+              
+                  <div class="imgWrapper relative more-button overlayed">
+                    <a href="#" class="absolute stretch overlay-link"></a>
+                    <div class="darkOverlay"></div>
+
+                    <div class="more-button-wrapper">
+                      <div class="more-button-container">
+                        <a href="#" class="title semi-bold">Подробнее</a>
+                        <i class="icomoon standard-arrow-icon"></i>
+                      </div>
+                    </div>
+
+                    <img src="img/action-item1.jpg" alt="action">
+                  </div>       
+
+                  <div class="description-container flex column">
+                    <h4 class="title article-title"><a href="#">Lorem ipsum dolor.</a></h4>
+                    <div class="description">
+                      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt hic qui minus nostrum quos reprehenderit quibusdam pariatur voluptas, esse in vero eaque! sdfswdfsdfsdfsf assd werwerwer</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="news-item mcol-xs-12 mcol-md-4">
+                <div class="item-container flex column">
+                  <div class="overlayed-date-container">
+                    <span>18 января 2018</span>
+                  </div>
+              
+                  <div class="imgWrapper relative more-button overlayed">
+                    <a href="#" class="absolute stretch overlay-link"></a>
+                    <div class="darkOverlay"></div>
+
+                    <div class="more-button-wrapper">
+                      <div class="more-button-container">
+                        <a href="#" class="title semi-bold">Подробнее</a>
+                        <i class="icomoon standard-arrow-icon"></i>
+                      </div>
+                    </div>
+
+                    <img src="img/action-item1.jpg" alt="action">
+                  </div>       
+
+                  <div class="description-container flex column">
+                    <h4 class="title article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, placeat, veniam!</a></h4>
+                    <div class="description">
+                      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores voluptates atque assumenda illum, adipisci quidem architecto consequatur nisi, eveniet vel voluptatum iste.</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+
+          </div>
+        </section>
+
+        <section id="countersSection" class="pageSection countersSection">
+
+          <!-- <div class="countersSectionOverlay"></div> -->
+          <div class="mcontainer">
+            <div class="animated-border-block section-title">
+              <div class="svg-container">
+                <svg class="rect-container">
+                  <rect x="0" y="0" class="animatedBlock"/>
+                  <rect x="0" y="0" stroke-width="4" class="overlappingBlock"/>                
+                </svg>
+                <h2 class="title ">Достижения</h2>
+              </div>
+            </div>
+
+            <ul class="countersList">
+              <li class="mcol-xs-12">
+                <div class="descriptionBlock">
+                  <div class="title">лет на рынке</div>
+                  <div class="counterContainer" data-count="13">0</div>
+                </div>
+              </li>
+              <li class="mcol-xs-12">
+                <div class="descriptionBlock">
+                  <div class="title">отделений по Украине</div>
+                  <div class="counterContainer" data-count="406">0</div>
+                </div>
+              </li>
+              <li class="mcol-xs-12">
+                <div class="descriptionBlock">
+                  <div class="title">городов</div>
+                  <div class="counterContainer" data-count="100">0</div>
+                </div>
+              </li>
+              <li class="mcol-xs-12">
+                <div class="descriptionBlock">
+                  <div class="title">довольных клиентов</div>
+                  <div class="counterContainer" data-count="1809523">0</div>
+                </div>
+              </li>
+              <li class="mcol-xs-12">
+                <div class="descriptionBlock">
+                  <div class="title">выданных кредитов</div>
+                  <div class="counterContainer" data-count="2943587">0</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <div class="relative scrollTopContainer">
+        <div id="scrollTopButton" class="icomoon standard-arrow-icon navigateIcon up"></div>
+      </div>
+
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

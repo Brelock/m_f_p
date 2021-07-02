@@ -1,0 +1,109 @@
+.customCheckboxContainer {
+	position: relative;
+
+	/*input[type="checkbox"],
+	input[type="radio"] {
+		position: absolute;
+		visibility: hidden;
+		right: 200%;
+	}*/
+
+	/*input[type="checkbox"] + label,
+	input[type="radio"] + label {
+		display: inline-table;
+		cursor: pointer;
+		position: relative;
+
+		& > span {
+			display: table-cell;
+			padding-left: 12px;
+			vertical-align: middle;
+		}
+	}*/
+	.el-radio__inner,
+	.el-checkbox__inner {
+		height: 23px;
+		width: 23px;
+		background: transparent; 
+		border: 1px solid #cbcbcb;
+		border-radius: 4px;
+		transition: all 0.15s ease;
+
+		&:after {
+			transition: border 0.15s ease;
+			width: 6px;
+			height: 12px;
+			top: 2px;
+			left: 7px;
+			border: 2px solid #fff;
+			border-top-width: 0 !important;
+			border-left-width: 0 !important;
+			border-radius: unset !important;
+			transform: rotate(45deg) !important;
+		}
+	}
+
+	.el-radio__input.is-checked,
+	.el-checkbox__input.is-checked {
+		.el-radio__inner,
+		.el-checkbox__inner {
+			border-color: #cbcbcb;
+			background-color: #fff;
+
+			&:after {
+				border-color: $primaryColor;
+			}
+		}
+	}
+
+
+	&.inverted {
+
+		.el-radio__inner,
+		.el-checkbox__inner {
+			&:after {
+				border-color: #fff !important;
+			}
+		}
+
+		.el-radio__input.is-checked,
+		.el-checkbox__input.is-checked {
+			.el-radio__inner,
+			.el-checkbox__inner {
+				border-color: $primaryColor;
+				background-color: $primaryColor;
+			}
+		}
+	}
+}
+
+.customCheckboxContainer {
+
+}
+
+// ----Radio------
+/*.customRadioContainer {
+	input[type="radio"] + label:before  {
+		border-radius: 100%;
+		display: inline-block;
+	}
+	
+	input[type="radio"] + label:after {
+		width: 13px;
+		height: 13px;
+		background: $primaryColor;
+		top: 6px;
+		left: 6px;
+		border-radius: 100%;
+		transition: all 0.2s ease;
+	}
+	
+	input[type="radio"]:not(:checked) + label:after {
+		opacity: 0;
+		transform: scale(0);
+	}
+	input[type="radio"]:checked + label:after {
+		opacity: 1;
+		transform: scale(1);
+	} 
+}*/

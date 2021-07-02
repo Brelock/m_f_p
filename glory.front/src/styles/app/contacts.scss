@@ -1,0 +1,15 @@
+.contactsPage {
+	text-align: center;
+
+	.form-contacts {
+		max-width: 295px;
+		
+		@media screen and (min-width: $changeWidth) {
+			max-width: 440px;
+		}
+
+		.button {
+			margin-left: auto;
+		}
+	}
+}

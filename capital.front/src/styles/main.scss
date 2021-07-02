@@ -1,0 +1,40 @@
+@import "optional/customReset";
+@import "optional/bottomFooter"; //set page height to 100% and moves mainFooter to bottom.
+
+/* ----Variables--- */
+@import "variables";
+
+@import "fonts";
+
+// -----Frames--------
+@import "frames/frames_main";
+
+// ----Common-----
+@import "app/common/common";
+@import "app/common/common-blocks";
+@import "app/common/common-content";
+@import "app/common/aboutUsCategory";
+@import "app/common/calculator-category";
+@import "app/common/dropzone/basic";
+@import "app/common/dropzone/dropzone";
+
+
+//------Partials-----
+@import "app/partials/header";
+@import "app/partials/footer";
+
+//-----App-----
+@import "app/homePage";
+@import "app/newsPage";
+@import "app/actionPage";
+@import "app/faqPage";
+@import "app/achievements";
+@import "app/tariffsPage";
+@import "app/feedbackPage";
+
+@import "app/departments";
+@import "app/department";
+@import "app/cabinetLoginPage";
+@import "app/cabinet";
+@import "app/promoPage";
+

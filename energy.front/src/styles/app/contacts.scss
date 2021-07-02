@@ -1,0 +1,103 @@
+.contactsPage {
+	.sections__content .icomoon {
+		font-size: 100px;
+
+		@media screen and (min-width: $changeWidth) {
+			font-size: 200px;
+		}
+	}
+
+	.sections__item:last-child {
+		// .sections__content {
+		// 	@media screen and (min-width: $changeWidth) {
+		// 		bottom: 19%;
+		// 	}
+		// }
+
+		.sections__content .icomoon {
+			font-size: 70px;
+	
+			@media screen and (min-width: $changeWidth) {
+				font-size: 140px;
+			}
+		}
+	}
+}
+
+.contacts-info-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-height: 375px;
+	
+	text-align: left;
+	
+	@media screen and (min-width: $changeWidth) {
+		max-width: 50%;
+		height: calc(100vh - 112px - 109px);
+		max-height: 455px;
+	}
+}
+
+.contacts-info-item {
+	display: flex;
+	align-items: center;
+
+	.icomoon {
+		font-size: 47px;
+		
+		@media screen and (min-width: $changeWidth) {
+			font-size: 87px;
+		}
+	}
+
+	.icon-location {
+		font-size: 40px;
+		
+		@media screen and (min-width: $changeWidth) {
+			font-size: 80px;
+		}
+	}
+
+	.icon-mail {
+		font-size: 24px;
+		
+		@media screen and (min-width: $changeWidth) {
+			font-size: 44px;
+		}
+	}
+
+	.icomoon-wrap + .contacts-info__text {
+		margin-left: 20px;
+		
+		@media screen and (min-width: $changeWidth) {
+			margin-left: 35px;
+		}
+	}
+
+	.icomoon-wrap {
+		max-width: 40px;
+		width: 100%;
+		
+		text-align: center;
+		
+		@media screen and (min-width: $changeWidth) {
+			max-width: 60px;
+		}
+	}
+}
+
+.contacts-info__text {
+	.text-first {
+		line-height: 30px;
+	}
+}
+
+.contacts-info__text-tel a {
+	max-width: 170px;
+	display: inline-block;
+
+	@media screen and (min-width: 768px) {
+		max-width: 100%;
+	}
+}

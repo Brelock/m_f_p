@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="173px" height="131px" viewBox="0 0 173 131" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>tablet</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="kapital_main" transform="translate(-963.000000, -1955.000000)" stroke="#E60000">
+            <g id="block_3" transform="translate(0.000000, 1634.000000)">
+                <g id="spec_3" transform="translate(749.000000, 288.000000)">
+                    <g id="tablet" transform="translate(215.000000, 33.000000)">
+                        <path d="M42.5071301,6.8198609 L161.618665,0.841106062 C166.582978,0.591924405 170.809351,4.41429351 171.058532,9.3786064 C171.112803,10.4598193 170.97156,11.5419542 170.641588,12.5730145 L135.201749,123.311682 C133.797739,127.698787 129.307849,130.317668 124.797998,129.380026 L7.66407934,105.026728 C2.79758467,104.014935 -0.327269036,99.2496422 0.684523246,94.3831476 C0.800253644,93.8265102 0.96846859,93.2820914 1.18691265,92.7571906 L34.6491347,12.3505755 C35.9827836,9.14594087 39.040428,6.9938706 42.5071301,6.8198609 Z" id="Rectangle-13"></path>
+                        <polygon id="Rectangle-13" points="40.2882602 16.5163823 154.295799 12.6486591 122.877611 109.76053 9.57359675 91.2473089"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

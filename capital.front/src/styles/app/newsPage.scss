@@ -1,0 +1,34 @@
+.newsPage {
+
+	.description img {
+		width: auto;
+	}
+
+	.icon-youtube {
+		&:before {
+			color: #E60000;
+		}
+	}
+
+
+
+	@media (min-width: 767px) {
+		[class*="sectionBlockColumn_"] {
+			& + [class*="sectionBlockColumn_"] {padding-left: 0;}
+		}
+
+		[class*="sectionBlockColumn_"].image-block {
+			order: 1;
+			padding-left: 40px;
+		}
+	}
+}
+
+.newsListPage {
+	.animated-border-block {
+		.overlappingBlock {
+			width: calc(100% - 65px);
+		}
+	}
+
+}

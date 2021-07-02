@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="productsPage" class="productsPage page">
+      
+        <div class="product-top-section">
+            <div class="mcontainer">
+                <div class="product-banner">
+                    <div class="banner__title">Basic Algorithm Scripting</div>
+                    <div class="banner__subtitle">The first thing to do is sort the array from lower to bigger, 
+                        just to make the code easier. This is where sort comes in, 
+                        it needs a callback function so you have to create it. 
+                        Once the array is sorted, then just check for the first 
+                        number that is bigger and return the index. If there is no index for that 
+                        number then you will have to deal with that case too.</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-filter">
+            <div class="mcontainer">
+                <form action="#">
+                    <div class="products-filters__container">
+                      <div class="products-filter-wrap flex">
+
+                          <div class="acc-item">
+                              <span class="acc-button">
+                                  Пол
+                              </span>
+                              <div class="acc-contant">
+                                  <div class="prod-wrap">
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="mans" value="мужской">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div>мужской</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="woman" value="женский">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div>женский</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <div class="acc-item size">
+                              <span class="acc-button">
+                                  Размер
+                              </span>
+                              <div class="acc-contant">
+                                  <div class="prod-wrap">
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="size-s" value="s-маленький">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div>S-Маленький</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="size-m" value="m-средний">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div>M-Средний</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="size-l" value="l-большой">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div>L-Большой</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <div class="acc-item form-glasse form-glesses-filter">
+                              <span class="acc-button">
+                                  Форма
+                              </span>
+                              <div class="acc-contant">
+                                  <div class="prod-wrap">
+      
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="circle" value="circle">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div><img src="./img/Rectangle.svg" alt=""></div>
+                                                      <div>Круглые</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+      
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="oval" value="oval">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div><img src="./img/Rectangle.svg" alt=""></div>
+                                                      <div>Овальные</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+      
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="Browline" value="Browline">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                      <div class="contant-label">
+                                                          <div><img src="./img/Rectangle.svg" alt=""></div>
+                                                          <div>Browline</div>
+                                                      </div>
+                                              </label>
+                                          </div>
+                                      </div>
+      
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="curly" value="curly">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div><img src="./img/Rectangle.svg" alt=""></div>
+                                                      <div>Фигурные</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+      
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="Wayfarer " value="Wayfarer ">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div><img src="./img/Rectangle.svg" alt=""></div>
+                                                      <div>Wayfarer</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+      
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="square" value="square">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div><img src="./img/Rectangle.svg" alt=""></div> 
+                                                      <div>Квадратные</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+      
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="cat" value="cat">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div><img src="./img/Rectangle.svg" alt=""></div>
+                                                      <div>Cat eye</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+      
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="aviator" value="aviator">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                    <div><img src="./img/Rectangle.svg" alt=""></div>
+                                                      <div>Авиатор</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+      
+      
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <div class="acc-item frame">
+                              <span class="acc-button">
+                                  Оправа
+                              </span>
+                              <div class="acc-contant">
+                                  <div class="prod-wrap">
+      
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="rim" value="rim">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div><img src="./img/frame.svg" alt=""></div>
+                                                      <div>Ободковые</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+      
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="loor-rim" value="loor-rim">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div><img src="./img/frame.svg" alt=""></div> 
+                                                        <div>Полуободковые</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+      
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="no-rim" value="no-rim">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div><img src="./img/frame.svg" alt=""></div>
+                                                      <div>Безободковые</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+      
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <div class="acc-item material">
+                              <span class="acc-button">
+                                  Материал
+                              </span>
+                              <div class="acc-contant">
+                                  <div class="prod-wrap">
+      
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="metall" value="metall">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div>Металл</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+      
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="plast" value="plast">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div>Пластик</div>
+                                                </div>
+                                              </label>
+                                          </div>
+                                      </div>
+      
+                                      <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="wood" value="wood">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">
+                                                      <div>Дерево</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                      </div>
+      
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <div class="acc-item colors active">
+                              <span class="acc-button">
+                                  Цвет
+                              </span>
+                              <div class="acc-contant">
+                                  <div class="prod-wrap">
+      
+                                    <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="mans" value="мужской">
+                                                  <div class="form-checkbox-subtitle">
+                                                      <img src="./img/colors-glesse.svg" alt="">
+                                                  </div>  
+                                                  <div class="contant-label">
+                                                        <div>Цветной</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                    </div>
+      
+                                    <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="woman" value="женский">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">       
+                                                        <div>Серый</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                    </div>
+
+                                    <div class="form-row-secondary">
+                                        <div class="checkbox-item">
+                                            <label class="checkbox-label">
+                                                <input class="form-checkbox" type="checkbox" name="woman" value="женский">
+                                                <div class="form-checkbox-subtitle"></div>
+                                                <div class="contant-label">  
+                                                     <div>Красный</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+      
+                                    <div class="form-row-secondary">
+                                        <div class="checkbox-item">
+                                            <label class="checkbox-label">
+                                                <input class="form-checkbox" type="checkbox" name="woman" value="женский">
+                                                <div class="form-checkbox-subtitle"></div>
+                                                <div class="contant-label"> 
+                                                     <div>Зеленый</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row-secondary">
+                                        <div class="checkbox-item">
+                                            <label class="checkbox-label">
+                                                <input class="form-checkbox" type="checkbox" name="woman" value="женский">
+                                                <div class="form-checkbox-subtitle"></div>
+                                                <div class="contant-label">
+                                                    <div>Серебряный</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row-secondary">
+                                        <div class="checkbox-item">
+                                            <label class="checkbox-label">
+                                                <input class="form-checkbox" type="checkbox" name="woman" value="женский">
+                                                <div class="form-checkbox-subtitle"></div>
+                                                <div class="contant-label">  
+                                                    <div>Цветной</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row-secondary">
+                                        <div class="checkbox-item">
+                                            <label class="checkbox-label">
+                                                <input class="form-checkbox" type="checkbox" name="woman" value="женский">
+                                                <div class="form-checkbox-subtitle"></div>
+                                                <div class="contant-label">       
+                                                     <div>Прозрачный</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row-secondary">
+                                        <div class="checkbox-item">
+                                            <label class="checkbox-label">
+                                                <input class="form-checkbox" type="checkbox" name="woman" value="женский">
+                                                <div class="form-checkbox-subtitle"></div>
+                                                <div class="contant-label">    
+                                                     <div>Коричневый</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row-secondary">
+                                          <div class="checkbox-item">
+                                              <label class="checkbox-label">
+                                                  <input class="form-checkbox" type="checkbox" name="woman" value="женский">
+                                                  <div class="form-checkbox-subtitle"></div>
+                                                  <div class="contant-label">              
+                                                        <div>Синий</div>
+                                                  </div>
+                                              </label>
+                                          </div>
+                                    </div>
+
+                                    <div class="form-row-secondary">
+                                        <div class="checkbox-item">
+                                            <label class="checkbox-label">
+                                                <input class="form-checkbox" type="checkbox" name="woman" value="женский">
+                                                <div class="form-checkbox-subtitle"></div>
+                                                <div class="contant-label">                   
+                                                     <div>Бронзовый</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row-secondary">
+                                        <div class="checkbox-item">
+                                            <label class="checkbox-label">
+                                                <input class="form-checkbox" type="checkbox" name="woman" value="женский">
+                                                <div class="form-checkbox-subtitle"></div>
+                                                <div class="contant-label">
+                                                     <div>Вполоску</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div>
+
+                      <button class="clear-product-filter">очистить фильтр</button>
+
+                    
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="product-block">
+
+            <div class="mcontainer">
+
+                <div class="product-block__top-contant">
+                    <div class="breadcrumbs">
+                        <ul class="flex">
+                            <li class="bread-item__link"><a href="./index.html">Главная страница</a></li>
+                            <li class="bread-item__active">Солнцезащитные очки</li>
+                        </ul>
+                    </div>
+
+                    <div class="sort-select">
+                        <div class="sort-select__title">Сортировка по:</div>
+                        <div class="sort-bar">
+                            <select name="" id="">
+                                <option value="1">Популярные</option>
+                                <option value="2">Цена</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-block__items-wrap">
+
+                    <div class="offer-glasses_item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                        <div class="offer-glasses_item-img">
+                          <a href="./productItem.html"><img src="./img/home-glasses-red.png" alt=""></a>
+                        </div>
+                        <div class="offer-glasses_item-check-button flex">
+
+                            <a href="./productItem.html"><div class="btn-link label-one-1"></div></a>
+                            <a href="./productItem.html"><div class="btn-link label-one-2"></div></a>
+                            <a href="./productItem.html"><div class="btn-link label-one-3"></div></a>
+                            <a href="./productItem.html"><div class="btn-link label-one-4"></div></a>
+                            <a href="./productItem.html"><div class="btn-link label-one-5"></div></a>
+
+                        </div>
+                        <div class="offer-glasses_item-model">St Michel ₴32</div>
+                        <div class="offer-glasses_item-btn">
+                            <a href="./productItem.html" class="button">Купить</a>
+                        </div>
+                    </div>
+
+                    <div class="offer-glasses_item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                        <div class="offer-glasses_item-img">
+                          <a href="#"><img src="./img/home-glasses-red.png" alt=""></a>
+                        </div>
+                        <div class="offer-glasses_item-check-button flex">
+
+                            <a href="#"><div class="btn-link label-one-1"></div></a>
+                            <a href="#"><div class="btn-link label-one-2"></div></a>
+                            <a href="#"><div class="btn-link label-one-3"></div></a>
+                            <a href="#"><div class="btn-link label-one-4"></div></a>
+                            <a href="#"><div class="btn-link label-one-5"></div></a>
+
+                        </div>
+                        <div class="offer-glasses_item-model">St Michel ₴32</div>
+                        <div class="offer-glasses_item-btn">
+                            <a href="#" class="button">Купить</a>
+                        </div>
+                    </div>
+
+                    <div class="offer-glasses_item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                        <div class="offer-glasses_item-img">
+                          <a href="#"><img src="./img/home-glasses-red.png" alt=""></a>
+                        </div>
+                        <div class="offer-glasses_item-check-button flex">
+
+                            <a href="#"><div class="btn-link label-one-1"></div></a>
+                            <a href="#"><div class="btn-link label-one-2"></div></a>
+                            <a href="#"><div class="btn-link label-one-3"></div></a>
+                            <a href="#"><div class="btn-link label-one-4"></div></a>
+                            <a href="#"><div class="btn-link label-one-5"></div></a>
+
+                        </div>
+                        <div class="offer-glasses_item-model">St Michel ₴32</div>
+                        <div class="offer-glasses_item-btn">
+                            <a href="#" class="button">Купить</a>
+                        </div>
+                    </div>
+
+                    <div class="offer-glasses_item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                        <div class="offer-glasses_item-img">
+                          <a href="#"><img src="./img/home-glasses-red.png" alt=""></a>
+                        </div>
+                        <div class="offer-glasses_item-check-button flex">
+
+                            <a href="#"><div class="btn-link label-one-1"></div></a>
+                            <a href="#"><div class="btn-link label-one-2"></div></a>
+                            <a href="#"><div class="btn-link label-one-3"></div></a>
+                            <a href="#"><div class="btn-link label-one-4"></div></a>
+                            <a href="#"><div class="btn-link label-one-5"></div></a>
+
+                        </div>
+                        <div class="offer-glasses_item-model">St Michel ₴32</div>
+                        <div class="offer-glasses_item-btn">
+                            <a href="#" class="button">Купить</a>
+                        </div>
+                    </div>
+
+                    <div class="offer-glasses_item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                        <div class="offer-glasses_item-img">
+                          <a href="#"><img src="./img/home-glasses-red.png" alt=""></a>
+                        </div>
+                        <div class="offer-glasses_item-check-button flex">
+
+                            <a href="#"><div class="btn-link label-one-1"></div></a>
+                            <a href="#"><div class="btn-link label-one-2"></div></a>
+                            <a href="#"><div class="btn-link label-one-3"></div></a>
+                            <a href="#"><div class="btn-link label-one-4"></div></a>
+                            <a href="#"><div class="btn-link label-one-5"></div></a>
+
+                        </div>
+                        <div class="offer-glasses_item-model">St Michel ₴32</div>
+                        <div class="offer-glasses_item-btn">
+                            <a href="#" class="button">Купить</a>
+                        </div>
+                    </div>
+
+                    <div class="offer-glasses_item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                        <div class="offer-glasses_item-img">
+                          <a href="#"><img src="./img/home-glasses-red.png" alt=""></a>
+                        </div>
+                        <div class="offer-glasses_item-check-button flex">
+
+                            <a href="#"><div class="btn-link label-one-1"></div></a>
+                            <a href="#"><div class="btn-link label-one-2"></div></a>
+                            <a href="#"><div class="btn-link label-one-3"></div></a>
+                            <a href="#"><div class="btn-link label-one-4"></div></a>
+                            <a href="#"><div class="btn-link label-one-5"></div></a>
+
+                        </div>
+                        <div class="offer-glasses_item-model">St Michel ₴32</div>
+                        <div class="offer-glasses_item-btn">
+                            <a href="#" class="button">Купить</a>
+                        </div>
+                    </div>
+
+                    <div class="offer-glasses_item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                        <div class="offer-glasses_item-img">
+                          <a href="#"><img src="./img/home-glasses-red.png" alt=""></a>
+                        </div>
+                        <div class="offer-glasses_item-check-button flex">
+
+                            <a href="#"><div class="btn-link label-one-1"></div></a>
+                            <a href="#"><div class="btn-link label-one-2"></div></a>
+                            <a href="#"><div class="btn-link label-one-3"></div></a>
+                            <a href="#"><div class="btn-link label-one-4"></div></a>
+                            <a href="#"><div class="btn-link label-one-5"></div></a>
+
+                        </div>
+                        <div class="offer-glasses_item-model">St Michel ₴32</div>
+                        <div class="offer-glasses_item-btn">
+                            <a href="#" class="button">Купить</a>
+                        </div>
+                    </div>
+
+                    <div class="offer-glasses_item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                        <div class="offer-glasses_item-img">
+                          <a href="#"><img src="./img/home-glasses-red.png" alt=""></a>
+                        </div>
+                        <div class="offer-glasses_item-check-button flex">
+
+                            <a href="#"><div class="btn-link label-one-1"></div></a>
+                            <a href="#"><div class="btn-link label-one-2"></div></a>
+                            <a href="#"><div class="btn-link label-one-3"></div></a>
+                            <a href="#"><div class="btn-link label-one-4"></div></a>
+                            <a href="#"><div class="btn-link label-one-5"></div></a>
+
+                        </div>
+                        <div class="offer-glasses_item-model">St Michel ₴32</div>
+                        <div class="offer-glasses_item-btn">
+                            <a href="#" class="button">Купить</a>
+                        </div>
+                    </div>
+
+                    <div class="offer-glasses_item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                        <div class="offer-glasses_item-img">
+                          <a href="#"><img src="./img/home-glasses-red.png" alt=""></a>
+                        </div>
+                        <div class="offer-glasses_item-check-button flex">
+
+                            <a href="#"><div class="btn-link label-one-1"></div></a>
+                            <a href="#"><div class="btn-link label-one-2"></div></a>
+                            <a href="#"><div class="btn-link label-one-3"></div></a>
+                            <a href="#"><div class="btn-link label-one-4"></div></a>
+                            <a href="#"><div class="btn-link label-one-5"></div></a>
+
+                        </div>
+                        <div class="offer-glasses_item-model">St Michel ₴32</div>
+                        <div class="offer-glasses_item-btn">
+                            <a href="#" class="button">Купить</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+      
+
+
+
+
+           <div class="modal-custom">
+             <div class="modal-custom__overlay"></div>
+           </div>
+
+        </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

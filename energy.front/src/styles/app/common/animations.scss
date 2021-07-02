@@ -1,0 +1,58 @@
+@keyframes menu-in {
+  0% {
+      transform: translate(-100%)
+  }
+
+  to {
+      transform: translate(0)
+  }
+}
+
+@keyframes menu-out {
+  0% {
+      transform: translate(0)
+  }
+
+  to {
+      transform: translate(-100%)
+  }
+}
+
+
+// @keyframes mySlideInLeft {
+//   from {
+//     transform: translate(-10%, 0);
+//     visibility: visible;
+//   }
+
+//   to {
+//     transform: translate(0, 0);
+//   }
+// }
+
+// .mySlideInLeft {
+//   animation-name: mySlideInLeft;
+// }
+
+// .animated {
+//   animation-duration: .5s;
+//   animation-fill-mode: both;
+// }
+
+// @keyframes sections-image-in {
+//   0% {
+//     transform: translateX(-100%);
+//   }
+
+//   70% {
+//     transform: translateX(200%);
+//   }
+  
+//   71% {
+//     transform: translateX(-100%);
+//   }
+
+//   100% {
+//     transform: translateX(0);
+//   }
+// }

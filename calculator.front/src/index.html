@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>title</title>
+    <!--  -->
+    @@include('templateHtml/head.html')
+    <!--  -->
+  </head>
+
+  <body>
+    <div class="mainWrapper">
+      <div class="contentWrapper">
+        <!--  -->
+        @@include('templateHtml/header.html', { "home": "active" })
+        <!--  -->
+        <div id="calcPage" class="ess-calcPage page">
+          <div class="calc-page__wrap-container">
+            <div class="bgi-banner">
+              <img src="./img/calc.jpg" alt="">
+            </div>
+            <div class="header-print">
+              <div class="header-print-logo"> <img src="./img/ESS-logo-new.png" alt=""></div>
+              <div class="header-print-adress">
+                <p> <span>Адрес:</span></p>
+                <p>ул. Волгоградская, 4 (р-н 95 квартала.)</p>       
+              </div>
+              <div class="header-print-phone flex">
+                <img src="./img/phone-call.svg" alt="">
+                <a href="#">068 153 73 03</a>
+              </div>
+              
+            </div>
+            <div class="calc-form-block mcontainer">
+              <div class="form-title">Калькулятор солнечной электростанции
+                <span>Калькулятор</span>
+              </div>
+              <div class="form-suptitle">Выберите конфигурацию СЭС:</div>
+              
+              <form action="#" class="miscount-form">
+
+                <div class="select-item">
+                  <span>Мощьность СЭС</span>
+                  <select name="#" id="1">
+                    <option value="1">20kBt</option>
+                    <option value="2">30kBt</option>
+                    <option value="3">40kBt</option>
+                  </select>
+                </div>
+                <div class="select-item">
+                  <span>Инвертор</span>
+                  <select name="#" id="2">
+                    <option value="1">ABB TRIO-20.0-TL-OUTD-S2X-400 (20 кВт, 3 фазы / 2 трекера) - 20000 Вт - $5432</option>
+                    <option value="2">ABB TRIO-20.0-TL-OUTD-S2X-400 (20 кВт, 3 фазы / 2 трекера) - 20000 Вт - $5432</option>
+                    <option value="3">ABB TRIO-20.0-TL-OUTD-S2X-400 (20 кВт, 3 фазы / 2 трекера) - 20000 Вт - $5432</option>
+                  </select>
+                </div>
+                <div class="select-item">
+                  <span>Панели</span>
+                  <select name="#" id="3">
+                    <option value="1">LONGISOLAR LR4-72HPH-435M, Hi-Mo Low LID Mono Perc - 435 Вт - $165.3</option>
+                    <option value="2">LONGISOLAR LR4-72HPH-435M, Hi-Mo Low LID Mono Perc - 435 Вт - $165.3</option>
+                    <option value="3">LONGISOLAR LR4-72HPH-435M, Hi-Mo Low LID Mono Perc - 435 Вт - $165.3</option>
+                  </select>
+                </div>
+                <div class="select-item">
+                  <span>Конструкция</span>
+                  <select name="#" id="4">
+                    <option value="1">Наземная (черный металл + оцинкованный профиль)</option>
+                    <option value="2">Наземная (черный металл + оцинкованный профиль)</option>
+                    <option value="3">Наземная (черный металл + оцинкованный профиль)</option>
+                  </select>
+                </div>
+               
+              </form>
+              <div class="price-list-table">
+                <div class="price-list-table__title">Цена решения "под ключ" - <span>$17 093</span></div>
+                <div class="wrap-form-btn flex">
+                  <button class="fotm-btn-booking">Заказать</button>
+                  <button class="form-btn-print" id="submit-print"></button>
+                </div>
+                <div class="minor-abstracts">
+                  <div class="bref-item"> Срок окупаемости (лет) <span>5.13</span></div>
+                  <div class="bref-item"> Занимаемая панелями площадь - <span> 103 кв. м</span></div>
+                  <div class="bref-item"> Мощность фотополя - <span>20 кВт</span></div>
+                </div>
+                <div class="table-block">
+                  
+                    <div class="line-title tr">
+                      <div class="name-articl">Наименование</div>
+                      <div class="td">Мощьность, кВт</div>
+                      <div class="td">Количество</div>
+                      <div class="td">Цена за шт., $</div>
+                      <div class="td">Общая цена, $</div>
+                    </div>
+                    <div class="tr"> 
+                      <div class="name-articl"> <p>Инвертор</p> <span>ABB TRIO-20.0-TL-OUTD-S2X-400 (20 кВт, 3 фазы /2 трекера)</span></div>
+                      <div class="td"> 20</div>
+                      <div class="td">1</div>
+                      <div class="td">5432</div>
+                      <div class="td">5432</div>
+                    </div>
+                    <div class="tr">
+                      <div class="name-articl"> <p>Солнечные панели</p><span>LONGISOLAR LR4-72HPH-435M, Hi-Mo Low LID Mono Perc</span></div>
+                      <div class="td"> 0.435</div>
+                      <div class="td quantity">
+                        <button type="button" name="button" class="btn-minus"></button>
+                        <input type="text" name="numbers" value="1">
+                        <button type="button" name="button" class="btn-plus"></button>
+                      </div>
+                      <div class="td">165.3</div>
+                      <div class="td">7605</div>
+                    </div>
+                    <div class="tr">
+                      <div class="name-articl"> <p>Защита</p><span>Щиты защиты AC/DC</span></div>
+                      <div class="td">20</div>
+                      <div class="td">1</div>
+                      <div class="td">400</div>
+                      <div class="td">400</div>
+                    </div>
+                    <div class="tr">
+                      <div class="name-articl"> <p>Электрический счетчик</p> <span>Счетчик для Зеленого тарифа</span></div>
+                      <div class="td">20</div>
+                      <div class="td">1</div>
+                      <div class="td">400</div>
+                      <div class="td">400</div>
+                    </div>
+                    <div class="tr">
+                      <div class="name-articl"> <p>Конструкция</p><span>Наземная (черный металл + оцинкованный профиль)</span></div>
+                      <div class="td">-</div>
+                      <div class="td">46</div>
+                      <div class="td">36</div>
+                      <div class="td">1650</div>
+                    </div>
+                    <div class="tr">
+                      <div class="name-articl"> <p>Монтаж</p> <span></span></div>
+                      <div class="td">-</div>
+                      <div class="td">-</div>
+                      <div class="td">-</div>
+                      <div class="td">1650</div>
+                    </div>
+                  
+                </div>
+                <div class="delivery-condition">*В комплект поставки солнечной электростанции 
+                не входит доставка оборудования на объект и дополнительные материалы: 
+                солнечный провод и провод переменного тока (считаются по факту расхода).</div>
+
+              </div>
+              <button class="clear-btn">Очистить</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--  -->
+     
+       <!-- @@include('templateHtml/modal.html')  -->
+      <!--  -->
+      
+      <!--  -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/scripts.html')
+  </body>
+</html>

@@ -1,0 +1,170 @@
+.promoPage {
+
+	.headerBlock {
+		margin-bottom: 35px;
+	}
+
+	.aside-gallery {
+		margin-top: 20px;
+	}
+
+	.aside-container {
+		margin: -3px;
+
+		.imgWrapper {
+			padding: 3px;
+			box-sizing: border-box;
+		}
+	}
+
+	/* .slider-container {
+		.manuals-container {
+			bottom: 0;
+		}
+	
+		.slick-arrow {
+			display: none!important;
+		}
+	}
+	
+	.nav-slider-container {
+		// display: flex;
+		margin-top: 15px;
+		margin-left: -5px;
+		margin-right: -5px;
+		.slick-slide {
+			padding: 5px;
+		}
+	
+		.slick-current.slick-active {
+			position: absolute;
+		}
+	} */
+
+	.description-section {
+		.description-block {
+			& + .description-block {
+				margin-top: 20px;
+			}
+		}
+
+		.banner-block {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		.description {
+			p + p {margin-top: 15px;}
+		}
+	}
+
+	@media (min-width: 991px) {
+		/* .slider-container {
+			box-sizing: border-box;
+			// margin-bottom: 15px;
+			.manuals-container {
+				// bottom: 0;
+				right: 15px;
+				// top: unset;
+			}
+		
+			&:hover {
+				.current-slide {
+					visibility: hidden;
+					opacity: 0;
+				}
+				.slick-arrow {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+		
+		.promoSlider {
+			padding-right: 15px;
+		
+			.slick-slide {
+				.image-block {
+					// min-height: 300px;
+					// max-height: 600px;
+					width: 100%;
+				}
+			}
+		
+			.slick-arrow {
+				display: block!important;
+				bottom: 0;
+				width: 25px;
+				height: 50px;
+				opacity: 0;
+				visibility: hidden;
+				transition: opacity 0.4s;
+				padding-top: 1px;
+		
+				& > i {
+					vertical-align: middle;
+				}
+		
+				&.slick-prev { right: 40px;	}
+				&.slick-next { right: 15px; }
+			}
+		}
+		
+		.nav-slider-container {
+			margin: 0;
+			padding-left: 5px;
+			box-sizing: border-box;
+			display: flex;
+			// flex-direction: column;
+			.slick-slide {
+				padding: 8px;
+			}
+		
+			.promoNavSlider {
+				margin: -9px 0;
+				// height: calc(100% + 25px);	
+			}			
+		} */
+
+		.content-block {
+			padding-right: 10px;
+			box-sizing: border-box;
+		}
+
+		.aside-gallery {
+			box-sizing: border-box;
+			padding-left: 3px;
+			margin-top: 0;
+
+			.aside-container {
+				// padding-left: 10px;
+				// flex-direction: column;
+				display: block;
+				margin: -10px 0;
+
+				.imgWrapper {
+					padding: 10px;
+				}
+			}
+
+		}
+
+		// ----------
+		.description-section {
+			.description-block {
+				& + .description-block {
+					margin-top: 0;
+				}
+				.block-container {
+					max-width: 90%;
+				}
+			}
+
+			.banner-block {
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,72 @@
+// -------AnimateBorder------
+$fillColor: $mainBackgroundColor;
+$fillColor2: $secondaryBackgroundColor;
+$fillColor3: rgba(36, 46, 57, .85);
+
+
+.animated-border-block {
+	margin-left: -23px;
+
+	.title {
+		margin: 15px 23px 15px 23px;
+		position: relative;
+	}
+	
+	.svg-container {
+		display: inline-block;
+		box-sizing: border-box;		
+		position: relative;
+	}
+
+	.rect-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%; 
+		height: 100%;
+		padding: 3px;
+		box-sizing: border-box;		
+		overflow: visible;
+	}
+
+	.animatedBlock {
+		fill: none;
+		width: 100%;
+		height: 100%;
+		stroke: $tertiaryColor;
+		/*stroke-dashoffset: 0;  */
+		transition: stroke-dashoffset 40s linear;		
+	}
+
+	.overlappingBlock {
+		fill: $fillColor;
+		stroke: $fillColor;
+		// width: calc(100% - 110px);
+		width: calc(100% - 80px);
+		// width: 100px;
+		height: 100%;
+		transform: skewX(-40deg);
+	}
+
+	.js_resetTransition {
+		transition-duration: 0s;
+	}	
+	
+}
+
+.white-bg {
+	.overlappingBlock {
+		fill: $fillColor2;
+		stroke: $fillColor2;
+	}
+}
+.dark-bg {
+	.overlappingBlock {
+		fill: $fillColor3;
+		stroke: $fillColor3;
+	}
+
+	.title {
+		color: #fff;
+	}
+}

@@ -1,0 +1,1 @@
+@keyframes a{0%{transform:translate(-10%);visibility:visible}to{transform:translate(0)}}.mySlideInLeft{animation-name:a}.animated{animation-duration:.5s;animation-fill-mode:both}

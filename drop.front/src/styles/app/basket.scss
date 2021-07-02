@@ -1,0 +1,506 @@
+.basketPage-block{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .produckt-alert-title{
+        margin: 0;
+    }
+    .input::placeholder{
+        color: $tertiaryColor;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+}
+.basket-block-title{
+    font-size: 24px;
+    font-weight: 500;
+     padding-bottom: 30px;
+}
+.th-block-form, .tb-block-form{
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    @media (min-width: $containerWidthLaptop) {
+        font-size: 16px;
+	}
+}
+.tb-block-form{
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid $borderColor;
+    .or-four{
+        display: flex;
+        flex-direction: column;
+        padding-right: 10px;
+    }
+    .or-five, .or-four{
+        color: $tertiaryColor;
+    }
+    .or-five.active, .or-four.active{
+        color: $black;
+    }
+}
+.th-block-form{
+    padding-top: 25px;
+}
+.img-order{
+    max-width: 87px;
+    max-height: 87px;
+}
+.form-order-head{
+    border-bottom: 2px solid $borderColor;
+    padding-bottom: 15px; 
+}
+.price-or-product-all{
+    font-size: 20px;
+    font-weight: 500;
+    @media (min-width: $containerWidthLaptop) {
+        font-size: 24px;
+	}
+}
+.price-or-product-one{
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 10px;
+    @media (min-width: $containerWidthLaptop) {
+        font-size: 14px;
+        padding-top: 0;
+	}
+}
+.or-one{
+    width: 10%;
+    display: none;
+    @media (min-width: $containerWidthLaptop) {
+		display: inherit;
+	}
+}
+.or-two{
+    width: 30%;
+    padding-right: 10px;
+    @media (min-width: $containerWidthLaptop) {
+        width: 45%;  
+	}
+}
+.or-three{
+    width: 34%;
+    padding-right: 10px;
+    @media (min-width: $containerWidthLaptop) {
+        width: 19%;  
+	}
+}
+.or-four{
+    width: 18%;
+    @media (min-width: $containerWidthLaptop) {
+        width: 13%;  
+	}
+}
+.or-five{
+    width: 18%;
+    @media (min-width: $containerWidthLaptop) {
+        width: 13%;  
+	}
+}
+
+.tb-block-form input {
+  -webkit-appearance: none;
+  border: none;
+  padding: 0;
+  text-align: center;
+  max-width: 90px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+ .or-quantity{
+     max-width: 160px;
+     width: 100%;
+     height: 38px;
+     border: 1px solid $borderColor;
+     display: flex;
+     input{
+         height: 36px;
+     }
+     input[value]{
+         font-weight: 500;
+     }
+
+     button {
+       min-width: 30px;
+       width: 37px;
+       height: 37px;
+       cursor: pointer;
+     }
+ }
+.minus-btn img {
+  margin-bottom: 3px;
+}
+.minus-btn{
+    border-right: 1px solid $borderColor;
+    position: relative;
+    &::before{
+        content: " ";
+        position: absolute;
+        width: 14px;
+        height: 2px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: $black;
+    }
+}
+.plus-btn{
+    border-left: 1px solid $borderColor;
+    position: relative;
+    &::before{
+        content: " ";
+        position: absolute;
+        width: 14px;
+        height: 2px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: $black;
+    }
+    &::after{
+        content: " ";
+        position: absolute;
+        width: 2px;
+        height: 14px;
+        left: 50%;
+        top: 54%;
+        transform: translate(-50%, -54%);
+        background-color: $black;
+    }
+}
+.plus-btn img {
+  margin-top: 2px;
+}
+ 
+.payment-data{
+    padding-top: 30px;
+    border-bottom: 2px solid $borderColor;
+    .form-check{
+        width: 100%;
+        @media (min-width: $containerWidthLaptop) {
+            width: 50%;
+        }
+        .check-label{
+            width: 50%;
+        }
+    }
+}
+.check-block-payment{
+    display: flex;
+}
+.check-label{
+    cursor: pointer;
+    align-items: center;
+    input{
+        width: 30px;
+        min-width: 30px;
+        @media (min-width: $containerWidthLaptop) {
+            width: 38px;
+           min-width: 38px;
+        }
+    }
+    p{
+        padding-left: 10px;
+    }
+   
+    .input-text{
+        padding-right: 20px;
+        @media (min-width: $containerWidthLaptop) {
+            padding-right: 40px;
+        }
+    }
+}
+.order-price-block, .card-payment-block{
+    display: none;
+}
+.order-price-block.hidePayment_js{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 18px hsla(0,0%,74%,.5);
+    @media (min-width: $containerWidthLaptop) {
+        flex-direction: row;
+	}
+}
+.card-payment-block.hidePayment_js{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+}
+.card-payment-block.hidePayment_js{
+    flex-direction: column;
+}
+.payment-block-all{
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 1px 18px hsla(0,0%,74%,.5);
+    @media (min-width: $containerWidthLaptop) {
+        flex-direction: row;
+	}
+}
+.card-payment-title{
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    span, p{
+        font-size: 24px;
+        padding-left: 10px;
+    }
+}
+.one-name-payment, .appointment-payment{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    @media (min-width: $containerWidthLaptop) {
+        width: 33%;
+        text-align: inherit;
+    }
+}
+
+
+.appointment-payment{
+    color: $tertiaryColor;
+    span{
+        color: $black;
+    }
+}
+.payment-block:not(:first-child){
+    border-top: 2px solid #eee;
+}
+.num-payment-card{
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.payment-block{
+    padding:30px 10px;
+    flex-direction: column;
+    @media (min-width: $containerWidthLaptop) {
+        flex-direction: row;
+    }
+}
+.or-price{
+    padding: 20px 0;
+     width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    @media (min-width: $containerWidthLaptop) {
+        width: 30%;
+        padding-left: 5px;
+        padding-right: 5px;
+	}
+    p{
+        font-size: 16px;
+        font-weight: 500;
+
+    }
+    .or-price-item{
+        padding-left: 10px;
+        font-size: 24px;
+    }
+}
+.or-imposed-item{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 87px;
+    height: 38px;
+    border: 1px solid $borderColor;
+    @media (min-width: $containerWidthLaptop) {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+.input-or-price{
+    width: 100%;
+    border: none;
+    @media (min-width: $containerWidthLaptop) {
+        padding-left: 5px;
+        padding-right: 5px;
+        border-left: 2px solid $borderColor;
+        border-right: 2px solid $borderColor;
+        width: 40%;
+    }
+    p{
+        text-align: end;
+        @media (min-width: $containerWidthLaptop) {
+           text-align: inherit;
+        }
+    }
+}
+.drop-data, .data-delivery{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.drop-data{
+    border-bottom: 2px solid $borderColor;
+}
+.drop-input-form{
+    box-shadow: 0 1px 18px hsla(0,0%,74%,.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $containerWidthLaptop) {
+        flex-direction: row;
+     }
+    .i-form-col-sm-6{
+        width: 100%;
+        max-width: 395px;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-height: 38px;
+        @media (min-width: $containerWidthLaptop) {
+            width: 50%;
+         }
+    }
+    .i-form-col-sm-6:first-child{
+        margin-bottom: 15px;
+        margin-left: 0;
+        @media (min-width: $containerWidthLaptop) {
+            margin-right: 20px;
+            margin-bottom: 0;
+         }
+    }
+}
+.form-check{
+    padding-left: 0;
+}
+.form-check-delivery{
+    .check-label{
+        width: 50%;
+        padding-left: 20px;
+        @media (min-width: $containerWidthLaptop) {
+           width: 25%;
+           padding-left: 0;
+         }
+    }
+}
+.check-label{
+    align-items: center;
+}
+.form-check-delivery{
+    width: 100%;
+    justify-content: space-between;
+}
+.input-delivery-new-post, .input-delivery{
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 1px 18px hsla(0,0%,74%,.5);
+    width: 100%;
+    // display: none;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    flex-wrap: wrap;
+    label{
+        width: 100%;
+    }
+    @media (min-width: $containerWidthLaptop) {
+        flex-direction: row;
+     }
+    .i-form-col-sm-3{
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        @media (min-width: $containerWidthLaptop) {
+            width: 33.3%;
+            padding-top: 0;
+         }
+         select{
+             background-color: #ffffff;
+         }
+    }
+}
+.input-delivery-new-post{
+    @media (min-width: $containerWidthLaptop) {
+        .i-form-col-sm-3:nth-child(1n+4){
+            padding-top: 20px!important;
+        }
+     }
+}
+.input-delivery{
+    display: none;
+    .i-form-col-sm-3{
+    @media (min-width: $containerWidthLaptop) {
+        width: 100%;
+     }
+    }
+}
+.input-delivery-new-post.hidePost_js{
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-delivery.hidePost_js{
+    display: flex;
+}
+
+.btn-order{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    width: 100%;
+    order: 2;
+    button{
+        width: 195px;
+    }
+}
+
+#ttnPage{
+    .feedback-other-contant{
+        display: block;
+    }
+}
+.dispatch-block{
+    padding-top: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.dispatch-title{
+    padding-bottom: 40px;
+}
+.dispatch-number{
+    width: 100%;
+    padding: 25px 20px;
+    box-shadow: 0 1px 18px hsla(0,0%,74%,.5);
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    @media (min-width: $containerWidthLaptop) {
+       flex-direction: row;
+        width: 75%;
+     }
+}
+.dispatch-number_btn{
+    color: $primaryColor;
+    font-weight: 500;
+    padding-top: 20px;
+    @media (min-width: $containerWidthLaptop) {
+       padding-top: 0;
+    }
+}
+.dispatch-number_item{
+    font-size: 24px;
+    font-weight: 500;
+}
+.dispatch-number_text{
+    color: $tertiaryColor;
+}
+.input-post1_js, .input-post2_js{
+    color: #6b6b6b;
+    -webkit-appearance: none;
+    background-image: url(../img/angle-down.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}

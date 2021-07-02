@@ -1,0 +1,155 @@
+// --------ProximaNova--------
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/proxima/ProximaNova-Regular.eot');
+  src: url('../fonts/proxima/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proxima/ProximaNova-Regular.woff') format('woff'),
+  url('../fonts/proxima/ProximaNova-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ProximaNovaSemiBold';
+  src: url('../fonts/proxima/ProximaNova-Semibold.eot');
+  src: url('../fonts/proxima/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proxima/ProximaNova-Semibold.woff') format('woff'),
+  url('../fonts/proxima/ProximaNova-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('../fonts/proxima/ProximaNova-Bold.eot');
+  src: url('../fonts/proxima/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proxima/ProximaNova-Bold.woff') format('woff'),
+  url('../fonts/proxima/ProximaNova-Bold.ttf') format('truetype');
+}
+
+
+// --------Icons--------
+
+@font-face {
+	font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?9pcvvc');
+  src:  url('../fonts/icomoon/icomoon.eot?9pcvvc#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?9pcvvc') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?9pcvvc') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?9pcvvc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.icomoon {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  &:before { transition: all 0.4s; }
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-logo-circle:before {
+  content: "\e919";
+}
+.icon-logo-capital:before {
+  content: "\e91a";
+}
+.icon-calendar:before {
+  content: "\e918";
+}
+.icon-group_doc:before {
+  content: "\e917";
+}
+.icon-clock:before {
+  content: "\e915";
+}
+.icon-docs:before {
+  content: "\e916";
+}
+.icon-doc:before {
+  content: "\e91b";
+}
+.icon-location-pin:before {
+  content: "\e91c";
+}
+
+.icon-link:before {
+  content: "\e914";
+}
+.icon-twitter:before {
+  content: "\e913";
+}
+.icon-close:before {
+  content: "\e911";
+}
+.icon-burger:before {
+  content: "\e912";
+}
+.icon-logo-capital2:before {
+  content: "\e910";
+}
+.icon-arrow:before {
+  content: "\e900";
+  color: #af926f;
+}
+.icon-quote:before {
+  content: "\e901";
+  color: #af926f;
+}
+.icon-angle:before {
+  content: "\e902";
+}
+.icon-calculator:before {
+  content: "\e903";
+  color: #e60000;
+}
+.icon-chat:before {
+  content: "\e904";
+  color: #ac1342;
+}
+.icon-envelope:before {
+  content: "\e905";
+}
+.icon-inst:before {
+  content: "\e906";
+}
+.icon-facebook:before {
+  content: "\e907";
+}
+.icon-youtube:before {
+  content: "\e908";
+}
+.icon-language:before {
+  content: "\e909";
+}
+.icon-login:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-logo_Z:before {
+  content: "\e90b";
+  font-size: 23px;
+}
+.icon-phone:before {
+  content: "\e90c";
+  color: #fff;
+}
+.icon-present:before {
+  content: "\e90d";
+  color: #e60000;
+}
+.icon-search:before {
+  content: "\e90e";
+  color: #fff;
+}
+.icon-viber:before {
+  content: "\e90f";
+  color: #fff;
+}

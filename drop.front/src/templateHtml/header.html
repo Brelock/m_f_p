@@ -1,0 +1,40 @@
+<header class="mainHeader">
+	<div class="main-header-top">
+		<div class="mcontainer">
+			<div class="top-header-wrap flex">
+				<ul class="top-header-links flex">
+					<li> <a href="./unloadingPage.html">Выгрузка</a> </li>
+					<li> <a href="./deliveryPage.html">Доставка и оплата</a> </li>
+					<li> <a href="/contactPage.html">Контакты</a> </li>
+				</ul>
+				<a href="tel:+380508549400" class="top-header-phone flex"> 
+					<div class="top-header-phone_img"></div> 
+					<span>050 854 94 00</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="main-header-body">
+		<div class="mcontainer">
+			<nav class="flex navbar-menu spaceBetween">
+				<div class="logo-nav">
+					<a href="./index.html" class="navbar-brand"><img class="logo-nav-img" src="./img/logo-city-a.png" alt=""></a>
+				</div>
+				<div class="header-accordion-menu">
+					<div class="btn-title-container">Каталог товаров</div>
+					@@include('categoriesHeader2.html')
+				</div>
+				<form class="form-block ">
+					<input class="input-search mr-sm-2" type="search" placeholder="Что вы ищете?" aria-label="Search">
+					<button class="btn btn-primary my-sm-0" type="submit">Найти</button>
+				</form>
+				<div class="basket-nav basket__actived">
+					<a href="./basketPage.html">
+						<img src="./img/basket.svg" alt="">
+						<span>22</span>
+					</a>
+				</div>
+			</nav>
+		</div>
+	</div>
+</header>

@@ -1,0 +1,53 @@
+.layout-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  @media (min-width: $xlLayout) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.layout-left {
+  width: 100%;
+  
+  @media (min-width: $xlLayout) {
+    flex-grow: 1;
+    width: auto;
+  }
+}
+
+.layout-right {
+  flex-shrink: 0;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 15px;
+
+  @media (min-width: $xlLayout) {
+    margin-top: 0;
+    margin-left: 40px;
+  }
+}
+
+.review-item {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.review-item__info {
+  color: silver;
+}
+
+.review-item__title {
+  margin-top: 5px;
+}
+
+.review-item__descr {
+  margin-top: 10px;
+}
+
+.review-item + .review-item {
+  padding-top: 40px;
+  border-top: 1px solid #9a9a9a;
+}

@@ -1,0 +1,170 @@
+.custom-dialog-wrapper {
+	position: fixed;
+	// visibility: hidden;
+	top: 0;
+	// opacity: 0;
+	z-index: 1800;
+	transition: transform 0.4s cubic-bezier(0.39, 0.58, 0.57, 1);
+
+
+	a:not(.standardButton):hover { text-decoration: underline;}
+
+	.popupContentWrapper {
+	  background-color: #fff;
+	  box-sizing: border-box;
+	}
+
+	.modalHeader {
+	  // & + .popUpContainer {margin-top: 20px;}
+
+		.modal-title {
+			color: $primaryColor;
+			font-size: 18px;
+			text-align: center;
+			padding: 0 10px;
+			// line-height: 40px;
+		}
+	}
+
+	button.popupCloseButton {
+  	z-index: 1;
+  	position: absolute;
+  	border: none;
+  	// width: 40px;
+  	padding: 10px;
+  	cursor: pointer;
+  	right: 0;
+  	top: 0;
+
+  	i:before {
+  		transition: color ease 0.4s;
+  	}
+
+  	&:hover > i:before {
+  		color: $primaryColor;
+  	}
+  }
+
+  &.auth-dialog {
+  	// top: 12vh;
+    top: 58px;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+  	display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    // height: 100%;
+  	opacity: 0;
+  	visibility: hidden;
+  	z-index: 1800;
+  	transition: all 0.3s ease;
+    // transform: translateX(100%);
+
+    .modalHeader {
+      padding: 10px;
+      background-color: #cdcdcd;
+      justify-content: center;
+      
+      .modal-title {
+        font-size: 16px !important;
+        color: #000;
+      }
+    }
+
+    &.active {
+    	opacity: 1;
+    	visibility: visible;
+    }
+
+    & > .popupContentWrapper{
+    	width: 90%;
+    	max-width: 380px;
+    	margin: 0 auto;
+    }
+
+    .popUpContainer {
+    	max-height: 80vh;
+    	overflow: auto;
+    }
+
+    .profileTabsNavBar {
+      margin-top: 25px;
+    	.tabButton {
+    		width: 50%;
+    		max-width: 50%;
+    		box-sizing: border-box;
+    	}
+    }
+
+
+    .auth-sub-menu {
+    	display: block;
+    }
+
+    .formRow {
+      .buttonWrapper {
+
+        max-width: 100%;
+        // min-width: 250px;
+        width: 100%;
+      }
+    }
+  }
+
+
+	&.reviews-dialog {
+    transform: translateX(100%);
+    width: 100%;
+    right: 0;
+    // height: 100vh;
+    min-height: 100vh;
+    // max-height: 90vh;
+    max-width: 710px;
+    overflow: auto;
+
+		&.active {
+			transform: translateX(0);
+		}
+
+		.modalHeader {
+			height: 40px;
+		}
+
+
+		.popupContentWrapper {
+			padding: 15px;
+			min-height: inherit;
+		}
+
+		.rating-count {margin-left: 15px;}
+
+		.row-with-icon {
+			i {flex-basis: 25px;}
+		}
+
+		.formRow {
+			& + .formRow {margin-top: 25px;}
+			.label + * {margin-top: 10px;}
+
+			.row-description {margin-top: 10px;}
+		}
+	}
+
+
+  @media (min-width: 991px) {
+  	.modalHeader {
+  		.modal-title {
+				font-size: 24px;
+  		}
+  	}
+
+    &.reviews-dialog {
+    	.popupContentWrapper {
+    		padding: 25px 35px 35px;
+    	}
+
+    }
+
+  }
+}

@@ -1,0 +1,42 @@
+
+/* ----Variables--- */
+@import "variables";
+
+@import "fonts";
+
+// -----Frames--------
+@import "frames/frames_main";
+
+// ----Common-----
+@import "app/common/common";
+@import "app/common/common-blocks";
+@import "app/common/typography";
+// @import "app/common/common-content";
+
+//------Partials-----
+@import "app/partials/header";
+@import "app/partials/footer";
+
+
+//-----App-----
+@import "app/homePage";
+@import "app/contactPage";
+@import "app/newsPage";
+@import "app/projectPage";
+@import "app/onas";
+@import "app/knessPage";
+@import "app/partnerPage";
+@import "app/creditPage";
+@import "app/privatPersonPage";
+@import "app/companyPage";
+@import "app/sunpowerPage";
+@import "app/reviewPage";
+@import "app/insurancePage";
+@import "app/sunportPage";
+@import "app/statisticPage";
+// -----Libs ------
+
+@import "libs/jquery-ui";
+@import "libs/nouislider";
+@import "libs/photoswipe";
+

@@ -1,0 +1,21 @@
+.delivery {
+  .layout__step {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .layout__step-descr,
+  .layout__step-subdescr {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .layout__step-top .icomoon {
+    font-size: 40px;
+    margin-left: 0;
+
+    @media (min-width: $xlLayout) {
+      font-size: 90px;
+    }
+  }
+}

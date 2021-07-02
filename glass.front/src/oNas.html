@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="oNasPage" class="oNasPage page">
+      
+        <div class="mcontainer">
+          <div class="common-page-title">О нас</div>
+          <div class="onas-text">
+            <p> Мы больше чем просто бренд очков. Мы - это культура красивых и индивидуальных аксессуаров для каждого стиля. Наша цель , помочь    выразить свой стиль через  аксессуары <span class="yelow-span">Glasses House.</span>  </p>
+            <br>
+            <p> Для этого, ежемесячно  мы увеличиваем ассортимент на 50+ моделей очков, чтобы каждый смог найти свой стиль в нашем магазине.</p>
+            <br>
+            <p>Мы стараемся чтобы ваши покупки были максимально выгодными для вас. По этому наш магазин работает напрямую с фабриками, чтобы сделать цены на все модели дешевле чем в других </p>
+          </div>
+          <div class="botton-title">Очки для Твоего стиля</div>
+        </div>
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+body {
+	font-size: $pageFontSize;
+	font-family: $mainFont;
+	color: $mainFontColor;
+	position: relative;
+	margin: 0em;
+	background-color: #fbfdff;
+}
+body.js_pageOverlayOpen {	overflow: hidden;}
+
+// ---- mainWrapper -----
+div.mainWrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	& > div.contentWrapper {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+
+		& > .page {flex-grow: 1;}
+	}
+	& > footer.mainFooter {
+		flex: 0 0 auto;
+	}
+}
+.mainWrapper {
+	max-width: $pageMaxWidth;
+	margin: 0 auto;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+// ---- end mainWrapper --
+.page {
+	background-color: $mainBackgroundColor;
+	.page-container {position: relative;}
+}
+
+.pageSection,
+.mcontainer {
+	background-color: inherit;
+}
+
+.js_hidden {
+	visibility: hidden;
+	opacity: 0;
+	width: 0;
+	height: 0!important;
+	padding: 0 !important;
+	z-index: -100;
+}
+
+.slick-slide, .slick-slide:focus {outline: none;}
+.shadow {box-shadow: 0 1px 2px 0 #E3E3E3;}
+.bordered {border: 1px solid $borderColor;}
+.rounded {border-radius: 5px;}
+.alert {color: red;}
+
+// ---------Position--------
+.relative {position: relative;}
+// =========Buttons, inputs, links======
+button.active {background-color: $primaryColor};
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+button:active,
+button:focus,
+a:focus {
+	outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	outline: none;
+}
+input,
+textarea,
+select {
+	box-sizing: border-box;
+	width: 100%;
+}
+textarea {
+	padding: 10px 12px;
+}
+a {
+	text-decoration: none;
+	color: $linksColor;
+}
+a.underline {
+	text-decoration: underline;
+	&:hover {text-decoration: none;}
+}
+a.standard {
+	&:hover {text-decoration: underline;}
+}
+
+
+/* ======Media Queries===== */
+
+@media (min-width: 991px) {
+
+}
+
+
+@media (min-width: 1279px) {
+
+}

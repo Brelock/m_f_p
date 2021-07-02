@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Microsoft Tiles -->
+<meta name="msapplication-config" content="browserconfig.xml">
+
+<link rel="icon" type="image/png" href="favicon.ico">
+
+<!-- Font Awesome -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+<!-- Plugins -->
+<link rel="stylesheet" href="css/slick.min.css">
+<link rel="stylesheet" href="css/chosen.min.css">
+
+
+<link rel="stylesheet" href="css/main.min.css">
+
+  <!--  -->
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      <header class="mainHeader">
+	
+	<div class="top-section">
+		<div class="mcontainer">
+			
+			<div class="content-wrapper flex center">
+				<div class="headerSectionBlock firstPartBlock flex center">
+					<div class="buttonWrapper section-element mcol-md-hide ">
+						<button id="burgerButton" type="button" class="burgerButton mobileMenuButton">
+							<div class=""><i class="icomoon icon-menu-burger"></i></div>
+							<!-- <div class="closeIcon"><i class="icomoon icon-cross1"></i></div> -->
+						</button>
+					</div>
+
+					<div class="logoBlock section-element mcol-md-auto">
+						<div class="logo-wrapper">
+							<a href="/index.html" class="">
+								<img src="./img/logo.svg" alt="logo">
+								<!-- <div class="logo-type">name <span>logotype</span></div> -->
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="headerSectionBlock flex center secondPartBlock">
+					<div class="section-element searchBlock">
+						<form id="searchBlock" action="/" class="relative">
+							<input type="text" class="shadowInput" placeholder="поиск ..." >
+							<i class="icomoon icon-search inner-icon right gradientIcon"></i>
+							<button type="submit" class="js_hidden"></button>
+						</form>
+					</div>
+
+					<!-- <div class="section-element searchButton mcol-md-hide">
+						<button type="button" class="icomoon icon-search gradientIcon openButton"
+							data-target="mobileSearchBlock" data-class="js_showSlide" data-action="open"></button>
+					</div> -->
+
+					<div class="section-element same-width langBlock menu">
+						<div class="menu-button lang-buttons">
+							<i class="icomoon gradientIcon icon-lang"></i>
+							<span class="mcol-xs-hide mcol-md-show-inline link active">RU</span>
+							<span class="mcol-xs-hide mcol-md-show-inline link ">UA</span>
+						</div>
+						<div class="sub-menu mobile">
+							<div class="sub-menu-container">
+								<ul class="items-list">
+									<li><span class="link active">RU</span></li>
+									<li><span class="link ">UA</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<!-- <div class="section-element same-width likesBlock menu active">
+						<a href="#" class="menu-button">
+							<i class="icomoon gradientIcon icon-like1 relative">
+								<span class="quantity"><span>1</span></span>
+							</i>
+							<span class="text">Избранное</span>
+						</a>
+
+						<div class="sub-menu">
+							<div class="menu-header flex spaceBetween center">
+								<div class="page-title medium">Избранное</div>
+							</div>
+
+							<div class="items-list">
+								<div class="list-item">
+									<div class="imgWrapper mcol-md-3"><img src="./img/products/prod-1.jpg" alt="img"></div>
+									<div class="content-wrapper mcol-md-4">
+										<div class="grey-highlight">Категория</div>
+										<div class="">Название товара длинное или даже очень длинное</div>
+									</div>
+									<div class="priceBlock mcol-md-3"><b>345 грн.</b></div>
+									<button type="button" class="removeButton closeButton"><i class="icomoon icon-cross1"></i></button>
+								</div>
+
+								<div class="list-item">
+									<div class="imgWrapper mcol-md-3"><img src="./img/products/prod-1.jpg" alt="img"></div>
+									<div class="content-wrapper mcol-md-4">
+										<div class="grey-highlight">Категория</div>
+										<div class="">Название товара </div>
+									</div>
+									<div class="priceBlock mcol-md-3"><b>3453 грн.</b></div>
+									<button type="button" class="removeButton closeButton"><i class="icomoon icon-cross1"></i></button>
+								</div>
+
+								<div class="list-item">
+									<div class="imgWrapper mcol-md-3"><img src="./img/products/prod-1.jpg" alt="img"></div>
+									<div class="content-wrapper mcol-md-4">
+										<div class="grey-highlight">Категория</div>
+										<div class="">Название товара </div>
+									</div>
+									<div class="priceBlock mcol-md-3"><b>3453 грн.</b></div>
+									<button type="button" class="removeButton closeButton"><i class="icomoon icon-cross1"></i></button>
+								</div>
+							</div>
+
+							<div class="menu-footer">
+								<a href="#" class="standardButton primary-inverted uppercase">перейти в каталог товаров</a>
+							</div>
+						</div>
+					</div> -->
+
+					<div class="section-element same-width accountBlock menu">
+						<!-- <span class="js_hide">
+							<i class="icomoon icon-login gradientIcon"></i>
+							<a href="#" class="accountButton">Вход</a>
+							<a href="#" class="accountButton">Регистрация</a>
+						</span> -->
+
+						<a href="/cabinet_profile.html" class="menu-button">
+							<i class="icomoon gradientIcon icon-login"></i>
+							<span>Кабинет</span>
+						</a>
+
+						<!-- <div class="sub-menu">
+							<ul class="links-list">
+								<li><a href="/cabinet_profile.html">Ваш профиль</a></li>
+								<li><a href="#">Заказы</a></li>
+								<li><a href="#">Отзывы</a></li>
+							</ul>
+						
+							<a href="#" class="link-with-icon">
+								<i class="icomoon icon-exit1"></i>
+								<span>Выйти</span>
+							</a>
+						</div> -->
+						<!-- <div class="sub-menu parent-width for-user">
+							<div class="sub-menu-container">
+								<ul class="group">
+									<li>Ваш профиль</li>
+									<li>Заказы</li>
+									<li>Отзывы</li>
+								</ul>
+								<ul class="group">
+									<li>
+										<i class="icomoon icon-exit1"></i>
+										<span class="hover primary">Выйти</span>
+									</li>
+								</ul>
+							</div>
+						</div> -->
+
+						<div class="sub-menu">
+							<div class="contentNavBar profileTabsNavBar tabsNav flex wrap">
+							  <div data-target="login-tab" class="tabButton active"
+							    data-tabs-group="profileTab"
+							    data-tabs-container="profileTabsContainer"><b>Вход</b>
+							  </div>
+							  <div data-target="register-tab" class="tabButton"
+							    data-tabs-group="profileTab"
+							    data-tabs-container="profileTabsContainer"><b>Регистрация</b>
+							  </div>
+							  
+							</div>
+
+							<div class="toggleBlocks-list profileTabsContainer fade-animation js_animate sectionBlock">
+
+							  <div id="login-tab" class="toggleBlock profileTab active">
+									<div class="tab-container">
+										<div class="sectionBlock standard-form">
+											<div class="formRow">
+												<input type="email" placeholder="Электронная почта" class="">
+											</div>
+											<div class="formRow">
+												<input type="password" placeholder="Пароль" class="">
+											</div>
+
+											<div class="formRow mrow flex center spaceBetween submitBlock">
+												<div class="mcol-xs-6 wrapperBlock">
+													<button type="button" class="standardButton primary">ВОЙТИ</button>
+												</div>
+												<div class="mcol-xs-6 wrapperBlock">
+													<a href="#" class="password-link">Забыли пароль?</a>
+												</div>
+											</div>
+										</div>
+									</div>
+							  </div>
+
+								<div id="register-tab" class="toggleBlock profileTab">
+							  	<div class="tab-container">
+							  		<div class="sectionBlock standard-form">
+							  			<div class="formRow">
+							  				<input type="text" placeholder="Имя" class="">
+							  			</div>
+
+							  			<div class="formRow">
+							  				<input type="email" placeholder="Электронная почта" class="">
+							  			</div>
+
+							  			<div class="formRow customCheckboxContainer">
+							  				<input id="prf1" type="checkbox" class="">
+							  				<label for="prf1">
+							  					<span class="">Я согласен с <a href="#" class="link">условиями подписки</a>.</span>
+							  				</label>
+							  			</div>
+
+							  			<div class="formRow">
+							  				<input type="password" placeholder="Пароль" class="">
+							  			</div>
+
+							  			<div class="formRow">
+							  				<input type="password" placeholder="Подтвердить пароль" class="">
+							  			</div>
+
+							  			<div class="formRow">
+							  				<div class="mcol-xs-6 wrapperBlock">
+							  					<button type="button" class="standardButton primary">РЕГИСТРАЦИЯ</button>
+							  				</div>
+							  			</div>
+
+							  			<div class="formRow customCheckboxContainer">
+							  				<input id="prf2" type="checkbox" class="">
+							  				<label for="prf2">
+							  					<span class="">Я согласен на обработку персональных данных.</span>
+							  				</label>
+							  			</div>
+							  		</div>
+							  	</div>
+								</div>
+							</div>
+
+							<div class="remoteBlock sectionBlock">
+								<div class="title article-title text-center">Войти через</div>
+								<div class="remoteRow mrow flex ">
+									<div class="wrapperBlock">
+										<button type="button" class="">
+											<img src="/img/facebook_login.png" alt="login facebook">
+										</button>
+									</div>
+									<div class="wrapperBlock">
+										<button type="button" class="">
+											<img src="/img/gmail_login.png" alt="login gmail">
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="section-element same-width cartBlock menu active">
+						<a href="#" class="menu-button">
+							<i class="icomoon gradientIcon icon-basket relative">
+								<span class="quantity"><span>1</span></span>								
+							</i>
+							<span class="text">Корзина <br> пустая</span>
+						</a>
+
+						<div class="sub-menu">
+							<div class="menu-header flex spaceBetween center">
+								<div class="page-title medium">Корзина</div>
+							</div>
+
+							<div class="items-list">
+								<div class="list-item">
+									<div class="imgWrapper mcol-md-3"><img src="./img/products/prod-1.jpg" alt="img"></div>
+									<div class="content-wrapper mcol-md-4">
+										<div class="grey-highlight">Категория</div>
+										<div class="">Название товара длинное или даже очень длинное</div>
+									</div>
+									<div class="priceBlock mcol-md-3"><b>345 грн.</b></div>
+									<button type="button" class="removeButton closeButton"><i class="icomoon icon-cross1"></i></button>
+								</div>
+
+								<div class="list-item">
+									<div class="imgWrapper mcol-md-3"><img src="./img/products/prod-1.jpg" alt="img"></div>
+									<div class="content-wrapper mcol-md-4">
+										<div class="grey-highlight">Категория</div>
+										<div class="">Название товара </div>
+									</div>
+									<div class="priceBlock mcol-md-3"><b>3453 грн.</b></div>
+									<button type="button" class="removeButton closeButton"><i class="icomoon icon-cross1"></i></button>
+								</div>
+
+								<div class="list-item">
+									<div class="imgWrapper mcol-md-3"><img src="./img/products/prod-1.jpg" alt="img"></div>
+									<div class="content-wrapper mcol-md-4">
+										<div class="grey-highlight">Категория</div>
+										<div class="">Название товара </div>
+									</div>
+									<div class="priceBlock mcol-md-3"><b>3453 грн.</b></div>
+									<button type="button" class="removeButton closeButton"><i class="icomoon icon-cross1"></i></button>
+								</div>
+							</div>
+
+							<div class="menu-footer flex spaceBetween ">
+								<div class="info-block">
+									<div class="">Сумма</div>
+									<div class="total-price"><b>4561 грн.</b></div>
+								</div>
+
+								<a href="/cart.html" class="standardButton primary uppercase">перейти в корзину</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div id="mobileSearchBlock" class="mobile-searchBlock hiddenContent top">
+			
+				<div class="mobileSearch-container">
+					<div class="buttonWrapper">
+						<button type="button" class="closeMenuButton openButton" 
+							data-target="mobileSearchBlock" data-class="js_showSlide" data-action="close">
+							<i class="icomoon icon-cross1"></i>
+						</button>
+					</div>
+					
+					<form action="/" class="relative">
+						<input type="text" class="shadowInput" placeholder="поиск ...">
+						<i class="icomoon icon-search inner-icon right gradientIcon"></i>
+						<button type="submit" class="js_hidden"></button>
+					</form>
+				</div>
+			</div> -->
+
+		</div>
+	</div>
+
+	<div class="bottom-section">
+		<div class="menuMainWrapper">
+
+			<div class="menuBlock relative">
+
+				<nav id="navMenuWrapper" class="navMenuWrapper sectionBlock hiddenContent left">
+					<div id="navMenuContainer" class="navMenuContainer mcontainer backgroundMock">
+						<div class="menuButtonsContainer flex spaceBetween mcol-md-hide">
+							<button id="prevMenuButton" type="button" class="prevMenuButton " >
+								<i class="icomoon icon-arrow2"></i>
+							</button>
+							<button id="closeMenuButton" type="button" class="closeMenuButton" >
+								<i class="icomoon icon-cross1"></i>
+							</button>
+						</div>
+
+						<ul id="navMenu" class="navMenu menu-section">
+							<li class="mobile-search wrapperBlock">
+								<form action="/" class="relative">
+									<input type="text" class="shadowInput" placeholder="поиск ...">
+									<i class="icomoon icon-search inner-icon right gradientIcon"></i>
+									<button type="submit" class="js_hidden"></button>
+								</form>
+							</li>
+
+							<!-- ======================== -->
+							<li class="@@about">
+								<a class="" href="/productsList.html">Цветы</a>
+								<i class="icomoon icon-arrow2 subMenuButton"></i>								
+								<div class="submenuWrapper hiddenContent right">
+									<ul class="submenu">
+										<li><a href="/categoriesList.html">Категория 1</a></li>
+										<li><a href="/categoriesList.html">Категория 1</a></li>
+										<li><a href="/categoriesList.html">Категория 1</a></li>
+										<li><a href="/categoriesList.html">Категория 1</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="@@about">
+								<a class="" href="/productsList.html">Цветы</a>
+								<i class="icomoon icon-arrow2 subMenuButton"></i>
+								<div class="submenuWrapper hiddenContent right">
+									<ul class="submenu">
+										<li><a href="/categoriesList.html">Категория 2</a></li>
+										<li><a href="/categoriesList.html">Категория 2</a></li>
+										<li><a href="/categoriesList.html">Категория 2</a></li>
+										<li><a href="/categoriesList.html">Категория 2</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="@@about">
+								<a class="" href="/productsList.html">Цветы</a>
+								<i class="icomoon icon-arrow2 subMenuButton"></i>								
+								<div class="submenuWrapper hiddenContent right">
+									<ul class="submenu">
+										<li><a href="/categoriesList.html">Категория 1</a></li>
+										<li><a href="/categoriesList.html">Категория 1</a></li>
+										<li><a href="/categoriesList.html">Категория 1</a></li>
+										<li><a href="/categoriesList.html">Категория 1</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="@@about">
+								<a class="" href="/productsList.html">Цветы</a>
+								<i class="icomoon icon-arrow2 subMenuButton"></i>
+								<div class="submenuWrapper hiddenContent right">
+									<ul class="submenu">
+										<li><a href="/categoriesList.html">Категория 2</a></li>
+										<li><a href="/categoriesList.html">Категория 2</a></li>
+										<li><a href="/categoriesList.html">Категория 2</a></li>
+										<li><a href="/categoriesList.html">Категория 2</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="@@about">
+								<a class="" href="/productsList.html">Цветы</a>
+								<i class="icomoon icon-arrow2 subMenuButton"></i>
+								<div class="submenuWrapper hiddenContent right">
+									<ul class="submenu">
+										<li><a href="/categoriesList.html">Категория 2</a></li>
+										<li><a href="/categoriesList.html">Категория 2</a></li>
+										<li><a href="/categoriesList.html">Категория 2</a></li>
+										<li><a href="/categoriesList.html">Категория 2</a></li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="menu-group phoneBlock menu">
+								<div class="link menu-group_button phones-menu-button">
+									<span class="button-text md">еще</span>
+									<span class="button-text full">+38 (800) 700-43-43</span>
+									<i class="icomoon icon-arrow2"></i>
+								</div>
+								<!-- <li><a href="tel:+38(800)7004343">+38 (800) 700-43-43</a></li> -->
+								<div id="phones-menu" class="sub-menu phones-menu hiddenContent height">
+								  <ul class="phones-list">
+								    <li>
+								    	<div>
+								    		<div class="phone-num"><i class="icomoon icon-phone-call"></i> +38 (800) 700-43-43</div>
+								    		<div class="info-block">с 8:00 до 21:00 (пн-вс)</div>
+								    	</div>
+								    </li>
+								    <li>
+								    	<div>
+								    		<div class="phone-num"><i class="icomoon icon-phone-call"></i> +38 (800) 700-43-42</div>
+								    		<div class="info-block">беспланто по Украине</div>
+								    	</div>
+								    </li>
+								  </ul>
+								</div>
+							</li>
+							<li class="menu-group call-me-group menu">
+								<div class="call-me-button menu-group_button standardButton secondary-inverted">Перезвонить мне
+							  </div>
+
+							  <div class="sub-menu call-me-menu hiddenContent height">
+							    <form action="#" class="standard-form sub-menu-container">
+							    	<div class="formRow">
+							    	  <input type="text" placeholder="Имя" class="">
+							    	</div>
+							    	
+							    	<div class="formRow">
+							    	  <input type="text" placeholder="+3 (8) 0" class="">
+							    	</div>
+
+							    	<div class="formRow">
+							    		<button type="submit" class="standardButton primary uppercase">Перезвонить мне</button>
+							    	</div>
+							    </form>
+							  </div>
+							</li>
+							<li class="menu-group langBlock js_hidden"></li>
+						</ul>
+						<!--  -->
+
+						<!-- <div class="menu-section phoneBlock rightBlock">
+							<a href="tel:+38(800)7004343">+38 (800) 700-43-43</a>
+						</div> -->
+					
+					</div>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="mobile-quick-menu mcol-md-hide">
+		<div class="mcontainer">
+			<ul class="menu-list">
+				<li><a href="#">Категория один</a></li><!-- 
+				 --><li><a href="#">Категория 2</a></li><!-- 
+				 --><li><a href="#">Категория 3</a></li><!-- 
+				 --><li><a href="#">Категория 4</a></li>
+			</ul>
+			<div class="allCategories"><a href="#">Посмотреть все категории</a></div>
+		</div>
+	</div>
+</header>
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="feedbackPage" class="feedbackPage cabinet-category page">
+
+        <section class="pageSection ">
+          <div class="mcontainer">
+            <div class="sectionHeader sectionBlock">
+              <ul class="breadcrumbs mcol-xs-hide mcol-md-show">
+                <li><a href="/index.html">Главная</a></li>
+                <li class="active"><a href="#">Личный кабинет</a></li>
+              </ul>
+
+              <h1 class="page-title medium">Личный кабинет</h1>
+            </div>
+          
+            <div class="sectionBlock">
+
+              <div class="flex wrap">
+                <aside class="sidebar mcol-xs-12 mcol-md-3 accordionMenu">
+                  <div class="sidebarWrapper">
+  <div class="sidebarOpenButton accordionButton mcol-md-hide flex center" data-text="Показать Меню" data-text-active="Скрыть Меню">
+    <div class="title-container">
+      <div class="title section-title medium"><span>Показать Меню</span></div>
+    </div>
+    
+    <div class="arrow-button-container push-right">
+      <i class="icomoon icon-arrow2"></i>
+    </div>
+  </div>
+  
+  <div class="sidebar-dropdown hiddenContent height submenuWrapper">
+    <div class="sidebar-container">
+      <div class="sidebar-item personal-data">
+        <div class="item-container">
+          <div class="name section-title">Максим</div>
+          <div class="email">gmail@gmail.com</div>
+        </div>
+      </div>
+  
+      <div class="sidebar-item cart-item">
+        <div class="item-container">
+          <a href="/cart.html" class="section-title">В корзине 1 товар</a>
+        </div>
+      </div>
+  
+      <div class="sidebar-item @@orders">
+        <div class="item-container">
+          <a href="/cabinet_orders.html">Мои заказы</a>
+        </div>
+      </div> 
+  
+      <div class="sidebar-item @@profile">
+        <div class="item-container">
+          <a href="/cabinet_profile.html">Личные данные</a>
+        </div>
+      </div> 
+  
+      <div class="sidebar-item active">
+        <div class="item-container">
+          <a href="/cabinet_feedback.html">Отзывы</a>
+        </div>
+      </div>
+  
+      <div class="sidebar-item exit-item">
+        <div class="item-container">
+          <a href="#" class="link-with-icon">
+            <i class="icomoon icon-exit1"></i>
+            <span>Выйти</span>
+          </a>
+        </div>
+      </div>                       
+    </div>
+  </div>
+</div>                  
+                </aside>
+
+                <div class="content-wrapper mcol-xs-12 mcol-md-9">
+                  <div class="content-container">
+                    <div class="title page-title">Мои отзывы</div>
+
+                    <div class="feedback-list">
+                      <div class="feedback-item">
+                        <div class="item-container">
+                          <div class="author-block">
+                            <div class="flex wrap center medium content-container">
+                              <div class="date mcol-md-12">21. 05. 1819</div>
+                              <ul class="rating-list mcol-xs-12">
+                                <li><i class="icomoon active"></i></li>
+                                <li><i class="icomoon active"></i></li>
+                                <li><i class="icomoon active"></i></li>
+                                <li><i class="icomoon active"></i></li>
+                                <li><i class="icomoon"></i></li>
+                              </ul>
+                            </div>
+                          </div>
+                      
+                          <div class="content-block">
+                      
+                            <div class="description contentRow">
+                              <div class="description-title">
+                                <a href="#" class="underline">Название товара длинное или даже очень длинное</a>
+                              </div>
+                              <p>Это великолепный смартфон, совершенство по всем параметрам. Забрал его по предзаказу 1 марта, сразу же с первого включения стало понятно, что новая оболочка самсунга это нечто иное по сравнению со стандартным андроидом. Простота использования, настройки телефона и переноса данных, а так же кастомизации интерфейса "под себя" позволяет разгуляться по полной. Новые дисплеи которые самсунг начали использовать невозможно сравнить ни с чем, что было раньше. Просто шикарный звук динамиков самого телефона, пусть я и не использую динамики часто, но очень приятно когда качество звука, басов и громкости на таком уровне. Об этом телефоне можно писать что угодно, а сравнивать с чем то другим даже не стоит. Это лучший аппарат на андроиде выпущенный за последние 2 года. Если вы задумываетесь над покупкой серьезного флагмана, крайне рекомендую вам приглядеться к этому телефону.</p>
+                            </div>
+                      
+                            <div class="likes-block contentRow">
+                              <a href="#" class="like-button">
+                                <i class="icomoon icon-like2"></i>
+                                <span>41</span>
+                              </a>
+                      
+                              <a href="#" class="like-button dislike">
+                                <i class="icomoon icon-like2"></i>
+                                <span>12</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="feedback-item">
+                        <div class="item-container">
+                          <div class="author-block">
+                            <div class="flex wrap center medium content-container">
+                              <div class="date mcol-md-12">21. 05. 1819</div>
+                              <ul class="rating-list mcol-xs-12">
+                                <li><i class="icomoon active"></i></li>
+                                <li><i class="icomoon active"></i></li>
+                                <li><i class="icomoon active"></i></li>
+                                <li><i class="icomoon active"></i></li>
+                                <li><i class="icomoon"></i></li>
+                              </ul>
+                            </div>
+                          </div>
+                      
+                          <div class="content-block">
+                      
+                            <div class="description contentRow">
+                              <p>Это великолепный смартфон, совершенство по всем параметрам. Забрал его по предзаказу 1 марта, сразу же с первого включения стало понятно, что новая оболочка самсунга это нечто иное по сравнению со стандартным андроидом. Простота использования, настройки телефона и переноса данных, а так же кастомизации интерфейса "под себя" позволяет разгуляться по полной. Новые дисплеи которые самсунг начали использовать невозможно сравнить ни с чем, что было раньше. Просто шикарный звук динамиков самого телефона, пусть я и не использую динамики часто, но очень приятно когда качество звука, басов и громкости на таком уровне. Об этом телефоне можно писать что угодно, а сравнивать с чем то другим даже не стоит. Это лучший аппарат на андроиде выпущенный за последние 2 года. Если вы задумываетесь над покупкой серьезного флагмана, крайне рекомендую вам приглядеться к этому телефону.</p>
+                            </div>
+                      
+                            <div class="likes-block contentRow">
+                              <a href="#" class="like-button">
+                                <i class="icomoon icon-like2"></i>
+                                <span>41</span>
+                              </a>
+                      
+                              <a href="#" class="like-button dislike">
+                                <i class="icomoon icon-like2"></i>
+                                <span>12</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+
+                  </div>
+                  
+                </div>
+              </div>
+
+      
+            </div>
+          </div>
+        </section>
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      
+    </div>
+    <!--  -->
+    <div id="pageOverlay" class="pageOverlay"></div>
+<!--  -->
+<div id="popupFeedback" class="popupFeedback popup">
+	<div class="popupWrapper">
+		<div class="popupContentWrapper">
+			
+			<div class="modalHeader flex wrap relative">
+				<button class="popupCloseButton" type="button"><i class="icomoon icon-cross1"></i></button>			
+			</div>
+			
+			<div class="popUpContainer">
+				<div class="page-title title medium">Оставить отзыв</div>			
+				
+				<form action="#" class="standard-form">
+
+					<div class="formRow ratingBlock flex center">
+						<label>Ваша оценка</label>
+						<div class="rating-count">
+							<input id="mf5" type="radio" name="rating" value="5">
+							<label for="mf5" class="icomoon icon-star1">5</label>
+							<input id="mf4" type="radio" name="rating" value="4">
+							<label for="mf4" class="icomoon icon-star1">4</label>
+							<input id="mf3" type="radio" name="rating" value="3">
+							<label for="mf3" class="icomoon icon-star1">3</label>
+						  <input id="mf2" type="radio" name="rating" value="2">
+						  <label for="mf2" class="icomoon icon-star1">2</label>
+						  <input id="mf1" type="radio" name="rating" value="1" required>
+						  <label for="mf1" class="icomoon icon-star1">1</label>
+						</div>
+					</div>
+
+					<div class="formRow">
+						<label class="label row-with-icon">
+							<i class="icomoon gradientIcon icon-chat"></i>
+							<div>Комментарий</div>
+						</label>
+					  <textarea name="comment" id="" rows="7" placeholder=""></textarea>                        
+					</div>
+
+					<div class="formRow">
+						<label class="label">Имя</label>
+					  <input type="text" placeholder="Имя" class="">
+					</div>
+
+					<div class="formRow">
+						<label class="label">Электронная почта</label>
+					  <input type="email" placeholder="Имя" class="">
+					  <div class="grey-highlight row-description">Адрес не будет виден другим посетителям</div>
+					</div>
+
+					<div class="formRow">
+						<button type="submit" class="standardButton primary uppercase">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+    <!--  -->
+    <footer class="mainFooter">
+	<section class="mcontainer ">
+		<div class="flex wrap sections-list">
+			<div class="section-block mcol-xs-12 mcol-sm-6 mcol-md-3 flex column">
+				<h4 class="block-title">Горячая линия</h4>
+
+				<div class="hot-line">
+					<a href="tel:0800303505">0-800-303-505</a>
+				</div>
+
+				<div class="footer-description">
+					<p>с 8:00 до 21:00 (без выходных) Бесплатно со стационарных и мобильных телефонов в Украине</p>
+				</div>
+
+				<h4 class="block-title push-down">Присоединяйтесь</h4>
+				<ul class="social-media-list">
+					<li class=""><a href="#" class="icomoon icon-google-plus"></a></li>
+					<li class=""><a href="#" class="icomoon icon-linkedin"></a></li>
+					<li class=""><a href="#" class="icomoon icon-vk"></a></li>
+					<li class=""><a href="#" class="icomoon icon-odnoklassniki"></a></li>
+					<li class=""><a href="#" class="icomoon icon-facebook"></a></li>
+					<li class=""><a href="#" class="icomoon icon-twitter"></a></li>
+				</ul>
+
+			</div>
+
+			<div class="section-block mcol-xs-12 mcol-sm-6 mcol-md-3">
+				<h4 class="block-title">Name logotype</h4>
+
+				<ul class="footer-menu">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Магазины</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Пресс-центр</a></li>
+					<li><a href="#">Работа в Name Logotype</a></li>
+					<li><a href="#">Политика</a></li>
+					<li><a href="#">Партнерам</a></li>
+					<li><a href="#">Каталог товаров</a></li>
+				</ul>
+			</div>
+
+			<div class="section-block mcol-xs-12 mcol-sm-6 mcol-md-3">
+				<h4 class="block-title">Услуги и сервисы</h4>
+
+				<ul class="footer-menu">
+					<li><a href="#">Бонусная программа</a></li>
+					<li><a href="#">Подарочные карты</a></li>
+					<li><a href="#">Кредит и оплата частями</a></li>
+					<li><a href="#">Установка</a></li>
+					<li><a href="#">Страховка</a></li>
+					<li><a href="#">Дополнительная гарантия</a></li>
+					<li><a href="#">IT-сервис</a></li>
+					<li><a href="#">Безналичный счет</a></li>
+				</ul>
+			</div>
+
+			<div class="section-block mcol-xs-12 mcol-sm-6 mcol-md-3">
+				<h4 class="block-title">Помощь покупателю</h4>
+
+				<ul class="footer-menu">
+					<li><a href="#">Найти заказ</a></li>
+					<li><a href="#">Условия доставки</a></li>
+					<li><a href="#">Обмен и возврат товара</a></li>
+					<li><a href="#">Статус товара в ремонте</a></li>
+					<li><a href="#">Часто задаваемые вопросы</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="bottomFooter">
+		<!-- ______ -->
+		<div class="mcontainer">
+			<div class="contentContainer flex wrap spaceBetween">
+				<div class="rights  mcol-xs-12 mcol-sm-6">© ООО «NAME LOGOTYPE», 2011–2019</div>
+				<a href="#" class="zengineers mcol-xs-12 mcol-sm-6">
+					<span>Разработано в </span><span><img src="./img/icons/zengineers-logo.svg" alt="zengineers-logo"></span>
+				</a>
+			</div>
+		</div>
+	</section>
+</footer>
+    <!--  -->
+  </div>
+  <!--  -->
+  <!--________SCRIPTS______-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/dotdotdot.min.js"></script>
+<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+
+<script type="text/javascript" src="js/index.min.js"></script>
+
+  <!--  -->
+</body>
+
+</html>

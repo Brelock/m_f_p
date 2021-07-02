@@ -1,0 +1,54 @@
+<div id="pageOverlay" class="pageOverlay"></div>
+<!--  -->
+<div id="popupBasket" class="popupBasket popup">
+	<div class="popupWrapper">
+		<div class="popupContentWrapper">
+			@@include('basketNew.html')
+		</div>
+	</div>
+</div>
+
+<div class="modal-message modal-stock">
+	<div class="modal-content-wrap">
+		 <div class="button-close button-close--blue"></div>
+		 <div class="modal_content">
+			<div class="modal__content-title">Отправить сообщение</div>
+			<form method="POST" action="#" class="form form-contact-call form-val-js">
+				<div class="form-row-secondary">
+					<input name="email" type="text" class="form-item" placeholder="a-mail" autocomplete="off" data-validate="required" data-error-text="Необходимо заполнить поле">
+				</div>
+				<div class="form-row-secondary">
+					<input name="phone" type="tel" class="form-item input_mask_phone" placeholder="Контактный телефон" autocomplete="off" data-validate="required" data-error-text="Необходимо заполнить поле">
+				</div>
+				<div class="form-row-secondary">
+					<textarea name="message" type="text" class="form-item" placeholder="Текст сообщение" autocomplete="off" data-validate="required" data-error-text="Необходимо заполнить поле"></textarea>
+				</div>
+				<div class="form-row-secondary">
+					<button type="submit" class="button button--small secondary_btn">Отправить</button>
+				</div>
+			</form> 
+		 </div>
+	</div>
+	<div class="modal-overlay"></div>
+</div>
+
+<div class="modal-callback modal-stock">
+	<div class="modal-content-wrap">
+		<div class="button-close button-close--blue"></div>
+		<div class="modal_content">
+		 <div class="modal__content-title">Перезвоните мне</div>
+		 <form method="POST" action="#" class="form form-contact-call form-val-js">
+			 <div class="form-row-secondary">
+				 <input name="name" type="text" class="form-item" placeholder="Имя" autocomplete="off" data-validate="required" data-error-text="Необходимо заполнить поле">
+			 </div>
+			 <div class="form-row-secondary">
+				<input name="phone" type="tel" class="form-item input_mask_phone" placeholder="Контактный телефон" autocomplete="off" data-validate="required" data-error-text="Необходимо заполнить поле">
+			</div>
+			 <div class="form-row-secondary">
+				 <button type="submit" class="button button--small secondary_btn">Отправить</button>
+			 </div>
+		 </form> 
+		</div>
+ </div>
+ <div class="modal-overlay"></div>
+</div>

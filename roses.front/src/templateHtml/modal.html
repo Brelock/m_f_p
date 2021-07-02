@@ -1,0 +1,59 @@
+<div id="pageOverlay" class="pageOverlay"></div>
+<!--  -->
+<div id="popupFeedback" class="popupFeedback popup">
+	<div class="popupWrapper">
+		<div class="popupContentWrapper">
+			
+			<div class="modalHeader flex wrap relative">
+				<button class="popupCloseButton" type="button"><i class="icomoon icon-cross1"></i></button>			
+			</div>
+			
+			<div class="popUpContainer">
+				<div class="page-title title medium">Оставить отзыв</div>			
+				
+				<form action="#" class="standard-form">
+
+					<div class="formRow ratingBlock flex center">
+						<label>Ваша оценка</label>
+						<div class="rating-count">
+							<input id="mf5" type="radio" name="rating" value="5">
+							<label for="mf5" class="icomoon icon-star1">5</label>
+							<input id="mf4" type="radio" name="rating" value="4">
+							<label for="mf4" class="icomoon icon-star1">4</label>
+							<input id="mf3" type="radio" name="rating" value="3">
+							<label for="mf3" class="icomoon icon-star1">3</label>
+						  <input id="mf2" type="radio" name="rating" value="2">
+						  <label for="mf2" class="icomoon icon-star1">2</label>
+						  <input id="mf1" type="radio" name="rating" value="1" required>
+						  <label for="mf1" class="icomoon icon-star1">1</label>
+						</div>
+					</div>
+
+					<div class="formRow">
+						<label class="label row-with-icon">
+							<i class="icomoon gradientIcon icon-chat"></i>
+							<div>Комментарий</div>
+						</label>
+					  <textarea name="comment" id="" rows="7" placeholder=""></textarea>                        
+					</div>
+
+					<div class="formRow">
+						<label class="label">Имя</label>
+					  <input type="text" placeholder="Имя" class="">
+					</div>
+
+					<div class="formRow">
+						<label class="label">Электронная почта</label>
+					  <input type="email" placeholder="Имя" class="">
+					  <div class="grey-highlight row-description">Адрес не будет виден другим посетителям</div>
+					</div>
+
+					<div class="formRow">
+						<button type="submit" class="standardButton primary uppercase">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+

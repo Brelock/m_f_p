@@ -1,0 +1,23 @@
+.register-links {
+  display: flex;
+  justify-content: space-around;
+
+  max-width: 205px;
+  margin: 0 auto;
+
+  @media (min-width: $xlLayout) {
+    justify-content: space-between;
+  }
+
+  .icomoon {
+    font-size: 35px;
+  }
+
+  .icon-google {
+    font-size: 42px;
+  }
+
+  a:hover {
+    color: $yellowTextColor;
+  } 
+}

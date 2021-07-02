@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "cabinet": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="profilePage" class="profilePage cabinet-category page">
+
+        <section class="pageSection ">
+          <div class="mcontainer">
+            <div class="sectionHeader sectionBlock">
+              <ul class="breadcrumbs mcol-xs-hide mcol-md-show">
+                <li><a href="/index.html">Главная</a></li>
+                <li class="active"><a href="#">Личный кабинет</a></li>
+              </ul>
+
+              <h2 class="page-title medium">Личный кабинет</h2>
+            </div>
+          
+            <div class="sectionBlock">
+
+              <div class="flex wrap">
+                <aside class="sidebar mcol-xs-12 mcol-md-3 accordionMenu">
+                  @@include('templateHtml/cabinetSidebar.html', { "profile": "active" })                  
+                </aside>
+
+                <div class="content-wrapper mcol-xs-12 mcol-md-9">
+                  <form action="/" class="standard-form content-container">
+                    
+                    <div class="form-section">
+                      <div class="title page-title">Личные данные</div>
+
+                      <div class="formRow flex wrap center mcol-xs-12 mcol-sm-8 mcol-lg-7">
+                        <label class="mcol-xs-12 mcol-sm-4 mcol-lg-5">Электронная почта</label>
+                        <input type="email" placeholder="Электронная почта" class="mcol-xs-12 mcol-sm-8 mcol-lg-7">
+                      </div>
+
+                      <div class="formRow flex wrap center mcol-xs-12 mcol-sm-8 mcol-lg-7">
+                        <label class="mcol-xs-12 mcol-sm-4 mcol-lg-5">пароль</label>
+                        <input type="password" placeholder="пароль" class="mcol-xs-12 mcol-sm-8 mcol-lg-7">
+                      </div>
+
+                      <div class="formRow flex wrap center mcol-xs-12 mcol-sm-8 mcol-lg-7">
+                        <label class="mcol-xs-12 mcol-sm-4 mcol-lg-5">Имя</label>
+                        <input type="text" placeholder="Имя" class="mcol-xs-12 mcol-sm-8 mcol-lg-7">
+                      </div>
+                      
+                      <div class="formRow flex wrap center mcol-xs-12 mcol-sm-8 mcol-lg-7">
+                        <label class="mcol-xs-12 mcol-sm-4 mcol-lg-5">Телефон</label>
+                        <input type="text" placeholder="Телефон" class="mcol-xs-12 mcol-sm-8 mcol-lg-7">
+                      </div>
+
+                      <div class="formRow mcol-xs-12 mcol-sm-8 mcol-lg-7 ">
+                        <div class="buttonWrapper mcol-xs-12 mcol-sm-8 mcol-lg-7 push-right">
+                          <a href="#" class="standardButton primary uppercase">Сохранить</a>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="form-section">
+
+                      <div class="title page-title">Адрес доставки</div>
+
+                      <div class="formRow customRadioContainer flex wrap" >
+                        <div class="formElement mcol-xs-12 mcol-sm-4">
+                          <input id="d1" type="radio" name="delivery-group" class="radioButton" 
+                            data-target="delivery1" data-class="js_show" checked>
+                          <label for="d1"><span class="checkbox-label">Новая почта</span></label>
+                        </div>
+
+                        <div class="formElement mcol-xs-12 mcol-sm-4">
+                          <input id="d2" type="radio" name="delivery-group" class="radioButton" 
+                            data-target="delivery2" data-class="js_show">
+                          <label for="d2"><span class="checkbox-label">Самовывоз</span></label>
+                        </div>
+                      </div>
+
+                      <div id="delivery1" class="formRow hiddenContent hide delivery-group">
+                        <div class="formRow flex wrap center mcol-xs-12 mcol-sm-8 mcol-lg-7 ">
+                          <label class="mcol-xs-12 mcol-sm-4 mcol-lg-5">Город</label>
+                          <div class="chosen-wrapper mcol-xs-12 mcol-sm-8 mcol-lg-7">
+                            <select data-placeholder="Город" class="">
+                              <option value="1"></option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                            </select>                          
+                          </div>
+                        </div>
+
+                        <div class="formRow flex wrap center mcol-xs-12 mcol-sm-8 mcol-lg-7 ">
+                          <label class="mcol-xs-12 mcol-sm-4 mcol-lg-5">Номер отделения Новой почты</label>
+                          <div class="chosen-wrapper mcol-xs-12 mcol-sm-8 mcol-lg-7">
+                            <select data-placeholder="Выберите отделение" class="">
+                              <option value="1"></option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                            </select>                          
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="delivery2" class="formRow hiddenContent hide delivery-group">
+                        <div class="formRow flex wrap center mcol-xs-12 mcol-sm-8 mcol-lg-7 ">
+                          <label class="mcol-xs-12 mcol-sm-4 mcol-lg-5">Город</label>
+                          <div class="chosen-wrapper mcol-xs-12 mcol-sm-8 mcol-lg-7">
+                            <select data-placeholder="Город" class="">
+                              <option value="1"></option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                            </select>                          
+                          </div>
+                        </div>
+
+                        <div class="formRow flex wrap center mcol-xs-12 mcol-sm-8 mcol-lg-7 ">
+                          <label class="mcol-xs-12 mcol-sm-4 mcol-lg-5">Адрес магазина</label>
+                          <div class="chosen-wrapper mcol-xs-12 mcol-sm-8 mcol-lg-7">
+                            <select data-placeholder="Выберите отделение" class="">
+                              <option value="1"></option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                            </select>                          
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="formRow mcol-xs-12 mcol-sm-8 mcol-lg-7 ">
+                        <div class="buttonWrapper mcol-xs-12 mcol-sm-8 mcol-lg-7 push-right">
+                          <a href="#" class="standardButton primary uppercase">Сохранить</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

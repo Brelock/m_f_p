@@ -1,0 +1,314 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body Styles 
+body,
+html, 
+.body {
+  background: #f3f3f3 !important;
+}
+.logo-site{
+  color: #fff;
+}
+.container.header {
+  background: #f3f3f3;
+}
+
+.body-drip {
+  border-top: 8px solid #663399;
+}
+h4{
+  font-weight: 600;
+}
+// Full Width Headers
+.header {
+  background: #8a8a8a;
+}
+
+.header .columns {
+  padding-bottom: 0;
+}
+
+.header p {
+  color: #fff;
+  padding-top: 15px;
+}
+
+.header .wrapper-inner {
+  padding: 20px;
+}
+
+.header .container {
+  background: transparent;
+}
+table.container{
+  max-width: 600px;
+  width: 100%;
+}
+// Social Media
+table.button.facebook table td {
+  background: #3B5998 !important;
+  border-color: #3B5998;
+}
+
+table.button.twitter table td {
+  background: #1daced !important;
+  border-color: #1daced;
+}
+
+table.button.google table td {
+  background: #DB4A39 !important;
+  border-color: #DB4A39;
+}
+
+.wrapper.secondary {
+  background: #f3f3f3;
+}
+
+.logo-site, .logo-site-vsem, .logo-site-rozes {
+  height: 100%;
+  max-height: 40px;
+  min-width: 200px;
+  max-width: 200px;
+  width: 100% !important;
+  @media (min-width: 768px){}
+  max-width: 235px;
+}
+
+.icon-header {
+  width: auto;
+  max-width: 30px;
+  height: 25px !important;
+  margin: 0 5px;
+}
+
+.header-container .columns {
+  padding-top: 16px;
+}
+
+.link-in-site, .link-product {
+  text-decoration: underline;
+  color: #015AAB;
+}
+
+.header-container .columns.last {
+  padding-top: 24px;
+}
+
+.header-container.rozes-header .columns.last {
+  padding-top: 21px;
+}
+
+.header-container .columns.last p{
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.content-email-welcomen{
+  padding-left: 25px !important;
+}
+
+.logo-link {
+  max-width: 235px !important;
+}
+
+.wrap-btn-registr {
+  border: none !important;
+  border-radius: 7px;
+}
+
+.btn-register-rozes  {
+  background-color:#0AB1B0 !important;
+}
+.btn-register-vsem  {
+  background-color:#42B02B !important;
+}
+.wrap-btn-registr a{outline: none;}
+
+.btn-wrapper{
+  margin-left: 0;
+  @media (min-width: 768px){
+    margin-left: 25px;
+  }
+}
+
+table.button{
+  margin: auto !important;
+  @media (min-width: 768px){
+    margin: 0 !important;
+    margin-right: auto !important;
+  }
+}
+
+.phone-link{
+  text-decoration: underline;
+  color: #015AAB;
+}
+
+table.body .collapse .columns, table.body .collapse .column{
+  padding-left: 16px !important;
+}
+
+table.body .container-basket-he.collapse .columns, 
+table.body .container-basket-he.collapse .column{
+  padding-right: 16px !important;
+  padding-left: 0 !important;
+}
+
+table.body .container {
+  width: 100% !important;
+}
+
+.wrap-basket-content{
+  width: 95% !important;
+  max-width: 560px !important;
+  margin-left: 10px;
+  margin-right: 10px;
+  @media (min-width: 768px){
+    width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.thumbs-item.first{
+  padding: 20px 0 20px 20px !important;
+}
+
+.thumbs-item.last{
+  padding: 20px 20px 20px 0 !important;
+}
+
+.value-thumbs-item{
+  margin-top: 10px;
+}
+
+.border-bottom_basket-content{
+  border-bottom: 1px solid #bfbfbf
+}
+
+.data-counting {
+  padding: 20px !important;
+}
+
+.data-counting p{margin: 5px 0 0 0 !important;}
+.data-counting p.total-price{margin: 0 !important;}
+
+.data-counting p span{
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.b-text{font-weight: 600;}
+
+.total-price {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.total-price span{
+  color:#42B02B;
+}
+
+.total-price.rozes-price span{
+  color:#05B1B0;
+}
+
+.contact-subdata-string{
+  font-weight: 600;
+}
+
+.ml40{
+  margin-left: 20px;
+  @media (min-width: 768px){
+    margin-left: 40px;
+  }
+}
+
+.ml20{
+  margin-left: 20px;
+}
+
+.pt20{
+  padding-top: 20px;
+}
+
+.pb20{
+  padding-bottom: 20px;
+}
+
+.title-total-products{
+  padding: 20px 20px 0 20px !important;
+}
+
+.title-delivery-products{
+  padding: 35px 20px 0 20px !important;
+}
+
+.title-delivery-products h4{
+  font-weight: 600;
+}
+
+.delivery-content{
+  padding-top: 20px;
+}
+
+.title-total-products h3{
+ margin: 0 !important;
+ font-weight: 600;
+}
+
+.title-total-products h3 span{
+  margin-left: 15px;
+}
+
+.container {
+  background-color: #fff !important;
+}
+
+
+/* he */
+.container-he{
+  body, table.body, h1, h2, h3, h4, h5, h6, p, td, th{
+    text-align: right !important;
+  }
+  &.button{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    @media (min-width: 768px){
+      margin-right: 15px !important;
+    }
+  }
+}
+
+.container-basket-he{
+  body, table.body, h1, h2, h3, h4, h5, h6, p, td, th{
+    text-align: right !important;
+  }
+  .thumbs-item img{
+    margin-left: auto;
+  }
+}
+
+.mlAuto{
+  margin-left: auto;
+}
+.mr40{
+  margin-right: 20px;
+  margin-left: auto;
+  h4, h3, p{
+    text-align: right !important;
+  }
+  @media (min-width: 768px){
+    margin-right: 40px;
+  }
+}
+.mr20{
+  margin-right: 20px;
+  margin-left: auto;
+  h4, h3, p{
+    text-align: right !important;
+  }
+}
+// .large-1 {
+// }

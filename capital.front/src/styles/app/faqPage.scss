@@ -1,0 +1,80 @@
+.faqPage {
+
+	@keyframes slideFromLeft {
+		0% { transform: translateX(-125%); opacity: 0; }
+		100% { transform: translateX(0); opacity: 1; }
+	}
+	@keyframes slideFromRight {
+		0% { transform: translateX(125%); opacity: 0;	}
+		100% { transform: translateX(0); opacity: 1;		}
+	}
+
+
+	.faq-list {
+		&.animation {
+			
+			& > li {
+				visibility: hidden;
+				opacity: 0;
+				// transition: opacity 1.8s;
+			}
+
+			&.js_animate {
+				& > li {
+					// opacity: 1;
+					visibility: visible;
+					animation-iteration-count: 1;
+					animation-fill-mode: forwards;
+					animation-timing-function: ease;
+					animation-duration: 0.7s;
+				}
+
+				& > li.js_animateLeft {
+					animation-name: slideFromLeft;					
+				}
+				& > li.js_animateRight {
+					animation-name: slideFromRight;					
+				}
+				
+			}
+		}
+	}
+
+	.questionsFormBlock {
+		background-color: $fourthColor;
+		border-radius: 38px; 
+
+		& > .content-wrapper {
+			padding: 30px;
+
+		}
+	}
+
+	.questions-form {
+		margin-top: 20px;
+
+		input {
+			max-width: 360px;
+			padding: 0 25px;
+			background-color: transparent;
+			border-radius: 20px;
+			height: 40px;
+		}
+		.js_warning-list {
+			max-width: 360px;
+		}
+
+		.formRow {
+			& + .formRow {margin-top: 7px;}
+		}
+	}
+
+	@media (min-width: 767px) {
+		.questionsFormBlock {
+			& > .content-wrapper {
+				padding: 40px;
+			}
+		}
+	}
+	
+}

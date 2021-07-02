@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "cart": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="checkoutPage" class="checkoutPage cart-category page">
+
+        <section class="pageSection ">
+          <div class="mcontainer">
+            <div class="sectionHeader sectionBlock">
+              <ul class="breadcrumbs mcol-xs-hide mcol-md-show">
+                <li><a href="/index.html">Главная</a></li>
+                <li class="active"><a href="#">Корзина</a></li>
+              </ul>
+
+              <h1 class="page-title medium">Корзина</h1>
+            </div>
+          
+            <div class="sectionBlock">
+              <form action="/" class="flex wrap main-section-block standard-form">
+                <div class="formContentBlock  mcol-xs-12 mcol-md-8 mcol-lg-9">
+                  <div class="contentNavBar contactsTabsNavBar tabsNav flex wrap justify">
+                    <div data-target="newClient-tab" class="tabButton active"
+                      data-tabs-group="contactsTab"
+                      data-tabs-container="contactsTabsContainer"><b>Новый клиент</b>
+                    </div>
+                    <div data-target="regularClient-tab" class="tabButton"
+                      data-tabs-group="contactsTab"
+                      data-tabs-container="contactsTabsContainer"><b>Постоянный клиент</b>
+                    </div>
+                  </div>
+
+                  <div class="content-container">
+                    <div class="form-section">
+                      
+                      <div class="toggleBlocks-list contactsTabsContainer fade-animation js_animate sectionBlock">
+
+                        <div id="newClient-tab" class="toggleBlock contactsTab active">
+                          <div class="tab-container mrow flex wrap center">
+                            <div class="mcol-xs-12 mcol-sm-6 column">
+                              <div class="title form-section-title">Контактная информация</div>
+
+                              <div class="formRow">
+                                <input type="text" placeholder="Имя" class="mcol-xs-12 mcol-sm-10 mcol-lg-8">
+                              </div>
+
+                              <div class="formRow">
+                                <input type="text" placeholder="Фамилия" class="mcol-xs-12 mcol-sm-10 mcol-lg-8">
+                              </div>
+
+                              <div class="formRow">
+                                <input type="text" placeholder="Телефон" class="mcol-xs-12 mcol-sm-10 mcol-lg-8">
+                              </div>
+
+                              <div class="formRow">
+                                <input type="email" placeholder="Email" class="mcol-xs-12 mcol-sm-10 mcol-lg-8">
+                              </div>
+
+                              <div class="formRow">
+                                <button type="submit" class="standardButton primary uppercase">Далее</button>
+                              </div>
+                            </div>
+
+                            <div class="blocks-delimenter">или</div>
+
+                            <div class="mcol-xs-12 mcol-sm-6 remoteBlock column">
+                              <div class="title article-title medium">Войти через</div>
+                              <div class="remoteRow mrow flex ">
+                                <div class="wrapperBlock">
+                                  <button type="button" class="">
+                                    <img src="/img/facebook_login.png" alt="login facebook">
+                                  </button>
+                                </div>
+                                <div class="wrapperBlock">
+                                  <button type="button" class="">
+                                    <img src="/img/gmail_login.png" alt="login gmail">
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="remoteRow">
+                                <div class="description">
+                                  <p>Мы не передаем социальным сетям никаких данных и не постим ничего у вас на стенах!</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div id="regularClient-tab" class="toggleBlock contactsTab">
+                          <div class="tab-container mrow flex wrap center">
+                            <div class="mcol-xs-12 mcol-sm-6 column">
+                              <div class="title form-section-title">Контактная информация</div>
+
+                              <div class="formRow">
+                                <input type="text" disabled placeholder="Имя" class="mcol-xs-12 mcol-sm-10 mcol-lg-8">
+                              </div>
+
+                              <div class="formRow">
+                                <input type="text" disabled placeholder="Фамилия" class="mcol-xs-12 mcol-sm-10 mcol-lg-8">
+                              </div>
+
+                              <div class="formRow">
+                                <input type="text" placeholder="Телефон" class="mcol-xs-12 mcol-sm-10 mcol-lg-8">
+                              </div>
+
+                              <div class="formRow">
+                                <input type="email" disabled placeholder="Email" class="mcol-xs-12 mcol-sm-10 mcol-lg-8">
+                              </div>
+                            </div>
+
+                            <div class="blocks-delimenter">или</div>
+
+                            <div class="mcol-xs-12 mcol-sm-6 remoteBlock column">
+                              <div class="title article-title medium">Войти через</div>
+                              <div class="remoteRow mrow flex ">
+                                <div class="wrapperBlock">
+                                  <button type="button" class="">
+                                    <img src="/img/facebook_login.png" alt="login facebook">
+                                  </button>
+                                </div>
+                                <div class="wrapperBlock">
+                                  <button type="button" class="">
+                                    <img src="/img/gmail_login.png" alt="login gmail">
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="remoteRow">
+                                <div class="description">
+                                  <p>Мы не передаем социальным сетям никаких данных и не постим ничего у вас на стенах!</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+
+                    <div class="form-section">
+                      <div class="title form-section-title">Способ доставки</div>
+
+                      <div class="formRow customCheckboxContainer flex wrap" >
+                        <div class="formElement mcol-xs-12 mcol-sm-4 mcol-md-3">
+                          <input id="c1" type="radio" name="delivery-group" class="radioButton" 
+                            data-target="delivery1" data-class="js_show" checked>
+                          <label for="c1"><span class="checkbox-label">Новая почта</span></label>
+                        </div>
+
+                        <div class="formElement mcol-xs-12 mcol-sm-4 mcol-md-3">
+                          <input id="c2" type="radio" name="delivery-group" class="radioButton" 
+                            data-target="delivery2" data-class="js_show">
+                          <label for="c2"><span class="checkbox-label">Укрпочта</span></label>
+                        </div>
+
+                        <div class="formElement mcol-xs-12 mcol-sm-4 mcol-md-3">
+                          <input id="c3" type="radio" name="delivery-group" class="radioButton" 
+                            data-target="delivery3" data-class="js_show">
+                          <label for="c3"><span class="checkbox-label">Забрать из магазина</span></label>
+                        </div>
+                      </div>
+
+                      <div id="delivery1" class="formRow hiddenContent hide delivery-group">
+                        <div class="mrow flex wrap chosen-wrapper">
+                          <div class="formBlock mcol-xs-12 mcol-sm-4 mcol-md-6 mcol-lg-4">
+                            <select name="" data-placeholder="Выберите город доставки">
+                              <option value="1"></option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                            </select>
+                          </div>
+                          
+                          <div class="formBlock mcol-xs-12 mcol-sm-4 mcol-md-6 mcol-lg-4">
+                            <select name="" data-placeholder="Выберите номер отделения">
+                              <option value="1"></option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="delivery2" class="formRow hiddenContent hide delivery-group">
+                        <div class="mrow flex wrap chosen-wrapper">
+                          <div class="formBlock mcol-xs-12 mcol-sm-4 mcol-md-6 mcol-lg-4">
+                            <select name="" data-placeholder="Выберите город доставки">
+                              <option value="1"></option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                            </select>
+                          </div>
+
+                          <div class="formBlock mcol-xs-12 mcol-sm-4 mcol-md-6 mcol-lg-4">
+                            <input type="text" placeholder="Введите ваш адрес">
+                          </div>
+                          
+                          <div class="formBlock mcol-xs-12 mcol-sm-4 mcol-md-6 mcol-lg-4">
+                            <input type="text" placeholder="Введите почтовый индекс">
+                          </div>
+
+                          <!-- <div class="formBlock customCheckboxContainer mcol-xs-12 mcol-sm-4 mcol-md-6 mcol-lg-4">
+                            <input id="d11" type="checkbox" class="">
+                            <label for="d11">
+                              <span class="checkbox-label">До востребования
+                                <br><span class="subDescription">(* остается в отделении почты)</span>
+                              </span>
+                            </label>
+                          </div> -->
+                        </div>
+                      </div>
+
+                      <div id="delivery3" class="formRow hiddenContent hide delivery-group">
+                        <div class="mrow flex wrap chosen-wrapper">
+                          <div class="formBlock mcol-xs-12 mcol-sm-4 mcol-md-6 mcol-lg-4">
+                            <select name="" data-placeholder="Выберите город доставки">
+                              <option value="1"></option>
+                              <option value="2" >Option 2</option>
+                              <option value="3" >Option 3</option>
+                            </select>
+                          </div>
+                          
+                          <div class="formBlock mcol-xs-12 mcol-sm-4 mcol-md-6 mcol-lg-4">
+                            <select name="" data-placeholder="Выберите адрес магазина">
+                              <option value="1"></option>
+                              <option value="2" >Option 2</option>
+                              <option value="3" >Option 3</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-section">
+                      <div class="title form-section-title">Способ оплаты</div>
+
+                      <div class="formRow customCheckboxContainer flex wrap" >
+                        <div class="formElement mcol-xs-12 mcol-sm-4">
+                          <input id="c11" type="radio" name="payment-group" class="radioButton" 
+                            data-target="payment1" data-class="js_show" checked>
+                          <label for="c11"><span class="checkbox-label">Наличными при получении</span></label>
+                        </div>
+
+                        <div class="formElement mcol-xs-12 mcol-sm-4">
+                          <input id="c12" type="radio" name="payment-group" class="radioButton" 
+                            data-target="payment2" data-class="js_show">
+                          <label for="c12"><span class="checkbox-label">Картой Visa I MasterCard</span></label>
+                        </div>
+                      </div>
+
+                      <!-- <div id="payment2" class="formRow hiddenContent hide payment-group">
+                        <div class="mrow flex wrap">
+                          <div class="formBlock mcol-xs-12 mcol-sm-4 mcol-md-6 mcol-lg-4">
+                            <input type="text" placeholder="Введите номер банковской карточки">
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+
+                    <div class="form-section">
+                      <div class="title form-section-title">Комментарий к заказу</div>
+
+                      <div class="formRow">
+                        <textarea name="message"  rows="7" placeholder="На что нам обратить внимание при обработке вашего заказа?"></textarea>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="resultBlock mcol-xs-12 mcol-md-4 mcol-lg-3">
+                  <div class="content-container">
+                    <div class="form-section">
+                      <div class="title form-section-title">Состав заказа</div>
+
+                      <div class="cart-list">
+                        <div class="list-item medium flex">
+                          <div class="mcol-xs-3 imgWrapper">
+                            <img src="./img/products/prod-1.jpg" alt="prod">
+                          </div>
+
+                          <div class="mcol-xs-9">
+                            <div class="name">Название товара длинное или даже очень длинное</div>
+                            <div class="result">
+                              <span class="items-quantity">1 шт. x</span>
+                              <span><b>456 грн</b></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="list-item medium flex">
+                          <div class="mcol-xs-3 imgWrapper">
+                            <img src="./img/products/prod-2.jpg" alt="prod">
+                          </div>
+
+                          <div class="mcol-xs-9">
+                            <div class="name">Название товара длинное или даже очень длинное</div>
+                            <div class="result">
+                              <span class="items-quantity">2 шт. x</span>
+                              <span><b>4560 грн</b></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>   
+
+                    <div class="form-section ">
+                      <div class="formRow flex bottom">
+                        <span class="medium">Итого</span>
+                        <span class="total-price push-right"><b>45645 грн</b></span>
+                      </div>
+
+                      <div class="formRow limitedWidthWrapper">
+                        <a href="#" class="standardButton primary uppercase">оплатить заказ</a>
+                      </div>
+
+                      <div class="formRow customCheckboxContainer eulaBlock">
+                        <input id="eula" type="checkbox" class="">
+                        <label for="eula"><span class="checkbox-label">Я согласен на обработку <a href="#">персональных данных</a>, а также с условиями <a href="#">оферты</a>.</span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+           
+              </form>
+            </div>
+          </div>
+        </section>
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

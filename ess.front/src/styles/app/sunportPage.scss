@@ -1,0 +1,967 @@
+.top-section-sunport{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    .sunport-top-banner{
+        background-color: $secondaryColor;
+        position: relative;
+        height: 100%;
+        min-height: 200px;
+        img{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            // width: max-content;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .top-section-sunport__content{
+        height: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sunport__content-icon{
+        img{
+            max-width: 175px;
+        }
+    }
+   .ess-section-title{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #000;
+      text-align: center;
+      p{
+        padding: 0;
+        margin: 5px 0;
+      }
+   }
+ 
+    @media (min-width: $containerWidthLaptop){
+        height: 100vh;
+
+        .sunport-top-banner{
+            height: 40vh;
+            min-height: 100px;
+            img{
+              height: 38vh;
+            }
+        }
+     
+        .top-section-sunport__content{
+            height: calc(100vh - 40vh - 198px);
+            margin: 0;
+        }
+        .ess-section-title{
+            flex-direction: row;
+
+            font-size: 18px;
+            line-height: 24px;
+            p{
+              &:nth-child(2){
+                padding-left: 5px;
+                padding-right: 5px;
+              }
+            }
+        }
+    }
+}
+
+.sunport-video-banner{
+    position: relative;
+    height: 100vh;
+
+    overflow: hidden;
+    .sunport-video-bg{
+        position: absolute;
+        background-color: rgba(0,0,0,0.3);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        &:before{
+            content: "";
+            background-image: -webkit-gradient(linear,left bottom,right top,color-stop(33%,transparent),color-stop(33%,#000),color-stop(66%,#000),color-stop(66%,transparent));
+            background-image: linear-gradient(to right top,transparent 33%,#000 33%,#000 66%,transparent 66%);
+            background-size: 3px 3px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 4;
+        }
+    }
+    .ess-section-title{
+      color: #fff;
+    }
+    .sunport-video_content{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 444px;
+        z-index: 9;
+    }
+    .ess-section-title{
+        text-align: center;
+        font-size: 35px;
+    }
+    .ess-section-text{
+        color: #fff;
+        text-align: center;
+        margin-top: 20px;
+        padding: 0 20px;
+        line-height: 25px;
+        font-size: 17px;
+    }
+    .ess-section-btn{
+        margin: 30px auto 0;
+    }
+    video{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        min-width: 100%;
+        height: auto;
+    }
+    @media (min-width: $containerWidthLaptop){
+        // height: 100vh;
+     
+       
+        .ess-section-text{
+            margin-top: 30px;
+        }
+        .ess-section-btn{
+            margin: 50px auto 0;
+        }
+     
+    }
+}
+
+.sunport-first-slide-panel{
+    background-color: #000;
+    height: 100%;
+    position: relative;
+    .top-sketch-section{
+        width: 100%;
+        justify-content: center;
+        height: auto;
+        padding-top: 0 !important;
+    }
+    .sunport-img-prod{
+        min-width: 304px;
+        max-width: 305px;
+        min-height: 300px;
+        height: 100%;
+        max-height: 570px;
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .thumbnail-sketch-product{
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        margin: 0 20px;
+        padding-bottom: 20px;
+        .product-table{
+            min-height: 170px;
+        }
+        .mobile-bg-panel{
+            min-width: 304px;
+            max-width: 305px;
+            height: 100%;
+            max-height: 570px;
+        }
+        .product-slider{
+            display: none;
+            min-width: 304px;
+            max-width: 305px;
+            height: 100%;
+            max-height: 570px;
+        }
+    }
+    .product-table-wrap-line{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .product-table-line{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .product-table-wrap{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+     
+        max-width: 830px;
+        .product-table_bottom{
+            margin: 20px;
+            min-height: 405px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            .product-table_bottom-icon{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 20px 0;
+                img{
+                    max-width: 60px;
+                    max-height: 60px;
+                }
+                span{
+                    margin-top: 10px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .product-table_top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(inherit + 400px);
+        align-items: center;
+    }
+    .slick-dots{
+        bottom: 0;
+        li{
+            width: 15px;
+            height: 15px;
+            background-color: $primaryColor;
+            border-radius: 50%;
+            button{
+                width: 15px;
+                height: 15px;
+                &:before{
+                    font-size: 11px;
+                    top: 8px;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+        }
+    }
+    .arrows{
+        display: none;
+        position: absolute;
+        left: 50%;
+
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 40px;
+        width: 100%;
+        max-width: 1750px;
+     ul{
+         list-style: none;
+         padding: 0;
+         margin: 0;
+     }   
+     .top-sunport-prev{
+          position: absolute;
+          bottom: 0;
+          left: 6px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: $primaryColor;
+          cursor: pointer;
+          &::before{
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%) rotate(90deg);
+              background-image: url(../img/arrow.svg);
+              background-position: 50% 50%;
+              background-repeat: no-repeat;
+              background-size: 15px;
+              width: 40px;
+              height: 40px;
+  
+          }
+        @media (min-width: $containerWidthLaptop) {
+              left: 50px;
+        }
+ 
+     }
+
+     .top-sunport-next{
+         position: absolute;
+         top: 0;
+         right: 6px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: $primaryColor;
+          cursor: pointer;
+          &::before{
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%) rotate(-90deg);
+              background-image: url(../img/arrow.svg);
+              background-position: 50% 50%;
+              background-repeat: no-repeat;
+              background-size: 15px;
+              width: 40px;
+              height: 40px;
+  
+          }
+          @media (min-width: $containerWidthLaptop) {
+              right: 50px;
+          }
+     }
+    }
+    @media (min-width: $containerWidthLaptop){
+        height: 100vh;
+        .arrows{display: block;}
+        .thumbnail-sketch-product{
+            padding: 0;
+            .product-slider{
+                display: flex;
+                min-height: 430px;
+            }
+            .mobile-bg-panel{display: none;}
+        }
+        .product-table-wrap-line{
+            margin-top: 0;
+            flex-direction: row;
+        }
+        .product-table-line{
+            width: 50%;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .product-table-wrap{
+            .product-table{
+                justify-content: space-between;
+                max-width: 570px;
+                width: 100%;
+            }
+            .product-table_top{
+                height: 50%;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .product-table_bottom{
+                height: 50%;
+                min-height: auto;
+                flex-wrap: wrap;
+                flex-direction: row;
+                .product-table_bottom-icon{
+                    width: 33.33%;
+                    align-items: flex-start;
+                    span{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sunport-mwt-technology{
+    height: 100%;
+    background-color: $secondaryColor;
+    overflow: hidden;
+    .mwt-tech-wrap{
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      padding-top: 20px;
+    }
+    .ess-section-title{
+      color: #fff;
+    }
+    .ess-section-suptitle_sunport{
+      color: #fff;
+    }
+    .ess-section-title{
+      text-align: center;
+      padding-top: 12px;
+    }
+    .bottom-mwt-tech-suptitle{
+      opacity: .3;
+      text-align: center;
+      padding: 20px;
+      max-width: 520px;
+    }
+    .nwt-tech_present-panel-icon{
+      padding-left: 20px;
+      padding-right: 20px;
+      img{
+        max-width: 600px;
+        object-fit: contain;
+      }
+    }
+    .bottom-mwt-item_left{
+      width: 100%;
+    }
+    .bottom-mwt-item_right{
+      width: 100%;
+      background-color: #000;
+      height: 75px;
+      overflow: hidden;
+      button{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: all .3s;
+      }
+      img{
+        max-width: 50px;
+        max-height: 50px;
+        height: 100%;
+      }
+      span{
+        color: #fff;
+        font-size: 3vh;
+        font-weight: 600;
+      }
+    }
+    .mwt-tech-item{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      &:nth-child(2){
+        padding-top: 20px;
+      }
+    }
+    .nwt-tech_right{
+      ul {
+        padding-right: 20px;
+        li{
+          font-size: 15px;
+          line-height: 21px;
+          color: #fff;
+          margin: 5px 0;
+        }
+      }
+    }
+    .nwt-tech_left, .nwt-tech_right{
+      width: 100%;
+    }
+    .modal-content-wrap{
+			iframe{
+				width: 100vw;
+        height: 56.5vw;
+			}
+    }
+
+    @media (min-width: $containerWidthLaptop) {
+      height: 100vh;
+      .modal-content-wrap{
+        iframe{
+          width: 65vw;
+          height: 88vh;
+        }
+      }
+      .mwt-tech-wrap{
+        padding-top: 0;
+      }
+      .bottom-mwt-item_left{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .nwt-tech_right{
+        ul {
+          padding-right: 0;
+          li{
+            margin: 15px 0;
+          } 
+        }
+      }
+      .bottom-mwt-tech-suptitle{
+        text-align: left;
+        padding: 0 30px 0 0;
+        font-size: 22px;
+      }
+      .nwt-tech_left, .nwt-tech_right{
+        width: 50%;
+      }
+      .mwt-tech-item{
+        flex-direction: row;
+        &:first-child{
+          max-width: 1340px;
+          padding-top: 20px;
+          flex-direction: column;
+        }
+        &:nth-child(2){
+          max-width: 1100px;
+          padding-top: 0;
+        }
+      }
+      .ess-section-title{
+      //  font-size: 22px;
+       span{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        opacity: .3;
+       }
+      }
+      .bottom-mwt-item_right{
+        width: 50%;
+        height: 100px;
+        button{
+          justify-content: flex-start;
+        }
+        span{
+          padding-left: 75px;
+          color: #fff;
+          font-size: 24px;
+          line-height: 30px;
+        }
+        img{
+          padding-left: 75px;
+          max-width: 65px;
+          max-height: 65px;
+        }
+        &:hover{
+          button{
+            transform: scale(1.1);
+            transition: all .3s;
+          }
+        }
+
+      }
+      .nwt-tech_present-panel-icon{
+        padding-left: 0;
+        padding-right: 0;
+        img{
+          max-width: 480px;
+          object-fit: contain;
+        }
+      }
+    }
+}
+
+.sunport-technology-comparison {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  .ess-section-suptitle_sunport{
+    color: #000;
+  }
+  .ess-section-title{
+    color: #000;
+  }
+  @media (min-width: $containerWidthLaptop){
+    height: 100vh;
+    .technology-comparison__panels-wrap{
+      height: calc(100% - 200px);
+    }
+  }
+}
+
+
+.sunport-structure-cell{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .ess-section-title{
+    color: #000;
+  }
+  @media (min-width: $containerWidthLaptop){
+    height: 100vh;
+    .technology-comparison__panels-wrap{
+      height: calc(100% - 60px);
+    }
+  }
+}
+
+.sunport-encapsulation{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  .ess-section-title{
+    color: #000;
+  }
+  @media (min-width: $containerWidthLaptop){
+    height: 100vh;
+    .technology-comparison__panels-wrap{
+      height: calc(100% - 60px);
+    }
+  }
+}
+
+
+.sunport-last-slide-panel{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: $secondaryColor;
+  .slick-dots{
+    bottom: 0;
+    li{
+        width: 15px;
+        height: 15px;
+        background-color: $primaryColor;
+        border-radius: 50%;
+        button{
+            width: 15px;
+            height: 15px;
+            &:before{
+                font-size: 11px;
+                top: 8px;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+}
+ .arrows{
+    display: none;
+    position: absolute;
+    left: 50%;
+
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 100%;
+    max-width: 1750px;
+ ul{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }   
+ .sunport-bottom-slide-prev{
+      position: absolute;
+      bottom: 0;
+      left: 50px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: $primaryColor;
+      cursor: pointer;
+      &::before{
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(90deg);
+          background-image: url(../img/arrow.svg);
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: 15px;
+          width: 40px;
+          height: 40px;
+
+      }
+ }
+
+   .sunport-bottom-slide-next{
+     position: absolute;
+     top: 0;
+     right: 50px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: $primaryColor;
+      cursor: pointer;
+      &::before{
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(-90deg);
+          background-image: url(../img/arrow.svg);
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: 15px;
+          width: 40px;
+          height: 40px;
+
+      }
+   }
+ }
+ .item-sunport-slider{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .slick-list, .slick-track{
+   height: 100% !important;
+ }
+ .product-slider-pannel{
+  .wrap-img{
+    min-width: 299px;
+    max-width: 300px;
+    min-height: 303px;
+    max-height: 304px;
+  }
+ }
+ .product-slider{
+   height: 300px;
+ }
+ .product-table-lines-wrapper, .product-table-title{
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+.slick-slider{
+  margin-bottom: 10px;
+}
+  @media (min-width: $containerWidthLaptop){
+    height: 100vh;
+    .arrows{display: block;}
+    .sunport-bottom-slide-prev{left: 50px;}
+    .sunport-bottom-slide-next{right: 50px;}
+    .thumbnail-sketch__content, .top-sketch-section{
+      max-width: 1125px;
+      width: 100%;
+    } 
+    .product-table-lines-wrapper, .product-table-title{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .product-slider-pannel{
+      .wrap-img{
+        min-width: 399px;
+        max-width: 400px;
+        min-height: 303px;
+        max-height: 304px;
+      }
+     }
+     .thumbnail-sketch-product .product-table-line p{
+      line-height: 35px;
+     }
+  }
+}
+
+
+
+// .{
+//   height: 100%;
+//   position: relative;
+//   overflow: hidden;
+//   @media (min-width: $containerWidthLaptop){
+//     height: 100vh;
+//   }
+// }
+
+// --- sunport common ------------- 
+.sunportPage{
+  .thumbnail-sketch__content{
+    margin-top: 20px;
+  }
+  .project-cost-section {
+    .ess-section-title{
+      text-align: center;
+    }
+    @media (min-width: $containerWidthLaptop){
+      .ess-section-title{
+        text-align: left;
+      }
+    }
+  }
+  .ess-section-title{
+
+    text-align: center;
+    span{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -70%);
+    }
+  }
+  .wrap-sunport-title{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .technology-comparison__panels-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 20px;
+    @media (min-width: $containerWidthLaptop){
+     
+      padding-top: 0;
+    }
+  }
+  .comparison__panel-el{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ess-section-text{
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+      max-width: 400px;
+    }
+    img{
+      max-width: 300px;
+    }
+    @media (min-width: $containerWidthLaptop){
+      .ess-section-text{
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+  .comparison__panels{
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    @media (min-width: $containerWidthLaptop){
+      max-width: 880px;
+      width: 100%;
+      flex-direction: row;
+      padding-bottom: 0;
+      .ess-section-title{
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+  }
+  .technology-comparison__panels-title{
+    @media (min-width: $containerWidthLaptop){
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}
+
+
+// }
+// --// - sunport common ------------- 
+
+// ----- desktop L & Xl ---------
+.sunportPage.page{
+    @media (min-width: $containerWidthDesktopL){
+        .top-section-sunport{
+            .sunport-top-banner{
+                height: 50vh;
+                img{
+                  height: 48vh;
+                }
+            }
+            .sunport__content-icon{
+                img{
+                    max-width: 275px;
+                }
+            }
+            .top-section-sunport__content{
+                height: calc(100vh - 50vh - 198px);
+            }
+            .ess-section-title{
+              // flex-direction: column;
+                font-size: 26px;
+                line-height: 30px;
+            }
+        }
+        .sunport-first-slide-panel{
+            .product-table-wrap{
+                max-width: 1020px;
+                .product-table{
+                    max-width: 780px;
+                }
+            }
+        }
+        .nwt-tech_present-panel-icon{
+          img{
+            max-width: 550px;
+            object-fit: contain;
+          }
+        }
+        .modal-content-wrap{
+          iframe{
+            width: 950px;
+            height: 535px;
+          }
+        }
+        .ess-section-suptitle_sunport, .bottom-mwt-tech-suptitle{
+          font-size: 26px;
+          line-height: 34px;
+        }
+        .bottom-mwt-item_right{
+          height: 150px;
+          img{
+            padding-left: 100px;
+            max-width: 80px;
+            max-height: 80px;
+          }
+          span{
+            padding-left: 100px;
+            font-size: 28px;
+            line-height: 34px;
+          }
+        }
+        .mwt-tech-item{
+          &:nth-child(2){
+            max-width: 1340px;
+          }
+        }
+        .ess-section-suptitle_sunport{
+          max-width: 1340px;
+        }
+        .bottom-mwt-tech-suptitle{
+          max-width: 650px;
+        }
+        .technology-comparison__panels-title{
+          font-size: 28px;
+          line-height: 34px;
+        }
+        .comparison__panel-el{
+          img{
+            max-width: 450px;
+          }
+        }
+        .comparison__panels{
+          max-width: 1140px;
+        }
+        .wrap-sunport-title{
+          padding-top: 30px;
+        }
+        .sunport-last-slide-panel{
+          .thumbnail-sketch__content, .top-sketch-section{
+            max-width: 1340px;
+          } 
+        }
+    }
+}
+
+.sunportPage.page{
+  @media (min-width: $containerWidthDesktopXL){
+    .top-section-sunport{
+      .ess-section-title{
+        flex-direction: column;
+      }
+    }
+    .sunport-last-slide-panel{
+      .thumbnail-sketch-product .product-table-line p{
+        line-height: 43px;
+      }
+    }
+  }
+}

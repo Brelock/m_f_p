@@ -1,0 +1,98 @@
+// -----Pagination-----
+.pagination {
+	padding: 20px 0 20px;
+	width: 100%;
+
+	background-color: inherit;
+	
+	text-align: right;
+
+	.icomoon {
+		font-size: 18px;
+		font-weight: normal;
+		color: $primaryColor;
+	}
+
+	nav > ul > li.pagination-start,
+	nav > ul > li.pagination-end {
+		display: none;
+	}
+
+	nav > ul > li {
+		display: inline-block;
+		margin: 0 3px;
+
+		text-align: center;
+		vertical-align: middle;
+		background-color: transparent;
+		border-radius: 50%;
+
+		@media screen and (min-width: $xlLayout) {
+			margin: 0 3px;
+		}
+
+		& > a,
+		& > span,
+		& > a > span {
+			width: 33px;
+			height: 33px;
+			display: block;
+			font-size: 18px;
+			line-height: 33px;
+			transition: all .5s ease;
+
+			color: #fff;
+
+			border-radius: 50%;
+
+			@media (min-width: 375px) {
+				width: 38px;
+				height: 38px;
+				line-height: 38px;
+			}
+
+			@media screen and (min-width: $xlLayout) {
+				width: 38px;
+				height: 38px;
+				line-height: 38px;
+			}
+		}
+
+		&.active > span {
+			background-color: $primaryColor;
+			color: $fourthColor;
+		}
+	}
+
+	.pagination-prev, .pagination-next {
+		border: 1px solid $primaryColor;
+		border-radius: 50%;
+	} 
+
+	.pagination-prev {
+		transform: rotate(180deg);
+	}
+}
+
+.white-theme .pagination {
+	.icomoon {
+		color: $fourthColor;
+	}
+
+	.pagination-prev, .pagination-next {
+		border-color: $fourthColor;
+	}
+
+	nav > ul > li {
+		& > a,
+		& > span,
+		& > a > span {
+			color: #000;
+		}
+	}
+
+	nav > ul > li.active span {
+		background-color: #1938a5;
+    color: #ffed00;
+	}
+}

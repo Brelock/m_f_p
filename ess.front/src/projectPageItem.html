@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ESS</title>
+    <!--  -->
+    @@include('templateHtml/head.html')
+    <!--  -->
+  </head>
+
+  <body>
+    <div class="mainWrapper">
+      <div class="contentWrapper static-header">
+        <!--  -->
+        @@include('templateHtml/header.html', { "home": "active" })
+        <!--  -->
+        <div id="projectPageItem" class="projectPageItem page" >
+          
+          <div class="wrap-title">СЭС 30 кВт г.с. Матвеевка</div>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs-wrap">
+              <li class="breadcrumbs-link"><a href="index.html">Главная</a></li>
+              <li class="breadcrumbs-link"><a href="./projectPage.html">Наши работы</a></li>
+              <li class="breadcrumbs-link active-link"><a href="#">СЭС 30 кВт г.с. Матвеевка</a></li>
+            </ul>
+          </div>
+          
+          <div class="project-item">
+              <div class="project-item__slider">
+                <div class="slider-for">
+                  <img src="./img/energsave.png" alt="">                   
+                  <img src="./img/energsave.png" alt="">
+                  <img src="./img/energsave.png" alt="">
+                  <img src="./img/energsave.png" alt="">
+                  <img src="./img/energsave.png" alt="">
+                </div>
+                <div class="slider-nav">
+                  <img src="./img/energsave.png" class="actived-img" alt="">
+                  <img src="./img/energsave.png" alt="">
+                  <img src="./img/energsave.png" alt="">
+                  <img src="./img/energsave.png" alt="">
+                  <img src="./img/energsave.png" alt="">
+                </div>
+                <div class="arrows"> 
+                    <ul>
+                      <li class="next"></li>
+                      <li class="prev"></li>
+                    </ul>
+                </div>
+              </div>
+              <div class="project-item__info">
+                <div class="project-item__info-parameter">
+                  <div class="el-parameter">
+                    <p class="el-parameter__title visible-viewportchecker visibility--check">Адресс</p>
+                    <p class="el-parameter__context visible-viewportchecker visibility--check">Запорожская область с.Матвеевка</p>
+                  </div>
+                  <div class="el-parameter">
+                    <p class="el-parameter__title visible-viewportchecker visibility--check">Характеристики СЭС</p>
+                    <p class="el-parameter__context visible-viewportchecker visibility--check">Инвертор Аззурро
+                       30кВт и 16 панелей Risen 400. 
+                      Продолжение строительства летом.</p>
+                  </div>
+                  <div class="el-parameter">
+                    <p class="el-parameter__title visible-viewportchecker visibility--check">Ввод в эксплуатацию</p>
+                    <p class="el-parameter__context visible-viewportchecker visibility--check">Ввод в эксплуатацию 20 марта 2020 года</p>
+                  </div>
+                </div>
+                <div class="project-item__info-submit visible-viewportchecker visibility--check">
+                  <a href="./projectPage.html">Другие работы</a>
+                </div>
+              </div>
+          </div>
+          
+          
+        </div>
+        
+        
+      </div>
+      <!--  -->
+      
+      
+      @@include('templateHtml/footer.html') 
+      
+       
+       
+      <!--  -->
+      <!--  -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/scripts.html')
+  </body>
+</html>

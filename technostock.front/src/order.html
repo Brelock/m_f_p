@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="order" class="order page">
+        
+        <div class="breadcrumbsSection">
+          <div class="mcontainer">
+            <ul class="breadcrumbs sectionHeaderItem js_animate">
+              <li><a href="/index.html">Главная</a></li>
+              <li class="active">Оформление заказа</li>
+            </ul>  
+          </div>
+        </div>
+
+        <div class="pageSection">
+          <div class="mcontainer">
+            <div class="pageSection-title-wrap pageSection-title-wrap--border">
+              <h2 class="pageSection-title">Оформление заказа</h2>
+            </div>
+
+            <div class="products-categories products-categories--inner relative">
+              <div class="layout-main">
+                <div class="layout-left">
+                  <div class="cabinet-address-tabs tabsNav tabButtons">
+                    <button type="button" data-target="basket-newuser" class="tab tabButton button-tab active button button--inverse button--small">
+                      НОВЫЙ ПОКУПАТЕЛЬ
+                    </button>
+                    <button type="button" data-target="basket-olduser" class="tab tabButton button-tab button button--inverse button--small">
+                      постоянный клиент
+                    </button>
+                  </div>
+
+                  <div class="layout-order-content">
+                    <div class="layout-left">
+                      <div class="toggleBlocks-list">
+                        <div id="basket-newuser" class="toggleBlock active">
+
+                          <form
+                            action="#"
+                            class="form form-order form-val-js"
+                          >
+                            <div class="form-order-section">
+                              <div class="title-forms">
+                                <i class="icomoon icon-user yellow-blue"></i>
+                                <span>Контактные данные</span>
+                              </div>
+                              <div class="form-row form-row--two-items">
+                                <div class="form-item-wrap">
+                                  <label for="order-customer-name" class="form-label"
+                                    >ФИО*</label
+                                  >
+                                  <input
+                                    name="contactsName"
+                                    type="text"
+                                    id="order-customer-name"
+                                    class="form-item"
+                                    data-validate="required"
+                                    data-error-text="Необходимо заполнить поле"
+                                  />
+                                </div>
+                                <div class="form-item-wrap">
+                                  <label for="order-customer-phone" class="form-label"
+                                    >Телефон*</label
+                                  >
+                                  <input
+                                    name="contactSphone"
+                                    type="tel"
+                                    id="order-customer-phone"
+                                    class="form-item input_mask_phone"
+                                    data-validate="required"
+                                    data-error-text="Необходимо заполнить поле"
+                                  />
+                                </div>
+                              </div>
+                          
+                              <div class="form-row form-row--two-items">
+                                <div class="form-item-wrap">
+                                  <label for="order-customer-email" class="form-label"
+                                    >Электронная почта*</label
+                                  >
+                                  <input
+                                    name="contactsEmail"
+                                    type="email"
+                                    id="order-customer-email"
+                                    class="form-item"
+                                    data-validate="required"
+                                    data-error-text="Необходимо заполнить поле"
+                                  />
+                                </div>
+                                
+                                <div class="form-item-wrap">
+                                  <label for="order-customer-city" class="form-label"
+                                    >Ваш город*</label
+                                  >
+                                  <input
+                                    name="contactsCity"
+                                    type="text"
+                                    id="order-customer-city"
+                                    class="form-item"
+                                    data-validate="required"
+                                    data-error-text="Необходимо заполнить поле"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-order-section form-order-section--delivery">
+                              <div class="title-forms">
+                                <i class="icomoon icon-location yellow-blue"></i>
+                                <span>Доставка</span>
+                              </div>
+
+                              <div class="form-row form-row--three-items tabsNav-secondary tabButtons">
+                                <div class="radio-item tab" data-target="order-newpost">
+                                  <label class="radio-label">
+                                    <input checked name="confirm" type="radio" class="form-radio form-radio--hidden">
+                                    <span class="radiobtn radiobtn--wo-bg"><i class="icomoon icon-check2"></i></span>
+                                    <span class="form-radio-subtitle">Новая почта</span>
+                                  </label>
+                                </div>
+
+                                <div class="radio-item tab" data-target="order-ukrpost">
+                                  <label class="radio-label">
+                                    <input name="confirm" type="radio" class="form-radio form-radio--hidden">
+                                    <span class="radiobtn radiobtn--wo-bg"><i class="icomoon icon-check2"></i></span>
+                                    <span class="form-radio-subtitle">Укрпочта</span>
+                                  </label>
+                                </div>
+
+                                <div class="radio-item tab" data-target="order-shop">
+                                  <label class="radio-label">
+                                    <input name="confirm" type="radio" class="form-radio form-radio--hidden">
+                                    <span class="radiobtn radiobtn--wo-bg"><i class="icomoon icon-check2"></i></span>
+                                    <span class="form-radio-subtitle">Забрать с магазина</span>
+                                  </label>
+                                </div>
+                              </div>
+
+                              <div class="form-row">
+                                <div class="order-post-toggleBlocks">
+                                  <div id="order-newpost" class="toggleBlock-secondary">
+                                    <div class="form-row form-row--two-items">
+                                      <div class="form-item-wrap chosen-wrapper">
+                                        <label class="form-label">Город доставки*</label>
+                                        <select
+                                          name="newPostDeliveryCity"
+                                          class="form-item"
+                                          data-validate="required"
+                                          data-error-text="Необходимо заполнить поле"
+                                        >
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                        </select>
+                                      </div>
+                            
+                                      <div class="form-item-wrap chosen-wrapper">
+                                        <label class="form-label">Отделение "Новой почтый"*</label>
+                                        <select
+                                          name="newPostDeliveryDepartment"
+                                          class="form-item"
+                                          data-validate="required"
+                                          data-error-text="Необходимо заполнить поле"
+                                        >
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                              
+                                  <div id="order-ukrpost" class="toggleBlock-secondary">
+                                    <div class="form-row form-row--two-items">
+                                      <div class="form-item-wrap chosen-wrapper chosen-wrapper">
+                                        <label class="form-label">Город доставки*</label>
+                                        <select
+                                          name="ukrPostDeliveryCity"
+                                          class="form-item"
+                                          data-validate="required"
+                                          data-error-text="Необходимо заполнить поле"
+                                        >
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                        </select>
+                                      </div>
+                            
+                                      <div class="form-item-wrap">
+                                        <label for="order-ukrpost-home" class="form-label"
+                                          >Домашний адрес*</label
+                                        >
+                                        <input
+                                          name="ukrPostDeliveryHomeAdress"
+                                          type="text"
+                                          id="order-ukrpost-home"
+                                          class="form-item"
+                                          data-validate="required"
+                                          data-error-text="Необходимо заполнить поле"
+                                          placeholder="Укажите свой адрес"
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <div class="form-row form-row--two-items">
+                                      <div class="form-item-wrap">
+                                        <label for="order-ukrpost-idx" class="form-label"
+                                          >Индекс* <small>(домашний адресс или отделение Укрпочты)</small></label
+                                        >
+                                        <input
+                                          name="ukrPostDeliveryIdx"
+                                          type="text"
+                                          id="order-ukrpost-idx"
+                                          class="form-item"
+                                          data-validate="required"
+                                          data-error-text="Необходимо заполнить поле"
+                                          placeholder="Укажите свой адрес"
+                                        />
+                                      </div>
+                                      <div class="form-item-wrap flex bottom">
+                                        <div class="checkbox-item">
+                                          <label class="checkbox-label">
+                                            <input name="ukrPostDeliveryStatus" type="checkbox" class="form-checkbox form-checkbox--hidden">
+                                            <span class="checkboxbtn checkboxbtn--wo-bg"><i class="icomoon icon-check2"></i></span>
+                                            <span class="form-checkbox-subtitle">
+                                              До востребования
+                                              <small class="grey">(Останется на отделении Укрпочты)</small>
+                                            </span>
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div id="order-shop" class="toggleBlock-secondary">
+                                    <div class="form-row form-row--two-items">
+                                      <div class="form-item-wrap chosen-wrapper">
+                                        <label class="form-label">Город доставки*</label>
+                                        <select
+                                          name="shopDeliveryCity"
+                                          class="form-item"
+                                          data-validate="required"
+                                          data-error-text="Необходимо заполнить поле"
+                                        >
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                        </select>
+                                      </div>
+                            
+                                      <div class="form-item-wrap chosen-wrapper">
+                                        <label class="form-label">Адрес магазина "Техносток"*</label>
+                                        <select
+                                          name="shopDeliveryDepartment"
+                                          class="form-item"
+                                          data-validate="required"
+                                          data-error-text="Необходимо заполнить поле"
+                                        >
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-order-section">
+                              <div class="title-forms">
+                                <i class="icomoon icon-Pay3 yellow-blue"></i>
+                                <span>Способ оплаты</span>
+                              </div>
+
+                              <div class="form-row form-row--two-items">
+                                <div class="form-item-wrap">
+                                  <div class="radio-item" data-target="payWayCash">
+                                    <label class="radio-label">
+                                      <input name="confirm" type="radio" class="form-radio form-radio--hidden">
+                                      <span class="radiobtn radiobtn--wo-bg"><i class="icomoon icon-check2"></i></span>
+                                      <span class="form-radio-subtitle">наличными при получении</span>
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="form-item-wrap">
+                                  <div class="radio-item" data-target="payWayVisa">
+                                    <label class="radio-label">
+                                      <input name="confirm" type="radio" class="form-radio form-radio--hidden">
+                                      <span class="radiobtn radiobtn--wo-bg"><i class="icomoon icon-check2"></i></span>
+                                      <span class="form-radio-subtitle">Карточкой Visa|MasterCard</span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="form-row">
+                                <div class="form-item-wrap">
+                                  <label for="order-coments" class="form-label"
+                                    >Коментарии к заказу*</label
+                                  >
+                                  <textarea 
+                                    name="coments" 
+                                    id="order-coments" 
+                                    cols="30" 
+                                    rows="10"
+                                    data-validate="required"
+                                    data-error-text="Необходимо заполнить поле"
+                                  >
+                                  </textarea>
+                                </div>
+                              </div>
+                            </div>
+
+                            <button type="submit" class="button">
+                              Подтвердить заказ
+                            </button>
+                          </form>
+
+                        </div>
+
+                        <div id="basket-olduser" class="toggleBlock">
+                          <form action="#" class="form form-olduser form-login form-val-js">
+                            <div class="form-olduser-left">
+                              <div class="form-row">
+                                <input 
+                                  name="email" 
+                                  type="email" 
+                                  class="form-item" 
+                                  placeholder="Введите e-mail*"
+                                  data-validate="required" 
+                                  data-error-text="Необходимо заполнить поле">
+                              </div>
+                              <div class="form-row relative">
+                                <input 
+                                  name="password" 
+                                  type="password" 
+                                  class="form-item" 
+                                  placeholder="Введите пароль*"
+                                  data-validate="required" 
+                                  data-error-text="Необходимо заполнить поле">
+                                <i class="icomoon icon-eye icon-abs showPasswordButton"></i>
+                              </div>
+                              <div class="form-row">
+                                <button type="submit" class="button button--w100">Войти</button>
+                              </div>
+
+                              <div class="form-row flex justifyCenter xl-show-f">
+                                <a href="#" class="text-common white-dark">Забыли пароль?</a>
+                              </div>
+                            </div>
+
+                            <div class="form-olduser-right">
+                              <div class="divider"><span>или</span></div>
+                              <div class="form-olduser-right-wrap">
+                                <div class="form-main__links flex column center">
+                                  <a href="#" class="title-categories white-dark">
+                                    <i class="icomoon icon-FB"></i>
+                                    <span>Войти через facebook</span>
+                                  </a>
+                                  <a href="#" class="text-common xl-show-mob white-dark">Забыли пароль?</a>
+                                </div>
+                                <!-- <div class="form-footer">
+                                  <span>Еще нет аккаунта?</span>
+                                  <a href="#" class="yellow-blue underline">Зарегистрируйтесь</a>
+                                </div> -->
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <div class="layout-right">
+                  <div class="info-order">
+                    <div class="title-common yellow">Ваш заказ</div>
+
+                    <div class="fav__table-mobile">
+                      <div class="fav__item-mob">
+                        <div class="fav__row-mob">
+                          <div class="fav__th-mob">
+                            <div class="bold">Информация о товаре</div>
+                            <div class="fav__prod">
+                              <a href="#" class="fav__prod-img-wrap">
+                                <img src="/img/tovar1.jpg" alt="" class="fav__prod-img">
+                              </a>
+                              <a href="#">
+                                <span class="fav__prod-title">Ноутбук Acer Aspire V3-551</span>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="fav__th-mob flex center">
+                            <div class="bold">Количество</div>
+                            <div class="counter-el">
+                              <input type="number" value="1" disabled>
+                            </div>
+                          </div>
+                          <div class="fav__th-mob flex center">
+                            <div class="bold">Цена</div>
+                            <div class="fav__td-mob fav__td-mob--price">
+                              5800 грн
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="fav__item-mob">
+                        <div class="fav__row-mob">
+                          <div class="fav__th-mob">
+                            <div class="bold">Информация о товаре</div>
+                            <div class="fav__prod">
+                              <a href="#" class="fav__prod-img-wrap">
+                                <img src="/img/tovar1.jpg" alt="" class="fav__prod-img">
+                              </a>
+                              <a href="#">
+                                <span class="fav__prod-title">Ноутбук Acer Aspire V3-551</span>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="fav__th-mob flex center">
+                            <div class="bold">Количество</div>
+                            <div class="counter-el">
+                              <input type="number" value="1" disabled>
+                            </div>
+                          </div>
+                          <div class="fav__th-mob flex center">
+                            <div class="bold">Цена</div>
+                            <div class="fav__td-mob fav__td-mob--price">
+                              5800 грн
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="fav__item-mob fav__item--gather fav__item--gather-mob">
+                        <div class="fav__row-mob">
+                          <div class="fav__th-mob">
+                            <div class="bold">Информация о товаре</div>
+                            <div class="fav__prod">
+                              <a href="#" class="fav__prod-img-wrap">
+                                <img src="/img/tovar1.jpg" alt="" class="fav__prod-img">
+                              </a>
+                              <a href="#">
+                                <span class="fav__prod-title">Ноутбук Acer Aspire V3-551</span>
+                              </a>
+                            </div>
+                          </div>
+
+                          <div class="fav__th-mob flex center">
+                            <div class="bold">Цена</div>
+                            <div class="fav__td-mob fav__td-mob--price">
+                              5800 грн
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="fav__row-mob">
+                          <div class="fav__th-mob">
+                            <div class="bold">Информация о товаре</div>
+                            <div class="fav__prod">
+                              <a href="#" class="fav__prod-img-wrap">
+                                <img src="/img/tovar1.jpg" alt="" class="fav__prod-img">
+                              </a>
+                              <a href="#">
+                                <span class="fav__prod-title">Ноутбук Acer Aspire V3-551</span>
+                              </a>
+                            </div>
+                          </div>
+
+                          <div class="fav__th-mob flex center">
+                            <div class="bold">Цена</div>
+                            <div class="fav__td-mob fav__td-mob--price">
+                              5800 грн
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="fav__row-mob">
+                          <div class="fav__td-mob">
+                            <div class="fav__row-mob">
+                              <div class="fav__th-mob flex center">
+                                <div class="bold">Количество</div>
+                                <div class="counter-el">
+                                  <input type="number" value="1" disabled>
+                                </div>
+                              </div>
+                              <div class="fav__th-mob flex center">
+                                <div class="bold">Итого</div>
+                                <div class="fav__td-mob fav__td-mob--price">
+                                  5800 грн
+                                </div>
+                              </div>
+                            </div>                
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="fav__table">
+                      <div class="fav__item bb-1">
+                        <div class="fav__row">
+                          <div class="fav__td">
+                            <div class="fav__prod">
+                              <a href="#" class="fav__prod-img-wrap">
+                                <img src="/img/tovar1.jpg" alt="" class="fav__prod-img">
+                              </a>
+                              <a href="#">
+                                <span class="fav__prod-title">Ноутбук Acer Aspire V3-551</span>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="fav__td flex center">
+                            <div class="counter-el">
+                              <input type="number" value="1" disabled>
+                            </div>
+                          </div>
+                          <div class="fav__td flex center">5800 грн</div>
+                        </div>
+                        <div class="fav__row">
+                          <div class="fav__td flex center justifyCenter">
+                            <span class="fav__prod-title">Гарантия</span>
+                          </div>
+                          <div class="fav__td flex center">
+                            <div class="counter-el">
+                              <input type="number" value="1" disabled>
+                            </div>
+                          </div>
+                          <div class="fav__td flex center">150 грн</div>
+                        </div>
+                      </div>
+
+                      <div class="fav__item bb-1">
+                        <div class="fav__row">
+                          <div class="fav__td">
+                            <div class="fav__prod">
+                              <a href="#" class="fav__prod-img-wrap">
+                                <img src="/img/tovar1.jpg" alt="" class="fav__prod-img">
+                              </a>
+                              <a href="#">
+                                <span class="fav__prod-title">Гарантия</span>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="fav__td flex center">
+                            <div class="counter-el">
+                              <input type="number" value="1" disabled>
+                            </div>
+                          </div>
+                          <div class="fav__td flex center">150 грн</div>
+                        </div>
+                      </div>
+
+                      <div class="fav__item fav__item--gather">
+                        <div class="fav__row">
+                          <div class="fav__td">
+                            <div class="fav__prod">
+                              <a href="#" class="fav__prod-img-wrap">
+                                <img src="/img/tovar1.jpg" alt="" class="fav__prod-img">
+                              </a>
+                              <a href="#">
+                                <span class="fav__prod-title">Ноутбук</span>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="fav__td"></div>
+                          <div class="fav__td flex center">150 грн</div>
+                        </div>
+
+                        <div class="fav__row">
+                          <div class="fav__td">
+                            <div class="fav__prod">
+                              <a href="#" class="fav__prod-img-wrap">
+                                <img src="/img/tovar1.jpg" alt="" class="fav__prod-img">
+                              </a>
+                              <a href="#">
+                                <span class="fav__prod-title">Телефон</span>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="fav__td"></div>
+                          <div class="fav__td flex center">150 грн</div>
+                        </div>
+
+                        <div class="fav__row">
+                          <div class="fav__td"></div>
+                          <div class="fav__td flex center">
+                            <div class="counter-el">
+                              <input type="number" value="1" disabled>
+                            </div>
+                          </div>
+                          <div class="fav__td flex center">300 грн</div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="info-order-total flex spaceBetween">
+                      <span class="title-common">К оплате:</span>
+                      <span class="title-common yellow">5950 грн</span>
+                    </div>
+
+                    <a href="/basket.html" class="info-order-link center yellow underline">
+                      Редактировать заказ
+                    </a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        @@include('templateHtml/recentlyViewed.html')
+                
+        @@include('templateHtml/bid.html')
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

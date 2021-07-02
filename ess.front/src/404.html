@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ESS</title>
+    <!--  -->
+    @@include('templateHtml/head.html')
+    <!--  -->
+  </head>
+
+  <body>
+    <div class="mainWrapper">
+      <div class="contentWrapper error static-header">
+        <!--  -->
+        @@include('templateHtml/header.html', { "home": "active" })
+        <!--  -->
+        <div id="errorPage" class="errorPage-404 page">
+         <div class="error-wrap-section">
+          <img src="./img/404_foto.jpg" alt="">
+          <div class="wrap-error-content">
+            <div class="error__title">Ваша страница не найдена.</div>
+            <div class="error__error-num">404</div>
+            <div class="error__btn">
+              <a href="./index.html" class="error-btn">на главную</a>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+      <!--  -->
+      @@include('templateHtml/bottomFooter.html')
+      <!--  -->
+      <!--  -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/scripts.html')
+
+  </body>
+</html>

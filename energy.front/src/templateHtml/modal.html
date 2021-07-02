@@ -1,0 +1,71 @@
+<div id="pageOverlay" class="pageOverlay"></div>
+<!--  -->
+<!-- begin popupMessage -->
+<div id="popupMessage" class="popupActionsSuccess popupMessage popup">
+	<div class="popupContentWrapper">
+		
+		<header class="modalHeader relative">
+			<div class="modal-title title">Спасибо! ваша заявка принята!</div>     
+		</header>
+
+	</div>
+</div>
+<!-- end popupMessage -->
+
+<!-- popupContact -->
+<div id="popupContact" class="popupContact popup">
+	<div class="popupContactWrap">
+		<form method="POST" action="#" class="form form-contacts text-center">
+			<div class="form-item-wrap-second">
+				<label class="form-item-label" for="form-contacts-name">Ваше имя<sup>*</sup></label>
+				<input 
+					name="name"
+					type="text" 
+					class="form-item-second"
+					id="form-contacts-name"
+					placeholder="Введите ваше имя"
+					data-validate="required" 
+					data-error-text="Необходимо заполнить поле">
+			</div>
+
+			<div class="form-item-wrap-second">
+				<label class="form-item-label" for="form-contacts-phone">Ваш телефон<sup>*</sup></label>
+				<input 
+					name="phone"
+					type="tel" 
+					class="form-item-second"
+					id="form-contacts-phone"
+					placeholder="Введите ваш телефон" 
+					data-validate="required" 
+					data-error-text="Необходимо заполнить поле" >
+			</div>
+
+			<div class="form-item-wrap-second">
+				<label class="form-item-label" for="form-contacts-mail">Ваша електронная почта<sup>*</sup></label>
+				<input 
+					name="phone"
+					type="email" 
+					class="form-item-second"
+					id="form-contacts-mail"
+					placeholder="Введите ваш e-mail" 
+					data-validate="required" 
+					data-error-text="Необходимо заполнить поле" >
+			</div>
+
+			<div class="form-item-wrap-second">
+				<label class="form-item-label" for="form-contacts-mess">Ваше сообщение<sup>*</sup></label>
+				<textarea 
+					name="message" 
+					class="form-item-second form-item-textarea"
+					id="form-contacts-mess" 
+					placeholder="Введите ваше сообщение" 
+					data-validate="required" 
+					data-error-text="Необходимо заполнить поле"></textarea>
+			</div>
+
+			<button type="submit" class="button button--secondary">Отправить</button>
+		</form>
+		<button class="close-button close-button--fill"></button>
+	</div>
+</div>
+<!-- end popupContact -->

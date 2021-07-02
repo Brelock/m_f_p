@@ -1,0 +1,27 @@
+.button-tab i {
+  transition: color .4s ease;
+}
+
+.button-tab:hover {
+  color: $fifthFontColor;
+
+  i {
+    color: $fifthFontColor;
+  }
+}
+
+.button-tab.active {
+  color: $fifthFontColor;
+  border-left: 2px solid $primaryColor;
+}
+
+.button-tab.active i {
+  color: $fifthFontColor;
+}
+
+.toggleBlocks-list {
+  .article + .article {
+    margin-top: 0;
+    border-top: none;
+  }
+}

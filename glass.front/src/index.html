@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="homePage" class="homePage page">
+      
+        <div class="banner-section">
+          <div class="mcontainer">
+            <div class="banner-section__container">
+              <div class="banner-section__img">
+                <img src="./img/home-banner-top.png" alt="">
+              </div>
+              <div class="banner-section__container-info">
+                <p class="banner-section__container-text">Найди свою идеальную пару</p>
+                <div class="banner-section__container-btn wrap-buton">
+                  <a class="button" href="#"> В магазин</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="glases-style">
+          <div class="mcontainer">
+            <div class="glases-style__wrap">
+              <div class="glases-style__title">Лучшие очки для твоего стиля</div>
+              <div class="glases-style__subtitle">
+                Очки это не только хорошая защита от солнечных лучей или же синего света экранов. 
+                В первую очередь это аксессуар который выделяет тебя и позволяет завершить твой ежедневный образ. С нами ты всегда 
+                сможешь оставаться в тренде и безопасности для своих глаз. 
+              </div>
+              <div class="glasses-style__btn wrap-buton">
+                <a class="button" href="#"> В магазин</a>
+              </div>
+  
+              <div class="offer-glasses flex wrap">
+                <div class="offer-glasses_item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                  <div class="offer-glasses_item-img">
+                    <img src="./img/home-glasses-red.png" alt="">
+                  </div>
+                  <div class="offer-glasses_item-check-button flex">
+                    <label for="one-1" class="label-one-1 active ">
+                      <input type="radio" name="" id="one-1" data-check="./img/home-glasses-red.png">
+                    </label>
+                    <label for="one-2" class="label-one-2">
+                      <input type="radio" name="" id="one-2" data-check="./img/home-glasses-yelow.png">
+                    </label>
+                    <label for="one-3" class="label-one-3">
+                      <input type="radio" name="" id="one-3" data-check="./img/home-glasses-red.png">
+                    </label>
+                    <label for="one-4" class="label-one-4">
+                      <input type="radio" name="" id="one-4" data-check="./img/home-glasses-blue.png">
+                    </label>
+                    <label for="one-5" class="label-one-5">
+                      <input type="radio" name="" id="one-5" data-check="./img/home-glasses-yelow.png">
+                    </label>
+                  </div>
+                  <div class="offer-glasses_item-model">St Michel ₴32</div>
+                </div>
+                <div class="offer-glasses_item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                  <div class="offer-glasses_item-img">
+                    <img src="./img/home-glasses-yelow.png" alt="">
+                  </div>
+                  <div class="offer-glasses_item-check-button flex">
+                    <label for="two-1" class="label-two-1 active">
+                      <input type="radio" name="" id="two-1" data-check="./img/home-glasses-yelow.png">
+                    </label>
+                    <label for="two-2" class="label-two-2">
+                      <input type="radio" name="" id="two-2" data-check="./img/home-glasses-blue.png">
+                    </label>
+                    <label for="two-3" class="label-two-3">
+                      <input type="radio" name="" id="two-3" data-check="./img/home-glasses-red.png">
+                    </label>
+                  </div>
+                  <div class="offer-glasses_item-model">St Michel ₴32</div>
+                </div>
+                <div class="offer-glasses_item mcol-xs-12 mcol-sm-6 mcol-md-4">
+                  <div class="offer-glasses_item-img">
+                    <img src="./img/home-glasses-blue.png" alt="">
+                  </div>
+                  <div class="offer-glasses_item-check-button flex">
+                    <label for="three-1" class="label-three-1 active">
+                      <input type="radio" name="" id="three-1" data-check="./img/home-glasses-blue.png">
+                    </label>
+                    <label for="three-2" class="label-three-2">
+                      <input type="radio" name="" id="three-2" data-check="./img/home-glasses-yelow.png">
+                    </label>
+                    <label for="three-3" class="label-three-3">
+                      <input type="radio" name="" id="three-3" data-check="./img/home-glasses-red.png">
+                    </label>
+                  </div>
+                  <div class="offer-glasses_item-model">St Michel ₴32</div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="temporary-offers">
+          <div class="mcontainer">
+            <div class="offer-card-wrap flex wrap">
+
+              <div class="offer-card__item mcol-xs-12 mcol-sm-6 mcol-md-4">
+
+                <div class="offer-card-wrap__item-img">
+                  <img src="./img/baner-offer-new.png" alt="">
+                </div>
+                <div class="offer-card-wrap-contant">
+                  <div class="offer-card-wrap__item-title">Новое</div>
+                  <div class="offer-card-wrap__item-subtitle">Будьте в курсе всех последних тенденций и новинок</div>
+                </div>             
+                <div class="offer-card-wrap__item-btn wrap-buton">
+                  <a class="button" href="#"> В магазин</a>
+                </div>
+
+              </div>
+
+              <div class="offer-card__item mcol-xs-12 mcol-sm-6 mcol-md-4">
+
+                <div class="offer-card-wrap__item-img">
+                  <img src="./img/baner-offer-sale.png" alt="">
+                </div>
+                <div class="offer-card-wrap-contant">
+                  <div class="offer-card-wrap__item-title">Скидки</div>
+                  <div class="offer-card-wrap__item-subtitle">Получите скидку до 50% на многие аксессуары</div>
+                </div>              
+                <div class="offer-card-wrap__item-btn wrap-buton">
+                  <a class="button" href="#"> В магазин</a>
+                </div>
+
+              </div>
+
+              <div class="offer-card__item mcol-xs-12 mcol-sm-6 mcol-md-4">
+
+                <div class="offer-card-wrap__item-img">
+                  <img src="./img/baner-offer-garant.png" alt="">
+                </div>
+                <div class="offer-card-wrap-contant">
+                  <div class="offer-card-wrap__item-title">Гарантии</div>
+                  <div class="offer-card-wrap__item-subtitle">При покупке гарантия 14 дней</div>
+                </div>   
+                <div class="offer-card-wrap__item-btn wrap-buton">
+                  <a class="button" href="#"> Подробнее</a>
+
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-banner">
+          <div class="mcontainer">
+            <div class="bottom-banner-wrap slide">
+
+              <div class="bottom-banner-item">
+                <div class="bottom-banner-item__img banner-b-t">
+                  <img class="" data-defoult-img="./img/banner-1-bottom.jpg"  data-mobile="./img/mobile-banner-bottom.png" src="./img/banner-b-t.png" alt="">
+                </div>
+                <div class="bottom-banner-item__contant b-t">
+                  <!-- <div class="bottom-banner-item__title">Доставка около 2 дней</div>
+                  <div class="bottom-banner-item__subtitle">Получи очки быстрее, чем когда либо</div> -->
+                  <div class="bottom-banner-btn wrap-buton">
+                    <a class="button" href="#"> В магазин</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bottom-banner-item">
+                <div class="bottom-banner-item__img banner-b-bd">
+                  <img class="" data-defoult-img="./img/banner-2-bottom.jpg"  data-mobile="./img/mobile-banner-bottom.png" src="./img/banner-b-bd.png" alt="">
+                </div>
+                <div class="bottom-banner-item__contant b-bd">
+                  <!-- <div class="bottom-banner-item__title">Доставка около 2 дней</div>
+                  <div class="bottom-banner-item__subtitle">Получи очки быстрее, чем когда либо</div> -->
+                  <div class="bottom-banner-btn wrap-buton">
+                    <a class="button" href="#"> В магазин</a>
+                  </div>
+                </div>
+              </div>
+
+             
+
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

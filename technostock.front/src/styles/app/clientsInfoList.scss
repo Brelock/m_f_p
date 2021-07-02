@@ -1,0 +1,106 @@
+.layout-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $xlLayout) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.layout__step {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+
+  @media (min-width: $xlLayout) {
+    display: block;
+    width: 33.3333%;
+  }
+}
+
+.layout__step + .layout__step {
+  margin-top: 20px;
+
+  @media (min-width: $xlLayout) {
+    margin-top: 0;
+    margin-left: 8%;
+  }
+}
+
+.layout__step-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  
+  border: 1px solid #fff;
+  margin: 0 auto;
+
+  border-radius: 50%;
+
+  font-size: 18px;
+  
+  @media (min-width: $xlLayout) {
+    width: 94px;
+    height: 94px;
+    border: 4px solid #fff;
+    margin-left: 0;
+    
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+.white-theme .layout__step-number {
+  border-color: #000;
+}
+
+.layout__step-top {
+  display: flex;
+  align-items: center;
+
+  .icomoon {
+    margin-left: 90px;
+
+    color: $yellowTextColor;
+
+    font-size: 26px;
+  }
+}
+
+.white-theme .layout__step-top .icomoon {
+  color: $blueTextColor;
+}
+
+.layout__step-descr {
+  margin-left: 20px;
+
+  font-size: 18px;
+  line-height: 24px;
+
+  @media (min-width: $xlLayout) {
+    margin-left: 0;
+    margin-top: 22px;
+
+    font-size: 24px;	
+    font-weight: bold;	
+    line-height: 34px;
+  }
+}
+
+.layout__step-subdescr {
+  line-height: 22px;
+  margin-left: 10px;
+  text-align: justify;
+  
+  @media (min-width: $xlLayout) {
+    margin-left: 0px;
+    margin-top: 20px;
+    text-align: left;
+  }
+}

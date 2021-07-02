@@ -1,0 +1,15 @@
+.registration {
+  .button--big-paddings {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: 375px) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+  .form-registration {
+    text-align: center;
+  }
+}

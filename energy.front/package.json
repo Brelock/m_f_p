@@ -1,0 +1,53 @@
+{
+  "name": "markup-team-template",
+  "version": "1.0.0",
+  "author": "A. M.",
+  "homepage": "https://github.com/Yipee-ki-yay/markup-team-template",
+  "license": "MIT",
+  "description": "html/css/js builder based on gulp/sass",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "envTest",
+    "gulp": "./node_modules/.bin/gulp",
+    "copyProdStyleToSiteAndNpmRunProd": "gulp buildProd:css; gulp purgecss; cp -a ./production/css/main.min.css /var/www/html/energy.full/resources/styles/site; cd /var/www/html/energy.full; npm run prod",
+    "copyProdJsToSite": "gulp buildProd:js; cp -a ./production/js/index.min.js /var/www/html/energy.full/public/js/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yipee-ki-yay/markup-team-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Yipee-ki-yay/markup-team-template/issues"
+  },
+  "dependencies": {
+    "gulp-install": "^1.1.0",
+    "imagemin-webp": "^5.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "babel-plugin-transform-remove-strict-mode": "^0.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "css-mqpacker": "^6.0.1",
+    "del": "^3.0.0",
+    "gulp": "4.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-file-include": "^1.1.0",
+    "gulp-htmlhint": "^2.1.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-purgecss": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "imagemin-pngquant": "^5.0.1",
+    "postcss-assets": "^4.1.0",
+    "postcss-flexbugs-fixes": "^3.3.0",
+    "postcss-focus": "^3.0.0"
+  }
+}

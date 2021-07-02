@@ -1,0 +1,218 @@
+footer.mainFooter {
+	color: $footerFontColor;
+	background-color: $black;
+}
+
+.bottom-footer{
+	background-color: $black;
+	color: $footerFontColor;
+	padding: 5px 0;
+	position: relative;
+	z-index: 1;
+	@media (min-width: $containerWidth){
+		padding: 0;
+	}
+}
+
+.footer-content-wrap{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	p{
+		margin: 0;
+		padding: 0;
+	}
+	@media (min-width: $containerWidth){
+		margin: 0 50px;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.footer-copirate, .footer-dev-company{
+	font-size: 13px;
+	line-height: 25px;
+	@media (min-width: $containerWidth){
+		line-height: 50px;
+	}
+}
+
+.footer-dev-company__link{
+	color: $white;
+}
+
+.discussion-question{
+	.discussion-question__bgc{
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  position: relative;
+	  height: 100%;
+	  background-color: $secondaryColor;
+	  @media (min-width: $containerWidthLaptop) {
+	   height: 100vh;
+	  }
+   }
+   
+   .discussion-question__form-wrap{
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: inherit;
+	 height: 100%;
+	 @media (min-width: $containerWidthLaptop) {
+	   align-items: center;
+	   flex-direction: row;
+	 }
+   }
+   
+   .discussion-question__baner{
+	 margin: 30px;
+	 width: auto;
+	 img{
+	   max-width: 380px;
+	   margin: auto;
+	 }
+	 @media (min-width: $containerWidthLaptop) {
+	   width: 44%;
+	   margin: 0 100px 0 0;
+	   img{
+		 margin: 0 0 0 auto;
+	   }
+	 }
+   }
+   
+  .ess-section-title{
+		text-align: center;
+		padding-left: 20px;
+		padding-right: 20px;
+		span{
+			left: 22%;
+			transform: translate(-55%, -93%);
+		}
+		@media (min-width: $containerWidthLaptop) {
+			text-align: left;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+  }
+   
+  .form-wraper{
+	  width: 100%;
+	  padding-top: 30px;
+	 .ess-section-btn{
+	   margin-left: 0;
+	 }
+	 .project-cost__form{
+	   margin-left: auto;
+	   margin-right: auto;
+	 }
+	 @media (min-width: $containerWidthLaptop) {
+	   padding-top: 0;
+	   padding-left: 0;
+	   width: 56%;
+	   .project-cost__form{
+		 padding-top: 60px;
+	   }
+	   .project-cost__form{
+		 width: 73%;
+	   }
+	   .project-cost__form{
+		 margin-left: 0;
+		 margin-right: inherit;
+	   }
+	 }
+  }
+  
+  .project-cost__content, .project-cost__form{
+			width: 90%;
+			padding-top: 40px;
+			max-width: 470px;
+	label{
+	  border-bottom: 2px solid #fff;
+	  padding: 10px 0;
+	  &:first-child{
+		padding-top: 0;
+		input{
+		  padding-top: 0;
+		}
+	  }
+	  @media (min-width: $containerWidthLaptop){
+		margin: 0;
+	  }
+	}
+	input{
+		border: none;
+		font-size: 15px;
+		line-height: 100%;
+	  padding: 30px 0 10px;
+	  color: #fff;
+		background: rgba(23, 26, 32, .0);
+		font-family: $mainFont;
+    font-weight: 400;
+	  &::placeholder{
+			color: #fff;
+			font-size: 15px;
+			line-height: 100%;
+			font-weight: 300;
+			font-family: $mainFont;
+	  }
+	}
+	@media (min-width: $containerWidthLaptop){
+	  width: 50%;
+	  padding-top: 0;
+	  max-width: 530px;
+	}
+  }
+  .ess-section-btn{
+		margin: 40px 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@media (min-width: $containerWidthLaptop){
+		  margin: 40px 0;
+		}
+  }
+  
+}
+.calculator-links{
+	padding-left: 0px;
+	padding-right: 0px;
+	.calc-link__title{
+		font-size: 15px;
+		line-height: 21px;
+		opacity: .5;
+		color: #fff;
+	}
+	.calc-btn{
+		width: 198px;
+		height: 38px;
+		border-radius: 22px;
+		border: 2px solid #fff;
+		cursor: pointer;
+		margin: 10px 0 40px;
+		a{
+			text-transform: uppercase;
+			font-size: 13px;
+			color: $white;
+			padding: 11px 30px;
+			line-height: 38px;
+			font-family: $mainFont;
+		}
+	}
+	@media (min-width: $containerWidthLaptop){
+		padding-left: 0;
+		padding-right: 0;
+		.calc-btn{
+			margin: 10px 0 10px;
+			&:hover{
+				border: 2px solid $primaryColor;
+				background-color: transparent;
+				a{
+					color: $primaryColor;
+				}
+			}
+		}
+	}
+}

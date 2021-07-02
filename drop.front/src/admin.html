@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper bgc-gray">
+
+    <div class="contentWrapper">
+      <!--  -->
+      <!-- @@include('templateHtml/header.html', { "home": "active" }) -->
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+
+      <form class="form-registr">
+        <div class="title-form">Авторизация</div>
+          <div class="form-group">
+             <label for="exampleInputEmail1"></label>
+             <input type="email" class="form-input-mail" placeholder="Электронная почта" id="exampleInputEmail1" aria-describedby="emailHelp">
+             <label for="exampleInputPassword1"></label>
+             <input type="password" class="form-input" placeholder="Пароль" id="exampleInputPassword1">
+            </div>
+          <div class="buttons-form">
+                <button type="submit" class="btn btn-primary admin-exit">Войти</button>
+          </div>
+      </form>
+
+
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    <!-- @@include('templateHtml/footer.html') -->
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

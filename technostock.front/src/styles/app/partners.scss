@@ -1,0 +1,37 @@
+.partners-item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $xlLayout) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.partners-item + .partners-item {
+  margin-top: 40px;
+}
+
+.partners-item__img {
+  max-width: 165px;
+  max-height: 165px;
+  margin: 0 auto;
+
+  border-radius: 50%;
+}
+
+.partners-item__text {
+  margin-top: 15px;
+
+  @media (min-width: $xlLayout) {
+    margin-top: 0;
+    margin-left: 25px;
+  }
+}
+
+.partners-item__descr {
+  margin-top: 40px;
+
+  line-height: 26px;
+  font-weight: bold;
+}

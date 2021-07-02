@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>title</title>
+    <!--  -->
+    @@include('templateHtml/head.html')
+    <!--  -->
+  </head>
+
+  <body>
+    <!--[if lte IE 11]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- @@include('templateHtml/preloader.html') -->
+
+    <div class="mainWrapper">
+      <div class="contentWrapper">
+        <!--  -->
+        @@include('templateHtml/header.html', { "home": "active" })
+        <!--  -->
+
+        <!-- Start of page code insertion here -->
+        <div id="cabinet" class="cabinet page">
+          <div class="breadcrumbsSection">
+            <div class="mcontainer">
+              <ul class="breadcrumbs sectionHeaderItem js_animate">
+                <li><a href="/index.html">Главная</a></li>
+                <li class="active">Личный кабинет</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pageSection">
+            <div class="mcontainer">
+              <div
+                class="pageSection-title-wrap pageSection-title-wrap--border"
+              >
+                <h2 class="pageSection-title">Личный кабинет</h2>
+              </div>
+
+              <div
+                class="products-categories products-categories--inner products-categories--wo-padding"
+              >
+                <div class="layout-cabinet">
+                  <aside class="cabinet-aside">
+                    <div class="cabinet-tabs">
+                      <a href="/cabinet-info.html"
+                        class="button--through-line active"
+                      >
+                        <i class="icomoon icon-user"></i>
+                        <span>
+                          Персональные данные
+                        </span>
+                      </a>
+                      <a href="/cabinet-address.html"
+                        class="button--through-line"
+                      >
+                        <i class="icomoon icon-location"></i>
+                        <span>
+                          Адреса доставки
+                        </span>
+                      </a>
+                      <a href="/cabinet-orders.html"
+                        class="button--through-line"
+                      >
+                        <i class="icomoon icon-basket"></i>
+                        <span>
+                          Мои заказы
+                        </span>
+                      </a>
+                      <a href="/cabinet-favorites.html"
+                        class="button--through-line"
+                      >
+                        <i class="icomoon icon-hearth1"></i>
+                        <span>
+                          Избранное
+                        </span>
+                      </a>
+                      <a href="/cabinet-subscribe.html"
+                        class="button--through-line"
+                      >
+                        <i class="icomoon icon-newspaper"></i>
+                        <span>
+                          Подписка на новости
+                        </span>
+                      </a>
+                      <form action="#" class="form-quit">
+                        <button class="button--through-line">
+                          <i class="icomoon icon-logout"></i>
+                          <span>Выйти</span>
+                        </button>
+                      </form>
+                    </div>
+                  </aside>
+
+                  <div class="cabinet-main">
+                    <div class="cabinet-toggleBlocks">
+                      @@include('templateHtml/cabinet-blocks/cabinet-address.html')
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          @@include('templateHtml/recentlyViewed.html')
+          @@include('templateHtml/bid.html')
+        </div>
+
+        <!-- End of page code insertion here -->
+
+        <!-- @@include('templateHtml/scrollToTopButton.html') -->
+      </div>
+      <!--  -->
+      @@include('templateHtml/modal.html')
+      <!--  -->
+      @@include('templateHtml/footer.html')
+      <!--  -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/scripts.html')
+    <!--  -->
+  </body>
+</html>

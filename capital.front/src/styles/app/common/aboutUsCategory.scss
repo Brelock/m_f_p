@@ -1,0 +1,65 @@
+.achivement__title {
+    text-align: center;
+}
+
+
+.aboutUsPage {
+
+}
+
+.contacts-list {
+	.icomoon {
+		font-size: 16px;
+		&:before {color: $primaryColor}
+	}
+
+	.sub-description {
+		color: $subDescriptionColor;
+		padding-left: 26px;
+		font-size: 12px;
+		line-height: 15px;
+	}
+}
+
+.aboutRequisitesListPage,
+.aboutRequisitePage {
+
+	.pageSection:first-child {
+		// padding-bottom: 90vh;
+		min-height: 55vh;
+		background-repeat: no-repeat;
+		// background-size: cover;
+		background-position: 90% 140px;
+		background-image: url('../img/icons/Group_doc.svg');
+
+		& > .mcontainer {background-color: transparent;}
+	}
+
+	.description-title {font-weight: bold;}
+
+	.document-image {
+		width: 220px;
+		height: 270px;
+	}
+}
+
+
+
+// =============Media========
+
+	
+@media (min-width: 767px) {
+	.departmentPage,
+	.aboutUsPage,
+	.aboutContactsPage {
+
+		[class^="sectionBlockColumn_"] {
+			& + [class^="sectionBlockColumn_"] {padding-left: 0;}
+		}
+
+		[class^="sectionBlockColumn_"]:nth-child(1) {
+			order: 1;
+			padding-left: 40px;
+		}
+	}
+}

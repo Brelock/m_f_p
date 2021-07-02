@@ -1,0 +1,53 @@
+.departmentPage {
+    .description {
+        .description-title {
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: bold;
+        }        
+    }
+    .department-description {
+        display: flex;
+        flex-direction: column;
+    }
+    .department-img-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            margin-top: 10px;
+            max-width: 310px;
+            width: 100%;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    /* @media */
+    @media(min-width: 768px) {
+        .department-img-wrapper {
+            flex-direction: row;
+            align-items: auto;
+            justify-content: space-between;
+            margin-top: auto;
+            img {
+                margin-top: 0;
+                width: 49%;
+                transition: transform 0.4s ease;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .description { 
+            ul>li {
+                margin-top: 24px;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    /* end @media */
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>login</title>
+  <!--  -->
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Microsoft Tiles -->
+<meta name="msapplication-config" content="browserconfig.xml">
+
+<link rel="icon" type="image/png" href="favicon.ico">
+
+<!-- Font Awesome -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+<!-- Fonts -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> -->
+
+<link rel="stylesheet" href="css/main.min.css">
+
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      <header class="mainHeader">
+	<div class="mcontainer">
+		<div class="mainHeader-wrap">
+		
+			<div class="logo">
+				<a href="/" class="logo__link">
+					<img src="img/logo.svg" alt="" class="logo__img">
+				</a>
+			</div>
+
+			<div class="search">
+				<form action="#" class="search-form">
+					<label class="item-with-icon">
+						<input type="text" placeholder="Поиск свидетельств" class="form-item-secondary text-primary">
+						<i class="icomoon icon-search"></i>
+					</label>
+				</form>
+			</div>
+
+			<div class="control-wrap">
+
+				<div class="langs flex column">
+					<a href="#" class="lang-btn active text-primary">RU</a>
+					<a href="#" class="lang-btn text-primary">EN</a>
+				</div>
+				
+				<div class="cabinet">
+					<button class="cabinet__btn">
+						<i class="icomoon icon-user"></i>
+					</button>
+
+					<ul class="cabinet-menu">
+						<li class="cabinet-menu__item">
+							<a href="/cabinet.html#myData" class="cabinet-menu__link">
+								<span>Личные данные</span>
+								<i class="icomoon icon-id"></i>
+							</a>
+						</li>
+						<li class="cabinet-menu__item">
+							<a href="/cabinet.html#myStories" class="cabinet-menu__link">
+								<span>Мои свидетельства</span>
+								<i class="icomoon icon-text"></i>
+							</a>
+						</li>
+						<li class="cabinet-menu__item">
+							<a href="#" class="cabinet-menu__link">
+								<span>Выйти</span>
+								<i class="icomoon icon-exit"></i>
+							</a>
+						</li>
+						<li class="cabinet-menu__item">
+							<a href="/login.html" class="cabinet-menu__link">
+								<span>Войти</span>
+								<i class="icomoon icon-exit"></i>
+							</a>
+						</li>
+						<li class="cabinet-menu__item">
+							<a href="/registration.html" class="cabinet-menu__link">
+								<span>Зарегистрироваться</span>
+								<i class="icomoon icon-exit"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<a href="/addArticle.html" class="button button--third">
+					Засвидетельствовать
+				</a>
+
+			</div>
+		</div>
+	</div>
+</header>
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="login" class="login page">
+        
+        <div class="mcontainer">
+          <!-- wrapper -->
+          <div class="wrapper">
+            <article class="article article--third">
+              <h1 class="article-title article-body-title article-title-secondary text-center">Вход / Регистрация</h1>
+
+              <div class="form-login-wrap">
+                <form action="#" method="POST" class="form form-login">
+                  <!-- begin form-block -->
+                  <div class="form-block form-block--login">
+                    <div class="form-row">
+                      <input placeholder="Ваш e-mail" 
+                              data-validate="required" 
+                              data-error-text="Необходимо заполнить поле" 
+                              class="form-item" 
+                              type="email" 
+                              name="email">
+                    </div>
+                    <div class="form-row">
+                      <input placeholder="Ваш пароль" 
+                              data-validate="required" 
+                              data-error-text="Необходимо заполнить поле" 
+                              class="form-item" 
+                              type="password" 
+                              name="password">
+                    </div>
+                    <div class="form-row">
+                      <label class="form-label--checkbox">
+                        <input class="checkbox-hidden" type="checkbox" checked="checked" name="remember">
+                        <span class="checkmark"></span>
+                        <span class="form-label__title text-secondary">Запомнить пароль</span>
+                      </label>
+                    </div>
+                    <div class="form-row form-row--flex form-row--btn">
+                      <button class="button button--big-paddings">Войти</button>
+
+                      <a href="#" class="form-link text-secondary">Забыли пароль?</a>
+                    </div>
+                  </div>
+
+                </form>
+                <div class="login-facebook">
+                  <div class="login-facebook__descr">
+                    Войти как пользователь
+                  </div>
+                  <a href="#" class="login-facebook__btn"></a>
+
+                  <a href="/registration.html" class="form-link form-link--purple form-link--reg">Зарегистрироваться</a>
+                </div>
+              </div>              
+              
+            </article>
+          </div>
+          <!-- end wrapper -->
+        </div>
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      
+    </div>
+    <!--  -->
+    <div id="pageOverlay" class="pageOverlay"></div>
+<!--  -->
+<div id="popupOrder" class="popupOrder popup">
+	<div class="popupWrapper">
+		<div class="popupContentWrapper">
+			
+			<!-- <div class="modalHeader flex wrap relative">
+				<div class="icon-block">
+					<i class="icomoon icon-shopping_returns"></i>
+				</div>
+				<div class="modal-title title mcol-xs-12 mcol-sm-7">Returns & Exchanges Policy</div>			
+				<button class="popupCloseButton" type="button"><i class="icomoon icon-delete"></i></button>			
+			</div>
+			
+			<div class="popUpContainer">
+				<div class="description">
+					
+					<p class="description-title">StemarShoes.com Privacy Policy</p>
+					<p>We want you to be fully satisfied with your . You may return or exchange your order for 15 days from when your order arrived.</p>
+					
+					<p>All returns/exchanges must be returned to StemarShoes.com in their original condition, in original packaging, including shoe dust covers and all tags. We do not guarantee wear or tear or any damage unrelated to the manufacturer. Shoes returned with any scratches or scuffs, or excessive creasing in the vamp will not be accepted.</p>
+					
+				</div>
+			</div> -->
+		</div>
+	</div>
+</div>
+
+
+    <!--  -->
+    <footer class="mainFooter">
+	<div class="mcontainer">
+		<div class="mainFooter-wrap text-primary">	
+
+			<a href="https://zengineers.company/" target="_blank" class="developers desctop">
+				<span class="desctop">Разработано в</span>
+				<i class="icomoon icon-z_logo"></i>
+			</a>
+
+			<nav class="main-menu-nav">
+				<ul class="main-menu">
+					 <li class="main-menu__item">
+						<a href="/about.html" class="main-menu__link">О нас</a>
+					</li>
+					<li class="main-menu__item">
+						<a href="/contacts.html" class="main-menu__link">Напишите нам</a>
+					</li>
+				</ul>
+			</nav>
+
+			<ul class="social-menu">
+				<li class="social-menu__item">
+					<a href="#" target="_blank" class="social-menu__link">
+						<i class="icomoon icon-twit"></i>
+					</a>
+				</li>
+				<li class="social-menu__item">
+					<a href="#" target="_blank" class="social-menu__link">
+						<i class="icomoon icon-inst"></i>
+					</a>
+				</li>
+				<li class="social-menu__item">
+					<a href="#" target="_blank" class="social-menu__link">
+						<i class="icomoon icon-fb"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+    <!--  -->
+  </div>
+  <!--  -->
+  <!--________SCRIPTS______-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+
+<script type="text/javascript" src="js/index.min.js"></script>
+
+  <!--  -->
+</body>
+
+</html>

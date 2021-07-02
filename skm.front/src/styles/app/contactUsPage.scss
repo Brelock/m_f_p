@@ -1,0 +1,28 @@
+.contactUsPage {
+
+	.page-container {
+		@media (min-width: 767px) {
+			border-top: solid 1px #eee;
+		}
+   }
+	.address-item {
+		p + p {margin-top: 10px;}
+	}
+
+	.form-container {
+		padding: 25px 15px 15px;
+		background-color: $tertiaryColor;
+
+		.form-title {
+			padding-bottom: 15px;
+			border-bottom: 1px solid #e5e5e5;
+		}
+
+		label {
+			text-align: right;
+			& + * {margin-left: 25px;}
+		}
+
+	}
+
+}

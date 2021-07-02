@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div id="page-preloader" class="page-preloader js_animate">
+    <div class="transition-loader-inner">
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+    </div>
+  </div>
+  <!--  -->
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "credits": "active" }) )
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="creditsPage" class="creditsPage page">
+
+        <section class="pageSection white-bg">
+            <div class="mcontainer">
+              <div class="sectionHeader sectionBlock">
+                <div class="animated-border-block section-title sectionHeaderItem">
+                  <div class="svg-container">
+                    <svg class="rect-container">
+                      <rect x="0" y="0" class="animatedBlock"/>
+                      <rect x="0" y="0" stroke-width="4" class="overlappingBlock"/>                
+                    </svg>
+                    <h2 class="title">Кредит под залог - очень просто</h2>
+                  </div>
+                </div>
+            
+                <ul class="breadcrumbs sectionHeaderItem">
+                  <li><a href="/index.html">Главная</a></li>
+                  <li class="active"><a href="#">Кредиты</a></li>
+                </ul>
+              </div>
+
+
+              <div class="sectionBlock">
+                <div class="title-descr contentRow">Зробіть 3 кроки і отримайте кредит готівкою усього за 7 хвилин!</div>
+
+                <div class="credit-steps-list contentRow mrow flex wrap">
+                  <article class="credit-step-item mcol-xs-12 mcol-md-4">
+                    <div class="item-container">
+                    <h4 class="title article-title"><span class="step-number">1</span> Перевiрка залогового майна</h4>
+                      <div class="description small-margin">
+                        <p>
+                          <span class="row-with-icon">
+                            <i class="icomoon icon-clock"></i>
+                            <span><b>4 хвилини</b></span>
+                          </span>
+                        </p>
+                        <p>Кваліфікований спеціаліст ломбардного відділення перевіряє виріб і оголошує його оціночну вартість. Для золотих і срібних виробів це займає до 4-х хвилин.</p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="credit-step-item mcol-xs-12 mcol-md-4">
+                    <div class="item-container">
+                    <h4 class="title article-title"><span class="step-number">2</span> Оформлення договору</h4>
+                      <div class="description small-margin">
+                        <p>
+                          <span class="row-with-icon">
+                            <i class="icomoon icon-clock"></i>
+                            <span><b>2 хвилини</b></span>
+                          </span>
+                        </p>
+                        <ul class="disc">Для того, щоб оформити договір кредиту, усього лиш потрібно:
+                          <li>бути старше 18 років;</li>
+                          <li>мати при собі паспорт;</li>
+                          <li>мати при собі заставне майно</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="credit-step-item mcol-xs-12 mcol-md-4">
+                    <div class="item-container">
+                    <h4 class="title article-title"><span class="step-number">3</span> Отримання грошей</h4>
+                      <div class="description small-margin">
+                        <p>
+                          <span class="row-with-icon">
+                            <i class="icomoon icon-clock"></i>
+                            <span><b>1 хвилина</b></span>
+                          </span>
+                        </p>
+                        <p>Завершальний етап - клієнт отримує готівкові гроші. Разом весь процес отримання готівки в кредит під заставу в наших ломбардах займає від  до 7 хвилин! </p>
+
+                        <div class="more-button credit-button inversed">
+                          <div class="more-button-wrapper">
+                            <div class="more-button-container">
+                              <a href="#" class="title semi-bold">Рассчитать мой кредит</a>
+                              <i class="icomoon standard-arrow-icon inversed"></i>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </article>
+                 
+                </div>
+
+                <div class="wrapperBlock contentRow tariffs-button">
+                  <a href="#" class="standardButton white border-decor">Узнать тарифные планы</a>
+                </div>
+              </div>
+            
+            </div>
+
+        </section>   
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <div class="mcontainer relative scrollTopContainer">
+        <div id="scrollTopButton" class="icomoon standard-arrow-icon navigateIcon up"></div>
+      </div>
+
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

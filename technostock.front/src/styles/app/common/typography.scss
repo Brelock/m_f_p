@@ -1,0 +1,174 @@
+.pageSection-title-wrap {
+  text-align: center;
+  border-top-left-radius: $br_mobile;
+  border-top-right-radius: $br_mobile;
+  @media (min-width: $xlLayout) {
+    text-align: left;
+    border-top-left-radius: $br_desktop;
+    border-top-right-radius: $br_desktop;
+  }
+}
+
+.pageSection-title-container {
+  flex-grow: 1;
+}
+
+.pageSection-title {
+  position: relative;
+
+  display: inline-block;
+  width: 100%;
+
+  color: #fff;
+  // color: #0D0B0C;
+
+  font-size: 24px;	
+  line-height: 29px;
+  
+  font-weight: bold;	
+  text-align: center;
+
+  @media (min-width: $xlLayout) {
+    width: auto;
+    
+    font-size: 36px;	
+    line-height: 43px;
+  }
+}
+.white-theme .pageSection-title {
+  color: #0D0B0C;
+}
+
+.pageSection-title-wrap + * {
+  margin-top: 16px;
+
+  @media (min-width: $xlLayout) {
+    margin-top: 30px;
+  }
+}
+
+.pageSection-title-wrap--border {
+  padding: 15px;
+  border: 1px solid #a9a9a9;
+  border-bottom: 0;
+}
+
+.pageSection-title-wrap--border + * {
+  margin-top: 0;
+
+  @media (min-width: $xlLayout) {
+    margin-top: 0;
+  }
+}
+
+.title-common {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 29px;
+}
+
+.text-common {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.title-small {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 19px;
+}
+
+.text-small {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+}
+
+.title-categories {
+  font-size: 18px;	
+  font-weight: bold;	
+  line-height: 22px;
+}
+
+.title-forms {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+
+.title-big {
+	font-size: 32px;
+	line-height: 38px;
+	font-weight: 900;
+
+	@media (min-width: $xlLayout) {
+		font-size: 36px;
+		line-height: 43px;
+	}
+}
+
+.text-medium {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.green {
+  color: $greenTextColor !important;
+ }
+ 
+ .red {
+  color: $redTextColor !important;
+ }
+ 
+.yellow {
+  color: $yellowTextColor !important;
+}
+  
+.yellow-blue {
+  color: $yellowTextColor;
+}
+
+.white-theme .yellow-blue {
+  color: $blueTextColor;
+}
+
+.white-blue {
+  color: #fff;
+}
+
+.white-theme .white-blue {
+  color: $blueTextColor;
+}
+
+.white-dark {
+  color: #fff;
+}
+
+.white-theme .white-dark {
+  color: #000000;
+}
+ 
+.white {
+  color: #ffffff !important;
+}
+
+.dark {
+  color: #000 !important;
+}
+
+.grey {
+  color: $greyTextColor !important;
+}
+
+.crossed-out {
+  text-decoration: line-through;
+}
+
+.underline {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

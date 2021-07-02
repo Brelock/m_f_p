@@ -1,0 +1,45 @@
+@media (min-width: 375px) {
+	body {
+		font-size: $pageFontSize;
+	}
+}
+@media (min-width: 380px) {
+	body {
+		font-size: $pageFontSize;
+	}
+}
+@media (min-width: 767px) {
+	body {
+		font-size: $pageFontSize;
+	}
+}
+@media (min-width: 768px) {
+	body {
+		font-size: $pageFontSize;
+	}
+}
+@media screen and (min-width: $changeWidth) {
+	body {
+		font-size: $pageFontSize;
+	}
+}
+@media screen and (min-width: 1200px) {
+	body {
+		font-size: $pageFontSize;
+	}
+}
+@media screen and (min-width: 1279px) {
+	body {
+		font-size: $pageFontSize;
+	}
+}
+@media screen and (min-width: 1300px) {
+	body {
+		font-size: $pageFontSize;
+	}
+}
+@media screen and (min-width: 1400px) {
+	body {
+		font-size: $pageFontSize;
+	}
+}

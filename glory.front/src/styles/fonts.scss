@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova/ProximaNova-Regular.woff2') format('woff2'),
+  url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+  url('../fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url('../fonts/ProximaNova/ProximaNova-Semibold.eot');
+  src: url('../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova/ProximaNova-Semibold.woff2') format('woff2'),
+  url('../fonts/ProximaNova/ProximaNova-Semibold.woff') format('woff'),
+  url('../fonts/ProximaNova/ProximaNova-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('../fonts/ProximaNova/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova/ProximaNova-Bold.woff2') format('woff2'),
+  url('../fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),
+  url('../fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// --------Icons--------
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?mwqjgc');
+  src:  url('../fonts/icomoon/icomoon.eot?mwqjgc#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?mwqjgc') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?mwqjgc') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?mwqjgc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icomoon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e900";
+}
+.icon-heart:before {
+  content: "\e905";
+}
+.icon-search:before {
+  content: "\e90e";
+}
+.icon-location:before {
+  content: "\e91c";
+}
+.icon-gallery:before {
+  content: "\e906";
+}
+.icon-inst:before {
+  content: "\e907";
+}
+.icon-user:before {
+  content: "\e909";
+}
+.icon-z_logo:before {
+  content: "\e90a";
+}
+.icon-exit:before {
+  content: "\e901";
+}
+.icon-id:before {
+  content: "\e902";
+}
+.icon-shape:before {
+  content: "\e903";
+}
+.icon-text:before {
+  content: "\e904";
+}
+.icon-camera:before {
+  content: "\e908";
+}
+.icon-fb:before {
+  content: "\e911";
+}
+.icon-twit:before {
+  content: "\e90b";
+}

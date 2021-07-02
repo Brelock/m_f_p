@@ -1,0 +1,492 @@
+/* forms */
+.search-form {
+	position: relative;
+	
+	display: flex;
+}
+
+// .search-form__select {
+// 	max-width: 310px;
+// }
+
+.form-item {
+	height: 38px;
+}
+.mainFooter {
+	.form-item {
+		height: 38px;
+	}
+	@media (min-width: $collapseBefore) { 
+		.form-item {
+			height: 50px;
+		}
+	}
+}
+.block-with-icon {
+	position: relative;
+	width: 100%;
+
+	.icomoon {
+		position: absolute;
+
+		font-size: 15px;
+		left: 11px;
+		top: 47%;
+		transform: translateY(-50%);
+
+		color: #000 !important;
+		
+		@media (min-width: $collapseBefore) {
+			left: 15px;
+			
+			font-size: 22px;
+		}
+	}
+
+	input {
+		display: block;
+		width: 100%;
+		padding-left: 33px;
+		
+		font-size: 16px;
+		
+		@media (min-width: $collapseBefore) {
+			padding-left: 45px;
+			
+			font-size: 18px;
+		}
+	}
+
+	::placeholder {
+		color: #000;
+
+		font-size: 16px;
+
+		@media (min-width: $collapseBefore) {
+			font-size: 18px;
+		}
+	}
+}
+
+// .chosen-container.form-item {
+// 	width: 100% !important;
+// }
+
+.form-item-wrap {
+	width: 100%;
+	input{
+		border-radius: $br_mobile;
+		@media (min-width: $collapseBefore) {
+			border-radius: $br_desktop;
+		}
+	}
+}
+
+.form-item--common {
+	width: 100%;
+	max-width: 300px;
+}
+
+.form-item--price {
+	border: 1px solid #E3E3E3;
+	border-radius: 6px;
+	max-width: 100px;
+
+	background-color: transparent;
+	color: #fff;
+
+	font-size: 13px;
+}
+
+.white-theme .form-item--price {
+	color: #000;
+}
+
+.form-row + .form-row {
+	margin-top: 13px;
+
+	@media (min-width: $mdLayout) {
+		margin-top: 27px;
+	}
+}
+
+.form-row-secondary + .form-row-secondary {
+	margin-top: 10px;
+}
+
+.form-row-third + .form-row-third {
+  margin-top: 15px;
+}
+
+.form-row-mobile + .form-row-mobile {
+	margin-top: 13px;
+
+	@media (min-width: $xlLayout) {
+		margin-top: 0;
+		margin-left: 5%;
+	}
+}
+
+.form-row-mobile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	@media (min-width: $xlLayout) {
+		flex-direction: row;
+	}
+
+	label {
+		white-space: nowrap;
+	}
+
+	.form-item + .form-item,
+	.chosen-container {
+		margin-left: 0;
+
+		@media (min-width: $xlLayout) {
+			margin-left: 20px;
+		}
+	}
+
+	.form-item {
+		line-height: 38px;
+	}
+
+	.select-item {
+		width: 100%;
+		max-width: 300px;
+
+		@media (min-width: $xlLayout) {
+			width: 250px;
+		}
+
+		@media (min-width: $xxlLayout) {
+			width: 300px;
+		}
+	}
+}
+
+.form-row--two-items {
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: $mdLayout) {
+    flex-direction: row;
+    
+    > * {
+			width: calc(50% - 19px / 2);
+    }
+	}
+
+	.form-item + .button,
+	.form-item-wrap + .button {
+		margin-top: 15px;
+
+		@media (min-width: $mdLayout) {
+			margin-top: 0;
+			margin-left: 16px;
+		}
+  }
+  
+  .form-item-wrap + .form-item-wrap,
+  .form-item + .form-item {
+    margin-top: 15px;
+
+    @media (min-width: $mdLayout) {
+			margin-top: 0;
+			margin-left: 19px;
+		}
+  }
+}
+
+.form-row--three-items {
+	@media (min-width: $xlLayout) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	> * + * {
+		margin-top: 15px;
+	
+		@media (min-width: $xlLayout) {
+			margin-top: 0;
+		}	
+	}
+}
+
+// .form-row--two-items-second {
+//   > * {
+//     width: 50%;
+//   }
+// }
+
+.form-row--price {
+	display: flex;
+	align-items: center;
+
+	* + * {
+		margin-left: 10px;
+	}
+}
+
+.checkbox-label,
+.radio-label {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.checkbox-label--disabled,
+.radio-label--disabled {
+	color: $disabledColor;
+
+	.checkboxbtn {
+		background-color: $disabledColor;
+	}
+	.checkboxbtn--sqare {
+		border: 1px solid $disabledColor;
+	}
+}
+.white-theme{
+	.checkbox-label--disabled,
+.radio-label--disabled {
+	color: $disabledWhiteThemeColor;
+
+	.checkboxbtn {
+		background-color: #f7f7f7;
+	}
+	.checkboxbtn--sqare {
+		border: 1px solid $disabledWhiteThemeColor;
+	}
+}
+}
+.checkbox-label--column {
+	flex-direction: column-reverse;
+}
+
+.checkbox-label.center,
+.radio-label.center {
+  justify-content: center;
+}
+
+.form-checkbox--hidden,
+.form-radio--hidden {
+	position: absolute;
+	opacity: 0;
+	
+	width: 0;
+	height: 0;
+	margin: 0;
+	
+	cursor: pointer;
+}
+
+input:checked ~ .checkboxbtn .icomoon,
+input:checked ~ .checkboxbtn-wrap .checkboxbtn .icomoon,
+input:checked ~ .radiobtn .icomoon {
+	display: block;
+} 
+
+.form-checkbox-subtitle {
+	a {
+		text-decoration: underline;
+	}
+}
+
+.checkboxbtn-wrap {
+	display: flex;
+	align-items: center;
+}
+
+.checkboxbtn,
+.radiobtn {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+
+	height: 25px;
+	width: 25px;
+	// border: 3px solid $primaryColor;
+	border: 3px solid silver;
+	background-color: $primaryColor;
+	border-radius: 50%;
+
+	.icomoon {
+		display: none;
+
+		color: $blueTextColor;
+	}
+}
+
+input:checked ~ .checkboxbtn,
+input:checked ~ .checkboxbtn-wrap .checkboxbtn,
+input:checked ~ .radiobtn {
+	border-color: $primaryColor;
+}
+
+.white-theme input:checked ~ .checkboxbtn,
+.white-theme input:checked ~ .checkboxbtn-wrap .checkboxbtn,
+.white-theme input:checked ~ .radiobtn {
+	border-color: $blueTextColor;
+}
+
+.white-theme .popupBasket input:checked ~ .checkboxbtn,
+.white-theme .popupBasket input:checked ~ .radiobtn {
+	border-color: $primaryColor;
+}
+
+.checkboxbtn--wo-bg,
+.radiobtn--wo-bg {
+	border-width: 1px;
+	background-color: transparent;
+
+	.icomoon {
+		color: #fff;
+	}
+}
+
+.white-theme .checkboxbtn--wo-bg,
+.white-theme .radiobtn--wo-bg {
+	border-color: $blueTextColor;
+
+	.icomoon {
+		color: $blueTextColor;
+	}
+}
+
+.checkboxbtn--checked-yellow,
+.radiobtn--checked-yellow {
+	background-color: transparent;
+
+	.icomoon {
+		color: $blueTextColor;
+	}
+}
+
+input:checked ~ .checkboxbtn--checked-yellow,
+input:checked ~ .checkboxbtn-wrap .checkboxbtn--checked-yellow,
+input:checked ~ .radiobtn--checked-yellow {
+	background-color: $primaryColor;
+	border-color: $yellowTextColor;
+}
+
+.white-theme .checkboxbtn--checked-yellow,
+.white-theme .checkboxbtn-wrap .checkboxbtn--checked-yellow,
+.white-theme .radiobtn--checked-yellow {
+	background-color: transparent;
+
+	.icomoon {
+		color: $blueTextColor;
+	}
+}
+
+.white-theme input:checked ~ .checkboxbtn--checked-yellow,
+.white-theme input:checked ~ .radiobtn--checked-yellow {
+	background-color: $primaryColor;
+	border-color: $yellowTextColor;
+}
+
+.checkboxbtn--sqare {
+	width: 17px;
+	height: 17px;
+	border: 1px solid #DEDCDC;
+
+	border-radius: 2px;
+	background-color: transparent;
+
+	@media (min-width: $mdLayout) {
+		width: 17px;
+		height: 17px;
+	}
+
+	.icomoon {
+		font-size: 12px;
+	}
+}
+
+input:checked ~ .checkboxbtn--sqare {
+	background-color: $primaryColor;
+}
+
+.checkboxbtn + *,
+.radiobtn + * {
+	margin-left: 10px;
+}
+
+.form--small {
+	max-width: 400px;
+	width: 100%;
+}
+
+.form--medium {
+  max-width: 737px;
+  width: 100%;
+}
+
+.form--blue {
+	padding: 20px;
+	
+	background-color: $fourthColor;
+	text-align: center;
+	
+	@media (min-width: $mdLayout) {
+		padding: 30px 35px;
+	}
+}
+
+.form--blue-second {
+	padding: 15px 0 0 0;
+	background-color: $fourthColor;
+	text-align: center;
+}
+
+.form-title + * {
+	margin-top: 30px;
+}
+
+.form-title--with-bd {
+	padding-bottom: 12px;
+}
+
+.form-main {
+	padding: 15px;
+
+	@media (min-width: $xlLayout) {
+		padding: 17px 35px 30px;
+	}
+}
+
+.form-header {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #9a9a9a;
+}
+
+.form-footer {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: 1px solid #9a9a9a;
+}
+
+.form-main__links {
+	a + a {
+		margin-top: 30px;
+	}
+
+	a:hover {
+		color: $yellowTextColor;
+	} 
+}
+
+.form-quit {
+  text-align: left;
+}
+
+.form-label + .form-item,
+.form-label + textarea {
+  margin-top: 10px;
+}
+/* forms end */

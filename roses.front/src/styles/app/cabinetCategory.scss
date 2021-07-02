@@ -1,0 +1,128 @@
+.cabinet-category {
+
+	.sidebar-dropdown {
+		.sidebar-item {
+			background-color: #f7f7f7;
+			color: #9e9e9e;
+			font-weight: 500;
+			transition: background $formTransitions;
+			a {
+				display: inline-block;
+				color: #9e9e9e;
+				font-weight: 500;
+			}
+
+			&.personal-data > .item-container {
+				padding: 20px 25px;				
+			}
+			
+			& > .item-container {
+				a, .link-with-icon {
+					padding: 20px 25px;
+					display: inline-block;
+					width: 100%;
+					box-sizing: border-box;
+				}
+			}
+
+			&.active, &:hover {
+				background-color: #fff;
+				color: #000;
+				a { color: #000;}
+
+			}
+
+			&.exit-item {
+				border-top: 1px solid $borderColor;
+			}
+
+			&.personal-data {
+				color: #fff;
+				a { color: #fff;}
+			}
+
+			&.personal-data {
+				background-color: $secondaryColor;
+				.email {margin-top: 10px;}
+			}
+		}
+	}
+
+	.content-wrapper {
+		background-color: #fff;
+		& > .content-container {
+			padding: 35px 30px;
+			font-weight: 500;
+		}
+	}
+
+	.orders-list {
+		font-weight: 500;
+		// padding: 15px;
+		.order-item {
+
+			.price {font-size: 24px;}
+		}
+
+		.order-prod-item {
+			// width: 100%;
+		}
+	}
+
+	.feedback-list {
+		.feedback-item {
+		 & + .feedback-item {margin-top: 30px; }
+			.author-block .date {margin-left: 0;}
+		}
+
+	}
+
+	@media (min-width: 767px) {
+		.orders-list {
+
+			.order-item {
+				
+				.content-container > div:nth-child(1) {
+					flex-basis: 2%; max-width: 2%;
+					padding-left: 0;
+				}
+				.content-container > div:nth-child(2) {flex-basis: 10%; max-width: 16%;}
+				.content-container > div:nth-child(3) {flex-basis: 16%; max-width: 10%;}
+				.content-container > div:nth-child(4) {flex-basis: 40%; max-width: 30%;}
+				.content-container > div:nth-child(5) {
+					width: 7%; max-width: 7%;
+					text-align: right;
+				}
+				.content-container > div:nth-child(6) {
+					flex-basis: 25%; max-width: 25%;
+					padding-right: 0;
+					text-align: right;
+				}
+
+			}
+		}
+	}
+
+	@media (min-width: 991px) {
+		.formRow + .formRow {margin-top: 30px;}
+	}
+
+	@media (min-width: 1279px) {
+		.orders-list {
+			.order-item {
+				
+
+				.content-container > div:nth-child(3) {max-width: 100px;}
+
+				.content-container > div:nth-child(4) { max-width: none;}
+
+				.content-container > div:nth-child(5) {
+					flex-basis: 12%; max-width: 12%;
+				}
+				.content-container > div:nth-child(6) {
+					flex-basis: 20%; max-width: 20%;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="reviews" class="reviews page">
+        
+        <div class="breadcrumbsSection">
+          <div class="mcontainer">
+            <ul class="breadcrumbs sectionHeaderItem js_animate">
+              <li><a href="/index.html">Главная</a></li>
+              <li class="active">Отзывы покупателей</li>
+            </ul>  
+          </div>
+        </div>
+
+        <div class="pageSection">
+          <div class="mcontainer">
+            <div class="pageSection-title-wrap pageSection-title-wrap--border">
+              <h2 class="pageSection-title">Отзывы покупателей</h2>
+            </div>
+
+            <div class="products-categories products-categories--inner">
+              <div class="layout-main">
+                <div class="layout-left">
+                  <div class="review-item">
+                    <div class="review-item__info">
+                      <span class="review-item__name">Виктор /</span>
+                      <time class="review-item__date">16.12.2018</time>
+                    </div>
+                    <div class="title-common yellow-blue review-item__title">Покупка фотоаппарата</div>
+                    <div class="text-common bold review-item__descr">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                      Distinctio minus dolore perspiciatis reprehenderit, accusantium, 
+                      at consequatur quis corporis facere, quos blanditiis et. Impedit, 
+                      pariatur laborum!
+                    </div>
+                  </div>
+
+                  <div class="review-item">
+                    <div class="review-item__info">
+                      <span class="review-item__name">Виктор /</span>
+                      <time class="review-item__date">16.12.2018</time>
+                    </div>
+                    <div class="title-common yellow-blue review-item__title">Покупка фотоаппарата</div>
+                    <div class="text-common bold review-item__descr">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                      Distinctio minus dolore perspiciatis reprehenderit, accusantium, 
+                      at consequatur quis corporis facere, quos blanditiis et. Impedit, 
+                      pariatur laborum!
+                    </div>
+                  </div>
+
+                  <div class="review-item">
+                    <div class="review-item__info">
+                      <span class="review-item__name">Виктор /</span>
+                      <time class="review-item__date">16.12.2018</time>
+                    </div>
+                    <div class="title-common yellow-blue review-item__title">Покупка фотоаппарата</div>
+                    <div class="text-common bold review-item__descr">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                      Distinctio minus dolore perspiciatis reprehenderit, accusantium, 
+                      at consequatur quis corporis facere, quos blanditiis et. Impedit, 
+                      pariatur laborum!
+                    </div>
+                  </div>
+                </div>
+
+                <div class="layout-right">
+                  <form action="#" class="form form-reviews form--small form--blue form-val-js">
+                    <div class="form-title title-common yellow">Оставить отзыв</div>
+                    <div class="form-row">
+                      <input 
+                        name="name" 
+                        type="text" 
+                        class="form-item" 
+                        placeholder="Ваше имя" 
+                        data-validate="required" 
+                        data-error-text="Необходимо заполнить поле">
+                    </div>
+                    <div class="form-row">
+                      <input 
+                        name="phone" 
+                        type="tel" 
+                        class="form-item input_mask_phone" 
+                        placeholder="Ваш телефон"
+                        data-validate="required" 
+                        data-error-text="Необходимо заполнить поле">
+                    </div>
+                    <div class="form-row">
+                      <input 
+                        name="email" 
+                        type="email" 
+                        class="form-item" 
+                        placeholder="Ваш e-mail"
+                        data-validate="required" 
+                        data-error-text="Необходимо заполнить поле">
+                    </div>
+                    <div class="form-row">
+                      <input 
+                        name="title" 
+                        type="text" 
+                        class="form-item" 
+                        placeholder="Тема отзыва"
+                        data-validate="required" 
+                        data-error-text="Необходимо заполнить поле">
+                    </div>
+                    <div class="form-row">
+                      <textarea 
+                        name="text" 
+                        cols="30" 
+                        rows="10" 
+                        placeholder="Ваш отзыв"
+                        data-validate="required" 
+                        data-error-text="Необходимо заполнить поле"></textarea>
+                    </div>
+                    <div class="form-row">
+                      <button type="submit" class="button">Отправить</button>
+                    </div>
+                  </form>
+                </div>              
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        @@include('templateHtml/recentlyViewed.html')
+                
+        @@include('templateHtml/bid.html')
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

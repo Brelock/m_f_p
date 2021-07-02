@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Telegram</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="14.6726253%" y1="14.6945251%" x2="85.3423483%" y2="85.364248%" id="linearGradient-1">
+            <stop stop-color="#00B0E7" offset="0%"></stop>
+            <stop stop-color="#0094D6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sviaz" transform="translate(-1155.000000, -1041.000000)">
+            <g id="Telegram" transform="translate(1155.000000, 1041.000000)">
+                <circle id="Oval" fill="url(#linearGradient-1)" cx="18.95" cy="18.95" r="18.95"></circle>
+                <g id="Group" transform="translate(7.250000, 10.500000)">
+                    <polygon id="Path" fill="#B8DAEC" points="5.425 9.975 7.625 15.9 17.275 2.45"></polygon>
+                    <polygon id="Path" fill="#88CDE3" points="7.85 11.3 7.65 15.95 12.75 11.625"></polygon>
+                    <path d="M19.65,0.2 L0.6,7.45 C0.05,7.65 0.075,8.425 0.625,8.6 L5.55,10.25 L16.75,3.025 L7.875,11.3 L14.775,16.525 C15.5,17.075 16.525,16.7 16.75,15.825 L20.475,0.9 C20.575,0.425 20.1,0 19.65,0.2 Z" id="Path" fill="#E7F7FC"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

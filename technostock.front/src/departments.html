@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="departments" class="departments page">
+        
+        <div class="breadcrumbsSection">
+          <div class="mcontainer">
+            <ul class="breadcrumbs sectionHeaderItem">
+              <li><a href="/index.html">Главная</a></li>
+              <li class="active">Магазины</li>
+            </ul>  
+          </div>
+        </div>
+
+        <div class="pageSection">
+          <div class="mcontainer">
+              <div class="pageSection-title-wrap">
+                <h2 class="pageSection-title">Магазины</h2>
+              </div>
+
+              <div class="departments-info">
+                <div class="departments-header">
+                  <div class="departments-filter">
+                    <div class="form-row-mobile chosen-wrapper">
+                      <label for="citiesSelect" class="form-item">Город:</label>
+                      <select name="citiesSelect" id="citiesSelect" class="form-item form-item--common select-item" data-placeholder="Выберите город">
+                        <option value=""></option>
+                        <option value="1">Option 1</option>
+                        <option value="2" >Option 2</option>
+                        <option value="3" >Option 3</option>
+                      </select>
+                    </div>
+
+                    <div class="form-row-mobile chosen-wrapper">
+                      <label for="departmentsSelect" class="form-item">Выберите магазин:</label>
+                      <select name="departmentsSelect" id="departmentsSelect" class="form-item form-item--common select-item" data-placeholder="Выберите магазин">
+                        <option value=""></option>
+                        <option value="1">Option 1</option>
+                        <option value="2" >Option 2</option>
+                        <option value="3" >Option 3</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="departments-tabs tabsNav tabButtons">
+                    <button data-target="map-wrap" class="tab tabButton button-tab active">Карта</button>
+                    <button data-target="list-wrap" class="tab tabButton button-tab">Список</button>
+                  </div>
+                </div>
+
+                <div class="departments-toggleBlocks toggleBlocks-list">
+                  <div id="map-wrap" class="toggleBlock active">
+                    <div class="departments-map">
+                      <div id="departmentsMap" class="departments-map"
+                           data-lat="47.856350"
+                           data-lng="35.106594"></div>
+                    </div>
+                  </div>
+
+                  <div id="list-wrap" class="toggleBlock">
+                    <div class="departments-list">
+                      <div class="departments-item">
+                        <div class="departments-item__img">
+                          <img src="/img/tovar1.jpg">
+                        </div>
+                        
+                        <div class="departments-item__location departments-item__wrap">
+                          <div class="departments-item__title">№234</div>
+                          <div class="departments-item__descr">м. Днепр просп. Слобожанський, б. 46</div>
+                        </div>
+    
+                        <div class="departments-item__time departments-item__wrap">
+                          <div class="departments-item__title">Время работы</div>
+                          <div class="departments-item__descr"> Пн-Нд  08:00  - 20:00 </div>
+                        </div>
+                        
+                        <div class="departments-item__phone departments-item__wrap">
+                          <div class="departments-item__title">Телефон</div>
+                          <a href="tel:+380676100677" class="departments-item__descr">(067) 610-06-77</a>
+                        </div>    
+                      </div>
+
+                      <div class="departments-item">
+                        <div class="departments-item__img">
+                          <img src="/img/tovar1.jpg">
+                        </div>
+                        
+                        <div class="departments-item__location departments-item__wrap">
+                          <div class="departments-item__title">№234</div>
+                          <div class="departments-item__descr">м. Днепр просп. Слобожанський, б. 46</div>
+                        </div>
+    
+                        <div class="departments-item__time departments-item__wrap">
+                          <div class="departments-item__title">Время работы</div>
+                          <div class="departments-item__descr"> Пн-Нд  08:00  - 20:00 </div>
+                        </div>
+                        
+                        <div class="departments-item__phone departments-item__wrap">
+                          <div class="departments-item__title">Телефон</div>
+                          <a href="tel:+380676100677" class="departments-item__descr">(067) 610-06-77</a>
+                        </div>    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        @@include('templateHtml/recentlyViewed.html')
+
+        @@include('templateHtml/bid.html')
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+
+  <script type="text/javascript" src="js/departmentsMap.min.js"></script>
+  <script src="/js/markerclusterer.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5s7S2q_mcLPcyO032OssFNTt1NdRs14U&callback=deptsMap.decorator"
+  type="text/javascript"></script>
+  <!--  -->
+</body>
+
+</html>

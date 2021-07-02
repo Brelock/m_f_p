@@ -1,0 +1,104 @@
+.homePage{
+    padding-bottom: 60px;
+}
+
+.titul-info-block{
+    display: block;
+    margin-left: -10px;
+    margin-right: -10px;
+    @media (min-width: $containerWidthLaptop) {
+        margin-left: 0;
+        margin-right: -15px;
+        padding: 20px 0;
+        display: flex;
+    }
+}
+.cards{
+    width: 30%;
+    height: fit-content;
+    padding: 10px;
+    position: relative;
+}
+.card-block{
+    padding-top: 20px;
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+    @media (min-width: $containerWidthLaptop) {
+        padding-top: 0;
+        margin: -10px;
+        padding-left: 20px;
+    }
+}
+.card-body, .border-produckt-block{
+    border: 1px solid $borderColor;
+    .card-link{
+        color: $primaryColor;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+.card-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+.card-subtitle{
+    color: $tertiaryColor !important;
+}
+.card-text{
+    // padding-bottom: 10px;
+    word-break: normal;
+}
+.card-block-all{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.bottom-card{
+    padding: 20px;
+    .card-body{
+        padding: 0;
+    }
+    .card-title{
+        padding: 16px;
+        background-color: $secondaryColor;
+        border-bottom: 2px solid $borderColor;
+    }
+    .card-subtitle, .card-text{
+        padding: 16px 16px 0 16px;
+    }
+   .card-link{
+       padding: 16px;
+   }
+}
+.company-info{
+    .text-window{
+        padding: 20px;
+        border: none;
+        box-shadow: 0 0 10px rgba(109, 113, 117, 0.3);
+    }
+    .title-window{
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+.card-block-xls{
+    padding-top: 10px;
+    padding-left: 0;
+    @media (min-width: $containerWidthLaptop) {
+        padding-left: 10px;
+    }
+}
+.img-file-xls{
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    img{
+        max-width: 25px;
+        max-height: 25px;
+        min-width: 23px;
+    }
+}

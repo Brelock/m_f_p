@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="products" class="products page">
+        
+        <div class="breadcrumbsSection">
+          <div class="mcontainer">
+            <ul class="breadcrumbs sectionHeaderItem js_animate">
+              <li><a href="/index.html">Главная</a></li>
+              <li><a href="#">Мобильные телефоны</a></li>
+              <li class="active">Apple Iphone</li>
+            </ul>  
+          </div>
+        </div>
+
+        <div class="pageSection">
+          <div class="mcontainer">
+              <div class="pageSection-title-wrap pageSection-title-wrap--border flex spaceBetween center">
+                <h2 class="pageSection-title">Мобильные телефоны</h2>
+                <span class="grey text-medium">2 756 товаров</span>
+              </div>
+
+              <div class="products-wrapper">
+                <aside class="acc-wrapper products-filters aside-js">
+                  <div class="button-close xl-show-mob"></div>
+
+                  <form action="#" class="form form-products-filters">
+                    <div class="products-filters__container">
+                      <div class="acc-item products-filter">
+                        <button type="button" class="acc-button title-common button-filter">
+                          Фильтр
+                          <i class="icomoon icon-arrow"></i>
+                        </button>
+                        <div class="acc-content products-filter-wrap">
+                          <div class="form-row-secondary">
+                            <div class="checkbox-item">
+                              <label class="checkbox-label checkbox-label--disabled">
+                                <input 
+                                  name="confirm"
+                                  type="checkbox"
+                                  class="form-checkbox form-checkbox--hidden"
+                                >
+                                <span class="checkboxbtn checkboxbtn--sqare"><i class="icomoon icon-check2"></i></span>
+                                <span class="form-checkbox-subtitle">
+                                  <span class="products-filter__subtitle">Б/У</span>
+                                  <span class="products-filter__quantity">(345)</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+
+                          <div class="form-row-secondary">
+                            <div class="checkbox-item">
+                              <label class="checkbox-label">
+                                <input 
+                                  name="confirm"
+                                  type="checkbox"
+                                  class="form-checkbox form-checkbox--hidden"
+                                >
+                                <span class="checkboxbtn checkboxbtn--sqare"><i class="icomoon icon-check2"></i></span>
+                                <span class="form-checkbox-subtitle">
+                                  <span class="products-filter__subtitle">Новый</span>
+                                  <span class="products-filter__quantity">(11)</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="acc-item products-filter products-filter--price">
+                        <button type="button" class="acc-button title-common button-filter">
+                          Цена
+                          <i class="icomoon icon-arrow"></i>
+                        </button>
+                        <div class="acc-content products-filter-wrap">
+                          <div class="form-row form-row--price">
+                            <span>от</span>
+                            <input class="form-item form-item--price" name="from" type="number">
+                            <span>до</span>
+                            <input class="form-item form-item--price" name="to" type="number">
+                            <span>грн</span>
+                          </div>
+                          <div class="form-row">
+                            <div id="slider-range"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="products-filters__container">
+                      <div class="acc-item products-filter">
+                        <button type="button" class="acc-button title-common button-filter">
+                          Фильтр 2
+                          <i class="icomoon icon-arrow"></i>
+                        </button>
+                        <div class="acc-content">
+                          <div class="products-filter-wrap">
+                            <div class="form-row-secondary">
+                              <div class="checkbox-item">
+                                <label class="checkbox-label">
+                                  <input 
+                                    name="confirm"
+                                    type="checkbox"
+                                    class="form-checkbox form-checkbox--hidden"
+                                  >
+                                  <span class="checkboxbtn checkboxbtn--sqare"><i class="icomoon icon-check2"></i></span>
+                                  <span class="form-checkbox-subtitle">
+                                    <span class="products-filter__subtitle">Apple Iphone</span>
+                                    <span class="products-filter__quantity">(45)</span>
+                                  </span>
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="form-row-secondary">
+                              <div class="checkbox-item">
+                                <label class="checkbox-label">
+                                  <input 
+                                    name="confirm"
+                                    type="checkbox"
+                                    class="form-checkbox form-checkbox--hidden"
+                                  >
+                                  <span class="checkboxbtn checkboxbtn--sqare"><i class="icomoon icon-check2"></i></span>
+                                  <span class="form-checkbox-subtitle">
+                                    <span class="products-filter__subtitle">Samsung</span>
+                                    <span class="products-filter__quantity">(12)</span>
+                                  </span>
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="form-row-secondary">
+                              <div class="checkbox-item">
+                                <label class="checkbox-label">
+                                  <input 
+                                    name="confirm"
+                                    type="checkbox"
+                                    class="form-checkbox form-checkbox--hidden"
+                                  >
+                                  <span class="checkboxbtn checkboxbtn--sqare"><i class="icomoon icon-check2"></i></span>
+                                  <span class="form-checkbox-subtitle">
+                                    <span class="products-filter__subtitle">LG</span>
+                                    <span class="products-filter__quantity">(3)</span>
+                                  </span>
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="form-row-secondary">
+                              <div class="checkbox-item">
+                                <label class="checkbox-label">
+                                  <input 
+                                    name="confirm"
+                                    type="checkbox"
+                                    class="form-checkbox form-checkbox--hidden"
+                                  >
+                                  <span class="checkboxbtn checkboxbtn--sqare"><i class="icomoon icon-check2"></i></span>
+                                  <span class="form-checkbox-subtitle">
+                                    <span class="products-filter__subtitle">Sony</span>
+                                    <span class="products-filter__quantity">(24)</span>
+                                  </span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="button" class="button-show-all">
+                            Показать все
+                            <i class="icomoon icon-arrow"></i>
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="acc-item products-filter">
+                        <button type="button" class="acc-button title-common button-filter">
+                          Фильтр 3
+                          <i class="icomoon icon-arrow"></i>
+                        </button>
+                        <div class="acc-content">
+                          <div class="products-filter-wrap">
+                            <div class="form-row-secondary">
+                              <div class="checkbox-item">
+                                <label class="checkbox-label">
+                                  <input 
+                                    name="confirm"
+                                    type="checkbox"
+                                    class="form-checkbox form-checkbox--hidden"
+                                  >
+                                  <span class="checkboxbtn checkboxbtn--sqare"><i class="icomoon icon-check2"></i></span>
+                                  <span class="form-checkbox-subtitle">
+                                    <span class="products-filter__subtitle">Запорожье</span>
+                                    <span class="products-filter__quantity">(45)</span>
+                                  </span>
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="form-row-secondary">
+                              <div class="checkbox-item">
+                                <label class="checkbox-label">
+                                  <input 
+                                    name="confirm"
+                                    type="checkbox"
+                                    class="form-checkbox form-checkbox--hidden"
+                                  >
+                                  <span class="checkboxbtn checkboxbtn--sqare"><i class="icomoon icon-check2"></i></span>
+                                  <span class="form-checkbox-subtitle">
+                                    <span class="products-filter__subtitle">Кременчуг</span>
+                                    <span class="products-filter__quantity">(12)</span>
+                                  </span>
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="form-row-secondary">
+                              <div class="checkbox-item">
+                                <label class="checkbox-label">
+                                  <input 
+                                    name="confirm"
+                                    type="checkbox"
+                                    class="form-checkbox form-checkbox--hidden"
+                                  >
+                                  <span class="checkboxbtn checkboxbtn--sqare"><i class="icomoon icon-check2"></i></span>
+                                  <span class="form-checkbox-subtitle">
+                                    <span class="products-filter__subtitle">Кривой Рог</span>
+                                    <span class="products-filter__quantity">(3)</span>
+                                  </span>
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="form-row-secondary">
+                              <div class="checkbox-item">
+                                <label class="checkbox-label">
+                                  <input 
+                                    name="confirm"
+                                    type="checkbox"
+                                    class="form-checkbox form-checkbox--hidden"
+                                  >
+                                  <span class="checkboxbtn checkboxbtn--sqare"><i class="icomoon icon-check2"></i></span>
+                                  <span class="form-checkbox-subtitle">
+                                    <span class="products-filter__subtitle">Париж</span>
+                                    <span class="products-filter__quantity">(24)</span>
+                                  </span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <button type="button" class="button-show-all">
+                            Показать все
+                            <i class="icomoon icon-arrow"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </aside>
+
+                <div class="products-list-wrapper">
+                  <header class="products-list-header grey">
+                    <div class="wrap-container-filters">
+                      <div class="products-filters-small">
+
+                        <div class="mob-description-filter">Сортировать</div>
+
+                        <div class="btn-drop-menu">
+                          <span>По цене</span>
+                          <i class="icomoon icon-arrow"></i>
+                        </div>
+
+                        <ul class="drop-filters">
+                          <li>
+                            <button class="products-filter-small active desc">
+                              <span>По цене</span>
+                              <!-- <i class="icomoon icon-arrow"></i> -->
+                            </button>
+                          </li>
+
+                            <li>
+                              <button class="products-filter-small">
+                                <span>По популярности</span>
+                                <!-- <i class="icomoon icon-arrow"></i> -->
+                              </button>
+                            </li>
+    
+                            <li>
+                              <button class="products-filter-small">
+                                <span>По новизне</span>
+                                <!-- <i class="icomoon icon-arrow"></i> -->
+                              </button>
+                            </li>
+    
+                            <li>
+                              <button class="products-filter-small">
+                                <span>По имени</span>
+                                <!-- <i class="icomoon icon-arrow"></i> -->
+                              </button>
+                            </li>
+                          </ul>
+
+                      </div>
+
+                      <a class="reset-filters" href="#">Сбросить фильтры</a>
+                    </div>
+
+                    <div class="numbers-of-products-wrap xl-show">
+                      <button class="numbers-of-products active">10</button>
+                      <button class="numbers-of-products">20</button>
+                      <button class="numbers-of-products">30</button>
+                    </div>
+
+                    <div class="button-aside-show xl-show-mob-f">
+                      <!-- <i class="icomoon icon-filters"></i> -->
+                      фильтры
+                    </div>
+                  </header>
+                  
+                  <main class="products-list">
+                    <div class="mrow flex wrap">
+                      <div class="product-card-in-row mcol-xs-6 mcol-xsm-4 mcol-md-4 mcol-lg-3">
+                        <article class="product-card">
+                          <header class="product-card__header">
+                            <div class="product-card__img--blur-wrap">
+                              <img src="/img/tovar1.jpg" alt="" class="product-card__img--blur">
+                            </div>
+                            <img src="/img/tovar1.jpg" alt="" class="product-card__img">
+                            <div class="sticker sticker--new">Новый</div>
+                            <a href="#" class="sticker sticker--favorits">
+                              <i class="icomoon icon-hearth1"></i>
+                              <i class="icomoon icon-hearth2"></i>
+                            </a>
+                            <div class="info-label-sell">-20%</div>
+                          </header>
+                          <div class="two-buttons-wrapper">
+                            <a href="#" class="button">Купить</a>
+                            <a href="/product.html" class="button button--inverse">Подробнее</a>
+                          </div>
+                          <footer class="product-card__footer">
+                            <div class="product-card__prices">
+                              <div class="product-card__price"><span>4 899</span> грн</div>
+                            </div>
+                            <h3 class="product-card__title">Mirta LD-32T2HD</h3>
+                            <div class="info-label info-label--hit">Хит</div>
+                            <div class="info-label info-label--new">Новинка</div>
+                          </footer>
+                        </article>
+                      </div>
+
+                      <div class="product-card-in-row mcol-xs-6 mcol-xsm-4 mcol-md-4 mcol-lg-3">
+                        <article class="product-card">
+                          <header class="product-card__header">
+                            <div class="product-card__img--blur-wrap">
+                              <img src="/img/tovar2.jpg" alt="" class="product-card__img--blur">
+                            </div>
+                            <img src="/img/tovar2.jpg" alt="" class="product-card__img">
+                            <div class="sticker sticker--almost-new">Майже новий</div>
+                            <a href="#" class="sticker sticker--favorits sticker--favorits-added">
+                              <i class="icomoon icon-hearth1"></i>
+                              <i class="icomoon icon-hearth2"></i>
+                            </a>
+                          </header>
+                          <div class="two-buttons-wrapper">
+                            <a href="#" class="button">Купить</a>
+                            <a href="/product.html" class="button button--inverse">Подробнее</a>
+                          </div>
+                          <footer class="product-card__footer">
+                            <div class="product-card__prices">
+                              <div class="product-card__price"><span>3 900</span> грн</div>
+                            </div>
+                            <h3 class="product-card__title">Motorola Moto G5 Plus XT1685</h3>
+                            <div class="info-label info-label--new">Новинка</div>
+                          </footer>
+                        </article>
+                      </div>
+
+                      <div class="product-card-in-row mcol-xs-6 mcol-xsm-4 mcol-md-4 mcol-lg-3">
+                        <article class="product-card product-card--stock">
+                          <header class="product-card__header">
+                            <div class="product-card__img--blur-wrap">
+                              <img src="/img/tovar1.jpg" alt="" class="product-card__img--blur">
+                            </div>
+                            <img src="/img/tovar1.jpg" alt="" class="product-card__img">
+                            <div class="sticker sticker--new">Новый</div>
+                            <a href="#" class="sticker sticker--favorits">
+                              <i class="icomoon icon-hearth1"></i>
+                              <i class="icomoon icon-hearth2"></i>
+                            </a>
+                            <div class="info-label-sell">-20%</div>
+                          </header>
+                          <div class="two-buttons-wrapper">
+                            <a href="#" class="button">Купить</a>
+                            <a href="/product.html" class="button button--inverse">Подробнее</a>
+                          </div>
+                          <footer class="product-card__footer">
+                            <div class="product-card__prices">
+                              <div class="product-card__price"><span>4 899</span> грн</div>
+                              <div class=" product-card__price product-card__price--old"><span>4 899</span> грн</div>
+                            </div>
+                            <h3 class="product-card__title">Mirta LD-32T2HD</h3>
+                          </footer>
+                        </article>
+                      </div>
+
+                      <div class="product-card-in-row mcol-xs-6 mcol-xsm-4 mcol-md-4 mcol-lg-3">
+                        <article class="product-card product-card--stock">
+                          <header class="product-card__header">
+                            <div class="product-card__img--blur-wrap">
+                              <img src="/img/tovar2.jpg" alt="" class="product-card__img--blur">
+                            </div>
+                            <img src="/img/tovar2.jpg" alt="" class="product-card__img">
+                            <div class="sticker ">Комис.</div>
+                            <a href="#" class="sticker sticker--favorits sticker--favorits-added">
+                              <i class="icomoon icon-hearth1"></i>
+                              <i class="icomoon icon-hearth2"></i>
+                            </a>
+                            <div class="info-label-sell">-20%</div>
+                          </header>
+                          <div class="two-buttons-wrapper">
+                            <a href="#" class="button">Купить</a>
+                            <a href="/product.html" class="button button--inverse">Подробнее</a>
+                          </div>
+                          <footer class="product-card__footer">
+                            <div class="product-card__prices">
+                              <div class="product-card__price"><span>4 899</span> грн</div>
+                              <div class=" product-card__price product-card__price--old"><span>4 899</span> грн</div>
+                            </div>
+                            <h3 class="product-card__title">Mirta LD-32T2HD</h3>
+                          </footer>
+                        </article>
+                      </div>
+                    </div>
+                    <div class="spinner spinner--catalog-js"></div>
+                  </main>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        @@include('templateHtml/pagination.html')
+
+        @@include('templateHtml/recentlyViewed.html')
+                
+        @@include('templateHtml/bid.html')
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    @@include('templateHtml/contacts.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

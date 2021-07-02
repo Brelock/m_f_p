@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="productPage" class="productPage page"> 
+        <div class="mcontainer">
+
+       
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs-wrap">
+                  <li class="breadcrumbs-link"><a href="index.html">Главная</a></li>
+                  <li class="breadcrumbs-link active-link"><a href="#">Предприятиям</a></li>
+                </ul>
+              </div> 
+              <div class="page-title">Предприятиям</div>
+
+              <div class="titul-info-block">
+                <aside class="category-sidebar descMenu">
+                   <!-- @@include('templateHtml/categoriesMenu.html') -->
+                  <div class="filter-mobile-buttom">Показать фильтры</div>
+
+                  <div class="form--block">
+                    @@include('templateHtml/filtersPage.html')
+                  </div>
+                </aside>
+                <div class="product-block">
+                    <div class="produckt-alert-title">При заказе на сумму <span>1300 грн</span>  и выше по оптовым ценам - активируется оптовая цена</div>
+                   <div class="products-filters">
+                     <button data-alias="name-order" data-value="" class="products-filter-small"><span>По названию</span></button>
+                     <button data-alias="price-order" data-value="" class="products-filter-small"><span>По цене</span></button>
+                     <button data-alias="presence-order" data-value="" class="products-filter-small"><span>Есть в наличии</span></button>
+                     <button data-alias="date-order" data-value="" class="products-filter-small"><span>По дате</span></button>
+                     <input type="hidden" name="default" value="default"> 
+                   </div>
+                    <div class="product-card-block">
+    
+                       <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                             <div class=" border-produckt-block">
+                               <div class="img-card">
+                                   <img src="./img/blaser2.jpg" class="card-img-top" alt="...">
+                               </div>
+                              <div class="card-body">
+                                <div class="card-text__article">Артикул:
+                                  <span>123456</span>
+                                  <span class="action">DISCOUNT</span>
+                                  <span class="big-action">BIG-SALE</span>
+                                  <span class="hot-prod">HOT</span>
+                                  <span class="new-prod">NEW</span>
+                                </div>
+                                <div class="card-text"> No-brand тракер на застежке (серый)</div>
+                              </div>
+                              <div class="list-group list-group-flush">
+                                <div class="list-group-item">
+                                    <div class="info-item">Наличие</div>
+                                    <div class="info-item-price">34 <span>шт.</span></div>
+                                </div>
+                                <div class="list-group-item action-price">
+                                    <div class="info-item"> Опт <span>-20%</span></div>
+                                    <div class="info-item-price">135<span>грн.</span> <p class="action-item-price">100<span>грн</span></p></div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="info-item">Дроп</div>
+                                    <div class="info-item-price">457<span>грн.</span></div>
+                                </div>
+                              </div>
+                             </div> 
+                             <a class="link-product-item" href="./productItem.html"></a>
+                             <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                        </div>
+
+                       <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/blaser.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Кепка серая</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <div class="info-item">Наличие</div>
+                                  <div class="info-item-price">34 <span>шт.</span></div>
+                              </div>
+                              <div class="list-group-item">
+                                  <div class="info-item"> Опт</div>
+                                  <div class="info-item-price">135<span>грн.</span></div>
+                              </div>
+                              <div class="list-group-item">
+                                  <div class="info-item">Дроп</div>
+                                  <div class="info-item-price">457<span>грн.</span></div>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                        </div>
+                      
+                       <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                     
+                       <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                          <div class=" border-produckt-block">
+                            <div class="img-card">
+                                <img src="./img/blaser2.jpg" class="card-img-top" alt="...">
+                            </div>
+                           <div class="card-body">
+                             <div class="card-text">Кепка серая</div>
+                           </div>
+                           <div class="list-group list-group-flush">
+                             <div class="list-group-item">
+                                 <p class="info-item">Наличие</p>
+                                 <p class="info-item-price">34 <span>шт.</span></p>
+                             </div>
+                             <div class="list-group-item">
+                                 <p class="info-item"> Опт</p>
+                                 <p class="info-item-price">135<span>грн.</span></p>
+                             </div>
+                             <div class="list-group-item">
+                                 <p class="info-item">Дроп</p>
+                                 <p class="info-item-price">457<span>грн.</span></p>
+                             </div>
+                           </div>
+                          </div> 
+                          <a class="link-product-item" href="./productItem.html"></a>
+                          <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                     
+                       <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/blaser2.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Кепка серая</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                     
+                       <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                          <div class=" border-produckt-block">
+                            <div class="img-card">
+                                <img src="./img/blaser2.jpg" class="card-img-top" alt="...">
+                            </div>
+                           <div class="card-body">
+                             <div class="card-text">Кепка серая</div>
+                           </div>
+                           <div class="list-group list-group-flush">
+                             <div class="list-group-item">
+                                 <p class="info-item">Наличие</p>
+                                 <p class="info-item-price">34 <span>шт.</span></p>
+                             </div>
+                             <div class="list-group-item">
+                                 <p class="info-item"> Опт</p>
+                                 <p class="info-item-price">135<span>грн.</span></p>
+                             </div>
+                             <div class="list-group-item">
+                                 <p class="info-item">Дроп</p>
+                                 <p class="info-item-price">457<span>грн.</span></p>
+                             </div>
+                           </div>
+                          </div> 
+                          <a class="link-product-item" href="./productItem.html"></a>
+                          <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                     
+                       <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/blaser2.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Кепка серая</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                     
+                       <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                          <div class=" border-produckt-block">
+                            <div class="img-card">
+                                <img src="./img/blaser2.jpg" class="card-img-top" alt="...">
+                            </div>
+                           <div class="card-body">
+                             <div class="card-text">Кепка серая</div>
+                           </div>
+                           <div class="list-group list-group-flush">
+                             <div class="list-group-item">
+                                 <p class="info-item">Наличие</p>
+                                 <p class="info-item-price">34 <span>шт.</span></p>
+                             </div>
+                             <div class="list-group-item">
+                                 <p class="info-item"> Опт</p>
+                                 <p class="info-item-price">135<span>грн.</span></p>
+                             </div>
+                             <div class="list-group-item">
+                                 <p class="info-item">Дроп</p>
+                                 <p class="info-item-price">457<span>грн.</span></p>
+                             </div>
+                           </div>
+                          </div> 
+                          <a class="link-product-item" href="./productItem.html"></a>
+                          <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                    </div>
+                    <nav class="pagination-block">
+                      <ul class="pagination">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active" aria-current="page">
+                          <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
+                </div>
+
+              </div>
+              <div class="modal-custom">
+                <div class="modal-custom__content" tabindex="-1" role="dialog">          
+                    <div class="modal-custom_content">
+                      <div class="modal-custom_header">
+                        <h5 class="modal-custom_title">Товар добавлен в корзину</h5>
+                      </div>
+                      <div class="modal-custom_footer">
+                        <a class="modal-custom_buttom" href="/basketPage.html">Перейти в корзину</a>
+                        <button type="button" class="modal-custom_buttom modal-custom__close-btn">Продолжить покупку</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-custom__overlay"></div>
+              </div>
+              @@include('templateHtml/feedback.html')   
+            </div>
+
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    <!-- @@include('templateHtml/footer.html') -->
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

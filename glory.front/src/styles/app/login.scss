@@ -1,0 +1,52 @@
+.login {
+  .form-login-wrap {
+    @media screen and (min-width: $changeWidth) {
+      display: flex;
+    }
+  }
+
+  .login-facebook {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #bababa;
+
+    text-align: center;
+
+    @media screen and (min-width: $changeWidth) {
+      margin-top: 0!important;
+      padding-top: 0;
+      border-top: none;
+      border-left: 1px solid #bababa;
+      padding-left: 35px;
+      margin-left: 35px;
+    }
+  }
+
+  .login-facebook__btn {
+    display: inline-block;
+    border-radius: 4px;
+    min-height: 44px;
+    min-width: 159px;
+    margin-top: 15px;
+
+    background-color: #4267b2;
+    background-image: url(/img/FB_logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  .form-login {
+    flex-grow: 1;
+  }
+
+  .form-link--reg {
+    display: block;
+    margin-top: 20px;
+    
+    font-weight: bold;
+    
+    @media screen and (min-width: $changeWidth) {
+      margin-top: 80px;
+    }
+  } 
+}

@@ -1,0 +1,157 @@
+.order {
+  .fav__prod-img-wrap {
+    max-width: 45px;
+  }
+
+  .fav__item:first-child .fav__row:first-child {
+    .fav__td {
+      border-top: 1px solid #9a9a9a;
+    }
+  }
+
+  .title-common {
+    margin-bottom: 20px;
+  }
+
+  .divider span {
+    background-color: #2F2F33;
+  }
+
+  .form-footer {
+    text-align: center;
+  }
+
+  .layout-main {
+    @media (min-width: $xlLayout) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (min-width: $xxlLayout) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  .layout-right {
+    @media (min-width: $xlLayout) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    
+    @media (min-width: $xxlLayout) {
+      margin-left: 40px;
+      margin-top: 0px;
+    }
+  }
+
+  .cabinet-address-tabs {
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $xxlLayout) {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  }
+
+  .products-categories {
+    @media (min-width: $xlLayout) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.white-theme {
+  .divider span {
+    background-color: $fourthColor;
+  }
+
+  .form-olduser .divider span {
+    background-color: $whiteThemeColor;
+  }
+}
+
+.layout-order-content {
+  margin-top: 44px;
+}
+
+.form-order-section + .form-order-section {
+  margin-top: 15px;
+  padding-top: 40px;
+  border-top: 1px solid #9a9a9a;
+}
+
+.form-order {
+  .title-forms {
+    display: flex;
+    align-items: center;
+  }
+
+  .title-forms .icomoon {
+    font-size: 30px;
+  }
+
+  button[type=submit] {
+    @media (min-width: $xlLayout) {
+      position: absolute;
+      left: 43px;
+      bottom: -70px;
+    }
+  }
+}
+
+.info-order-total,
+.info-order-link {
+  margin-top: 20px;
+
+  @media (min-width: $xlLayout) {
+    margin-top: 40px;
+  }
+}
+
+.info-order-link {
+  display: inline-block;
+}
+
+.form-olduser {
+  @media (min-width: $xlLayout) {
+    display: flex;
+
+    .form-olduser-left {
+      min-width: 400px;
+    }
+
+    .form-olduser-right {
+      margin-left: 15px;
+      display: flex;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+
+    .divider span {
+      padding: 5px 0;
+    }
+
+    .divider:before {
+      width: 1px;
+      height: 100%;
+      left: 50%;
+    }
+
+    .form-olduser-right-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 10px;
+    }
+
+    .form-footer {
+      border: none;
+    }
+  }
+}

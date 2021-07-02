@@ -1,0 +1,205 @@
+button {
+	height: 50px;
+  &.button {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		font-weight: 500;
+		font-family: $mainFont;
+		text-transform: uppercase;
+		width: 100%;
+		max-width: 265px;
+		min-width: 195px;
+		img {max-height: 25px;}
+		&:before, &:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 100%;
+			background-color: transparent;
+		}
+		&:before {
+			width: 0%;
+			transition: all .2s;
+			z-index: -1;
+		}	
+		&:after {
+			width: 100%;
+			z-index: -2;
+		}
+		&:hover {
+			&:before {
+				width: 100%;
+			}
+		}
+  }
+	&.btn-callback {
+		display: block;
+		text-transform: none;
+	}
+  &.primary-btn{
+		justify-content: space-evenly;
+		letter-spacing: 1px;
+		color: $white;
+
+		background-color: $primaryColor;
+		img{
+			position: relative; 
+			z-index: 3;
+			animation: 1.4s ease-in-out infinite pulse;
+		} 
+		p{
+			width: 72%;
+			position: relative; 
+			z-index: 3;
+		}
+	}
+	&.white-btn {
+		justify-content: space-evenly;
+		border: 2px solid #fff;
+		// border-radius: 4px;
+		color: $black;
+		background-color: #fff;
+		max-width: 415px;
+		min-width: 270px;
+		width: 100%;
+		img {
+			position: relative; 
+			z-index: 3;
+			animation: 1.4s ease-in-out infinite mob-pulse;
+		} 
+	}
+	&.consultation-callback {
+		justify-content: space-evenly;
+		border: 2px solid #fff;
+		// border-radius: 4px;
+		color: $black;
+		background-color: #fff;
+		max-width: 415px;
+		min-width: 270px;
+		width: 100%;
+		img {
+			position: relative; 
+			z-index: 3;
+			animation: 1.4s ease-in-out infinite mob-pulse;
+		} 
+	}
+	&.btn-callback{
+		text-align: center;
+	  border-radius: 5px;
+	  width: 195px;
+		height: 45px;
+		color: $white;
+		border: 2px solid $primaryColor;
+	  background-color: $primaryColor;
+	}
+	@media (min-width: $containerWidthLaptop) {
+		height: 60px;
+		&.button {
+			font-size: 16px;
+			max-width: 305px;
+			img {max-height: 35px;}
+		}
+		&.proposal-btn {
+			margin: 20px 40px;
+		}
+		&.btn-callback {
+			border-radius: 0;
+			color: #fff;
+			transition: all .2s;
+			background-color: transparent;
+			border: 2px solid #fff;
+			&:hover {
+				color: rgba(0, 0, 0, .8);
+				&:before{
+					background-color: #fff;
+				}
+			}
+		}
+		&.primary-btn{
+			&:hover {
+				&:before{
+					background-color: #07b9ec;
+				}
+			}
+		}
+		&.consultation-callback{
+			img {animation: 1.4s ease-in-out infinite pulse;} 
+			&:hover {
+				&:before{
+					background-color: #f0f0f0;
+				}
+			}
+		}
+	}
+}
+
+.shop-modal {
+	button {
+		&.button {
+			margin-top: 26px;
+			margin-bottom: 20px;
+			max-width: none;
+			font-weight: 600;
+			&:hover {
+				&:before{
+					background-color: #f0f0f0;
+				}
+			}
+		}
+	}
+}
+
+.section-contact-form {
+	.section-wrap__button {
+		.button {
+			max-width: 285px;
+			@media (min-width: $containerWidthLaptop) { max-width: 365px;}
+		}
+	}
+}
+
+.consultation-section {
+	button.button { 
+		@media (min-width: $containerWidthLaptop) { max-width: 415px;}
+	}
+}
+
+.proposal-block-footer {
+	.button {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		max-width: 265px;
+		height: 50px;
+		@media (min-width: $containerWidthDesktop) { 
+			height: 70px;
+			max-width: 305px; 
+		}
+	}
+}
+
+// .page {
+// 	@media (min-width: $containerWidthDesktop){
+// 		button {
+
+// 		}
+// 	}
+// }
+
+
+.wrap-btn-callback{
+	order: 3;
+	display: flex;
+	align-items: center;
+	width: 30%;
+	max-width: 195px;
+	min-width: 195px;
+	@media (min-width: $containerWidthLaptop){
+		width: 25%;
+		margin-left: 15px;      
+	}
+}
+

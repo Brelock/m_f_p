@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  @@include('templateHtml/preloader.html')  
+  <!--  -->
+
+  <div class="mainWrapper">
+    
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html')
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="feedbackPage" class="feedbackPage page">
+        <section class="pageSection pageSection--big-padding white-bg">
+          <div class="mcontainer">
+            <div class="content-container ">
+              <div class="img-container flex justifyCenter sectionBlock">
+                <div class="imgWrapper">
+                  <img src="img/icons/wink.svg" alt="wink">
+                </div>
+              </div>
+
+              <p class="text sectionBlock">Спасибо! Мы вас тоже любим.</p>
+            </div>
+          </div>          
+        </section>
+      </div>  
+      <!-- End of page code insertion here -->
+
+      <div class="relative scrollTopContainer">
+        <div id="scrollTopButton" class="icomoon standard-arrow-icon navigateIcon up"></div>
+      </div>
+
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

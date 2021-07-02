@@ -1,0 +1,13 @@
+.investors {
+	.banner-advantages--secondary .advantages--6-items {
+		.icomoon {
+			@media screen and (min-width: $changeWidth) {
+				font-size: 8.4vmax;
+			}
+		}
+		
+		.icomoon.icon-key {
+			transform: rotate(2deg);
+		}
+	}
+}

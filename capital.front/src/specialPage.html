@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "credits": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="specialPage" class="specialPage page calculator-category">
+
+        <section class="pageSection white-bg">
+          <div class="mcontainer">
+
+            <div class="sectionBlock">
+              <div class="sectionHeader">
+                <div class="animated-border-block section-title sectionHeaderItem">
+                  <div class="svg-container">
+                    <svg class="rect-container">
+                      <rect x="0" y="0" class="animatedBlock"/>
+                      <rect x="0" y="0" stroke-width="4" class="overlappingBlock"/>                
+                    </svg>
+                    <h1 class="title">Специальные возможности</h1>
+                  </div>
+                </div>
+
+                <ul class="breadcrumbs sectionHeaderItem">
+                  <li><a href="/index.html">Главная</a></li>
+                  <li><a href="/index.html">Кредиты</a></li>
+                  <li class="active"><a href="#">Специальные возможности</a></li>
+                </ul>
+              </div>
+              <div class="title title-descr">Выберите ваш залог:</div>
+            </div>
+            
+
+            <div class="specialCategoryNavBar categoryNavBar tabsNav sectionBlock">
+              
+              <div class="mobileButtonsWrapper showButton" 
+                   data-button-type="button" data-menu-type="drop-down" data-target="categoriesMenu">
+                <div class="arrow-button-container">
+                  <i class="icomoon icon-angle"></i>
+                </div>
+                <div class="active-category-container">
+                  <span class=""></span>
+                </div>
+              </div>
+
+              <div id="categoriesMenu" class="tabButtons hiddenContent height">
+                <div class="content-container">
+                  <div data-target="diamonds-tab" class="category specialCategory active">
+                    <div class="content-container flex">
+                      <div class="checkBlock"><i></i></div>
+                      <div class="description">
+                        <h3 class="title">Бриллианты</h3>
+                        <p>Оценочная стоимость залога зависит в первую очередь от пробы металла и состояния изделия</p>    
+                      </div>
+                    </div>
+                  </div>
+                  <div data-target="antiques-tab" class="category specialCategory">
+                    <div class="content-container flex">
+                      <div class="checkBlock"><i></i></div>
+                      <div class="description">
+                        <h3 class="title">Антиквариат</h3>
+                        <p>Оценочная стоимость залога зависит в первую очередь от пробы металла и состояния изделия</p>    
+                      </div>
+                    </div>
+                  </div>
+                  <div data-target="clocks-tab" class="category specialCategory">
+                    <div class="content-container flex">
+                      <div class="checkBlock"><i></i></div>
+                      <div class="description">
+                        <h3 class="title">Часы</h3>
+                        <p>Оценочная стоимость залога зависит в первую очередь от пробы металла и состояния изделия</p>    
+                      </div>
+                    </div>
+                  </div>
+                  <div data-target="jewelry-tab" class="category specialCategory">
+                    <div class="content-container flex">
+                      <div class="checkBlock"><i></i></div>
+                      <div class="description">
+                        <h3 class="title">Драгоценности</h3>
+                        <p>Оценочная стоимость залога зависит в первую очередь от пробы металла и состояния изделия</p>    
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            
+            <div class="toggleBlocks-list animation sectionBlock">
+
+              <div id="diamonds-tab" class="toggleBlock active">
+                <form id="diamonds-form" action="#" class="standard-form calculate-form flex wrap">
+
+                  <div class="sectionBlockColumn_md mcol-xs-12 mcol-md-6">
+                    <div class="content-container">
+                  
+                      <div class="formRow chosen-wrapper flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="101">Форма камня</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <select id="101" data-placeholder="Не выбранно" class="">
+                            <option value=""></option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                  
+                      <div class="formRow flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="102">Масса карат</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <input id="102" class="border-decor" type="text" placeholder="">
+                        </div>
+                      </div>
+                  
+                      <div class="title row-title">Цвет камня:</div>                      
+                      <div class="formRow chosen-wrapper flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="103" class="sub-label">GIA</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <select id="103" data-placeholder="Не выбранно" class="">
+                            <option value=""></option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                  
+                      <div class="formRow chosen-wrapper flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="103b" class="sub-label">ГОСТ</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <select id="103b" data-placeholder="Не выбранно" class="">
+                            <option value=""></option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+
+                      </div>
+                  
+                      <div class="title row-title">Чистота</div>                      
+                      <div class="formRow chosen-wrapper flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="104" class="sub-label">GIA</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <select id="104" data-placeholder="Не выбранно" class="">
+                            <option value=""></option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                  
+                      <div class="formRow chosen-wrapper flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="105" class="sub-label">ГОСТ</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <select id="105" data-placeholder="Не выбранно" class="">
+                            <option value=""></option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                  
+                      <div class="formRow chosen-wrapper flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="106">Геометричексие параметры</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <select id="106" data-placeholder="Не выбранно" class="">
+                            <option value=""></option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                  
+                    </div>
+                  </div>
+                  
+                  <div class="sectionBlockColumn_md mcol-xs-12 mcol-md-6 contentRow">
+                    <div class="content-container ">
+                     
+                        <div class="formBlock mcol-xs-12">
+                        <div class="labelText title label">Наличие сертификата</div>
+                        </div>
+                       <div class="formRow customCheckboxContainer checkboxCircle flex spaceBetween">
+
+                         <div class="radioWrapper">
+                           <input id="110" type="checkbox" name="diamond_certificate" class="" value="GIA">
+                           <label for="110">
+                             <span class="labelText">GIA</span>
+                           </label>
+                         </div>
+                         <div class="radioWrapper">
+                           <input id="111" type="checkbox" name="diamond_certificate" class="" value="AGS">
+                           <label for="111">
+                             <span class="labelText">AGS</span>
+                           </label>
+                         </div>
+                         <div class="radioWrapper">
+                           <input id="112" type="checkbox" name="diamond_certificate" class="" value="HRD">
+                           <label for="112">
+                             <span class="labelText">HRD</span>
+                           </label>
+                         </div>
+                         <div class="radioWrapper">
+                           <input id="113" type="checkbox" name="diamond_certificate" class="" value="EGL">
+                           <label for="113">
+                             <span class="labelText">EGL</span>
+                           </label>
+                         </div>
+                         <div class="radioWrapper">
+                           <input id="114" type="checkbox" name="diamond_certificate" class="" value="GCI">
+                           <label for="114">
+                             <span class="labelText">GCI</span>
+                           </label>
+                         </div>
+                       </div>
+                    
+                      <div class="formRow flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="121">Номер сертификата</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <input id="121" class="border-decor" type="text" placeholder="">
+                        </div>
+                      </div>
+                  
+                      <div class="formRow flex wrap ">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="photoDropzone">Добавьте или перетащите фото изделия</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <div id="photoDropzone" class="js_dropzone photoDropzone" action="/"></div>
+                        </div>
+                      </div>
+                  
+                      <div class="formRow flex wrap ">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                         <label for="122">Дополнительная информация</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <textarea id="122" class="border-decor" type="text" placeholder=""></textarea>
+                        </div>
+                      </div>
+                  
+                    </div>
+                  </div>
+                  
+                  <div class="mcol-xs-12 mcol-md-6 contentRow last">
+                    <div class="formRow flex wrap ">
+                      <div class="formBlock mcol-xs-12 mcol-sm-5">
+                        <label for="131">Ваше имя</label>
+                      </div>
+                      <div class="formBlock mcol-xs-12 mcol-sm-7">
+                        <input id="131" class="border-decor" type="text" placeholder="">
+                      </div>
+                    </div>
+                    
+                    <div class="formRow flex wrap">
+                      <div class="formBlock mcol-xs-12 mcol-sm-5">
+                        <label for="132">Ваш e-mail</label>
+                      </div>
+                      <div class="formBlock mcol-xs-12 mcol-sm-7">
+                        <input id="132" class="border-decor" type="email" placeholder="">
+                      </div>
+                    </div>
+                    
+                    <div class="formRow flex wrap">
+                      <div class="formBlock mcol-xs-12 mcol-sm-5">
+                        <label for="133">Ваш телефон</label>
+                      </div>
+                      <div class="formBlock mcol-xs-12 mcol-sm-7">
+                        <input id="133" class="border-decor" type="text" placeholder="+3 8">
+                      </div>
+                    </div>
+                    
+                    <div class="submitButtonWrapper more-button inversed mcol-xs-12">
+                      <div class="more-button-wrapper">
+                        <div class="more-button-container">
+                          <button class="title semi-bold" type="submit">Отправить</button>
+                          <i class="icomoon standard-arrow-icon inversed"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+
+              <div id="antiques-tab" class="toggleBlock active">
+                <form id="antiques-form" action="#" class="standard-form calculate-form flex wrap">
+
+                  <div class="sectionBlockColumn_md mcol-xs-12 mcol-md-6">
+                    <div class="content-container">
+                  
+                      <div class="description formRow">
+                        <p>Сфотографируйте Вашу вещь. Общий план, более крупно детали, заднюю сторону. Клейма, печати, надписи, если таковые имеются. Укажите размеры. Чем выше качество фото и чем их больше, тем более точно и легко для нас будет Вам помочь.</p>
+                      </div>
+
+                    </div>
+                  </div>
+                  
+                  <div class="sectionBlockColumn_md mcol-xs-12 mcol-md-6 contentRow">
+                    <div class="content-container ">
+                  
+                      <div class="formRow flex wrap top">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="photoDropzone">Добавьте или перетащите фото изделия</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <div id="photoDropzone3" class="js_dropzone photoDropzone" action="/"></div>
+                        </div>
+                      </div>
+                  
+                    </div>
+                  </div>
+                  
+                  <div class="mcol-xs-12 mcol-md-6 contentRow order-last">
+                    <div class="formRow flex wrap ">
+                      <div class="formBlock mcol-xs-12 mcol-sm-5">
+                        <label for="201">Ваше имя</label>
+                      </div>
+                      <div class="formBlock mcol-xs-12 mcol-sm-7">
+                        <input id="201" class="border-decor" type="text" placeholder="">
+                      </div>
+                    </div>
+                    
+                    <div class="formRow flex wrap">
+                      <div class="formBlock mcol-xs-12 mcol-sm-5">
+                        <label for="202">Ваш e-mail</label>
+                      </div>
+                      <div class="formBlock mcol-xs-12 mcol-sm-7">
+                        <input id="202" class="border-decor" type="email" placeholder="">
+                      </div>
+                    </div>
+                    
+                    <div class="formRow flex wrap">
+                      <div class="formBlock mcol-xs-12 mcol-sm-5">
+                        <label for="203">Ваш телефон</label>
+                      </div>
+                      <div class="formBlock mcol-xs-12 mcol-sm-7">
+                        <input id="203" class="border-decor" type="text" placeholder="+3 8">
+                      </div>
+                    </div>
+                    
+                    <div class="submitButtonWrapper more-button inversed mcol-xs-12">
+                      <div class="more-button-wrapper">
+                        <div class="more-button-container">
+                          <button class="title semi-bold" type="submit">Отправить</button>
+                          <i class="icomoon standard-arrow-icon inversed"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sectionBlockColumn_md mcol-xs-12 mcol-md-6 contentRow ">
+                    <div class="formRow flex wrap top">
+                      <div class="formBlock mcol-xs-12 mcol-sm-5">
+                       <label for="221">Дополнительная информация</label>
+                      </div>
+                      <div class="formBlock mcol-xs-12 mcol-sm-7">
+                        <textarea id="221" class="border-decor" type="text" placeholder=""></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+
+              <div id="clocks-tab" class="toggleBlock active">
+                <form id="clocks-form" action="#" class="standard-form calculate-form flex wrap">
+
+                  <div class="sectionBlockColumn_md mcol-xs-12 mcol-md-6">
+                    <div class="content-container">
+                  
+                      <div class="formRow chosen-wrapper flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="301">Марка часов</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <select id="301" data-placeholder="Не выбранно" class="">
+                            <option value=""></option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                  
+                      <div class="formRow flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="302">Модель или ref-номер</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <input id="302" class="border-decor" type="text" placeholder="">
+                        </div>
+                      </div>
+                  
+                      <div class="formRow chosen-wrapper flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="303" class="">Состояние часов</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <select id="303" data-placeholder="Не выбранно" class="">
+                            <option value=""></option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                  
+                      <div class="formRow chosen-wrapper flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="303b" class="">Документы</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <select id="303b" data-placeholder="Не выбранно" class="">
+                            <option value=""></option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="formRow flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="304">Место приобретения</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <input id="304" class="border-decor" type="text" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="sectionBlockColumn_md mcol-xs-12 mcol-md-6 contentRow">
+                    <div class="content-container ">
+                     
+                      <div class="title row-title">Оригинальная коробка</div>                      
+                      <div class="formRow customCheckboxContainer radioCircle flex ">
+                        <div class="radioWrapper">
+                          <input id="305a" type="radio" name="certificate" class="" checked>
+                          <label for="305a">
+                            <span class="labelText">GIA</span>
+                          </label>
+                        </div>
+                        <div class="radioWrapper">
+                          <input id="305b" type="radio" name="certificate" class="">
+                          <label for="305b">
+                            <span class="labelText">AGS</span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="formRow chosen-wrapper flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="306a" class="">Дата покупки</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7 flex date-pick">
+                          <select id="306a" data-placeholder="01" class="">
+                            <option value="01" selected>01</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+
+                          <select id="306b" data-placeholder="январь" class="">
+                            <option value="январь" selected>январь</option>
+                            <option value="1" >Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+
+                          <select id="306c" data-placeholder="1990" class="">
+                            <option value="1990" selected>1990</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="formRow flex wrap ">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="photoDropzone">Добавьте или перетащите фото изделия</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <div class="js_dropzone photoDropzone" action="/"></div>
+                        </div>
+                      </div>
+                  
+                    </div>
+                  </div>
+                  
+                  <div class="mcol-xs-12 mcol-md-6 contentRow order-last last">
+                    <div class="formRow flex wrap ">
+                      <div class="formBlock mcol-xs-12 mcol-sm-5">
+                        <label for="311">Ваше имя</label>
+                      </div>
+                      <div class="formBlock mcol-xs-12 mcol-sm-7">
+                        <input id="311" class="border-decor" type="text" placeholder="">
+                      </div>
+                    </div>
+                    
+                    <div class="formRow flex wrap">
+                      <div class="formBlock mcol-xs-12 mcol-sm-5">
+                        <label for="312">Ваш e-mail</label>
+                      </div>
+                      <div class="formBlock mcol-xs-12 mcol-sm-7">
+                        <input id="312" class="border-decor" type="email" placeholder="">
+                      </div>
+                    </div>
+                    
+                    <div class="formRow flex wrap">
+                      <div class="formBlock mcol-xs-12 mcol-sm-5">
+                        <label for="313">Ваш телефон</label>
+                      </div>
+                      <div class="formBlock mcol-xs-12 mcol-sm-7">
+                        <input id="313" class="border-decor" type="text" placeholder="+3 8">
+                      </div>
+                    </div>
+                    
+                    <div class="submitButtonWrapper more-button inversed mcol-xs-12">
+                      <div class="more-button-wrapper">
+                        <div class="more-button-container">
+                          <button class="title semi-bold" type="submit">Отправить</button>
+                          <i class="icomoon standard-arrow-icon inversed"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sectionBlockColumn_md mcol-xs-12 mcol-md-6 contentRow last">
+                    <div class="formRow flex wrap top">
+                      <div class="formBlock mcol-xs-12 mcol-sm-5">
+                       <label for="307">Дополнительная информация</label>
+                      </div>
+                      <div class="formBlock mcol-xs-12 mcol-sm-7">
+                        <textarea id="307" class="border-decor" type="text" placeholder=""></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+
+              <div id="jewelry-tab" class="toggleBlock active">
+                <form id="jewelry-form" action="#" class="standard-form calculate-form flex wrap">
+
+                  <div class="sectionBlockColumn_md mcol-xs-12 mcol-md-6">
+                    <div class="content-container">
+                  
+                      <div class="formRow chosen-wrapper flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="401">Вид изделия</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <select id="401" data-placeholder="Не выбранно" class="">
+                            <option value=""></option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                  
+                      <div class="formRow flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="402">Бренд</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <input id="402" class="border-decor" type="text" placeholder="">
+                        </div>
+                      </div>
+                  
+                      <div class="formRow chosen-wrapper flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="403" class="">Металл</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <select id="403" data-placeholder="Не выбранно" class="">
+                            <option value=""></option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                  
+                      <div class="formRow chosen-wrapper flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="403b" class="">Проба</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <select id="403b" data-placeholder="Не выбранно" class="">
+                            <option value=""></option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="formRow flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="404">Вес изделия</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <input id="404" class="border-decor" type="text" placeholder="">
+                        </div>
+                      </div>
+
+                      <div class="formRow flex wrap">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="408">Характеристики вставок</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <input id="408" class="border-decor" type="text" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="sectionBlockColumn_md mcol-xs-12 mcol-md-6 contentRow">
+                    <div class="content-container ">
+                     
+                      <div class="formRow customCheckboxContainer radioCircle flex ">
+                        <div class="formBlock mcol-xs-12 mcol-sm-6 flex wrap">
+                          <div class="title row-title mcol-xs-12">Оригинальная упаковка</div>                      
+                          <div class="flex">
+                            <div class="radioWrapper">
+                              <input id="405a" type="radio" name="originalPackage" class="" checked>
+                              <label for="405a">
+                                <span class="labelText">Есть</span>
+                              </label>
+                            </div>
+                            <div class="radioWrapper">
+                              <input id="405b" type="radio" name="originalPackage" class="">
+                              <label for="405b">
+                                <span class="labelText">Нет</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="formBlock mcol-xs-12 mcol-sm-6">
+                          <div class="title row-title mcol-xs-12">Документы</div>                      
+                          <div class="flex">
+                            <div class="radioWrapper">
+                              <input id="406a" type="radio" name="documents" class="" checked>
+                              <label for="406a">
+                                <span class="labelText">Есть</span>
+                              </label>
+                            </div>
+                            <div class="radioWrapper">
+                              <input id="406b" type="radio" name="documents" class="">
+                              <label for="406b">
+                                <span class="labelText">Нет</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="formRow flex wrap ">
+                        <div class="formBlock mcol-xs-12 mcol-sm-5">
+                          <label for="photoDropzone">Добавьте или перетащите фото изделия</label>
+                        </div>
+                        <div class="formBlock mcol-xs-12 mcol-sm-7">
+                          <div class="js_dropzone photoDropzone" action="/"></div>
+                        </div>
+                      </div>
+                  
+                    </div>
+                  </div>
+                  
+                  <div class="mcol-xs-12 mcol-md-6 contentRow order-last last">
+                    <div class="formRow flex wrap ">
+                      <div class="formBlock mcol-xs-12 mcol-sm-5">
+                        <label for="411">Ваше имя</label>
+                      </div>
+                      <div class="formBlock mcol-xs-12 mcol-sm-7">
+                        <input id="411" class="border-decor" type="text" placeholder="">
+                      </div>
+                    </div>
+                    
+                    <div class="formRow flex wrap">
+                      <div class="formBlock mcol-xs-12 mcol-sm-5">
+                        <label for="412">Ваш e-mail</label>
+                      </div>
+                      <div class="formBlock mcol-xs-12 mcol-sm-7">
+                        <input id="412" class="border-decor" type="email" placeholder="">
+                      </div>
+                    </div>
+                    
+                    <div class="formRow flex wrap">
+                      <div class="formBlock mcol-xs-12 mcol-sm-5">
+                        <label for="413">Ваш телефон</label>
+                      </div>
+                      <div class="formBlock mcol-xs-12 mcol-sm-7">
+                        <input id="413" class="border-decor" type="text" placeholder="+3 8">
+                      </div>
+                    </div>
+                    
+                    <div class="submitButtonWrapper more-button inversed mcol-xs-12">
+                      <div class="more-button-wrapper">
+                        <div class="more-button-container">
+                          <button class="title semi-bold" type="submit">Отправить</button>
+                          <i class="icomoon standard-arrow-icon inversed"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sectionBlockColumn_md mcol-xs-12 mcol-md-6 contentRow last">
+                    <div class="formRow flex wrap top">
+                      <div class="formBlock mcol-xs-12 mcol-sm-5">
+                       <label for="407">Дополнительная информация</label>
+                      </div>
+                      <div class="formBlock mcol-xs-12 mcol-sm-7">
+                        <textarea id="407" class="border-decor" type="text" placeholder=""></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <div class="mcontainer relative scrollTopContainer">
+        <div id="scrollTopButton" class="icomoon standard-arrow-icon navigateIcon up"></div>
+      </div>
+
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+
+</body>
+
+</html>

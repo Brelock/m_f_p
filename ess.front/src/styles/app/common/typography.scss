@@ -1,0 +1,18 @@
+img {width: 100%; display: block;}
+a > img {display: table;}
+.uppercase { text-transform: uppercase; }
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.bold {font-weight: 700;}
+.medium {font-weight: 500;}
+.light {font-weight: 300; }
+.primaryColor {color: $primaryColor!important;}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

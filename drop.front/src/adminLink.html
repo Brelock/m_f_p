@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+    
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/headerAdminNav.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="adminLink" class="adminLink page">
+        
+        <div class="mcontainer">
+            <form action="#">
+                <div class="form-row">
+                    <div class="col-amd-3 ">
+                      <label for="v01"></label>
+                      <input type="text" class="form-control" id="v01" placeholder="Название XML ссылки" required>
+                    </div>
+                    <div class="col-amd-3">
+                      <label for="v02"></label>
+                      <input type="text" class="form-control" id="v02" placeholder="Сама XML ссылка" required>
+                    </div>
+                    <div class="col-amd-3">
+                      <label for="iv01"></label>
+                      <input type="text" class="form-control" id="iv01" placeholder="Комментарий" required>
+                    </div>
+                    <div class="btn-admin-link">
+                        <button type="button" class="btn btn-primary btn-lg">OK</button>
+                    </div>
+                    
+                  </div>
+            </form>
+
+
+            <div class="information-form flex">
+                <div class="name-xml">test</div>
+                <div class="link-xml">test</div>
+                <div class="comment-xml">test</div>
+                <div class="close-btn">
+                    <a class="btn-close">
+                    </a>
+                </div>
+            </div>
+            <div class="information-form flex">
+                <div class="name-xml">test</div>
+                <div class="link-xml">test</div>
+                <div class="comment-xml">test</div>
+                <div class="close-btn">
+                    <a class="btn-close"></a>
+                </div>
+            </div>
+
+
+        </div>
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    <!-- @@include('templateHtml/footer.html') -->
+    <!--  -->
+  </div>
+  
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

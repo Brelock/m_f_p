@@ -1,0 +1,560 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  height: 38px;
+
+  background-color: $primaryColor;
+  color: $fourthColor;
+  border-radius: $br_mobile;
+  font-size: 14px;
+  line-height: 38px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    background-color: #ddcb00;
+  }
+
+  &.secondary_btn {
+    background-color: $fourthColor;
+    color: #fff !important;
+    transition: all $linksTransition;
+    white-space: nowrap;
+    border: 2px solid $fourthColor;
+    padding: 0 5px;
+
+    &:hover {
+      background-color: transparent;
+      color: $fourthColor !important;
+    }
+  }
+
+   &.gray_btn {
+    background-color: #eee;
+    transition: all $linksTransition;
+    white-space: nowrap;
+    border: 2px solid $fourthColor;
+    padding: 0 5px;
+
+    &:hover {
+      background-color: transparent;
+      // color: $fourthColor !important;
+    }
+  }
+
+  @media (min-width: $xlLayout) {
+    height: 50px;
+    max-width: 220px;
+
+    font-size: 18px;
+    line-height: 50px;
+    border-radius: $br_desktop;
+    &.secondary_btn {
+      font-size: 14px;
+    }
+
+  }
+}
+.product-card{
+  .two-buttons-wrapper{
+    a.button, button{
+      height: 45px;
+      line-height: 41px;
+      max-width: 150px;
+      font-size: 15px;
+    }
+  }
+}
+.modal-stock{
+  .button {
+    &.secondary_btn {
+      padding: 0 20px;
+    }
+  }
+}
+
+.contacts-wrapper{
+  .button:hover {
+    text-decoration: none;
+    background-color: $primaryColor;
+  }
+}
+a.button-nav_link{
+  background-color: transparent;
+  color: #000 !important;
+  font-size: 15px !important;
+  line-height: 40px !important;
+  height: 40px;
+
+  cursor: pointer;
+
+  font-weight: 500 !important;
+  @media (min-height: 869px) {
+    &:hover {
+      text-decoration: none;
+      background-color: #ddcb00;
+    }
+    // height: 50px;
+    // line-height: px !important;
+    font-size: 16px !important;
+    border-radius: $br_desktop;
+  }
+}
+a.button-nav_link{
+  @media (min-width: $xlLayout) {
+    background-color: $primaryColor;
+    color: $fourthColor !important;
+    border-radius: $br_mobile;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.search-form {
+  input{
+    height: 38px;
+    border-top-left-radius: $br_mobile;
+    border-bottom-left-radius: $br_mobile;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0;
+    box-shadow: none;
+    @media (min-width: $collapseBefore) {
+      border: 1px solid #dad8d8;
+      box-shadow: inherit;
+      height: 50px;
+      border-top-left-radius: $br_desktop;
+      border-bottom-left-radius: $br_desktop;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+  .button{
+    height: 38px;
+    border-top-right-radius: $br_mobile;
+    border-bottom-right-radius: $br_mobile;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    font-size: 14px;
+    line-height: 38px;
+    @media (min-width: $collapseBefore) {
+      height: 50px;
+      max-width: 220px;
+      border-top-right-radius: $br_desktop;
+      border-bottom-right-radius: $br_desktop;
+      font-size: 18px;
+      line-height: 50px;
+  
+      &.secondary_btn {
+        font-size: 14px;
+      }
+    }
+  }
+}
+.button:disabled {
+  background: #ddd;
+  color: #888;  
+  cursor: default;
+
+  &:hover {
+    background-color: #ddd;
+    color: #888;
+  }
+}
+
+.button--with-icon {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  .icomoon {
+    font-size: 26px;
+  }
+}
+
+.button--small {
+  padding: 0 12px;
+
+  font-size: 14px;
+  line-height: 34px;
+  
+  @media (min-width: $xlLayout) {
+    font-size: 14px;
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+.form-row--price{
+  .button--small {
+    height: 38px;
+    line-height: 38px;
+    @media (min-width: $xlLayout) {
+      max-width: 100%;
+      width: auto;
+    }
+  }
+}
+.button--mob-small {
+  max-width: 88px;
+
+  @media (min-width: $xlLayout) {
+    max-width: 220px;
+  }
+}
+
+.button--inverse {
+  border: 2px solid $primaryColor;
+
+  background-color: transparent;
+
+  color: $yellowTextColor;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.button--inverse-gray {
+  border-color: #949496;
+  color: #949496;
+}
+
+.white-theme {
+  .button--inverse-wt-blue {
+    border-color: $fourthColor;
+  
+    color: $blueTextColor;
+  }
+
+  .button--inverse-gray {
+    color: #949496;
+  }
+}
+
+.button--fluid {
+  max-width: 100%;
+  width: auto;
+  padding: 0 10px;
+  overflow: hidden;
+
+  @media (min-width: $xlLayout) {
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+.button--fluid-pd20 {
+  padding: 0 20px;
+}
+
+.button--fluid-xl {
+  @media (min-width: $xlLayout) {
+    padding: 0 10px;
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+.button--w100 {
+  width: 100%;
+  max-width: 100%;
+
+  @media (min-width: $xlLayout) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.button--mob-small-fz {
+  font-size: 12px;
+  
+  @media (min-width: $xlLayout) {
+    font-size: 18px;
+  }
+}
+
+.two-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  max-width: 220px;
+
+  transition: 0.2s ease opacity, 0.2s ease visibility;
+
+  .button + .button {
+    margin-top: 22px;
+  }
+}
+
+.button-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  color: #ffffff;
+
+  .icomoon {
+    font-size: 11px;
+
+    color: #a9a9a9;
+  }
+}
+
+.white-theme .button-filter {
+  color: #000;
+}
+
+.button-show-all {
+  color: #a9a9a9;
+
+  border-bottom: 1px dashed #a9a9a9;
+  transition: transform .4s ease;
+  &:hover{
+    border-bottom: 1px solid #a9a9a9;
+  }
+  .icomoon {
+    display: inline-block;
+    
+    font-size: 7px;
+    vertical-align: 20%;
+  }
+}
+.white-theme{
+  .button-show-all {
+    color: $fourthColor;
+  
+    border-bottom: 1px dashed $fourthColor;
+    transition: transform .4s ease;
+    &:hover{
+      border-bottom: 1px solid $fourthColor;
+    }
+  }
+  .products-wrapper{
+    .products-filters__container{
+      .products-filter .icomoon{
+        color: inherit;
+      }
+    }
+  }
+}
+.button-show-all.open .icomoon {
+  transform: rotate(180deg);
+}
+
+.button-aside-show {
+  position: absolute;
+	top: 38px;
+	right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44%;
+  height: 40px;
+  border-radius: $br_mobile;
+  cursor: pointer;
+  background-color: $primaryColor;
+  color: $fourthColor !important;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  text-transform: uppercase;
+  @media (min-width: $xlLayout) {
+    position: static;
+    border-radius: $br_desktop;
+    &:hover {
+      background-color: #ddcb00;;
+    }
+	}
+}
+
+.white-theme .button-aside-show {
+  border-color: $blueTextColor;
+  
+  .icomoon {
+    color: $blueTextColor;
+  }
+}
+
+.button-close {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+
+  top: 20px;
+  right: 20px;
+  margin-top: -11px;
+  margin-left: -11px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.button-close::after,
+.button-close::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -1px;
+
+  width: 25px;
+  height: 3px;
+
+  background-color: $tertiaryColor;
+}
+.button-close::before {
+  transform: rotate(45deg);
+}
+.button-close::after {
+  transform: rotate(-45deg);
+}
+.button-close:hover::after,
+.button-close:hover::before {
+  background-color: #fb565a;
+}
+.button-close:active::after,
+.button-close:active::before {
+  background-color: #ffeeee;
+}
+
+.button-close--no-abs {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+
+.button-close--second {
+  width: 16px;
+  height: 16px;
+
+  &:after, 
+  &:before {
+    width: 20px;
+    height: 1px;
+
+    background-color: #9a9a9a;
+  }
+
+  &:hover {
+    &:after, 
+    &:before {
+      background-color: #fff;
+    }
+  } 
+}
+
+.button-close--in-input {
+  top: 15px;
+  right: 15px;
+  
+  display: none;
+  width: 30px;
+  height: 30px;
+  
+  @media (min-width: $collapseBefore) {
+    top: 20px;
+    right: 20px;
+  }
+
+  &:after, 
+  &:before {
+    top: 15px;
+    width: 30px;
+    height: 1px;
+
+    background-color: #9a9a9a;
+  }
+
+  &:hover {
+    &:after, 
+    &:before {
+      background-color: #000;
+    }
+  } 
+}
+
+.button-close--gray {
+  width: 16px;
+  height: 16px;
+
+  &:after, 
+  &:before {
+    width: 20px;
+    height: 1px;
+
+    background-color: #9a9a9a;
+  }
+
+  &:hover {
+    &:after, 
+    &:before {
+      background-color: #fff;
+    }
+  } 
+}
+
+.button-close--blue {
+  width: 16px;
+  height: 16px;
+
+  &:after, 
+  &:before {
+    width: 20px;
+    height: 2px;
+
+    background-color: $fourthColor;
+  }
+
+  &:hover {
+    &:after, 
+    &:before {
+      background-color: $fourthColor;
+    }
+  } 
+}
+
+.button--through-line {
+  span {
+    position: relative;
+
+    display: inline-block;
+
+    &:before {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      height: 3px;
+      width: 0%;
+
+      background-color: $primaryColor;
+      transition: width .4s ease;
+    }
+  }
+}
+
+.button--through-line:hover,
+.button--through-line.active {
+  span:before {
+    width: 100%;
+  }
+}
+
+.white-theme {
+  .button--through-line span:before{
+    background-color: $fourthColor;
+  }
+}

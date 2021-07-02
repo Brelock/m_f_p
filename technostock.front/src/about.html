@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="about" class="about page">
+        
+        <div class="breadcrumbsSection">
+          <div class="mcontainer">
+            <ul class="breadcrumbs sectionHeaderItem js_animate">
+              <li><a href="/index.html">Главная</a></li>
+              <li class="active">О компании</li>
+            </ul>  
+          </div>
+        </div>
+
+        <div class="pageSection">
+          <div class="mcontainer">
+            <div class="pageSection-title-wrap pageSection-title-wrap--border">
+              <h2 class="pageSection-title">О компании</h2>
+            </div>
+
+            <div class="products-categories products-categories--inner">
+              <img src="/img/stock.jpg" alt="" class="products-categories__inner-img">
+
+              <div class="products-categories__inner-descr text-common">
+                «ТЕХНОСТОК», на сегодняшний день, является лидирующей сетью комиссионных 
+                магазинов по продаже Б/У техники и электроники в Украине. 
+                Первый магазин был открыт в 2010 году в г. Запорожье. 
+                За 8 лет работы сеть выросла до 45 магазинов в 19 городах Украины. 
+                Благодаря многолетнему опыту мы добились высокого уровня квалификации при проверке, 
+                настройке и тестировании техники. Каждая единица техники, 
+                попавшая на витрину в магазине «ТЕХНОСТОК», проходит полную 
+                проверку и предпродажную подготовку. Наши сотрудники — это 
+                специалисты с высоким уровнем знаний, прошедшие обучение и специализированные тренинги.
+              </div>
+
+              <div class="info-block">
+                <div class="info-block-wrapper">
+                  <div class="title-common yellow">Lorem ipsum dolor sit amet.</div>
+                  <div class="info-block__descr">
+                    Lorem ipsum dolor sit amet.
+                  </div>
+                  <div class="info-block__item">
+                    <i class="icomoon icon-phone"></i>
+                    <a class="title-common bold" href="tel:0800301313">0 800 30 13 13</a>
+                  </div>
+
+                  <div class="info-block__item">
+                    <i class="icomoon icon-mail"></i>
+                    <a class="bold underline" href="mailto:hotline@technostock.com.ua">hotline@technostock.com.ua</a>
+                  </div>
+
+                </div>
+
+                <i class="icomoon icon-man"></i>
+              </div>
+
+              <div class="products-categories__inner-descr">
+                Коммерческие предложения отправляйте нам на эл.почту: bilovosh.n@technostock.com.ua
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        @@include('templateHtml/recentlyViewed.html')
+                
+        @@include('templateHtml/bid.html')
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

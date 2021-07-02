@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html')
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="productsListPage" class="productsListPage productsListCategory page">
+
+        <section class="pageSection ">
+          <div class="mcontainer">
+            <div class="sectionHeader">
+              <ul class="breadcrumbs mcol-xs-hide mcol-md-show">
+                <li><a href="/index.html">Главная</a></li>
+                <li class="active"><a href="#">Категория 1</a></li>
+              </ul>
+
+              <h1 class="page-title medium">Категория 1</h1>
+            </div>
+          </div>
+        </section>
+      
+        <section class="pageSection ">
+          <div class="mcontainer">
+
+            <div class="flex wrap">
+
+              <aside class="sidebar categories-filter mcol-xs-12 mcol-md-3 accordionMenu">
+                <div class="sidebarOpenButton accordionButton mcol-md-hide flex center" data-text="Показать фильтры" data-text-active="Скрыть фильтры">
+                  <div class="title-container">
+                    <div class="title section-title medium"><span>Показать фильтры</span></div>
+                  </div>
+                  
+                  <div class="arrow-button-container push-right">
+                    <i class="icomoon icon-arrow2"></i>
+                  </div>
+                </div>
+                <div id="asideFilters" class="sidebar-dropdown hiddenContent height submenuWrapper">
+                  <form action="/" class="content-container">
+                    <div class="aside-filters-list">
+                      <div class="filter-item">
+                        <div class="accordionButton flex center item-button">
+                          <div class="title-container">
+                            <div class="title section-title medium">Цена</div>
+                          </div>
+                    
+                          <div class="arrow-button-container push-right">
+                            <i class="icomoon icon-arrow2"></i>
+                          </div>
+                        </div>
+                    
+                        <div class="hiddenContent submenuWrapper height">
+                          <div class="content-container">
+                            Price Slider
+                            <!-- <div class="flex spaceBetween prices-range">
+                              <div class="relative">
+                                <span class="inner-icon left medium">от</span>
+                                <input type="text">
+                                <span class="inner-icon right medium grey-highlight">грн</span>
+                              </div>
+                              <div class="relative">
+                                <span class="inner-icon left medium">до</span>
+                                <input type="text">
+                                <span class="inner-icon right medium grey-highlight">грн</span>
+                              </div>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                                      
+                      <div class="filter-item">
+                        <div class="accordionButton flex center item-button">
+                          <div class="title-container">
+                            <div class="title section-title medium">Активные фильтры</div>
+                          </div>
+                    
+                          <div class="arrow-button-container push-right">
+                            <i class="icomoon icon-arrow2"></i>
+                          </div>
+                        </div>
+                    
+                        <div class="hiddenContent submenuWrapper height ">
+                          <div class="content-container">
+                            <ul class="active-filters-list sectionBlock">
+                              <li>
+                                <span>Фильтр 1</span>
+                                <span class="quantity-prods">64</span>
+                              </li>
+                  
+                              <li>
+                                <span>Фильтр 2</span>
+                                <span class="quantity-prods">4</span>
+                              </li>
+                  
+                              <li>
+                                <span>Фильтр sdfsdfsdfs aasd</span>
+                                <span class="quantity-prods">64</span>
+                              </li>
+                            </ul>
+
+                            <div class="sectionBlock wrapperBlock">
+                              <button type="button" class="standardButton primary-inverted ">ОЧИСТИТЬ</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <div class="filter-item">
+                        <div class="accordionButton flex center item-button">
+                          <div class="title-container">
+                            <div class="title section-title medium">Фильтр 3</div>
+                          </div>
+                      
+                          <div class="arrow-button-container push-right">
+                            <i class="icomoon icon-arrow2"></i>
+                          </div>
+                        </div>
+                      
+                        <div class="hiddenContent submenuWrapper height">
+                          <div class="content-container customCheckboxContainer inverted">
+                            <div class="formRow">
+                              <a href="#"></a>
+                              <input id="af11" type="checkbox" class="">
+                              <label for="af11"><span class="boldLabel capitalize">Фильтр Фильтр</span></label>
+                            </div>
+                  
+                            <div class="formRow">
+                              <a href="#"></a>
+                              <input id="af12" type="checkbox" class="">
+                              <label for="af12"><span class="boldLabel">Фильтр Фильтр</span></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="control-block text-center">
+                      <div class="grey-highlight">Подобрано 76 товаров</div>
+                      <div class="wrapperBlock">
+                        <a href="#" class="standardButton primary-inverted">ПОКАЗАТЬ</a>
+                      </div>
+                      <div class="wrapperBlock">
+                        <a href="#" class="standardButton third">СБРОСИТЬ</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </aside>
+
+              <div class="content-container mcol-xs-12 mcol-md-9">
+                <div class="sort-bar">
+                  <div class="content-container">
+                    <a href="#" class="sortBar-item active asc">
+                      <span>По цене</span>
+                      <i class="icomoon icon-arrow2"></i>
+                    </a>
+
+                    <a href="#" class="sortBar-item">
+                      <span>По популярности</span>
+                      <i class="icomoon icon-arrow2"></i>
+                    </a>
+
+                    <a href="#" class="sortBar-item">
+                      <span>По новизне</span>
+                      <i class="icomoon icon-arrow2"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex wrap main-list contentRow">
+                  <div class="product-item card-item mcol-xs-12 mcol-sm-4 ">
+                    <div class="item-container relative">
+                  
+                      <div class="action-block action absolute">
+                        <span class="uppercase">-100 <span><br>грн</span></span>
+                      </div>
+                  
+                      <div class="like-block absolute">
+                        <button class="" type="button"> <i class="icomoon icon-heart"></i> </button>
+                      </div>
+                  
+                      <div class="image-block">
+                        <div class="imgWrapper relative">
+                          <a href="/productPage.html" class="overlay-link absolute stretch"></a>                        
+                          <img src="./img/products/prod-1.jpg" alt="prod">
+                        </div>
+                      </div>
+                      
+                      <div class="content-container">
+                        <div class="product-category card-add-info">Карта памяти</div>
+                        <h4 class="product-title card-title"><a href="/productPage.html">Карта памяти SanDisk Ultra Android microSDXC 200GB 10 Class</a></h4>
+                  
+                        <div class="ratingBlock flex center spaceBetween">
+                          <ul class="rating-list">
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon"></i></li>
+                          </ul>
+                  
+                          <div class="comments-block">
+                            <a href="#" class="active">
+                              <i class="icomoon icon-chat"></i>
+                              <span class="medium">40</span>
+                            </a>
+                          </div>
+                        </div>
+                  
+                        <div class="footer-block flex center spaceBetween">
+                          <div class="price bold">
+                            <span class="">454</span>
+                            <span class="currency">грн.</span>
+                          </div>
+                  
+                          <a href="#" class="standardButton primary uppercase">купить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-item card-item mcol-xs-12 mcol-sm-4 ">
+                    <div class="item-container relative">
+                  
+                      <div class="action-block action absolute">
+                        <span class="uppercase">-100 <span><br>грн</span></span>
+                      </div>
+                  
+                      <div class="like-block absolute">
+                        <button class="active" type="button"><i class="icomoon icon-heart"></i> </button>
+                      </div>
+                  
+                      <div class="image-block">
+                        <div class="imgWrapper relative">
+                          <a href="#" class="overlay-link absolute stretch"></a>                        
+                          <img src="./img/products/prod-1.jpg" alt="prod">
+                        </div>
+                      </div>
+                      
+                      <div class="content-container">
+                        <div class="product-category card-add-info">Карта памяти</div>
+                        <h4 class="product-title card-title"><a href="#">Карта памяти SanDisk Ultra Android microSDXC 200GB 10 Class</a></h4>
+                  
+                        <div class="ratingBlock flex center spaceBetween">
+                          <ul class="rating-list">
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon"></i></li>
+                          </ul>
+                  
+                          <div class="comments-block">
+                            <a href="#" class="">
+                              <i class="icomoon icon-chat"></i>
+                              <span class="medium">40</span>
+                            </a>
+                          </div>
+                        </div>
+                  
+                        <div class="footer-block flex center spaceBetween">
+                          <div class="price bold">
+                            <span class="">454</span>
+                            <span class="currency">грн.</span>
+                          </div>
+                  
+                          <a href="#" class="standardButton primary uppercase">купить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-item card-item mcol-xs-12 mcol-sm-4 ">
+                    <div class="item-container relative">
+                  
+                      <div class="action-block action absolute">
+                        <span class="uppercase">-100 <span><br>грн</span></span>
+                      </div>
+                  
+                      <div class="like-block absolute">
+                        <button class="active" type="button"><i class="icomoon icon-heart"></i> </button>
+                      </div>
+                  
+                      <div class="image-block">
+                        <div class="imgWrapper relative">
+                          <a href="#" class="overlay-link absolute stretch"></a>                        
+                          <img src="./img/products/prod-1.jpg" alt="prod">
+                        </div>
+                      </div>
+                      
+                      <div class="content-container">
+                        <div class="product-category card-add-info">Карта памяти</div>
+                        <h4 class="product-title card-title"><a href="#">Карта памяти SanDisk Ultra Android microSDXC 200GB 10 Class</a></h4>
+                  
+                        <div class="ratingBlock flex center spaceBetween">
+                          <ul class="rating-list">
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon"></i></li>
+                          </ul>
+                  
+                          <div class="comments-block">
+                            <a href="#" class="">
+                              <i class="icomoon icon-chat"></i>
+                              <span class="medium">40</span>
+                            </a>
+                          </div>
+                        </div>
+                  
+                        <div class="footer-block flex center spaceBetween">
+                          <div class="price bold">
+                            <span class="">454</span>
+                            <span class="currency">грн.</span>
+                          </div>
+                  
+                          <a href="#" class="standardButton primary uppercase">купить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-item card-item mcol-xs-12 mcol-sm-4 ">
+                    <div class="item-container relative">
+                  
+                      <div class="action-block action absolute">
+                        <span class="uppercase">-100 <span><br>грн</span></span>
+                      </div>
+                  
+                      <div class="like-block absolute">
+                        <button class="" type="button"> <i class="icomoon icon-heart"></i> </button>
+                      </div>
+                  
+                      <div class="image-block">
+                        <div class="imgWrapper relative">
+                          <a href="#" class="overlay-link absolute stretch"></a>                        
+                          <img src="./img/products/prod-2.jpg" alt="prod">
+                        </div>
+                      </div>
+                      
+                      <div class="content-container">
+                        <div class="product-category card-add-info">Карта памяти</div>
+                        <h4 class="product-title card-title"><a href="#">Карта памяти SanDisk Ultra Android microSDXC 200GB 10 Class</a></h4>
+                  
+                        <div class="ratingBlock flex center spaceBetween">
+                          <ul class="rating-list">
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon"></i></li>
+                          </ul>
+                  
+                          <div class="comments-block">
+                            <a href="#" class="active">
+                              <i class="icomoon icon-chat"></i>
+                              <span class="medium">40</span>
+                            </a>
+                          </div>
+                        </div>
+                  
+                        <div class="footer-block flex center spaceBetween">
+                          <div class="price bold">
+                            <span class="">454</span>
+                            <span class="currency">грн.</span>
+                          </div>
+                  
+                          <a href="#" class="standardButton primary uppercase">купить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pagination-wrapper contentRow">
+                  <!-- <button class="pagination">
+                     <i class="icomoon icon-update-arrows"></i>
+                     <i aria-hidden="true" class="fa fa-refresh icon-loader" style="display: none;"></i>
+                     <span>Показать еще<span>15</span> <span>экскурсий</span></span>
+                   </button> --> 
+                  
+                  <ul class="pagination">
+                    <li class="pagination-item "><button class="pagination-link">«</button></li>
+                    <li class="pagination-item "><button class="pagination-link">‹</button></li>
+                    <li class="pagination-item" style="display: none;"><button class="pagination-link">1</button></li>
+                    <li class="pagination-item" style="display: none;"><button class="pagination-link">2</button></li>
+                    <li class="pagination-item pagination-item--disable" style="display: none;"><span class="pagination-link pagination-link--disable">...</span></li>
+                    <li class="pagination-item active"><button class="pagination-link">1</button></li>
+                    <li class="pagination-item pagination-item--active"><button class="pagination-link pagination-link--active">2</button></li>
+                    <li class="pagination-item "><button class="pagination-link">3</button></li>
+                    <li class="pagination-item pagination-item--disable"><span class="pagination-link pagination-link--disable">...</span></li>
+                    <li class="pagination-item" style="display: none;"><button class="pagination-link">18</button></li>
+                    <li class="pagination-item"><button class="pagination-link">19</button></li>
+                    <li class="pagination-item "><button class="pagination-link">›</button></li>
+                    <li class="pagination-item "><button class="pagination-link">»</button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pageSection subscribe-section">
+          <div class="mcontainer">
+            <div class="mrow flex wrap center spaceBetween">
+              <div class="mcol-xs-12 mcol-md-4">
+                <div class="page-title title">Будьте в курсе</div>
+                <div class="description">
+                  <p>Подпишитесь на последние обновления и узнавайте о новинках и специальных предложениях первыми</p>
+                </div>
+              </div>
+
+              <div class="mcol-xs-12 mcol-md-3">
+                <form id="subscribeBlock" action="/" class=" mrow flex center relative">
+                  <div class="mcol-xs-8">
+                    <input type="text" class="" placeholder="Адрес электронной почты">
+                  </div>
+                  <div class="mcol-xs-4">
+                    <button type="submit" class="standardButton secondary  uppercase">Подписаться</button>
+                  </div>
+                </form>
+              </div>
+              <div class="mcol-xs-12 mcol-md-4 flex center check-block">
+                <div class="icon-block">
+                  <i class="icomoon icon-Check"></i>
+                </div>
+                <div class="descr-block description">
+                  <p>Я согласен на обработку <a href="#">персональных данных</a>, <br> а также с <a href="#">условиями подписки</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pageSection services-section">
+          <div class="mcontainer">
+            <div class="list-wrapper">
+              <div class="flex wrap mrow services-list">
+                <div class="mcol-xs-12 mcol-xsm-6 mcol-md-3 services-item">
+                  <div class="icon-block">
+                    <i class="icomoon gradientIcon icon-delivery"></i>
+                  </div>
+                  <h5 class="section-title medium">Доставка товара по всей Украине</h5>
+                </div>
+              
+                <div class="mcol-xs-12 mcol-xsm-6 mcol-md-3 services-item">
+                  <div class="icon-block">
+                    <i class="icomoon gradientIcon icon-present"></i>
+                  </div>
+                  <h5 class="section-title medium">Бонусы за покупку</h5>
+                </div>
+              
+                <div class="mcol-xs-12 mcol-xsm-6 mcol-md-3 services-item">
+                  <div class="icon-block">
+                    <i class="icomoon gradientIcon icon-pay"></i>
+                  </div>
+                  <h5 class="section-title medium">Оплата наличными или картой</h5>
+                </div>
+              
+                <div class="mcol-xs-12 mcol-xsm-6 mcol-md-3 services-item">
+                  <div class="icon-block">
+                    <i class="icomoon gradientIcon icon-security"></i>
+                  </div>
+                  <h5 class="section-title medium">Гарантийное обслуживание</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pageSection products-section">
+          <div class="mcontainer">
+            <div class="sectionTitleBlock withButton">
+              <h3 class="section-title">Вы смотрели</h3>
+              <a href="#" class="more-button">
+                <i class="icomoon icon-arrow1"></i>
+              </a>
+            </div>
+
+            <div class="sliderContainer">
+              <div class="productsSlider">
+              
+                <div class="slide">
+                  <div class="product-item card-item slideContent">
+                    <div class="item-container relative">
+                  
+                      <div class="action-block action absolute">
+                        <span class="uppercase">-100 <span><br>грн</span></span>
+                      </div>
+                  
+                      <div class="like-block absolute">
+                        <button class="" type="button"> <i class="icomoon icon-heart"></i> </button>
+                      </div>
+                  
+                      <div class="image-block">
+                        <div class="imgWrapper relative">
+                          <a href="#" class="overlay-link absolute stretch"></a>                        
+                          <img src="./img/products/prod-1.jpg" alt="prod">
+                        </div>
+                      </div>
+                      
+                      <div class="content-container">
+                        <div class="product-category card-add-info">Карта памяти</div>
+                        <h4 class="product-title card-title"><a href="#">Карта памяти SanDisk Ultra Android microSDXC 200GB 10 Class</a></h4>
+                  
+                        <div class="ratingBlock flex center spaceBetween">
+                          <ul class="rating-list">
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon"></i></li>
+                          </ul>
+                  
+                          <div class="comments-block">
+                            <a href="#" class="">
+                              <i class="icomoon icon-chat"></i>
+                              <span class="medium">40</span>
+                            </a>
+                          </div>
+                        </div>
+                  
+                        <div class="footer-block flex center spaceBetween">
+                          <div class="price bold">
+                            <span class="">454</span>
+                            <span class="currency">грн.</span>
+                          </div>
+                  
+                          <a href="#" class="standardButton primary uppercase">купить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="slide">
+                  <div class="product-item card-item slideContent">
+                    <div class="item-container relative">
+                  
+                      <div class="action-block new absolute">
+                        <span class="uppercase">new</span>
+                      </div>
+                  
+                      <div class="like-block absolute">
+                        <button class="" type="button"> <i class="icomoon icon-heart"></i> </button>
+                      </div>
+                  
+                      <div class="image-block">
+                        <div class="imgWrapper relative">
+                          <a href="#" class="overlay-link absolute stretch"></a>                        
+                          <img src="./img/products/prod-2.jpg" alt="prod">
+                        </div>
+                      </div>
+                      
+                      <div class="content-container">
+                        <div class="product-category card-add-info">Карта памяти</div>
+                        <h4 class="product-title card-title"><a href="#">Карта памяти </a></h4>
+                  
+                        <div class="ratingBlock flex center spaceBetween">
+                          <ul class="rating-list">
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon"></i></li>
+                          </ul>
+                  
+                          <div class="comments-block">
+                            <a href="#" class="">
+                              <i class="icomoon icon-chat"></i>
+                              <span class="medium">40</span>
+                            </a>
+                          </div>
+                        </div>
+                  
+                        <div class="footer-block flex center spaceBetween">
+                          <div class="price bold">
+                            <span class="">454</span>
+                            <span class="currency">грн.</span>
+                          </div>
+                  
+                          <a href="#" class="standardButton primary uppercase">купить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slide">
+                  <div class="product-item card-item slideContent">
+                    <div class="item-container relative">
+                  
+                      <div class="action-block action absolute">
+                        <span class="uppercase">-2555 <br><span>грн</span>  </span>
+                      </div>
+                  
+                      <div class="like-block absolute">
+                        <button class="" type="button"> <i class="icomoon icon-heart"></i> </button>
+                      </div>
+                  
+                      <div class="image-block">
+                        <div class="imgWrapper relative">
+                          <a href="#" class="overlay-link absolute stretch"></a>                        
+                          <img src="./img/products/prod-1.jpg" alt="prod">
+                        </div>
+                      </div>
+                      
+                      <div class="content-container">
+                        <div class="product-category card-add-info">Карта памяти</div>
+                        <h4 class="product-title card-title"><a href="#">Карта памяти SanDisk Ultra Android microSDXC 200GB 10 Class</a></h4>
+                  
+                        <div class="ratingBlock flex center spaceBetween">
+                          <ul class="rating-list">
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon"></i></li>
+                          </ul>
+                  
+                          <div class="comments-block">
+                            <a href="#" class="">
+                              <i class="icomoon icon-chat"></i>
+                              <span class="medium">40</span>
+                            </a>
+                          </div>
+                        </div>
+                  
+                        <div class="footer-block flex center spaceBetween">
+                          <div class="price bold">
+                            <div class="oldPrice"><span>222 грн</span></div>
+                            <span class="">454</span>
+                            <span class="currency">грн.</span>
+                          </div>
+                  
+                          <a href="#" class="standardButton primary uppercase">купить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="slide">
+                  <div class="product-item card-item slideContent">
+                    <div class="item-container relative">
+                  
+                      <div class="action-block new absolute">
+                        <span class="uppercase">new</span>
+                      </div>
+                  
+                      <div class="like-block absolute">
+                        <button class="" type="button"> <i class="icomoon icon-heart"></i> </button>
+                      </div>
+                  
+                      <div class="image-block">
+                        <div class="imgWrapper relative">
+                          <a href="#" class="overlay-link absolute stretch"></a>                        
+                          <img src="./img/products/prod-2.jpg" alt="prod">
+                        </div>
+                      </div>
+                      
+                      <div class="content-container">
+                        <div class="product-category card-add-info">Карта памяти</div>
+                        <h4 class="product-title card-title"><a href="#">Карта памяти </a></h4>
+                  
+                        <div class="ratingBlock flex center spaceBetween">
+                          <ul class="rating-list">
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon"></i></li>
+                          </ul>
+                  
+                          <div class="comments-block">
+                            <a href="#" class="">
+                              <i class="icomoon icon-chat"></i>
+                              <span class="medium">40</span>
+                            </a>
+                          </div>
+                        </div>
+                  
+                        <div class="footer-block flex center spaceBetween">
+                          <div class="price bold">
+                            <span class="">454</span>
+                            <span class="currency">грн.</span>
+                          </div>
+                  
+                          <a href="#" class="standardButton primary uppercase">купить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slide">
+                  <div class="product-item card-item slideContent">
+                    <div class="item-container relative">
+                  
+                      <div class="action-block new absolute">
+                        <span class="uppercase">new</span>
+                      </div>
+                  
+                      <div class="like-block absolute">
+                        <button class="" type="button"> <i class="icomoon icon-heart"></i> </button>
+                      </div>
+                  
+                      <div class="image-block">
+                        <div class="imgWrapper relative">
+                          <a href="#" class="overlay-link absolute stretch"></a>                        
+                          <img src="./img/products/prod-2.jpg" alt="prod">
+                        </div>
+                      </div>
+                      
+                      <div class="content-container">
+                        <div class="product-category card-add-info">Карта памяти</div>
+                        <h4 class="product-title card-title"><a href="#">Карта памяти </a></h4>
+                  
+                        <div class="ratingBlock flex center spaceBetween">
+                          <ul class="rating-list">
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon active"></i></li>
+                            <li><i class="icomoon"></i></li>
+                          </ul>
+                  
+                          <div class="comments-block">
+                            <a href="#" class="">
+                              <i class="icomoon icon-chat"></i>
+                              <span class="medium">40</span>
+                            </a>
+                          </div>
+                        </div>
+                  
+                        <div class="footer-block flex center spaceBetween">
+                          <div class="price bold">
+                            <span class="">454</span>
+                            <span class="currency">грн.</span>
+                          </div>
+                  
+                          <a href="#" class="standardButton primary uppercase">купить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+
+              <div class="operationsBlock">
+                <span class="currentSlide"></span>
+                <span class="totalSlides"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

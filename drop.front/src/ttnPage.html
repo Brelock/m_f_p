@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="ttnPage" class="basketPage page"> 
+        <div class="mcontainer">
+          <div class="dispatch-block">
+            <div class="dispatch-title">
+              Ваш заказ принят. Спасибо за сотрудничество с нами.
+            </div>
+            <div class="dispatch-number flex spaceBetween">
+               <p class="dispatch-number_text">Номер ТТН</p>
+               <p class="dispatch-number_item">20 4040 4040 4040</p> 
+               <button  class="dispatch-number_btn">Скопировать</button>
+            </div>
+          </div>
+          <div class="feedback-block">
+            <div class="feedback-other-block " style="display: block;">
+             <div class="feedback-title">Быстрая связь</div>
+                  <div class="feedback-other-contant">
+                   <div class="feedback-content-top">
+                     <div class="feedback-name-manadger"> Юля <span> +380508549400</span> </div>
+                     <ul class="messendge-icon">
+                         <li><a href="viber://chat?number=+380508549400"><img src="./img/viber-icon.svg" alt=""></a></li>
+                         <li><a href="tg://resolve?domain=@Cityadrop1"><img src="./img/Telegram-icon.svg" alt=""></a></li>
+                         <li><a href="tel:+380508549400"><img src="./img/phone-icon.svg" alt=""></a></li>
+                     </ul>
+                    </div>
+                    <div class="feedback-content">
+                     <div class="feedback-name-manadger"> Алина<span> +380681019400</span> </div>
+                     <ul class="messendge-icon">
+                        <li><a href="https://vk.com/youngmao" target="_blank"><img src="/img/vk-icon.svg" alt=""></a></li>
+                        <li><a href="viber://chat?number=+380681019400"><img src="./img/viber-icon.svg" alt=""></a></li>
+                        <li><a href="tg://resolve?domain=@City_a"><img src="./img/Telegram-icon.svg" alt=""></a></li>
+                        <li><a href="tel:+380681019400"><img src="./img/phone-icon.svg" alt=""></a></li>
+                    </ul>
+                   </div>
+                  </div>
+               </div>
+          </div>
+        </div>  
+       </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    <!-- @@include('templateHtml/footer.html') -->
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+.contact-table-wrap{
+  padding-top: 10px;
+  .contact-table-section:nth-child(2){
+    border: none;
+  }
+  table{font-size: 12px;}
+  iframe{
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+  }
+  @media (min-width: $containerWidthLaptop){
+
+    padding-top: 5px;
+    table{font-size: 14px;}
+    iframe{
+      width: 450px;
+      height: 252px;
+    }
+    .contact-table-section:nth-child(2){
+      border-top: 2px solid $borderColor;
+    }
+  }
+}
+
+
+.contact-section, .unloading-section {
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  span{
+    width: auto;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: normal;
+  }
+  @media (min-width: $containerWidthLaptop){
+    flex-direction: row;
+    height: 67px;
+    justify-content: flex-start;
+    padding: 0;
+    span{
+      width: 20%;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+.contact-section.contact-table-head, .unloading-table-head{
+  display: none;
+  span{
+    font-weight: 600;
+  }
+  @media (min-width: $containerWidthLaptop){
+    display: flex;
+    height: 40px !important;
+    margin-top: 25px;
+  }
+}
+.contact-table-section, .unloading-table-section{
+  border-top: 2px solid $borderColor;
+  @media (min-width: $containerWidthLaptop){
+  
+  }
+}
+
+.get-section {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: -10px;
+  .additional-section{
+    width: 100%;
+    min-height: 200px;
+    padding: 10px 0;
+    border: none;
+    
+  }
+  .additional-content{
+    box-shadow: 0 0 10px hsla(210,4%,44%,.3);
+    padding: 20px;
+    height: 100%;
+    min-height: 200px;
+    width: fit-content;
+    min-width: 370px;
+    @media (min-width: $containerWidthLaptop){
+      width: auto;
+    }
+  }
+  .additional-title{
+    font-size: 24px;
+    color: $primaryColor;
+    font-weight: 500;
+  }
+  @media (min-width: $containerWidthLaptop){
+    flex-direction: row;
+    padding-bottom: 40px;
+    .additional-section{
+      width: 50%;
+      padding: 10px;
+    }
+  }
+}
+

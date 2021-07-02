@@ -1,0 +1,96 @@
+// .mainWrapper {
+	
+	.standardButton {
+		padding: 0 20px 0; 
+		font-size: $normal;	
+		box-sizing: border-box;
+		text-align: center;
+		display: inline-block;
+		border: 2px solid;
+		line-height: $standardButtonHeight - 2px;
+		text-decoration: none;
+		border-radius: 6px;
+		font-weight: 600;
+
+		&:hover {text-decoration: none;}
+	}
+
+	.standardButton.primary {
+		// line-height: 38px;
+		background-color: $primaryColor;
+		color: #000;
+		// font-family: $titleFont;
+		border-color: $primaryColor;
+
+		&:hover {
+			background-color: transparent;
+			color: $primaryColor;
+		}	
+	}
+
+	.standardButton.primary-inverted {
+		background-color: transparent;
+		color: $primaryColor;
+		border-color: $primaryColor;
+
+		&:hover {
+			background-color: $primaryColor;
+			color: #fff;
+		}
+	}
+
+	.standardButton.secondary {
+		// line-height: 38px;
+		background-color: $secondaryColor;
+		color: #fff;
+		// font-family: $titleFont;
+		border-color: $secondaryColor;
+
+		&:hover {
+			background-color: transparent;
+			color: $secondaryColor;
+		}
+	}
+
+	.standardButton.secondary-inverted {
+		// line-height: 38px;
+		background-color: transparent;
+		color: $secondaryColor;
+		// font-family: $titleFont;
+		border-color: #fff;
+
+		&:hover {
+			background-color: #fff;
+			color: $secondaryColor;
+		}
+	}
+
+	.standardButton.third {
+		// line-height: 38px;
+		background-color: #fff;
+		color: #a2a2a2;
+		// font-family: $titleFont;
+		border-color: #a2a2a2;
+
+		&:hover {
+			background-color: #a2a2a2;
+			color: #fff;
+		}
+	}
+
+	.showButton, .accordionButton  {
+
+		.icon-arrow2 {
+			// padding-top: 3px;
+			display: inline-block;
+			vertical-align: middle;
+			transform: rotate(90deg);
+		}
+
+		&.active {
+			.icon-arrow2 {
+				transform: rotate(-90deg);
+			}		
+		}
+	}
+// }

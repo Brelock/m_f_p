@@ -1,0 +1,24 @@
+.cabinetPage {
+
+}
+
+.login-form {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+
+	.links-wrapper {
+    margin-top: 10px;
+  }
+
+  .more-button {
+    margin-top: 30px;
+
+    text-align: center;
+  }
+
+  .more-button .more-button-wrapper .more-button-container {
+    width: 100%;
+    min-width: 208px;
+  }
+}

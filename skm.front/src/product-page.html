@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+<!--   <link rel="stylesheet" href="css/nivo_default.min.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/nivo-slider.min.css" type="text/css" media="screen" />
+ -->
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "contactUs": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="productPage" class="productPage page">
+        <div class="page-container">
+
+          <div class="page-content-container">
+            <div class="mcontainer">
+              <!-- <div class="sectionHeader sectionBlock opacityMobile">
+                <ul class="breadcrumbs sectionHeaderItem">
+                  <li><a href="/index.html"><i class="fas fa-home"></i></a></li>
+                  <li><a href="/categoryPage.html">Furniture</a></li>
+                  <li class="active"><a href="#">product 1</a></li>
+                </ul>
+              </div> -->
+              
+              <div class="flex wrap sectionBlock mobileCategory">
+                <div class="mcol-xs-12 mcol-sm-3 aside-part">
+                  <aside id="sidebarMenu" class="aside-container category-sidebar descAccordion">
+                    @@include('templateHtml/categoriesMenu.html')
+                  </aside>
+                </div>
+              </div>
+
+
+              <div class="productSection sectionBlock pageSection">
+                <div class="section-container">
+                  <div class="imgSliderBlock">
+                    <div class="sectionBlock">
+                      <div id="productSlider" class="productSlider slider-wrapper popup_img_js">
+                        <div class="slide">
+                          <a class="single" href="/img/catalog/product2.jpg">
+                            <img src="/img/catalog/product2.jpg" alt="prod-img" class="prodImg">
+                          </a>
+                        </div>
+                        <div class="slide">
+                          <a class="single" href="/img/catalog/product3.jpg">
+                            <img src="/img/catalog/product3.jpg" alt="prod-img" class="prodImg">
+                          </a>
+                        </div>
+                        <div class="slide">
+                          <a class="single" href="/img/catalog/product5.jpg">
+                            <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg">
+                          </a>
+                        </div>
+                        <div class="slide">
+                          <a class="single" href="/img/catalog/product16.jpg">
+                            <img src="/img/catalog/product16.jpg" alt="prod-img" class="prodImg">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="sectionBlock navSliderBlock">
+                      <div class="navSliderWrapper slider-wrapper">
+                        <div id="productSliderNav" class="nav-slider-container productSliderNav">
+                          <div class="slide">
+                              <img src="/img/catalog/product2.jpg" alt="prod-img" class="prodImg">
+                          </div>
+                          <div class="slide">
+                            <img src="/img/catalog/product3.jpg" alt="prod-img" class="prodImg">
+                          </div>
+                          <div class="slide">
+                            <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg">
+                          </div>
+                          <div class="slide">
+                            <img src="/img/catalog/product16.jpg" alt="prod-img" class="prodImg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="detailsBlock">
+                    <div class="content-container bordered rounded">
+                      <div class="title section-title">Mauris venenatis diam</div>
+
+                      <!-- <ul class="info-list sectionBlock">
+                        <li>Product Code: Product 6</li>
+                        <li>Availability: In Stock</li>
+                      </ul> -->
+
+                      <div class="sectionBlock">
+                        <div class="result-price">$4564556</div>
+                      </div>
+                    </div>
+                    <div class="pageSection description-section">
+                      <div class="content-container">
+                        <!-- <div class="productTabsBar tabsNav flex">
+                          <div data-target="description-tab" class="tabButton active uppercase"
+                            data-tabs-group="productTab"
+                            data-tabs-container="productTabsContainer"><span>Description</span>
+                          </div>
+                        </div> -->
+      
+                        <div class="toggleBlocks-list productTabsContainer bordered rounded fade-animation js_animate">
+                          <div id="description-tab" class="toggleBlock productTab  active">
+                            <div class="description">
+                              <p>Fusce sem risus, faucibus a ligula id, egestas suscipit turpis. Ut cursus elementum mattis. Quisque bibendum massa non rhoncus luctus. In scelerisque at metus sit amet faucibus. Integer facilisis magna nisl, convallis lacinia est imperdiet sit amet. Aenean gravida tristique nisl, congue sodales mi sodales in. Suspendisse fermentum massa vel molestie molestie. Quisque et ullamcorper nibh, eu condimentum tortor. Nulla non augue maximus, facilisis sapien a, molestie orci. Pellentesque sit amet mauris a orci tempor tincidunt. Vivamus elit elit, volutpat vel bibendum ac, tempor a est. Vivamus aliquam sollicitudin vestibulum. Etiam ac nisi a tortor tincidunt viverra id sit amet libero Ut ullamcorper ipsum sed fermentum dictum. Morbi nulla eros, tempus nec augue id, porttitor gravida enim. Proin fringilla finibus dui sed imperdiet. Integer viverra lacinia lobortis. Etiam consequat augue luctus, tempus dui vitae, dapibus tortor. In tincidunt faucibus nisl quis vestibulum. Integer eleifend ut sapien vitae tempor. Quisque arcu nulla, eleifend et neque in, sollicitudin faucibus est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut nec ultricies libero, eget egestas felis. Pellentesque lacinia lobortis magna id sagittis. Quisque sed vulputate mi. Morbi eleifend bibendum aliquet</p>
+                            </div>
+                          </div>
+      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+
+              <div class="pageSection featured-slider-section">
+                <div class="content-container">
+                  <div class="title-block">
+                    <div class="decor-icon">
+                      <img src="/img/title-divider.png" alt="icon">
+                    </div>
+                    <h3 class="title section-title bold uppercase">RELATED PRODUCTS</h3>
+                  </div>
+
+                  <div class="ourProductsSlider slider-wrapper">
+                    <div class="product-card slide">
+                      <div class="product-card-container">
+                        <div class="image-block">
+                          <a href="#" class="img-link"></a>
+                          <div class="imgWrapper">
+                            <img src="/img/catalog/product3.jpg" alt="prod-img" class="prodImg startImg">
+                            <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg hiddenImg">
+                          </div>
+                          
+                        </div>
+
+                        <div class="content-block">
+                          <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                          <div class="price">
+                            <span>$123.23</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card slide">
+                      <div class="product-card-container">
+                        <div class="image-block">
+                          <a href="#" class="img-link"></a>
+                          <div class="imgWrapper">
+                            <img src="/img/catalog/product16.jpg" alt="prod-img" class="prodImg startImg">
+                            <img src="/img/catalog/product3.jpg" alt="prod-img" class="prodImg hiddenImg">
+                          </div>
+                        </div>
+
+                        <div class="content-block">
+                          <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                          <div class="price">
+                            <span>$123.23</span>
+                          </div>                          
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card slide">
+                      <div class="product-card-container">
+                        <div class="image-block">
+                          <a href="#" class="img-link"></a>
+                          <div class="imgWrapper">
+                            <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg startImg">
+                            <img src="/img/catalog/product2.jpg" alt="prod-img" class="prodImg hiddenImg">
+                          </div>
+                        </div>
+
+                        <div class="content-block">
+                          <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                          <div class="price">
+                            <span>$123.23</span>
+                          </div>                          
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card slide">
+                      <div class="product-card-container">
+                        <div class="image-block">
+                          <a href="#" class="img-link"></a>
+                          <div class="imgWrapper">
+                            <img src="/img/catalog/product16.jpg" alt="prod-img" class="prodImg startImg">
+                            <img src="/img/catalog/product5.jpg" alt="prod-img" class="prodImg hiddenImg">
+                          </div>
+                        </div>
+
+                        <div class="content-block">
+                          <div class="product-title"><a href="#">Lorem ipsum dolor.</a></div>
+                          <div class="price">
+                            <span>$123.23</span>
+                          </div>                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>     
+        @@include('templateHtml/footer.nav.menu.html')
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      @@include('templateHtml/scrollToTopButton.html')
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

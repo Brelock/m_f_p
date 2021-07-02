@@ -1,0 +1,84 @@
+.homePage {
+	// text-align: center;
+	.mainSliderSection.pageSection {
+		padding-top: 0;
+
+		.mainSlider {
+			margin-bottom: 0;
+			box-shadow: none;
+		}
+	}
+
+	.pageSection.services-section {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+
+	// -------------
+	.pageSection.featured-section {
+		border-top: 1px solid $borderColor;
+	}
+
+	.ourProdTabsContainer {
+		margin-top: 30px;
+
+		.toggleBlock {
+			height: 0;
+			overflow: hidden;
+			display: block;
+
+			&.active {
+				height: auto;
+				overflow: visible;
+			}
+		}
+	}
+
+	.brandsSlider {
+		// padding: 0 45px;
+			// .slide {padding: 15px;}
+		.slide {
+			padding: 10px;
+			position: relative;
+			padding-bottom: 3%;
+			padding-top: 3%;
+			&:hover {
+				img {opacity:1}
+			}
+			img {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				max-width: 100px; 
+				margin: 0 auto;
+				opacity: 0.4;
+				transition: opacity 0.3s;
+			}
+		}
+		
+	}
+
+
+
+	@media (min-width: 991px) {
+		.brandsSlider {
+			padding-left: 30px;
+			padding-right: 30px;
+			// margin-left: -15px;
+			// margin-right: -15px;
+
+			.slick-prev {left: 0;}
+			.slick-next {right: 0;}
+		}
+	}
+
+	@media (min-width: 1279px) {
+		
+	}
+	
+}

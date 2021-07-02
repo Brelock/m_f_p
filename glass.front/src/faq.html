@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="faqPage" class="faqPage page">
+      
+        <div class="mcontainer">
+          <div class="common-page-title">Ответы на вопросы</div>
+          <div class="faq-text">
+           <div class="common-page-suptitle">Оформление заказа</div>
+
+           <div class="faq-text-item-graf">
+            <p>1. Где я могу оформить заказ? </p> 
+            <p>По телефону или же в любой удобной для вас соц сети.</p> 
+            <p>Заказ в нашем интернет-магазине можно оформить на сайте <a href="./index.html" class="yelow-span">glasses.house </a> </p> 
+            <p>Наш контакт для дополнительных вопросов <a href="tel:+38098 925 30 60" class="yelow-span">098 925 30 60 </a> </p> 
+           </div>
+           
+           <div class="faq-text-item-graf">
+            <p>2. Как я могу оплатить заказ? </p> 
+            <p>Мы предлагаем два способа оплаты:</p> 
+            <p>⁃ Полная оплата товара банковской картой </p> 
+            <p>⁃ Наложенным платежом(оплата при получении)</p> 
+            <p>Что такое наложенный платеж?</p>
+            <p>Наложенный платеж - это способ оплаты , которая происходит уже после осмотра заказа , непосредственно на отделении почты. </p>
+            <p>При этом способе оплаты (наложенный платеж), почта берет комиссию за услугу 20грн + 2% от суммы заказа</p>
+           </div>
+
+           <div class="faq-text-item-graf">
+            <p>3. Могу ли я отменить заказ или внести изменения ?</p> 
+            <p>Вы можете отменить свой заказ или скорректировать его на раннем этапе его реализации. Для отмены заказа, свяжитесь с нашими по номеру 098 925 30 60 ли в любом удобном месенджере.</p> 
+            <p>В начале разговора менеджер попросит Вас номер заказа. С целью ускорения Вашего обслуживания, пожалуйста, приготовьте его перед общением с консультантом.</p> 
+           </div>
+
+          </div>
+        </div>
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

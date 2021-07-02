@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="bascketPage" class="basketPage page">
+        <div class="basket-wrap">
+          <div class="mcontainer">
+            <div class="basket-contant">
+                    <div class="basket__title">Моя корзина</div>
+            </div>
+
+            <!-- <div class="empty-basket__title">Ваша корзина пуста</div> -->
+            <div class="basket-prod-wrap">
+              <div class="basket-prod__section-items">
+                <div class="prod-item">
+                  <div class="prod-item__img-glesses">
+                    <img src="./img/home-glasses-red.png" alt="">
+                  </div>
+                  <ul class="prod-item__list">
+                    <li class="prod__item"><div>Frame:<span>Lima</span></div> <p>₴ 32</p></li>
+                    <li class="prod-mobile-hiden"> 
+                      <ul>
+                        <li class="prod__item"> <div>Цвет:<span>Красный</span></div></li>
+                        <li class="prod__item"> <div>Размер:<span>L - Большой</span></div> </li>
+                        <li class="prod__item"> 
+                          <div class="select-prod__item">
+                           Количесво:
+                          <span>
+                            <select name="#" id="#">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                           </select>
+                          </span>
+                        </div>
+                        </li>
+                        <li class="prod__item">Итого к оплате: <p>₴ 32</p></li>
+                        <li class="prod__item">Доставка: <p>₴ 50</p></li>
+                      </ul>
+                    </li>
+                    <li class="handler-visible-item actived">Показать полностью</li>
+                    <li class="prod__item-btn"><button class="item-btn">Редактировать</button></li>
+                  </ul>
+                </div>
+                <div class="prod-item">
+                  <div class="prod-item__img-glesses">
+                    <img src="./img/home-glasses-red.png" alt="">
+                  </div>
+                  <ul class="prod-item__list">
+                    <li class="prod__item"><div>Frame:<span>Lima</span></div> <p>₴ 32</p></li>
+                    <li class="prod-mobile-hiden"> 
+                      <ul>
+                        <li class="prod__item"> <div>Цвет:<span>Красный</span></div></li>
+                        <li class="prod__item"> <div>Размер:<span>L - Большой</span></div> </li>
+                        <li class="prod__item"> 
+                          <div class="select-prod__item">
+                           Количесво:
+                          <span>
+                            <select name="#">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                           </select>
+                          </span>
+                        </div>
+                        </li>
+                        <li class="prod__item">Итого к оплате: <p>₴ 32</p></li>
+                        <li class="prod__item">Доставка: <p>₴ 50</p></li>
+                      </ul>
+                    </li>
+                    <li class="handler-visible-item actived">Показать полностью</li>
+                    <li class="prod__item-btn"><button class="item-btn">Редактировать</button></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="basket-prod__ordering">
+                <div class="ordering-paragrah">Предметов: <span>1</span></div>
+                <div class="ordering-paragrah">Итого: <span>₴ 32</span></div>
+                <div class="ordering-paragrah__total-value">К оплате: <span>₴ 32</span></div>
+                <div class="ordering-paragrah__btn">
+                  <a  href="./basketDataShop.html" class="button-shops">Оформление заказа</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

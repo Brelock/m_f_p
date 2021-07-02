@@ -1,0 +1,246 @@
+header.mainHeader {
+	// padding: 15px 0;
+	.main-header-top{
+		background-color: $primaryColor;
+		padding: 12px 0;
+		max-height: 48px;
+	}
+	.top-header-phone{
+		text-decoration: none;
+		margin-left: 20px;
+		.top-header-phone_img{
+			width: 24px;
+			height: 24px;
+			background-image: url(../img/phone-call.svg);
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: contain;
+			opacity: .5;
+		}
+		span{
+			display: none;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 500;
+			color:#fff;
+			font-family: $mainFont;
+			margin-left: 10px;
+		}
+		@media (min-width: $containerWidthLaptop) {
+			position: absolute;
+			right: 10px;
+			span{
+				display: inline-block;
+			}
+		}
+	}
+	.top-header-wrap{
+		flex-direction: row;
+		justify-content: space-between;
+		@media (min-width: $containerWidthLaptop) {
+			justify-content: center;
+		}
+	}
+	.top-header-links{
+		display: flex;
+		// visibility: hidden;
+		min-width: 255px;
+		list-style: none;
+		width: 100%;
+		max-width: 385px;
+		justify-content: space-between;
+		li{
+			display: flex;
+			align-items: center;
+			a{
+				font-size: 12px;
+				line-height: 18px;
+				color: #fff;
+				font-weight: 500;
+				font-family: $mainFont;
+				text-decoration: none;
+				cursor: pointer;
+				&.active{
+					text-decoration: underline;
+				}
+			}
+			&:hover{
+				a{
+					text-decoration: underline;
+				}
+			}
+		}
+
+		@media (min-width: 768px) {
+			min-width: 307px;
+			li a {
+				font-size: 14px;
+			}
+		}
+	}
+	.main-header-body{
+		padding: 11px 0;
+	}
+	.navbar-menu{
+	   width: 100%;
+	   flex-wrap: wrap;
+	   @media (min-width: $containerWidthLaptop) {
+			 flex-wrap: nowrap;
+			 align-items: center;
+	    }
+	}
+	.header-accordion-menu{
+		width: 100%;
+		min-width: 170px;
+		max-width: 200px;
+		height: 38px;
+		border: 2px solid $primaryColor;
+		border-radius: .25rem;
+		cursor: pointer;
+		display: none;
+		position: relative;
+		.btn-title-container{
+			color: $primaryColor;
+			font-size: 16px;
+			line-height: 34px;
+			font-weight: 500;
+			text-align: center;
+			&.open-accordion{
+				color: #fff;
+				background-color: $primaryColor;
+			}
+		}
+		@media (min-width: $containerWidthLaptop) {
+			display: block;
+		}
+	}
+	.logo-nav{
+		min-width: 200px;
+		padding-bottom: 20px;
+		justify-content: flex-start;
+    align-items: center;
+    display: flex;
+		.logo-nav-img{
+			max-height: 29px;
+			width: auto;
+			object-fit: cover;
+		}
+		@media (min-width: $containerWidthLaptop) {
+			min-width: 198px;
+			max-width: 200px;
+			.logo-nav-img{
+				max-height: 38px;
+				width: auto;
+				object-fit: cover;
+			}
+		 }
+		.navbar-brand{
+			margin: 0;
+			font-size: 24px;
+			font-weight: 700;
+			font-family: $mainFont;
+			@media (min-width: $containerWidthLaptop) {
+				font-size: 28px;
+			 }
+		}
+		span{
+			color: $primaryColor;
+		}
+		@media (min-width: $containerWidthLaptop) {
+			padding-bottom: 0;
+		 }
+	}
+	.input-search{
+		display: inline-block;
+		width: 100%;
+		vertical-align: middle;
+		&::placeholder{
+			color: $descriptionTextColor;
+			letter-spacing: 1px;
+		}
+	}
+    .form-block{
+		align-items: center;
+		display: flex;
+		width: 100%;
+		padding-left: 0;
+		order: 1;
+		@media (min-width: $containerWidthLaptop) {
+			padding-left: 20px;
+			padding-right: 30px;
+			width: 72%;
+			order: inherit;
+		 }
+		button{
+			margin-left: 5px;
+			max-height: 40px;
+			letter-spacing: 1px;
+			
+		}
+	}
+	.basket-nav{
+		margin-top: 0;
+		width: 5%;
+		min-width: 28px;
+		margin-left: 0;
+		position: relative;
+		a span{
+			display: none;
+
+			position: absolute;
+			content: "";
+			top: 0;
+			right: -4px;
+			width: 17px;
+			height: 17px;
+			border-radius: 50%;
+			background-color: $bgRed;
+			color: #fff;
+			text-align: center;
+			font-size: 10px;
+			line-height: 17px;
+			font-weight: bold;
+		}
+		&.basket__actived{
+			a span{
+				display: block;
+			}
+		}
+		@media (min-width: $containerWidthLaptop) {
+			min-width: 40px;
+			margin-top: 4px;
+			margin-left: 5px;
+			a span{
+				display: none;
+
+				position: absolute;
+				content: "";
+				top: -7px;
+				right: 0;
+				width: 25px;
+				height: 25px;
+				border-radius: 50%;
+				background-color: $bgRed;
+				color: #fff;
+				text-align: center;
+				font-size: 14px;
+				line-height: 25px;
+				font-weight: bold;
+			}
+			&.basket__actived{
+				a span{
+					display: block;
+				}
+			}
+		 }
+		img{
+			height: 100%;
+			max-height: 38px;
+			max-width: 45px;
+		}
+	}
+	a:hover{
+		color: inherit;
+		background-color:inherit;
+	}
+}

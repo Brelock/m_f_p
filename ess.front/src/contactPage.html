@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ESS</title>
+    <!--  -->
+    @@include('templateHtml/head.html')
+    <!--  -->
+  </head>
+
+  <body>
+    <div class="mainWrapper">
+      <div class="contentWrapper static-header">
+        <!--  -->
+        <!--  -->
+        <div id="contactPage" class="contactPage page" >
+          <div class="contact-page-wrap">
+            <div class="contact-page-body-wrap">
+              @@include('templateHtml/header.html', { "home": "active" })
+             <div class="wrap-title">Контакты</div>
+             <div class="breadcrumbs">
+               <ul class="breadcrumbs-wrap">
+                 <li class="breadcrumbs-link"><a href="index.html">Главная</a></li>
+                 <li class="breadcrumbs-link active-link"><a href="#">Контакты</a></li>
+               </ul>
+             </div> 
+  
+               <div id="contactMap" 
+                    class="map contact-section-maps"
+                    data-lat="47.840375"
+                    data-lng="35.139649"
+                    data-imgurl="img/location-pin.svg"></div>
+           </div>
+           @@include('templateHtml/contactFooter.html') 
+           @@include('templateHtml/bottomFooter.html') 
+         </div>
+                   
+        </div>
+        
+        
+      </div>
+      <!--  -->
+      
+      
+       
+       
+      <!--  -->
+      <!--  -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/scripts.html')
+  
+  </body>
+</html>

@@ -1,0 +1,53 @@
+.greenTariff {
+
+	.banner-about--grey {
+
+		@media screen and (min-width: $changeWidth) {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+
+		.button {
+			margin-top: 50px;
+		}
+
+		.banner-about-text {
+			@media screen and (min-width: $changeWidth) {
+				width: 50%;
+			}
+		}
+
+		.banner-about-text {
+			margin-right: 0;
+		}
+
+		.banner-about-img-wrap {
+			// max-width: 520px;
+			@media screen and (min-width: $changeWidth) {
+				width: calc(50% - 75px);
+				// max-width: 100%;
+			}
+		}
+
+		.banner-about-img-wrap + .banner-about-text {
+			margin-top: 20px;
+
+			@media screen and (min-width: $changeWidth) {
+				margin-top: 0;
+				margin-left: 75px;
+			}
+		}
+	}
+
+	.banner-about-img-descr {
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: normal;
+		font-family: $secondaryFont;
+
+		@media screen and (min-width: $changeWidth) {
+			font-size: 30px;
+			line-height: 60px;
+		}
+	}
+}

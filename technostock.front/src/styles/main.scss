@@ -1,0 +1,44 @@
+@import "optional/customReset";
+@import "optional/bottomFooter"; //set page height to 100% and moves mainFooter to bottom.
+
+/* ----Variables--- */
+@import "variables";
+@import "optional/media";
+
+@import "fonts";
+
+// -----Frames--------
+@import "frames/frames_main";
+
+// ----Common-----
+@import "app/common/common";
+@import "app/common/common-blocks";
+@import "app/common/common-content";
+@import "app/common/buttons";
+@import "app/common/customSwitch";
+@import "app/common/slick";
+@import "app/common/sliders";
+@import "app/common/typography";
+@import "app/common/forms";
+@import "app/common/colorbox";
+
+
+//------Partials-----
+@import "app/partials/header";
+@import "app/partials/footer";
+
+//-----App-----
+@import "app/homePage";
+@import "app/productsCategories";
+@import "app/product";
+@import "app/departments";
+@import "app/partners";
+@import "app/faq";
+@import "app/reviews";
+@import "app/contacts";
+@import "app/registration";
+@import "app/clientsInfoList";
+@import "app/delivery";
+@import "app/cabinet";
+@import "app/basket";
+@import "app/order";

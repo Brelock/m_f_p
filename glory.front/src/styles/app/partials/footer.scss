@@ -1,0 +1,89 @@
+.mainFooter {
+	display: flex;
+	align-items: center;
+	min-height: 30px;
+	padding: 15px 0;
+
+	background-color: $footerColor;
+	color: $thirdFontColor;
+	
+	text-align: center;
+
+	@media(min-width: $changeWidth) {
+		padding: 0;
+	}
+
+	a {
+		color: $thirdFontColor;
+
+		@media(min-width: $changeWidth) {
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+	i {
+		font-size: 17px;
+	}
+
+	.main-menu__link {
+		font-weight: 600;
+	}
+
+	.icomoon {
+		margin: 0 10px;
+	}
+
+	.mainFooter-wrap {
+		position: relative;
+
+		display: flex;
+		flex-direction: column-reverse;
+		
+		@media(min-width: $changeWidth) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	.main-menu-nav {
+		position: relative;
+		margin-top: 15px;
+
+		@media(min-width: $changeWidth) {
+			@include center('horizontal');
+			margin-top: 0;
+		}
+	}
+
+	.main-menu {
+		@media(min-width: $changeWidth) {
+			display: flex;
+		}
+	}
+
+	.main-menu__item {
+		@media(min-width: $changeWidth) {
+			margin: 0 17px;
+		}
+	}
+
+	.main-menu__item + .main-menu__item {
+		margin-top: 10px;
+
+		@media(min-width: $changeWidth) {
+			margin-top: 0;
+		}
+	}
+	
+	.developers {
+		margin-top: 15px;
+
+		@media(min-width: $changeWidth) {
+			display: flex;
+			align-items: center;
+			margin-top: 0;
+		}
+	}
+}

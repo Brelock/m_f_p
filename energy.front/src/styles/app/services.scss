@@ -1,0 +1,51 @@
+.services {
+	.sections__content {
+		.icomoon {
+			@media screen and (min-width: 1600px) {
+				font-size: 180px;
+			}
+		}
+
+		.sections__text {
+			@media screen and (min-width: 1400px) {
+				margin-top: 120px;
+			}
+		}
+	}
+
+	.banner-advantages--services {
+		padding-top: 15px;
+		
+		@media screen and (min-width: 1200px) {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+
+		.icomoon {
+			font-size: 8.5vmax;
+		}
+
+		.icomoon.icon-key {
+			transform: rotate(2deg);
+			font-size: 8.4vmax;
+		}
+
+		.advantages {
+			margin-top: 20px;
+		}
+
+		.advantages__descr {
+			font-weight: bold;
+
+			@media screen and (min-width: 1200px) {
+				font-size: 18px;
+				margin-top: 45px;
+				margin-bottom: 0px;
+			}
+
+			@media screen and (min-width: 1600px) {
+				font-size: 24px;
+			}
+		}
+	}
+}

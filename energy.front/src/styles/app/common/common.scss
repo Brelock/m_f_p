@@ -1,0 +1,276 @@
+body {
+	position: relative;
+
+	color: $mainFontColor;
+
+	font-size: $pageFontSize;
+	font-family: $mainFont;
+}
+
+body.menu-open {
+	overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+/*  */
+html, body {
+	box-sizing: border-box;
+}
+
+*,
+*:after,
+*::before {
+	box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+/*  */
+
+b,strong { font-weight: bold; }
+
+i {font-style: italic;}
+
+img {
+	width: 100%;
+	// display: block;
+}
+
+a > img {display: table;}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.disc {
+	list-style-type: disc;
+	padding-left: 20px;
+}
+
+ol.decimal {
+	list-style-type: decimal;
+	padding-left: 20px;
+}
+
+.icomoon + span {margin-left: 5px;}
+
+.relative {position: relative;}
+
+.mobile {
+	@media screen and (min-width: $changeWidth) {
+		display: none;
+	}
+}
+.desctop {
+	display: none;
+	@media screen and (min-width: $changeWidth) {
+		display: block;
+	}
+}
+
+.desctop-f {
+	display: none !important;
+
+	@media screen and (min-width: $changeWidth) {
+		display: flex !important;
+	}
+}
+
+
+// ------
+.mainWrapper {
+	max-width: $pageMaxWidth;
+	margin: 0 auto;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.page {
+  	background-color: $mobileBgColor;
+	@media screen and (min-width: $changeWidth) {
+		background-color: $mainBackgroundColor;
+	}
+}
+
+.pageSection,
+.mcontainer {
+	background-color: inherit;
+}
+
+.pageBackgroundWrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: -50;
+
+	width: 100%;
+	
+	background-color: $mainBackgroundColor;
+}
+
+.wrapperBlock > * {
+  width: 100%;
+}
+
+.inlineImg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+}
+
+.imgWrapper {
+	display: table;
+	& > img {display: table-cell;}
+}
+
+.js_hidden {
+	visibility: hidden;
+	opacity: 0;
+	width: 0;
+	height: 0!important;
+	padding: 0 !important;
+	z-index: -100;
+}
+
+// ---------Position--------
+.relative {position: relative;}
+.absolute {position: absolute;}
+.absolute.center {
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+}
+.absolute.stretch {
+	top: 0; bottom: 0; left: 0; right: 0;
+}
+
+.js_overflowHidden {overflow: hidden;}
+.js_fixed {	position: fixed!important; }
+
+
+// =========Buttons, inputs, links======
+
+.closeIcon {
+	display: none;
+}
+
+button.active {
+	.openIcon {display: none;}
+	.closeIcon {display: block;}
+}
+
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+button:active,
+button:focus,
+a:focus {
+	outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	// border: 1px solid $formElementsFocusBorderColor;
+	// outline: none;
+	outline: 1px solid $formElementsFocusBorderColor;
+	outline-offset: 0px;
+	// border-style: solid;
+	// border-radius: 0;
+}
+input,
+textarea,
+select {
+	// border: 1px solid $formElementsBorderColor;
+	padding: 1px 12px;
+	width: 100%;
+}
+textarea {
+	padding: 10px 12px;
+}
+
+input,
+textarea,
+button,
+button>i,
+select,
+a {
+	// cursor: pointer;
+	font-size: inherit;
+	transition: all ease 0.4s;
+}
+
+input, select {
+	height: $formElementsHeight;
+}
+// input[type="checkbox"] {
+// 	width: 15px;
+// 	height: 15px;
+// 	margin: 0;
+
+// 	& + label {
+// 		margin-bottom: 0;
+// 		margin-left: 15px;
+// 		width: 90%;
+// 	}
+// }
+
+a {
+	text-decoration: none;
+	color: $linksColor;
+}
+a.underline {
+	text-decoration: underline;
+	&:hover {text-decoration: none;}
+}
+a.standard {
+	&:hover {text-decoration: underline;}
+}
+
+
+span.showButton {display: inline-block;}
+
+.row-with-icon,
+.link-with-icon {
+	display: flex;
+	align-items: center;
+	span, a {
+		flex-basis: 80%;
+	}
+}
+
+[data-validate] {
+
+	&.js_containsError {
+		border-width: 2px;
+		border-color: red;
+
+		&:focus {	border-width: 1px; }
+	}
+}
+
+ul.js_warning-list {
+	position: absolute;
+	bottom: -19px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	text-align: center;
+	white-space: nowrap;
+	font-weight: bold;
+
+	li {
+		color: red;
+		& + li {margin-top: 3px;}
+	}
+}

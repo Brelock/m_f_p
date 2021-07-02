@@ -1,0 +1,259 @@
+header.mainHeader {
+  // text-align: center;
+  background-color: $headerColor;
+  color: $headerFontColor;
+
+  .header-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: inherit;
+  }
+
+  .bottomHeader,
+  .mainNavigation {
+    background-color: #fff;
+  }
+
+  .topHeader {
+   display: none;
+
+    .phone-block {
+      // max-width: 50px;
+      min-width: 160px;
+      color: $linksColor;
+      min-height: inherit;
+
+      .content-container {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        & > * + * {
+          margin-left: 10px;
+        }
+      }
+
+      & > * {
+        min-height: $topSectionHeaderHeight;
+      }
+
+      i,
+      a {
+        color: inherit;
+      }
+
+      a {
+        font-weight: 300;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .bottomHeader {
+    min-height: $headerHeight;
+
+    & > div {
+      min-height: inherit;
+    }
+
+    .logo-block {
+      max-width: 165px;
+    }
+
+    .right-part {
+      margin-left: auto;
+
+      & > .part-block {
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+    }
+
+    .search-block {
+      // display: flex;
+      // align-items: center;
+      // justify-content: flex-end;
+      // padding-right: 0 !important;
+     display: none;
+      input {
+        // margin-left: 10px;
+        width: 100%;
+      }
+    }
+
+    .searchButton {
+      padding: 10px 0 10px 10px;
+    }
+  }
+  
+
+  /* ======Media Queries===== */
+
+  @media (min-width: 767px) {
+    .bottomHeader {
+      .header-content-container {
+        justify-content: space-between;
+
+        .mokeBlock {
+          order: 2;
+        }
+      }
+
+      .logo-block {
+        width: 25%;
+        max-width: 200px;
+        .imgWrapper {
+          margin: 0 auto;
+          min-width: 200px;
+        }
+        padding: 40px 0;
+        order: 0;
+      }
+
+      .right-part {
+        margin-left: 0;
+        // max-width: 215px;
+      }
+
+      .search-block {
+        justify-content: flex-start;
+        padding-left: 0 !important;
+        padding-right: 10px !important;
+        border-bottom: 1px solid $borderColor;
+
+        // .searchButton {
+
+        // }
+
+        .hiddenContent {
+          width: 100% !important;
+          order: 1;
+
+          input {
+            border: 0;
+          }
+        }
+      }
+    }
+
+    .mainNavigation, .nav-mobile-menu {
+      background-color: #fff;
+      // border-top: solid 1px #eee;
+      .nav-list {
+        display: flex;
+        justify-content: center;
+
+        & > .nav-item {
+          padding: 25px 15px;
+          box-sizing: border-box;
+          font-weight: 600;
+
+          &:hover,
+          &.active {
+            a {
+              color: $primaryColor;
+            }
+          }
+        }
+        & > .nav-item:last-child{
+          padding: 25px 0 25px 15px;
+        }
+      }
+    }
+    .topHeader {
+      display: block;
+      min-height: $topSectionHeaderHeight;
+      background-color: $primaryColor;
+    }
+
+  }
+
+
+}
+
+.header-adresses{
+  display: none;
+ }
+.header-adresses{
+  @media (min-width: 767px) {
+  padding-bottom: 40px;
+  padding-top: 60px;  
+  // padding-left: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  .contact-item{
+    display: flex;
+    .icon{
+      flex-basis: 25px;
+      i{
+        color: $primaryColor;
+      }
+    }
+    &:not(:first-child){
+          padding-top: 15px;
+    }
+  }
+  & > div{
+    padding-left: 4%;
+  }
+}
+}
+.city-block{
+  position: relative;
+}
+.img-city{
+  position: absolute;
+  width: auto;
+  height: 65px;
+  left: 10px;
+  top: -32px;
+}
+
+.fa-bars {
+  &::before {
+    font-size: 28px;
+  }
+}
+.advantage-item{
+  min-height: $topSectionHeaderHeight;
+  max-width: 270px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  .advantage-item-title{
+    color: $white;
+  }
+  .advantage-item-icon{
+    padding-right: 10px;
+    img{
+      min-width: 30px;
+      min-height: 30px;
+    }
+  }
+}
+ .nav-mobile-menu {
+  background-color: #fff;
+  padding-top: 50px;
+  .nav-list {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    & > .nav-item {
+      padding: 10px;
+      box-sizing: border-box;
+      font-weight: 600;
+      &:hover,
+      &.active {
+        a {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+  @media (min-width: 767px) {display: none;}
+}
+  
+
+

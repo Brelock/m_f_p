@@ -1,0 +1,60 @@
+.shopsPage {
+
+	.shops-list {
+
+		.standardButton {
+			min-height: 36px;
+			line-height: 22px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 300px;
+			margin: 0 auto;
+		}
+	}
+	
+
+	@media (min-width: 767px) {
+		.shops-list {
+
+			.shop-item {
+				& > div {	padding: 10px 10px;	}
+
+				& > div:nth-child(1) {
+					flex-basis: 15%; max-width: 15%;
+					padding-left: 0;
+				}
+				& > div:nth-child(2) {flex-basis: 30%; max-width: 30%;}
+				& > div:nth-child(3) {flex-basis: 20%; max-width: 20%;}
+				& > div:nth-child(4) {
+					width: 15%; max-width: 15%;
+					// text-align: right;
+				}
+				& > div:nth-child(5) {
+					flex-basis: 25%; max-width: 25%;
+					padding-right: 0;
+					text-align: right;
+				}
+
+			}
+		}
+	}
+
+	@media (min-width: 991px) {
+		.shops-list {
+
+			.shop-item {
+				& > div {	padding: 10px 15px;	}
+			}
+		}
+	}
+
+	@media (min-width: 1279px) {
+		.shops-list {
+
+			.shop-item {
+				& > div:nth-child(1) {max-width: 130px;}
+			}
+		}
+	}
+}

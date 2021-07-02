@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "about": "active", "vacancies": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="vacanciesPage" class="vacanciesPage page">
+
+        <section class="pageSection white-bg">
+          <div class="mcontainer">
+
+            <div class="sectionBlock">
+              <div class="sectionHeader">
+                <div class="animated-border-block section-title sectionHeaderItem">
+                  <div class="svg-container">
+                    <svg class="rect-container">
+                      <rect x="0" y="0" class="animatedBlock"/>
+                      <rect x="0" y="0" stroke-width="4" class="overlappingBlock"/>                
+                    </svg>
+                    <h1 class="title">Вакансии</h1>
+                  </div>
+                </div>
+
+                <ul class="breadcrumbs sectionHeaderItem">
+                  <li><a href="/index.html">Главная</a></li>
+                  <li ><a href="/aboutUs.html">О компании</a></li>
+                  <li class="active"><a href="#">Вакансии</a></li>
+                </ul>
+              </div>
+
+              <div class="description mcol-xs-12 mcol-md-7">
+                <p>Наша Компанія є найбільшою мережею ломбардів в Україні, і ми продовжуємо успішно розвиватися. Пропонуємо і вам стати частинкою нашої великої команди!
+                Ми цінуємо всіх наших співробітників і гарантуємо їм безкоштовне навчання, гідну заробітну плату, комфортні умови і можливість кар'єрного росту.</p>
+                <p class="text-right"><i>З повагою, Департамент Персоналу компанії.</i></p>
+              </div>
+            </div>
+
+            <div class="sectionBlock contentBlock mcol-xs-12 mcol-md-7">
+              <div class="description small-margin">
+                <p class="title">Нижче представлений перелік вакансій Компанії у різних містах України.</p>
+                <p>Також усі актуальні вакансії можна знайти на наших сторінках на сайтах пошуку роботи <a href="#"><b>rabota.ua</b></a> и <a href="#"><b>work.ua</b></a>.</p>
+
+                <p>Якщо Ви не знайшли підходящу вакансію, але хочете працювати в «Капiталi» - надсилайте резюме на електронну адресу - podbor@lombard.credit.</p>
+                <p>Ми обов'язково розглянемо Вашу кандидатуру.</p>
+              </div>
+            </div>
+
+            <div class="sectionBlock filter-block flex wrap center">
+              <div class="formRow chosen-wrapper mcol-xs-12 mcol-sm-6">
+                <label for="1" class="title mcol-xs-12 mcol-sm-4">Регион: </label>
+                <select name="test" id="1" data-placeholder="По всей Украине" class="mcol-xs-12 mcol-sm-4">
+                  <option value=""></option>
+                  <option value="1">Option 1</option>
+                  <option value="2" >Option 2</option>
+                  <option value="3" >Option 3</option>
+                </select>
+              </div>
+
+              <div class="formRow chosen-wrapper mcol-xs-12 mcol-sm-6">
+                <label for="2" class="title mcol-xs-12 mcol-sm-4">Категории: </label>
+                <select name="test" id="2" data-placeholder="Бухгалтерия - Налоги - Финансы предприятия" class="mcol-xs-12 mcol-sm-4">
+                  <option value=""></option>
+                  <option value="1">Option 1</option>
+                  <option value="2" >Option 2</option>
+                  <option value="3" >Option 3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="sectionBlock">
+              <ul class="vacancies-list">
+                <li>
+                  <div class="header-block showButton" 
+                        data-group="vacancy-group" data-button-type="accordion" data-menu-type="drop-down">
+                    <div class="content-container">
+                      <h3 class="title">Кредитный эксперт</h3>
+                      <div class="sub-title vacancy-info">
+                        <div><span>Каменец-Подольский</span></div>
+                        <div><span>29.05.18</span></div>
+                        <div><span>6500 грн.</span></div>
+                      </div>
+                    </div>
+
+                    <div class="arrow-button-container push-right">
+                      <i class="icomoon icon-angle"></i>
+                    </div>
+                  </div>
+
+                  <div class="hiddenContent height vacancy-group">
+                    <div class="content-container">
+                      <div class="description">
+                        <p>Ми одна з найбiльших <b>мереж ломбардів «Капитал»</b>, яка стрiмко розвивається i продовжує вiдкривати новi сучаснi відділення у всiх куточках нашої країни.</p>
+                      
+                        <p class="description-title"><b>Кого ми шукаємо?</b></p>
+                        <p>Активних та позитивних людей з 100%-ю клiєнтоорiєнтованiстю, якi прагнуть отримати нову професiю з оцiнки дорогоцiнних металiв та техніки на посаду Кредитного Експерта, та стати для клiєнта надійним фінансовим Партнером.</p>
+
+                        <p class="description-title"><b>Стань частиною нашої команди:</b></p>
+                        <ul class="disc">
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+
+                        <p class="description-title"><b>Не зволікай, надсилай нам своє резюме. Команда ”Капитал” чекає на тебе!</b></p>
+                        <p>Екатерина 067 - 612 -34 -80.</p>
+
+                        <p>
+                          <div class="more-button credit-button inversed">
+                            <div class="more-button-wrapper">
+                              <div class="more-button-container">
+                                <a href="#" class="title semi-bold">Отправить резюме</a>
+                                <i class="icomoon standard-arrow-icon inversed"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </p>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="header-block showButton" 
+                        data-group="vacancy-group" data-button-type="accordion" data-menu-type="drop-down">
+                    <div class="content-container">
+                      <h3 class="title">Кредитный эксперт</h3>
+                      <div class="sub-title vacancy-info">
+                        <div><span>Каменец-Подольский</span></div>
+                        <div><span>29.05.18</span></div>
+                        <div><span>6500 грн.</span></div>
+                      </div>
+                    </div>
+
+                    <div class="arrow-button-container push-right">
+                      <i class="icomoon icon-angle"></i>
+                    </div>
+                  </div>
+
+                  <div class="hiddenContent height vacancy-group">
+                    <div class="content-container">
+                      <div class="description">
+                        <p>Ми одна з найбiльших <b>мереж ломбардів «Капитал»</b>, яка стрiмко розвивається i продовжує вiдкривати новi сучаснi відділення у всiх куточках нашої країни.</p>
+                      
+                        <p class="description-title"><b>Кого ми шукаємо?</b></p>
+                        <p>Активних та позитивних людей з 100%-ю клiєнтоорiєнтованiстю, якi прагнуть отримати нову професiю з оцiнки дорогоцiнних металiв та техніки на посаду Кредитного Експерта, та стати для клiєнта надійним фінансовим Партнером.</p>
+
+                        <p class="description-title"><b>Стань частиною нашої команди:</b></p>
+                        <ul class="disc">
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+
+                        <p class="description-title"><b>Не зволікай, надсилай нам своє резюме. Команда ”Капитал” чекає на тебе!</b></p>
+                        <p>Екатерина 067 - 612 -34 -80.</p>
+
+                        <p>
+                          <div class="more-button credit-button inversed">
+                            <div class="more-button-wrapper">
+                              <div class="more-button-container">
+                                <a href="#" class="title semi-bold">Отправить резюме</a>
+                                <i class="icomoon standard-arrow-icon inversed"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </p>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="header-block showButton" 
+                        data-group="vacancy-group" data-button-type="accordion" data-menu-type="drop-down">
+                    <div class="content-container">
+                      <h3 class="title">Кредитный эксперт</h3>
+                      <div class="sub-title vacancy-info">
+                        <div><span>Каменец-Подольский</span></div>
+                        <div><span>29.05.18</span></div>
+                        <div><span>6500 грн.</span></div>
+                      </div>
+                    </div>
+
+                    <div class="arrow-button-container push-right">
+                      <i class="icomoon icon-angle"></i>
+                    </div>
+                  </div>
+
+                  <div class="hiddenContent height vacancy-group">
+                    <div class="content-container">
+                      <div class="description">
+                        <p>Ми одна з найбiльших <b>мереж ломбардів «Капитал»</b>, яка стрiмко розвивається i продовжує вiдкривати новi сучаснi відділення у всiх куточках нашої країни.</p>
+                      
+                        <p class="description-title"><b>Кого ми шукаємо?</b></p>
+                        <p>Активних та позитивних людей з 100%-ю клiєнтоорiєнтованiстю, якi прагнуть отримати нову професiю з оцiнки дорогоцiнних металiв та техніки на посаду Кредитного Експерта, та стати для клiєнта надійним фінансовим Партнером.</p>
+
+                        <p class="description-title"><b>Стань частиною нашої команди:</b></p>
+                        <ul class="disc">
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+
+                        <p class="description-title"><b>Не зволікай, надсилай нам своє резюме. Команда ”Капитал” чекає на тебе!</b></p>
+                        <p>Екатерина 067 - 612 -34 -80.</p>
+
+                        <p>
+                          <div class="more-button credit-button inversed">
+                            <div class="more-button-wrapper">
+                              <div class="more-button-container">
+                                <a href="#" class="title semi-bold">Отправить резюме</a>
+                                <i class="icomoon standard-arrow-icon inversed"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </p>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+   
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <div class="mcontainer relative scrollTopContainer">
+        <div id="scrollTopButton" class="icomoon standard-arrow-icon navigateIcon up"></div>
+      </div>
+
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

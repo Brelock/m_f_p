@@ -1,0 +1,47 @@
+.main-header{
+	background-color: #fff;
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+.main-header-contant{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.main-header_logo{
+	margin-left: 10px;
+	@media (min-width: $containerWidth) {
+		margin-left: 32px;    
+	}
+}
+.contact-us{
+	min-width: 110px;
+	display: flex;   
+	cursor: pointer;
+	margin-right: 10px;
+	@media (min-width: $containerWidth) {
+		margin-right: 32px;  
+	}
+	img{
+		padding-right: 10px;
+		max-width: 18px;
+	}
+}
+.btn-contact-us{
+	font-size: 16px;
+}
+.logo-title{
+	text-transform: uppercase;
+	letter-spacing: 0.6em;      
+	font-family: $proximaFontNormal;
+	font-size: 16px;
+	margin: 0;
+}
+.logo-subtitle{
+	font-size: 20px;
+	font-family: $proximaFontExtraBold;
+	text-transform: uppercase;
+	font-weight: 800;
+	padding-top: 3px;
+	margin: 0;
+}

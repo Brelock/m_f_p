@@ -1,0 +1,405 @@
+.prod {
+  .pageSection-title-wrap {
+    padding: 15px;
+    border: 1px solid #a9a9a9;
+  }
+
+  .pageSection-title-container {
+    flex-wrap: wrap;
+    width: 100%;
+
+    @media (min-width: $xlLayout) {
+      flex-wrap: nowrap;
+      width: auto;
+      flex-grow: 0;
+
+      margin-right: 10px;
+    }
+  }
+
+  // .pageSection-title-container .info-label {
+  //   margin-left: 15px;
+
+  //   @media (min-width: $xlLayout) {
+  //     margin-left: 28px;
+  //   }
+  // }
+
+  .pageSection-title {
+    text-align: left;
+  }
+
+  .pageSection-title-wrap {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $xlLayout) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .prod-header span {
+    white-space: nowrap;
+  }
+}
+
+.prod-header + * {
+  margin-top: 0;
+
+  @media (min-width: $xlLayout) {
+    margin-top: 0;
+  }
+}
+
+.prod-header__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ .text-common{
+   color: $white;
+ }
+  @media (min-width: $xlLayout) {
+    width: auto;
+    flex-grow: 1;
+  }
+}
+.white-theme{
+  .prod-header__info{
+    .text-common{
+      color: $black;
+    }
+  }
+}
+.prod-header__labels-wrap {
+  display: flex;
+  
+  .info-label + .info-label {
+    margin-left: 15px;
+
+    @media (min-width: $xlLayout) {
+      margin-left: 28px;
+    }
+  }
+}
+
+.prod-header__labels-wrap:empty {
+  display: none;
+}
+
+.prod-header__labels-wrap + * {
+  margin-left: 10px;
+}
+
+.prod-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 15px;
+  border-left: 1px solid #9a9a9a;
+  border-right: 1px solid #9a9a9a;
+
+  @media (min-width: $xlLayout) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 35px 30px;
+  }
+}
+
+.prod-main__left {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  
+  width: 100%;
+  
+  @media (min-width: $xlLayout) {
+    justify-content: space-between;
+
+    width: 41.2903%;
+  }
+}
+
+.prod-main__right {
+  flex-grow: 1;
+  width: 100%;
+  margin-top: 15px;
+  
+  @media (min-width: $xlLayout) {
+    width: auto;
+    margin-top: 0;
+    margin-left: 110px;
+  }
+}
+
+.prod-descr-top {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: $xlLayout) {
+    flex-direction: row;
+  }
+}
+
+.prod-descr__prices {
+  display: flex;
+  justify-content: center;
+}
+
+.prod-descr__price {
+  color: $yellowTextColor;
+}
+
+.white-theme .prod-descr__price:not(.prod-descr__price--red) {
+  color: $blueTextColor;
+}
+
+.prod-descr__price-old {
+  align-self: center;
+  margin-left: 10px;
+
+  color: $gray;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 29px;
+}
+
+.prod-descr__price--red {
+  color: $redTextColor;
+}
+
+.prod-descr-bot {
+  width: 86%;
+
+  margin-top: 45px;
+}
+
+.prod-descr-wrap {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  margin-top: 10px;
+  
+  @media (min-width: $xlLayout) {
+    margin-left: 5px;
+    margin-top: 0;
+  }
+
+  button + button {
+    margin-left: 5px;
+
+    @media (min-width: $xlLayout) {
+      margin-left: 35px;
+    }
+  }
+}
+
+.prod-guarantee {
+
+  @media (min-width: $xlLayout) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .radio-item + .radio-item,
+  .checkbox-item + .checkbox-item {
+    margin-top: 10px;
+    
+    @media (min-width: $xlLayout) {
+      margin-top: 0;
+    }
+  }
+}
+
+.prod-guarantee__time {
+  display: inline-block;
+  width: 100%;
+}
+
+.prod-descr-bot__text {
+  margin-top: 40px;
+}
+
+.prod-descr-bot__export {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+
+  .icomoon {
+    font-size: 42px;
+  }
+}
+
+.prod-descr-bot__export-text {
+  margin-left: 15px;
+}
+
+.prod-descr-bot__export-descr {
+  margin-top: 10px;
+}
+
+.prod-footer {
+  border: 1px solid #9a9a9a;
+  border-top: 0;
+  border-bottom-left-radius: $br_desktop;
+	border-bottom-right-radius: $br_desktop;
+}
+
+.prod-tabs {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid #9a9a9a;
+
+  @media (min-width: $xlLayout) {
+    flex-direction: row;
+  }
+
+  .button-tab {
+    width: 100%;
+    
+    @media (min-width: $xlLayout) {
+      width: 33.33%;
+    }
+  }
+
+  .button-tab + .button-tab {
+    margin-left: 0;
+  }
+
+  .button-tab {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  .button-tab.active {
+    box-shadow: 0 2px 0px #ffed00;
+    color: #fff;
+  }
+}
+
+.white-theme .prod-tabs {
+  .button-tab.active {
+    box-shadow: 0 2px 0px #1938a5;
+  }
+}
+
+.white-theme .prod-tabs {
+  .button-tab,
+  .button-tab.active {
+    color: #000;
+  }
+}
+
+.prod-toggleBlocks {
+  .toggleBlock {
+    padding: 15px;
+    
+    @media (min-width: $xlLayout) {
+      padding: 45px 33px;
+    }
+  }
+}
+
+.prod-group {
+  line-height: 30px;
+}
+
+.prod-group + .prod-group {
+  margin-top: 20px;
+}
+
+.prod-group__title {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  @media (min-width: $xlLayout) {
+   text-align: left;
+  }
+}
+
+.prod-group__row {
+  display: block;
+  @media (min-width: $xlLayout) {
+    display: flex;
+  }
+}
+
+.prod-group__subtitle {
+  max-width: 330px;
+  width: 75%;
+  margin-right: 15px;
+  word-wrap: break-word;
+  @media (min-width: $xlLayout) {
+    width: 100%;
+  }
+}
+
+.prod-group__descr {
+  margin-left: 15px;
+  font-weight: bold;
+  // width: 25%;
+  word-wrap: break-word;
+  @media (min-width: $xlLayout) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.prod-slider__img-wrap {
+  position: relative;
+  padding-bottom: 134%;
+
+  overflow: hidden;
+}
+
+.prod-slider__img {
+  position: absolute;
+  height: 100%;
+  object-fit: contain;
+}
+
+.quality-assurance {
+  cursor: pointer;
+  margin-top: 25px;
+  .icon-faq-link {
+    width: 25px;
+    height: 25px;
+    background-color: $primaryColor;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 48%;
+      transform: translate(-50%, -50%);
+      background-image: url(../../img/question.svg);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 19px;
+      height: 19px;
+    }
+  }
+  a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 36px;
+    white-space: nowrap;
+    text-decoration: underline;
+  }
+  @media (min-width: $xlLayout) {
+    margin-top: 0;
+  }
+}

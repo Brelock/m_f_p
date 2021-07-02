@@ -1,0 +1,160 @@
+// ======Main Options=======
+/* -----Color------- */
+$primaryColor: #ffed00;
+$secondaryColor: #24CB99; 
+$tertiaryColor: #FF0201;	
+$fourthColor: #1938A5;
+$fifthColor: red;
+$whiteThemeColor: #fff;
+
+
+$black: #000;
+$white: #fff;
+$gray: #a9a9a9;
+
+/* -----Fonts-----*/
+$pageFontSize: 14px;
+$mainFont: 'Montserrat', sans-serif;
+$secondaryFont: 'Montserrat', sans-serif;
+$tertiaryFont: 'Montserrat', sans-serif;
+$font-2: 'sf-pro', sans-serif;
+
+$mainFontColor: #000;
+$yellowTextColor: #ffed00;
+$greenTextColor: #24CB99;
+$redTextColor: #FF0201;
+$blueTextColor: #1938A5;
+$greyTextColor: #a9a9a9;
+$secondaryFontColor: $white;
+$descriptionTextColor: #6A6A6A;
+$subDescriptionColor: rgba(13, 13, 15, 0.5);
+
+$titleFont: $mainFont;
+$titleFontSize: 32px;
+$titleFontSizeLaptop: 34px;
+$titleFontSizeDesktop: 36px;
+
+$sectionTitleFontSize: 20px;
+$sectionTitleFontSizeLaptop: 20px;
+$sectionTitleFontSizeDesktop: 20px;
+
+$articleTitleFontSize: 16px;
+$articleTitleFontSizeLaptop: 16px;
+$articleTitleFontSizeDesktop: 16px;
+
+$productCardSmall--lh: 24px; 
+
+
+$sectionBlockTitleFontSize: 24px;
+$descriptionTitleFontSize: 20px;
+
+/* ======Components Options======= */
+/* ------Color---------- */
+$mainBackgroundColor: #fff;
+
+$headerColor: #fff;
+$headerFontColor: #000;
+
+$headerBottomColor: $fourthColor;
+$headerBottomFontColor: #fff;
+
+$footerColor: $secondaryColor;
+$footerFontColor: #fff;
+
+$mobileMenuColor: #fff;
+
+$formElementsBorderColor: #DAD8D8;
+$formElementsFocusBorderColor: $primaryColor;
+
+$borderColor: #EDEded;
+
+$linksColor: #fff;
+
+$darkOverlayColor: rgb(0,0,0);
+$disabledColor: #4A4A4A;
+$disabledWhiteThemeColor: #DEDCDC;
+/* ------Fonts----------*/
+// $h1FontSize: 40px;
+// $h2FontSize: 24px;
+// $h3FontSize: 20px;
+$smaller: 12px;
+$normal: 14px;
+$larger: 16px;
+$large: 18px;
+$big: 24px;
+
+$descriptionLineHeight: 24px;
+$descriptionFontSize: 16px;
+
+
+/* ------Sizes----------*/
+$topSectionHeaderHeight: 40px;
+$headerHeight: 92px;
+$pageMaxWidth: 1920px;
+
+$formElementsHeightMob: 38px; 
+$formElementsHeight: 50px; 
+
+$standardButtonHeight: $formElementsHeight - 2px;
+
+// $navMenuHeight: 90px;
+
+/* ------Margins/Paddings------ */
+
+// ---Optional (page-grid)-----
+$containerPadding: 12px;
+$containerPaddingDesktop: 15px;
+
+$containerWidth: 760px;
+$containerWidthTablet: 980px;
+$containerWidthLaptop: 1100px;
+$containerWidthDesktop: 1300px;
+
+$sectionMarginTopMobile: 30px;
+$sectionMarginTopTablet: 30px;
+$sectionMarginTopLaptop: 40px;
+$sectionMarginTopDesktop: 50px;
+
+$articleMarginMobile: 10px;
+$articleMarginTablet: 10px;
+$articleMarginLaptop: 16px;
+$articleMarginDesktop: 16px;
+
+// ---Optional (collapse menu)-----
+$collapseBefore: 1280px;  // page width when menu should collapse
+$smLayout: 576px;
+$mdLayout: 768px;
+$xlLayout: 991px;
+$xxlLayout: 1200px;
+$xxxlLayout: 1600px;
+
+// ---Optional (form-grid)-----
+$formTitleFontSize: 1.25rem;
+$labelFontSize: 14px;
+
+/* ------Z-index-------- */
+$zMobileMenu: 1000;
+$zMobileMenuButton: $zMobileMenu + 10;
+
+$pageOverlayZIndex: $zMobileMenu - 50;
+$darkOverlayZIndex: $pageOverlayZIndex - 100;
+
+$zPopup: $zMobileMenu + 200;
+$zPopupDarkOverlay: $zPopup - 50;
+
+$imageIndex: 10;
+$gradientIndex: $imageIndex + 5;
+$captionIndex: $gradientIndex + 5;
+$dotsIndex: $captionIndex + 5;
+
+// ----------Transitions-------
+$linksTransition: 0.3s;
+$formTransitions: 0.3s;
+$animationTransitions: 0.4s;
+
+// ---------- border-radius ----------
+
+$br_mobile: 7px;
+$br_desktop: 12px;
+
+// $defaultBorderRadius

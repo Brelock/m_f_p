@@ -1,0 +1,223 @@
+.departmentsPage {
+    .categoryNavBar {
+        .hiddenContent {
+            height: auto;
+        }
+        .hiddenContent .content-container {
+            display: flex;
+            align-items: center;
+            float: left;
+            transition: transform .5s ease;
+        }
+        .category {
+            padding: 12px 24px;
+            position: relative;
+            white-space: nowrap;
+        }
+        .category:after {
+            height: 2px;
+            z-index: 1;
+            transform: scaleX(0);
+        }
+        .category:before {
+            height: 1px;
+            background-color: #858686;
+        }
+        .category:after, 
+        .category:before {
+            position: absolute;
+            bottom: 0;
+            content: "";
+            display: block;
+            width: 100%;
+            margin-left: -24px;
+            transition: all .4s;
+        }
+        .category.active:after {
+            transform: scaleX(1);
+        }
+    }
+    .departments-item {
+        padding: 10px 0;
+        border-bottom: 1px solid #D6D6D6;
+    }
+    .departments-item__img {
+        max-width: 500px;
+    }
+    .departments-item__title {
+        color: #868687;
+        font-size: 16px;
+    }
+    .departments-item__descr {
+        color: #0D0D0F; 
+        font-size: 18px;    
+        line-height: 26px;
+    }
+}
+//Start Map styles
+.departments-map {
+    height: calc(100vw - 8px - 8px);
+    min-height: 500px;   
+    max-height: 600px;
+    width: 100%;
+    max-width: 1300px;
+    
+    // infoBox
+    // [style*="z-index: 107"] > div:first-child { 
+    //   // top: -264px !important;
+    // }
+
+    // [style*="height: 317"] {
+    //   height: 400px !important;
+    // }
+    // [style*="height: 319"] {
+    //   height: 402px !important;
+    // }
+
+    // [style*="max-height: 301"] {
+    // }
+
+    // //box triangle
+    // [style*="top: 316"] { 
+    //   top: 401px !important;
+    // }
+    // [style*="top: 319"] {
+    //   top: 404px !important;
+    // }
+
+    .fakeBlock {
+        height: 200px;
+        width: 100%;
+    }
+
+}
+
+// start lombard-map popup
+.gm-style-iw {
+    left: 25px !important;
+
+}
+.lombard-map__image-wrapper {
+    margin: 10px 0 15px;
+    text-align: center;
+}
+.lombard-map__image {
+    max-width: 200px !important;
+    width: 100%;
+}
+.lombard-map__number {
+    font-weight: 700;
+    font-size: 1.125em;
+    margin: 0 0 16px;
+}
+.lombard-map__location {
+    position: relative;
+    padding: 0 0 0 27px;
+    margin: 0 0 18px;    
+}
+.lombard-map__location,
+.lombard-map__phone,
+.lombard-map__work-time {
+    &::before {
+        content: "\e91c";        
+        font-family: icomoon;
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        display: block;
+        color: red;
+    }
+}
+.lombard-map__phone {
+    &:before {
+        content: '\e90c';
+    }
+}
+.lombard-map__work-time {
+    &:before {
+        content: "\e915";
+    }
+}
+.lombard-map__phone {
+    margin: 0 0 18px;
+    padding: 0 0 0 27px;
+    position: relative;
+    a {
+        color: #3d3d3d;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+.lombard-map__description {
+    margin: 0 0 18px;
+}
+.lombard-map__work-time {
+    position: relative;
+    padding: 4px 0 4px 27px;
+    margin: 0 0 15px;
+}
+.lombard-map__link {
+    color: #e60000;
+    text-decoration: none;
+}
+.gm-style-iw + div {
+    position: absolute;
+    right: -19px!important;
+    top: -19px!important;
+    width: 38px!important;
+    height: 38px!important;
+    background: #e60000;
+    border-radius: 50%;
+    opacity: 1!important;
+    display: none;
+}
+.gm-style-iw + div:before,
+.gm-style-iw + div:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 2px;
+    margin-left: -7px;
+    margin-top: -1px;
+    background-color: #fff;
+}
+.gm-style-iw + div:before {
+    transform: rotate(45deg);
+}
+.gm-style-iw + div:after {
+    transform: rotate(-45deg);
+}
+.gm-style-iw + div img {
+    display: none;
+}
+// end lombard-map popup
+
+// Media
+@media(min-width: 992px) {
+    .departmentsPage {
+        .departments-item__wrap {
+            box-sizing: border-box;
+            padding-left: 5%;
+        }
+        .departments-item__img {
+            width: 11.5384%;
+        }
+        .departments-item__location {
+            width: 42.1538%;
+        }
+        .departments-item__time {
+            width: 26.6153%;
+        }
+        .departments-item__phone {
+            width: 19.6923%;
+        }
+        .departments-item {
+            display: flex;
+            align-items: center;            
+        }
+    }
+}

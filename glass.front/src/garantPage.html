@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="garantPage" class="garantPage page">
+      
+        <div class="mcontainer">
+          <div class="common-page-title">Гарантия</div>
+          <div class="garant-text">
+            <p> Гарантия на очки предоставляется в течение 6 месяцев, при условии правильной эксплуатации очков.  Гарантия на очки не предоставляется в случае повреждения очков и проблем, которые возникли в результате:</p>
+            <br>
+            <p>— несоблюдения правил пользования;</p>
+            <p>— небрежного использования;</p>
+            <p>— самостоятельной замены части оправы, линз или ремонта;</p>
+            <br>
+            <p>На естественный износ частей, имеющих ограниченный срок службы, гарантия — 3 месяца (заушники, носоупоры, винты).</p>
+          </div>
+          
+
+
+
+ 
+
+
+        </div>
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

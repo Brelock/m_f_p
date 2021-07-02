@@ -1,0 +1,29 @@
+
+
+.common-page-title{
+  padding-top: 40px;
+  font-size: 30px;
+  line-height: 120%;
+  font-weight: 600;
+  @media (min-width: $containerWidth){
+    padding-top: 100px;
+  }
+}
+.onas-text{
+  padding-top: 50px;
+  p{
+    font-size: 15px;
+    line-height: 120%;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+}
+.yelow-span{
+  color: $tertiaryColor;
+}
+.botton-title{
+  padding-top: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="homePage" class="homePage page">
+      
+
+
+        <div class="mcontainer">
+            <div class="titul-info-block">
+               <aside class="category-sidebar descMenu">
+                  @@include('templateHtml/categoriesMenu.html')
+                  @@include('templateHtml/footnotesSocial.html')
+               </aside>
+
+               <div class="sliders-section">
+                 <div class="banner-slide-wrap">
+                  <div class="banner-sliders">
+                    <div class="slide-item"><img src="./img/banner.jpg" alt=""></div>
+                    <div class="slide-item"><img src="./img/testtesttest.jpeg" alt=""></div>
+                    <div class="slide-item"><img src="./img/banner.jpg" alt=""></div>
+                  </div>
+                  <div class="arrows"> 
+                    <ul>
+                        <li class="prev"></li>
+                        <li class="next"></li> 
+                    </ul>
+                  </div>
+                 </div>
+  
+                 <div class="sale-slide-wrap slide-section">
+                   <div class="slide-title flex">
+                    <h2>Big Sale (распродажа)</h2>
+                    <div class="all-prod-button">
+                      <a href="#">Все Big Sale</a>
+                    </div>
+                   </div>
+                  <div class="sale-sliders">
+                    <!-- <div class="slide-item"> -->
+                        <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                    <!-- </div> -->
+                    <!-- <div class="slide-item"> -->
+                        <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                    <!-- </div> -->
+                    <!-- <div class="slide-item"> -->
+                        <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                    <!-- </div> -->
+                    <!-- <div class="slide-item"> -->
+                        <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                    <!-- </div> -->
+                    <!-- <div class="slide-item"> -->
+                        <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                    <!-- </div> -->
+                    <!-- <div class="slide-item"> -->
+                        <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Боксподарочный комплектподарочный комплект подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                    <!-- </div> -->
+                  </div>
+                  <div class="arrows"> 
+                    <ul>
+                        <li class="sale-prev"></li>
+                        <li class="sale-next"></li> 
+                    </ul>
+                  </div>
+                 </div>
+
+                 <div class="new-slide-wrap slide-section">
+                  <div class="slide-title flex">
+                    <h2>Новинки</h2>
+                    <div class="all-prod-button">
+                      <a href="#">Все новинки</a>
+                    </div>
+                   </div>
+                  <div class="new-prod-sliders">
+                    
+                        <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект gkigh ltrhghegh kleh gkherkghekhgkleh rklghe hghegrkherjgh из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                  
+                        <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+              
+                        <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                  
+                        <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                
+                        <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+              
+                        <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                       </div>
+                    
+                  </div>
+                  <div class="arrows"> 
+                    <ul>
+                        <li class="new-prev"></li>
+                        <li class="new-next"></li> 
+                    </ul>
+                  </div>
+                 </div>
+
+                 <div class="hot-slide-wrap slide-section">
+                  <div class="slide-title flex">
+                    <h2>Товар недели</h2>
+                    <div class="all-prod-button">
+                      <a href="#">Все товары недели</a>
+                    </div>
+                   </div>
+                  <div class="hot-prod-sliders">
+                    
+                       <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                     </div>
+                
+                      <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                     </div>
+            
+                      <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                     </div>
+                
+                      <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                     </div>
+              
+                      <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                     </div>
+            
+                      <div class="card-product mcol-xs-6 mcol-xsm-4 mcol-sm-3 mcol-md-20">
+                           <div class=" border-produckt-block">
+                             <div class="img-card">
+                                 <img src="./img/test.jpg" class="card-img-top" alt="...">
+                             </div>
+                            <div class="card-body">
+                              <div class="card-text">Бокс подарочный комплект из 12шт.</div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                              <div class="list-group-item">
+                                  <p class="info-item">Наличие</p>
+                                  <p class="info-item-price">34 <span>шт.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item"> Опт</p>
+                                  <p class="info-item-price">135<span>грн.</span></p>
+                              </div>
+                              <div class="list-group-item">
+                                  <p class="info-item">Дроп</p>
+                                  <p class="info-item-price">457<span>грн.</span></p>
+                              </div>
+                            </div>
+                           </div> 
+                           <a class="link-product-item" href="./productItem.html"></a>
+                           <button class="btn btn-primary btn-basket modal-custom-open-btn">В корзину</button>
+                     </div>
+                    
+                  </div>
+                  <div class="arrows"> 
+                    <ul>
+                        <li class="hot-prev"></li>
+                        <li class="hot-next"></li> 
+                    </ul>
+                  </div>
+                 </div>
+
+               </div>
+            </div>
+
+
+
+
+
+
+
+            <!-- <div class="company-info">
+              <div class="flex  window-block">
+              
+                    <div class="window-item ">
+                      <div class="text-window"> 
+                        <div class="title-window">Оплата</div>
+                        <p class="text-window_p"> Some quick example text to build on 
+                          the card title and make up the bulk of the card's content. </p>
+                       </div>
+                    </div>
+                    <div class="window-item ">
+                      <div class="text-window"> 
+                        <div class="title-window">Контакты</div>
+                        <p class="text-window_p"> Some quick example text to build on 
+                          the card title and make up the bulk of the card's content. </p>
+                       </div>
+                    </div>
+         
+                    <div class="window-item ">
+                      <div class="text-window">
+                        <div class="title-window">Доставка</div>
+                        <p class="text-window_p"> Some quick example text to build on 
+                          the card title and make up the bulk of the card's content. </p>
+                      </div>
+                    </div>
+                    <div class="window-item ">
+                      <div class="text-window">
+                        <div class="title-window">График работы</div>
+                        <p class="text-window_p"> Some quick example text to build on 
+                          the card title and make up the bulk of the card's content. </p>
+                      </div>
+                    </div>
+             
+            </div>
+            </div> -->
+            @@include('templateHtml/feedback.html')   
+        </div>
+
+
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    <!-- @@include('templateHtml/footer.html') -->
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

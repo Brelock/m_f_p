@@ -1,0 +1,140 @@
+.mainFooter {
+	padding-top: 10px;
+	
+	text-align: center;
+	min-height: 100px;
+	// background: linear-gradient(90deg,#252226,#484448 47.01%,#262428);
+	color: $footerFontColor;
+}
+
+.footer-containers {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 32px;
+	
+	@media (min-width: $xlLayout) {
+		flex-direction: row;
+		padding-top: 52px;
+	}
+}
+
+.footer-container {
+	padding: 23px 20px 30px 17px;
+	border: 0.5px solid #FFFFFF;
+
+	text-align: left;
+
+	@media (min-width: $xlLayout) {
+		padding-top: 39px;
+		padding-bottom: 42px;
+		width: 33.3333%;
+	}
+
+	.title-common + * {
+		margin-top: 15px;
+
+		@media (min-width: $xlLayout) {
+			margin-top: 39px;
+		}
+	}
+}
+
+.footer-container + .footer-container {
+	border-top: 0;
+
+	@media (min-width: $xlLayout) {
+		border-top: 0.5px solid #FFFFFF;
+		border-left: 0;
+	}
+}
+
+.footer-contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border-top-left-radius: $br_mobile;
+	border-top-right-radius: $br_mobile;
+	.button {
+		margin-top: 20px;
+	}
+	@media (min-width: $collapseBefore) {
+		border-top-left-radius: $br_desktop;
+		border-bottom-left-radius: $br_desktop;
+
+		border-top-right-radius: inherit;
+	}
+}
+
+.footer-news__date {
+	display: block;
+
+	color: #A5A5A5;
+}
+
+.form-footer-mail {
+	margin-top: 18px;
+}
+
+.footer-news {
+	display: flex;
+	flex-direction: column;
+	border-bottom-left-radius: $br_mobile;
+	border-bottom-right-radius: $br_mobile;
+	.button {
+		display: flex;
+		width: 100%;
+		margin: 20px 0;
+		
+		justify-content: center;
+		
+		@media (min-width: $xlLayout) {
+			margin-top: auto;
+			margin-bottom: 0;
+		}
+	}
+	.footer-partners-icon{
+		display: flex;
+    align-items: center;
+    justify-content: center;
+		img{
+			height: auto;
+			max-width: 300px;
+			min-width: 250px;
+			width: 100%;
+		}
+	}
+	@media (min-width: $collapseBefore) {
+		border-top-right-radius: $br_desktop;
+		border-bottom-right-radius: $br_desktop;
+		border-bottom-left-radius: inherit;
+
+	}
+}
+
+.bottom-footer {
+	display: flex;
+	justify-content: space-between;
+
+	padding-bottom: 17px;
+	margin-top: 15px;
+}
+
+.developers {
+	display: flex;
+	align-items: center;
+	
+	white-space: nowrap;
+
+	@media screen and (min-width: $xlLayout)  {
+		margin-left: 50px;
+	}
+
+	.icomoon {
+		margin-left: 8px;
+		font-size: 22px;
+	}
+}
+
+.mainFooter-descr {
+	line-height: 22px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html')
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="searchResultsPage" class="searchResultsPage page">
+
+        <section class="pageSection white-bg">
+          <div class="mcontainer">
+
+            <div class="sectionBlock">
+              <div class="sectionHeader">
+                <!-- <h1 class="title article-title">Результаты поиска:</h1> -->
+                <div class="contentContainer searchFormContainer">
+                  <form  action="/searchResultsPage.html" class="searchBlock ">
+                    <input type="text" class="title" placeholder="Введите слово для поиска ..." value="Кредит">
+                    <div class="borderBlock"></div>
+                    <button type="submit" class="js_hide"></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="sectionBlock">
+              <ul class="results-list">
+                <li>
+                  <div class="description">
+                    <p class="description-title title"><a href="#" class="underline">Які види техніки приймає заставне установа «Капітал»?</a></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus explicabo sunt quod molestias fuga, tempora incidunt dicta, in a sapiente! Architecto, nulla.</p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="description">
+                    <p class="description-title title"><a href="#" class="underline">Які види техніки приймає заставне установа «Капітал»?</a></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus explicabo sunt quod molestias fuga, tempora incidunt dicta, in a sapiente! Architecto, nulla.</p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="description">
+                    <p class="description-title title"><a href="#" class="underline">Які види техніки приймає заставне установа «Капітал»?</a></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus explicabo sunt quod molestias fuga, tempora incidunt dicta, in a sapiente! Architecto, nulla.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+        </section>
+
+   
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <div class="mcontainer relative scrollTopContainer">
+        <div id="scrollTopButton" class="icomoon standard-arrow-icon navigateIcon up"></div>
+      </div>
+
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

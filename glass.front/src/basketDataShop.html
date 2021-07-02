@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- @@include('templateHtml/preloader.html') -->  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="bascketPage" class="basketPage page">
+        <div class="basket-wrap">
+          <div class="mcontainer">
+            <div class="basket-contant basket-data-title">
+                <div class="basket__title">Оформление заказа</div>
+            </div>
+            <div class="back-basket-data-title">
+                <a href="./basket.html" class="basket__breadcramps">Вернутся в корзину</a>
+            </div>
+            <div class="shop-data-wraper flex">
+                <div class="shop-data__minor">
+                    <div class="shop-data__minor-wrap">
+                        <div class="shop-data__minor-title">Ваш заказ</div>
+                        <div class="flex shop-data__minor-item">
+                            <img class="shop-data__minor-item-img" src="./img/vari1.jpg" alt="">
+                            <div class="shop-data__minor-item-name"> Солнцезащитные очки <br><span>379 грн х 1</span></div> 
+                            <div class="shop-data__minor-price">379 грн</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-data__forms">
+
+                    <div class="shop-data__forms-titles flex">
+                        <div class="one-form__title before-title__active">Оформление заказа</div>
+                        <div class="two-form__title">Быстрый заказ</div>
+                    </div>
+                    
+                    <div class="section-forms">
+                        <form action="#" class="item-form__one form-actived">
+                            <label for="#" class="label-form">
+                                <span>Фамилия Имя</span>
+                                <input type="text">
+                            </label>
+                            <label for="#" class="label-form">
+                                <span>Телефон</span>
+                                <input type="text">
+                            </label>
+                            <label for="#" class="label-form">
+                                <span>Почта</span>
+                                <input type="email">
+                            </label>
+                            <div class="label-form border-top">
+                                <span>Перевозчик</span>
+                                <select name="#" id="2">
+                                    <option value="1">Выберите перевозчика</option>
+                                    <option value="2">Новая Почта</option>
+                                    <option value="3">Justin</option>
+                                </select>
+                            </div>
+                            <div class="label-form">
+                                <span>Город</span>
+                                <select name="#" id="3">
+                                    <option value="1">Выберите город</option>
+                                    <option value="2">Одесса</option>
+                                    <option value="3">Киев</option>
+                                    <option value="4">Львов</option>
+                                </select>
+                            </div>
+                            <div class="label-form">
+                                <span>Отделение</span>
+                                <select name="#" id="4">
+                                    <option value="1">Выберите отделение</option>
+                                    <option value="2">1</option>
+                                    <option value="3">2</option>
+                                    <option value="4">3</option>
+                                </select>
+                            </div>
+                            <div class="label-form border-t-b">
+                                <span>Оплата</span>
+                                <select name="#" id="5">
+                                    <option value="1">Не выбрано</option>
+                                    <option value="2">Наложенный платеж</option>
+                                    <option value="2">Оплата на карту</option>
+                                </select>
+                            </div>
+                            <div class="ordering-paragrah__btn label-form flex">
+                                <button class="button-shops">Оформление заказа</button>
+                                <span class="btn-shop-text">Подтверждение заказа, я принимаю условия пользовательского соглашения</span>
+                            </div>
+                        </form>
+
+                        <form action="#" class="item-form__two">
+                            <label for="#" class="label-form">
+                                <span>Фамилия Имя</span>
+                                <input type="text">
+                            </label>
+                            <label for="#" class="label-form">
+                                <span>Телефон</span>
+                                <input type="text">
+                            </label>
+                            <div class="ordering-paragrah__btn label-form flex">
+                                <button class="button-shops">Оформление заказа</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+           
+            
+            
+          </div>
+        </div>
+    
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

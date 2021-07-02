@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  @@include('templateHtml/preloader.html')  
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="homePage" class="homePage page">
+      
+        <div class="first-view">
+
+          <div class="background-slider">
+            <div class="background-slider__item">
+              <img src="/img/back1.jpg" alt="">
+            </div>
+            <div class="background-slider__item">
+              <img src="/img/back2.jpg" alt="">
+            </div>
+            <div class="background-slider__item">
+              <img src="/img/back1.jpg" alt="">
+            </div>
+            <div class="background-slider__item">
+              <img src="/img/back2.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="categories-nav-wrapper">
+            <div class="mcontainer">
+              <div class="categories-nav">
+
+                <ul class="categories initMobileSlickSlide">
+                  <li class="categories__item">
+                    <div class="categories__item-wrap">
+                      <div class="categories__item-content">
+                        <img class="categories__item-img" src="/img/icons/telephone-colored.png" alt="">
+                        <p class="categories-title">Смартфоны</p>
+                      </div>
+                      <a href="products-categories.html" class="absolute-link"></a>
+                    </div>
+                    <!-- <div class="categories-submenu-wrapper">
+                      <ul class="submenu">
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 1111 Смартфон 1111 Смартфон 1111</a></li>
+                            <li><a href="#">Смартфон 2 Смартфон 2 Смартфон 2</a></li>
+                            <li><a href="#">Телефон 3</a></li>
+                            <li><a href="#">Смартфон 4</a></li>
+                            <li><a href="#">Смартфон 5</a></li>
+                            <li><a href="#">Телефон 6</a></li>
+                            <li><a href="#">Смартфон 7</a></li>
+                            <li><a href="#">Смартфон 8</a></li>
+                            <li><a href="#">Телефон 9</a></li>
+                            <li><a href="#">Смартфон 10</a></li>
+                            <li><a href="#">Смартфон 11</a></li>
+                            <li><a href="#">Телефон 12</a></li>
+                            <li><a href="#">Телефон 12</a></li>
+                            <li><a href="#">Телефон 12</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Телефон 3</a></li>
+                            <li><a href="#">Смартфон 4</a></li>
+                            <li><a href="#">Смартфон 5</a></li>
+                            <li><a href="#">Телефон 6</a></li>
+                            <li><a href="#">Смартфон 7</a></li>
+                            <li><a href="#">Смартфон 8</a></li>
+                            <li><a href="#">Телефон 9</a></li>
+                            <li><a href="#">Смартфон 10</a></li>
+                            <li><a href="#">Смартфон 11</a></li>
+                            <li><a href="#">Телефон 12</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div> -->
+                  </li>
+
+                  <li class="categories__item">
+                    <div class="categories__item-wrap">
+
+                      <div class="categories__item-content">
+                        <img class="categories__item-img" src="/img/icons/laptop-colored.png" alt="">
+                        <p class="categories-title">Ноутбуки</p>
+                      </div>
+                      <a href="products-categories.html" class="absolute-link"></a>
+                    </div>
+                    <!-- <div class="categories-submenu-wrapper">
+                      <ul class="submenu">
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Телефон 3</a></li>
+                            <li><a href="#">Смартфон 4</a></li>
+                            <li><a href="#">Смартфон 5</a></li>
+                            <li><a href="#">Телефон 6</a></li>
+                            <li><a href="#">Смартфон 7</a></li>
+                            <li><a href="#">Смартфон 8</a></li>
+                            <li><a href="#">Телефон 9</a></li>
+                            <li><a href="#">Смартфон 10</a></li>
+                            <li><a href="#">Смартфон 11</a></li>
+                            <li><a href="#">Телефон 12</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Телефон 3</a></li>
+                            <li><a href="#">Смартфон 4</a></li>
+                            <li><a href="#">Смартфон 5</a></li>
+                            <li><a href="#">Телефон 6</a></li>
+                            <li><a href="#">Смартфон 7</a></li>
+                            <li><a href="#">Смартфон 8</a></li>
+                            <li><a href="#">Телефон 9</a></li>
+                            <li><a href="#">Смартфон 10</a></li>
+                            <li><a href="#">Смартфон 11</a></li>
+                            <li><a href="#">Телефон 12</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div> -->
+                  </li>
+
+                  <li class="categories__item">
+                    <div class="categories__item-wrap">
+                      <div class="categories__item-content">
+                        <img class="categories__item-img" src="/img/icons/TV-colored.png" alt="">
+                        <p class="categories-title">ТВ, фото</p>
+                      </div>
+                      <a href="products-categories.html" class="absolute-link"></a>
+                    </div>
+                  </li>
+
+                  <li class="categories__item">
+                    <div class="categories__item-wrap">
+                      <div class="categories__item-content">
+                        <img class="categories__item-img" src="/img/icons/stove-colored.png" alt="">
+                        <p class="categories-title">Бытовая техника</p>
+                      </div>
+                      <a href="products-categories.html" class="absolute-link"></a>
+                    </div>
+                    <!-- <div class="categories-submenu-wrapper">
+                      <ul class="submenu">
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Телефон 3</a></li>
+                            <li><a href="#">Смартфон 4</a></li>
+                            <li><a href="#">Смартфон 5</a></li>
+                            <li><a href="#">Телефон 6</a></li>
+                            <li><a href="#">Смартфон 7</a></li>
+                            <li><a href="#">Смартфон 8</a></li>
+                            <li><a href="#">Телефон 9</a></li>
+                            <li><a href="#">Смартфон 10</a></li>
+                            <li><a href="#">Смартфон 11</a></li>
+                            <li><a href="#">Телефон 12</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Телефон 3</a></li>
+                            <li><a href="#">Смартфон 4</a></li>
+                            <li><a href="#">Смартфон 5</a></li>
+                            <li><a href="#">Телефон 6</a></li>
+                            <li><a href="#">Смартфон 7</a></li>
+                            <li><a href="#">Смартфон 8</a></li>
+                            <li><a href="#">Телефон 9</a></li>
+                            <li><a href="#">Смартфон 10</a></li>
+                            <li><a href="#">Смартфон 11</a></li>
+                            <li><a href="#">Телефон 12</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div> -->
+                  </li>
+
+                  <li class="categories__item">
+                    <div class="categories__item-wrap">
+                      <div class="categories__item-content">
+                        <img class="categories__item-img" src="/img/icons/headphones-colored.png" alt="">
+                        <p class="categories-title">Аксесуары и переферия</p>
+                      </div>
+                      <a href="products-categories.html" class="absolute-link"></a>
+                    </div>
+                  </li>
+
+                  <li class="categories__item">
+                    <div class="categories__item-wrap">
+                      <div class="categories__item-content">
+                        <img class="categories__item-img" src="/img/icons/drill-colored.png" alt="">
+                        <p class="categories-title">Инструмент и оборудование</p>
+                      </div>
+                      <a href="products-categories.html" class="absolute-link"></a>
+                    </div>
+                  </li>
+                  <li class="categories__item">
+                    <div class="categories__item-wrap">
+                      <div class="categories__item-content">
+                        <img class="categories__item-img" src="/img/icons/drill-colored.png" alt="">
+                        <p class="categories-title">Инструмент и оборудование</p>
+                      </div>
+                      <a href="products-categories.html" class="absolute-link"></a>
+                    </div>
+                  </li>
+                  <li class="categories__item">
+                    <div class="categories__item-wrap">
+                      <div class="categories__item-content">
+                        <img class="categories__item-img" src="/img/icons/drill-colored.png" alt="">
+                        <p class="categories-title">Инструмент и оборудование</p>
+                      </div>
+                      <a href="products-categories.html" class="absolute-link"></a>
+                    </div>
+                  </li>
+
+                </ul>
+
+                <!-- <div class="search">
+                  <div class="pageOverlay searchOverlay"></div>
+                  <form action="#" class="search-form chosen-wrapper">
+                    <div class="block-with-icon">
+                      <i class="icomoon icon-search"></i>
+                      <input name="itemName" type="text" placeholder="Поиск товаров">
+                      <div class="spinner spinner--search spinner--search-js"></div>
+                      <button type="button" class="button-close button-close--in-input"></button>
+                    </div>
+                    <select class="search-form__select md-show" name="categories">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                    <button class="button button--mob-small">найти</button>
+                  </form>
+                </div> -->
+
+                <!-- <div class="switchBlock mobile cb-show-mob">
+                  <div class="mcontainer">
+                    <div class="customSwitcher">
+                      <label for="daySwitchMob" class="label-text">Ніч</label> 
+                      <label class="switch">
+                        <input id="daySwitchMob" type="checkbox"> 
+                        <span class="slider round"></span>
+                      </label> 
+                      <label for="daySwitchMob" class="label-text">День</label>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- <ul class="categories"> -->
+                  <!-- <li class="categories__item">
+                    <div class="categories__item-wrap">
+
+                      <div class="categories__item-content">
+                        <img class="categories__item-img" src="/img/icons/bike-colored.png" alt="">
+                        <p class="categories-title">Спорт, отдых, автотовары</p>
+                      </div>
+                      <a href="products-categories.html" class="absolute-link"></a>
+                    </div>
+
+                     <div class="categories-submenu-wrapper">
+                      <ul class="submenu">
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Телефон 3</a></li>
+                            <li><a href="#">Смартфон 4</a></li>
+                            <li><a href="#">Смартфон 5</a></li>
+                            <li><a href="#">Телефон 6</a></li>
+                            <li><a href="#">Смартфон 7</a></li>
+                            <li><a href="#">Смартфон 8</a></li>
+                            <li><a href="#">Телефон 9</a></li>
+                            <li><a href="#">Смартфон 10</a></li>
+                            <li><a href="#">Смартфон 11</a></li>
+                            <li><a href="#">Телефон 12</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Телефон 3</a></li>
+                            <li><a href="#">Смартфон 4</a></li>
+                            <li><a href="#">Смартфон 5</a></li>
+                            <li><a href="#">Телефон 6</a></li>
+                            <li><a href="#">Смартфон 7</a></li>
+                            <li><a href="#">Смартфон 8</a></li>
+                            <li><a href="#">Телефон 9</a></li>
+                            <li><a href="#">Смартфон 10</a></li>
+                            <li><a href="#">Смартфон 11</a></li>
+                            <li><a href="#">Телефон 12</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div> 
+                  </li> -->
+
+                  <!-- <li class="categories__item">
+                    <div class="categories__item-wrap">
+                      <div class="categories__item-content">
+                        <img class="categories__item-img" src="/img/icons/new-sticker-colored.png" alt="">
+                        <p class="categories-title">Техника без следов эксплуатации</p>
+                      </div>
+                      <a href="products-categories.html" class="absolute-link"></a>
+                    </div>
+
+                   <div class="categories-submenu-wrapper">
+                      <ul class="submenu">
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Телефон 3</a></li>
+                            <li><a href="#">Смартфон 4</a></li>
+                            <li><a href="#">Смартфон 5</a></li>
+                            <li><a href="#">Телефон 6</a></li>
+                            <li><a href="#">Смартфон 7</a></li>
+                            <li><a href="#">Смартфон 8</a></li>
+                            <li><a href="#">Телефон 9</a></li>
+                            <li><a href="#">Смартфон 10</a></li>
+                            <li><a href="#">Смартфон 11</a></li>
+                            <li><a href="#">Телефон 12</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Телефон 3</a></li>
+                            <li><a href="#">Смартфон 4</a></li>
+                            <li><a href="#">Смартфон 5</a></li>
+                            <li><a href="#">Телефон 6</a></li>
+                            <li><a href="#">Смартфон 7</a></li>
+                            <li><a href="#">Смартфон 8</a></li>
+                            <li><a href="#">Телефон 9</a></li>
+                            <li><a href="#">Смартфон 10</a></li>
+                            <li><a href="#">Смартфон 11</a></li>
+                            <li><a href="#">Телефон 12</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div> 
+                  </li> -->
+
+                  <!-- <li class="categories__item">
+                    <div class="categories__item-wrap">
+                      <div class="categories__item-content">
+                        <img class="categories__item-img" src="/img/icons/watch-colored.png" alt="">
+                        <p class="categories-title">Часы</p>
+                      </div>
+                      <a href="products-categories.html" class="absolute-link"></a>
+                    </div>
+                  </li> -->
+
+                  <!-- <li class="categories__item">
+                    <div class="categories__item-wrap">
+                      <div class="categories__item-content">
+                        <img class="categories__item-img" src="/img/icons/microscope-colored.png" alt="">
+                        <p class="categories-title">Медицинское оборудование</p>
+                      </div>
+                      <a href="products-categories.html" class="absolute-link"></a>
+                    </div>
+                     <div class="categories-submenu-wrapper">
+                      <ul class="submenu">
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Телефон 3</a></li>
+                            <li><a href="#">Смартфон 4</a></li>
+                            <li><a href="#">Смартфон 5</a></li>
+                            <li><a href="#">Телефон 6</a></li>
+                            <li><a href="#">Смартфон 7</a></li>
+                            <li><a href="#">Смартфон 8</a></li>
+                            <li><a href="#">Телефон 9</a></li>
+                            <li><a href="#">Смартфон 10</a></li>
+                            <li><a href="#">Смартфон 11</a></li>
+                            <li><a href="#">Телефон 12</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Смартфон 3</a></li>
+                            <li><a href="#">Телефон 1</a></li>
+                          </ul>
+                        </li>
+                        <li class="prod-category">
+                          <div class="catalog-subtitle bold"><a href="#">Фото-Видео техника</a></div>
+                          <ul class="prod-list">
+                            <li><a href="#">Смартфон 1</a></li>
+                            <li><a href="#">Смартфон 2</a></li>
+                            <li><a href="#">Телефон 3</a></li>
+                            <li><a href="#">Смартфон 4</a></li>
+                            <li><a href="#">Смартфон 5</a></li>
+                            <li><a href="#">Телефон 6</a></li>
+                            <li><a href="#">Смартфон 7</a></li>
+                            <li><a href="#">Смартфон 8</a></li>
+                            <li><a href="#">Телефон 9</a></li>
+                            <li><a href="#">Смартфон 10</a></li>
+                            <li><a href="#">Смартфон 11</a></li>
+                            <li><a href="#">Телефон 12</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div> 
+                  </li> -->
+
+                  <!-- <li class="categories__item">
+                    <div class="categories__item-wrap">
+                      <div class="categories__item-content">
+                        <img class="categories__item-img" src="/img/icons/plus-colored.png" alt="">
+                        <p class="categories-title green">Новинки</p>
+                      </div>
+                      <a href="products-categories.html" class="absolute-link"></a>
+                    </div>
+                  </li> -->
+
+                  <!-- <li class="categories__item">
+                    <div class="categories__item-wrap">
+                      <div class="categories__item-content">
+                        <img class="categories__item-img" src="/img/icons/percentage-colored.png" alt="">
+                        <p class="categories-title red">Скидки</p>
+                      </div>
+                      <a href="products-categories.html" class="absolute-link"></a>
+                    </div>
+                  </li> -->
+
+                <!-- </ul> -->
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pageSection slider-banner-wrapper">
+          <div class="mcontainer">
+            <div class="slider-banner">
+              <!-- <div class="slider-banner__item">
+                <img src="img/slider-banner_1.jpg" alt="">
+              </div>
+              <div class="slider-banner__item">
+                <img src="img/slider-banner_2.jpg" alt="">
+              </div>
+              <div class="slider-banner__item">
+                <img src="img/slider-banner_3.jpg" alt="">
+              </div>
+              <div class="slider-banner__item">
+                <img src="img/slider-banner_4.jpg" alt="">
+              </div> -->
+              <picture>
+                <source srcset="img/slider-banner_1.jpg" media="(min-width: 600px)">
+                <img src="img/slider-banner_2.jpg" alt="MDN">
+              </picture>
+              <picture>
+                <source srcset="img/slider-banner_1.jpg" media="(min-width: 600px)">
+                <img src="img/slider-banner_3.jpg" alt="MDN">
+              </picture>
+              <picture>
+                <source srcset="img/slider-banner_1.jpg" media="(min-width: 600px)">
+                <img src="img/slider-banner_4.jpg" alt="MDN">
+              </picture>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="pageSection">
+          <div class="mcontainer">
+            <div class="pageSection-title-wrap">
+              <h2 class="pageSection-title">
+                <a href="#">Новые поступления</a>
+                <div class="pageSection-arrows"></div>
+              </h2>
+            </div>
+            <div class="wrap-slider-pageSection">
+              <div class="slider-pageSection">
+                @@include('templateHtml/product-card-1.html')
+                @@include('templateHtml/product-card-2.html')
+                @@include('templateHtml/product-card-1.html')
+                @@include('templateHtml/product-card-2.html')
+                @@include('templateHtml/product-card-1.html')
+              </div>
+              <div class="slider-pageSection__item link-products product-card">
+                <div class="icon-link-product">
+                  <span class="icon-link-product_title"> К разделу </span>
+                  <div class="animate-link-product">
+                    <span class="anim_one"></span>
+                    <span class="anim_two"></span>
+                    <span class="anim_three"></span>
+                  </div>
+                </div>
+                <div class="bg_overlay"></div>
+                <a href="#"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pageSection">
+          <div class="mcontainer">
+            <div class="pageSection-title-wrap">
+              <h2 class="pageSection-title">
+                Акционные товары
+                <div class="pageSection-arrows"></div>
+              </h2>
+            </div>
+            <div class="wrap-slider-pageSection">
+              <div class="slider-pageSection">
+                @@include('templateHtml/product-card-stock-1.html')
+                @@include('templateHtml/product-card-stock-2.html')
+                @@include('templateHtml/product-card-stock-1.html')
+                @@include('templateHtml/product-card-stock-2.html')
+                @@include('templateHtml/product-card-stock-1.html')
+
+              </div>
+              <div class="slider-pageSection__item link-products product-card">
+                <div class="icon-link-product">
+                  <span class="icon-link-product_title"> К разделу </span>
+                  <div class="animate-link-product">
+                    <span class="anim_one"></span>
+                    <span class="anim_two"></span>
+                    <span class="anim_three"></span>
+                  </div>
+                </div>
+                <div class="bg_overlay"></div>
+                <a href="#"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pageSection stock_section">
+          <div class="mcontainer">
+            <div class="pageSection-title-wrap">
+              <h2 class="pageSection-title">
+                Акции
+                <div class="pageSection-arrows stock_arrow_el"></div>
+              </h2>
+            </div>
+
+            <div class="stock-slider-pageSection stocks">
+              <article class="slider-pageSection__item-stock stock-card">
+                <time class="stock-card__date">
+                  <span class="stock-card__date-main">11 февраля</span>
+                  <span class="stock-card__date-second">с 19.05.20 по 10.06.20</span>
+                </time>
+                <div class="stock-card__img-wrap">
+                  <a href="/stocksInner.html">
+                    <img class="stock-card__img" src="/img/news4.jpg" alt="">
+                  </a>
+                </div>
+                <div class="stock-card__descr">
+                  <a href="#">
+                    До дня Валентина "подвiйнi" знижки -28%
+                  </a>
+                </div>
+              </article>
+
+              <article class="slider-pageSection__item-stock stock-card">
+                <time class="stock-card__date">
+                  <span class="stock-card__date-main">27 декабря</span>
+                  <span class="stock-card__date-second">четверг, 12:00</span>
+                </time>
+                <div class="stock-card__img-wrap">
+                  <a href="/stocksInner.html">
+                    <img class="stock-card__img" src="/img/news1.jpg" alt="">
+                  </a>
+                </div>
+                <div class="stock-card__descr">
+                  <a href="#">
+                    о-ХРЮ-ненний РОЗПРОДАЖ
+                  </a>
+                </div>
+              </article>
+
+              <article class="slider-pageSection__item-stock stock-card">
+                <time class="stock-card__date">
+                  <span class="stock-card__date-main">18 декабря</span>
+                  <span class="stock-card__date-second">вторник, 13:00</span>
+                </time>
+                <div class="stock-card__img-wrap">
+                  <a href="/stocksInner.html">
+                    <img class="stock-card__img" src="/img/news3.jpg" alt="">
+                  </a>
+                </div>
+                <div class="stock-card__descr">
+                  <a href="#">
+                    Успей купить в Техносок со скидкой
+                  </a>
+                </div>
+              </article>
+
+              <article class="slider-pageSection__item-stock stock-card">
+                <time class="stock-card__date">
+                  <span class="stock-card__date-main">24 октября</span>
+                  <span class="stock-card__date-second">среда, 15:00</span>
+                </time>
+                <div class="stock-card__img-wrap">
+                  <a href="/stocksInner.html">
+                    <img class="stock-card__img" src="/img/news4.jpg" alt="">
+                  </a>
+                </div>
+                <div class="stock-card__descr">
+                  <a href="#">
+                    СКИДКИ К ХЭЛЛУИНУ до 30%
+                  </a>
+                </div>
+              </article>
+
+              <article class="slider-pageSection__item-stock stock-card">
+                <time class="stock-card__date">
+                  <span class="stock-card__date-main">11 Февраля</span>
+                  <span class="stock-card__date-second">четверг, 15:00</span>
+                </time>
+                <div class="stock-card__img-wrap">
+                  <a href="#">
+                    <img class="stock-card__img" src="/img/news4.jpg" alt="">
+                  </a>
+                </div>
+                <div class="stock-card__descr">
+                  <a href="#">
+                    До дня Валентина "подвiйнi" знижки -28%
+                  </a>
+                </div>
+              </article>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- <div class="pageSection">
+          <div class="pageSection-title-wrap">
+            <div class="mcontainer">
+              <h2 class="pageSection-title">
+                Бренды
+                <div class="pageSection-arrows"></div>
+              </h2>
+            </div>
+          </div>
+          <div class="slider-brands">
+            <article class="slider-brands__item">
+              <a href="#" class="slider-brands__link">
+                <img src="/img/zanussi_logo.png" alt="" class="slider-brands__img">
+              </a>
+            </article>
+            <article class="slider-brands__item">
+              <a href="#" class="slider-brands__link">
+                <img src="/img/kenwood_logo.png" alt="" class="slider-brands__img">
+              </a>
+            </article>
+            <article class="slider-brands__item">
+              <a href="#" class="slider-brands__link">
+                <img src="/img/sony_logo.png" alt="" class="slider-brands__img">
+              </a>
+            </article>
+            <article class="slider-brands__item">
+              <a href="#" class="slider-brands__link">
+                <img src="/img/samsung_logo.png" alt="" class="slider-brands__img">
+              </a>
+            </article>
+            <article class="slider-brands__item">
+              <a href="#" class="slider-brands__link">
+                <img src="/img/apple.png" alt="" class="slider-brands__img">
+              </a>
+            </article>
+            <article class="slider-brands__item">
+              <a href="#" class="slider-brands__link">
+                <img src="/img/beko_logo.png" alt="" class="slider-brands__img">
+              </a>
+            </article>
+            <article class="slider-brands__item">
+              <a href="#" class="slider-brands__link">
+                <img src="/img/moulinex_logo.png" alt="" class="slider-brands__img">
+              </a>
+            </article>
+            <article class="slider-brands__item">
+              <a href="#" class="slider-brands__link">
+                <img src="/img/philips_logo.png" alt="" class="slider-brands__img">
+              </a>
+            </article>
+            <article class="slider-brands__item">
+              <a href="#" class="slider-brands__link">
+                <img src="/img/lg_logo.png" alt="" class="slider-brands__img">
+              </a>
+            </article>
+            <article class="slider-brands__item">
+              <a href="#" class="slider-brands__link">
+                <img src="/img/chicco_logo.png" alt="" class="slider-brands__img">
+              </a>
+            </article>
+          </div>
+        </div> -->
+        
+        @@include('templateHtml/bid.html')
+
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <!-- @@include('templateHtml/scrollToTopButton.html') -->
+    </div>
+    <!--  -->
+    @@include('templateHtml/modal.html')
+    @@include('templateHtml/contacts.html')
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

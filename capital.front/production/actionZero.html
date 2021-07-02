@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Microsoft Tiles -->
+<meta name="msapplication-config" content="browserconfig.xml">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- libs -->
+<link rel="stylesheet" href="css/slick.min.css">
+<link rel="stylesheet" href="css/chosen.min.css">
+<link rel="stylesheet" href="css/bootstrap-datepicker3.min.css">
+
+<link rel="stylesheet" href="css/custom.min.css">
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"> -->
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.9/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" /> -->
+
+<!-- Font Awesome -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Exo+2:600,700&amp;subset=cyrillic" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.min.css">
+
+  <!--  -->
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      <header class="mainHeader">
+
+	<!-- <form id="searchBlock" action="/" class="searchBlock ">
+		<input type="text" class="" placeholder="поиск ...">
+		<button type="submit" class="hide"></button>
+	</form> -->
+	
+	<section class="top-section">
+		<div class="mcontainer">
+			
+			<div class="content-wrapper flex wrap">
+				<div class="section-element mcol-xs-hide mcol-md-show mcol-md-auto">
+					<a href="/faqPage.html" class="faq">Часто задаваемые вопросы</a>
+				</div>
+
+				<div class="section-element phone mcol-md-auto">
+					<i class="icomoon icon-phone mcol-xs-hide mcol-md-show"></i>
+					<span>0 800 300 789</span>
+					<span class="text dashed">Звоните беcплатно</span>
+				</div>
+			
+				<div class="section-element buttonWrapper fluid mcol-md-auto">
+					<button id="searchButton" type="button" class="searchButton">
+						<i class="icomoon icon-search"></i>
+					</button>
+				</div>
+			
+				<div class="section-element language">
+					<i class="icomoon icon-language"></i>
+					<ul class="lang-list">
+						<li class="active"><a href="#">RU</a></li>
+						<li><a href="#">UA</a></li>
+					</ul>
+				</div>
+
+				<ul class="section-element social-media-list mcol-xs-12 mcol-md-auto backgroundMock">
+					<li><a href="#" class="icomoon icon-envelope"></a></li>
+					<li><a href="#" class="icomoon icon-viber"></a></li>
+					<li><a href="#" class="icomoon icon-inst"></a></li>
+					<li><a href="#" class="icomoon icon-facebook"></a></li>
+					<li><a href="#" class="icomoon icon-youtube"></a></li>
+				</ul>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="bottom-section">
+		<div class="mcontainer backgroundMock">
+			<div class="menuMainWrapper">
+							
+				<div class="logo-wrapper">
+					<a href="/index.html" class="icomoon icon-logo-capital"></a>
+				</div>
+
+				<div class="menuBlock relative flex center">
+					<a href="#" class="gift-button">
+						<i class="icomoon icon-present"></i>
+						<!-- <span class="action">-20%</span> -->
+					</a>
+
+					<div class="credit-block">
+						<i class="icomoon icon-calculator"></i>
+						<a  class="@@calculator desctop-tc" href="/calculatorPage.html"><span>Рассчитать</span> <span>кредит</span></a>
+						<!-- <a  class="mobile-tc" href="#"><span>Личный</span> <span>кабинет</span></a> -->
+					</div>
+
+					<nav id="navMenuWrapper" class="navMenuWrapper hiddenContent scale opacityAnimate">
+						<div id="navMenuContainer" class="navMenuContainer">
+							<div class="menu-logo">
+								<a href="/index.html" class="icomoon icon-logo-capital"></a>
+							</div>
+
+							<a href="#" class="gift-button mobile-tc">
+								<i class="icomoon icon-present"></i>
+								<span class="action">-20%</span>
+							</a>
+
+							<ul class="navMenu menu-section accordionMenu">
+								<li class="@@credits"><a href="/credits.html">Кредиты</a>
+									<i class="icomoon icon-angle accordionButton"></i>
+									<div class="submenuWrapper">
+										<ul class="submenu">
+											<li><a href="#">Кредиты 1</a></li>
+											<li class="@@special"><a href="/specialPage.html">Специальные возможности</a></li>
+											<li class="@@tariffs"><a href="/tariffsPage.html">Тарифные планы</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="@@countriesList"><a href="/departments.html">Отделения</a></li>
+								<li class="active"><a href="/actionsList.html">Акции</a></li>
+								<li class="@@clients"><a href="/clientsInfoList.html">Клиентам</a></li>
+								<li class="@@about"><a href="/aboutUs.html">О компании</a>
+									<i class="icomoon icon-angle accordionButton"></i>
+									<div class="submenuWrapper">
+										<ul class="submenu">
+											<li class="@@contacts"><a href="/aboutContacts.html">Контакты</a></li>
+											<li class="@@news"><a href="/newsList.html">Новости</a></li>
+											<li class="@@requisitesList"><a href="/aboutRequisitesList.html">Реквизиты и финотчетность</a></li>
+											<li class="@@achievements"><a href="/achievements.html">Награды компании</a></li>
+											<li class="@@partnership"><a href="/aboutPartnership.html">Сотрудничество</a></li>
+											<li class="@@vacancies"><a href="/vacanciesPage.html">Вакансии</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<!--  -->
+							<div class="menu-section oneline-chat">
+								<i class="icomoon icon-chat"></i>
+								<a href="#"><span>Онлайн чат</span></a>
+							</div>
+
+							<div class="menu-section credit-block-menu">
+								<i class="icomoon icon-calculator"></i>
+								<a class="@@calculator" href="/calculatorPage.html"><span>Расчитать кредит</span></a>
+							</div>
+
+							<div class="menu-section auth-section">
+								<a href="#" class="standardButton secondary border-decor">
+									<i class="icomoon icon-login"></i>
+									<span>Личный кабинет</span>
+								</a>
+							</div>
+
+							<div class="menu-section faq-section">
+								<a href="/faqPage.html">Часто задаваемые вопросы</a>
+							</div>
+						
+						</div>
+					</nav>
+
+					<button id="burgerButton" type="button" class="burgerButton mobileMenuButton">
+						<i class="icomoon icon-burger"></i>
+					</button>
+
+				</div>
+			</div>
+		</div>
+	</section>
+</header>
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="actionsListPage" class="actionsListPage page">
+
+        <section class="pageSection white-bg">
+          <div class="mcontainer sectionBlock">
+            <div class="sectionHeader">
+              <div class="animated-border-block section-title sectionHeaderItem">
+                <div class="svg-container">
+                  <svg class="rect-container">
+                    <rect x="0" y="0" class="animatedBlock"/>
+                    <rect x="0" y="0" stroke-width="4" class="overlappingBlock"/>                
+                  </svg>
+                  <h2 class="title">Наши акции</h2>
+                </div>
+              </div>
+
+              <ul class="breadcrumbs sectionHeaderItem">
+                <li><a href="/index.html">Главная</a></li>
+                <li class="active"><a href="#">Акции</a></li>
+              </ul>
+            </div>
+
+            <div class="sectionBlock filter-block flex wrap center">
+              <div class="formRow chosen-wrapper mcol-xs-12 mcol-sm-6">
+                <label for="1" class="title mcol-xs-12 mcol-sm-4">Показывать акции:</label>
+                <select name="test" id="1" data-placeholder="Всей Украины" class="mcol-xs-12 mcol-sm-4">
+                  <option value=""></option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+              </div>
+
+              <div class="formRow chosen-wrapper mcol-xs-12 mcol-sm-6">
+                <label for="2" class="title mcol-xs-12 mcol-sm-4">Архив акций</label>
+                <select name="test" id="2" data-placeholder="Все" class="mcol-xs-12 mcol-sm-4">
+                  <option value=""></option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+              </div>
+            </div>
+          </div>        
+
+          <div class="sectionBlock circle-decoration-block">
+            <div class="mcontainer">
+              <h1 class="section-title title">На данный момент предложения временно недоступны</h1>
+              <div class="svg-wrapper relative">
+               
+                <div class="circle-wrapper">
+                  <svg width="951px" height="951px" view-box="0 0 951 951">
+                      <defs></defs>
+                      <g id="circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="circle-inner" transform="translate(-487.000000, -265.000000)">
+                              <g id="illustration" transform="translate(488.000000, 266.000000)">
+                                  <circle id="Oval-1" fill="#D39A0A" opacity="0.0493861607" cx="473.5" cy="473.5" r="397.5"></circle>
+                                  <circle id="Oval-2" fill="#FFFFFF" cx="473.5" cy="473.5" r="309.5"></circle>
+                                  <circle id="Oval-3" stroke="#D39A0A" opacity="0.0977678571" cx="473.5" cy="473.5" r="277.5"></circle>
+                                  <circle id="Oval-4" stroke="#D39A0A" opacity="0.0974888393" cx="474.5" cy="474.5" r="474.5"></circle>
+                                  <circle id="Oval-5" stroke="#D39A0A" opacity="0.1" cx="474.5" cy="474.5" r="442.5"></circle>
+                                  <circle id="Oval-6" fill="#D39A0A" opacity="0.0492745536" cx="473" cy="473" r="181"></circle>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                </div>
+
+                <div class="number-wrapper">
+                  <svg width="247" height="319" view-box="0 0 247 319" version="1.1">
+                      <defs></defs>
+                      <g id="number" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="number-inner" transform="translate(-836.000000, -520.000000)">
+                              <g id="Group" transform="translate(958.188425, 672.741748) rotate(-349.000000) translate(-958.188425, -672.741748) translate(845.688425, 506.741748)">
+                                  <path d="M179.954957,22.0590509 C179.954957,26.2671407 179.029632,29.3956212 177.178954,31.4445864 C175.328276,33.4935516 172.794647,34.5180188 169.577992,34.5180188 C167.595123,34.5180188 165.816075,34.0828956 164.240795,33.2126362 C162.665515,32.3423768 161.437256,30.9819284 160.555981,29.1312502 C159.674705,27.2805719 159.234074,25.0223377 159.234074,22.3564798 C159.234074,19.4923349 159.575563,17.1019114 160.258552,15.1851375 C160.94154,13.2683636 162.048626,11.8142811 163.579842,10.8228463 C165.111058,9.83141157 167.066358,9.33570162 169.445801,9.33570162 C171.164288,9.33570162 172.67345,9.60008026 173.973331,10.1288455 C175.273212,10.6576107 176.37479,11.4672703 177.278097,12.5578485 C178.181404,13.6484268 178.853367,14.9758278 179.294004,16.5400916 C179.734642,18.1043553 179.954957,19.94399 179.954957,22.0590509 Z M173.775045,21.7285743 C173.775045,18.8423975 173.466603,16.743892 172.84971,15.432995 C172.232818,14.1220979 171.142256,13.4666592 169.577992,13.4666592 C168.520462,13.4666592 167.677755,13.7806088 167.049846,14.4085175 C166.421937,15.0364262 165.992322,15.9617514 165.760987,17.184521 C165.529653,18.4072905 165.413987,19.9660229 165.413987,21.8607649 C165.413987,23.8216026 165.529653,25.4188902 165.760987,26.6526757 C165.992322,27.8864611 166.416429,28.8172943 167.033322,29.445203 C167.650215,30.0731116 168.49843,30.3870613 169.577992,30.3870613 C171.208351,30.3870613 172.315437,29.6930673 172.899282,28.3050587 C173.483127,26.91705 173.775045,24.7249104 173.775045,21.7285743 Z M213.795762,45.9525093 C213.795762,50.1605991 212.870436,53.2890797 211.019758,55.3380449 C209.16908,57.38701 206.635451,58.4114773 203.418796,58.4114773 C201.413895,58.4114773 199.623831,57.9708462 198.048551,57.0895709 C196.473272,56.2082955 195.239505,54.853355 194.347213,53.0247086 C193.454922,51.1960623 193.008783,48.9378281 193.008783,46.2499383 C193.008783,41.9537209 193.829459,38.7205905 195.470834,36.5504499 C197.112209,34.3803094 199.71744,33.2952554 203.286606,33.2952554 C205.005093,33.2952554 206.508746,33.559634 207.797611,34.0883992 C209.086476,34.6171644 210.188054,35.4103004 211.102377,36.4678308 C212.0167,37.5253612 212.694171,38.8417465 213.134808,40.4170262 C213.575446,41.9923059 213.795762,43.8374485 213.795762,45.9525093 Z M207.615849,45.6220327 C207.615849,42.7799197 207.307407,40.7034458 206.690515,39.3925487 C206.073622,38.0816516 204.98306,37.4262129 203.418796,37.4262129 C202.317202,37.4262129 201.457972,37.7346547 200.841079,38.3515474 C200.224186,38.9684402 199.789063,39.8772417 199.535696,41.0779794 C199.28233,42.2787171 199.155648,43.8374495 199.155648,45.7542233 C199.155648,48.7064958 199.469598,50.865588 200.097506,52.2315648 C200.725415,53.5975416 201.832501,54.2805197 203.418796,54.2805197 C205.027124,54.2805197 206.128701,53.5810179 206.723562,52.1819933 C207.318423,50.7829687 207.615849,48.596337 207.615849,45.6220327 Z M201.997747,13.6979928 L174.469046,58.0810007 C173.764026,59.2927543 172.97089,59.898622 172.089614,59.898622 C171.582881,59.898622 171.076155,59.7058459 170.569422,59.3202879 C170.062689,58.93473 169.809326,58.4335121 169.809326,57.8166194 C169.809326,57.3539498 170.029641,56.7921452 170.470279,56.1311887 L198.164218,11.3846566 C198.64892,10.5694769 199.073027,9.95810127 199.436553,9.55051142 C199.800079,9.14292157 200.323329,8.9391297 201.006317,8.9391297 C201.667274,8.9391297 202.201539,9.13190579 202.609129,9.51746376 C203.016718,9.90302172 203.22051,10.4152553 203.22051,11.05418 C203.22051,11.5168495 202.812927,12.3981117 201.997747,13.6979928 Z" id="%1" stroke="#F2CF41" stroke-width="4" fill="#F2CF41" transform="translate(186.514918, 34.418876) rotate(13.000000) translate(-186.514918, -34.418876) "></path>
+                                  <path d="M176.24684,18.7049691 C176.24684,22.9130589 175.321515,26.0415395 173.470836,28.0905047 C171.620158,30.1394698 169.08653,31.1639371 165.869875,31.1639371 C163.887005,31.1639371 162.107957,30.7288139 160.532677,29.8585545 C158.957398,28.9882951 157.729139,27.6278467 156.847863,25.7771684 C155.966588,23.9264902 155.525957,21.668256 155.525957,19.0023981 C155.525957,16.1382532 155.867446,13.7478296 156.550434,11.8310558 C157.233423,9.91428188 158.340508,8.46019936 159.871724,7.46876459 C161.40294,6.47732983 163.35824,5.98161988 165.737684,5.98161988 C167.456171,5.98161988 168.965332,6.24599852 170.265213,6.77476373 C171.565094,7.30352894 172.666672,8.11318852 173.569979,9.20376676 C174.473287,10.294345 175.145249,11.6217461 175.585887,13.1860098 C176.026524,14.7502736 176.24684,16.5899083 176.24684,18.7049691 Z M170.066927,18.3744925 C170.066927,15.4883157 169.758486,13.3898103 169.141593,12.0789132 C168.5247,10.7680161 167.434138,10.1125774 165.869875,10.1125774 C164.812344,10.1125774 163.969637,10.4265271 163.341729,11.0544357 C162.71382,11.6823444 162.284205,12.6076697 162.05287,13.8304392 C161.821535,15.0532088 161.705869,16.6119412 161.705869,18.5066832 C161.705869,20.4675208 161.821535,22.0648084 162.05287,23.2985939 C162.284205,24.5323794 162.708312,25.4632125 163.325205,26.0911212 C163.942097,26.7190299 164.790312,27.0329795 165.869875,27.0329795 C167.500234,27.0329795 168.607319,26.3389856 169.191164,24.9509769 C169.775009,23.5629683 170.066927,21.3708287 170.066927,18.3744925 Z M210.087644,42.5984276 C210.087644,46.8065174 209.162319,49.9349979 207.311641,51.9839631 C205.460962,54.0329283 202.927334,55.0573955 199.710679,55.0573955 C197.705777,55.0573955 195.915714,54.6167645 194.340434,53.7354891 C192.765154,52.8542138 191.531387,51.4992732 190.639096,49.6706269 C189.746805,47.8419805 189.300666,45.5837463 189.300666,42.8958565 C189.300666,38.5996392 190.121341,35.3665087 191.762716,33.1963682 C193.404092,31.0262276 196.009323,29.9411736 199.578488,29.9411736 C201.296975,29.9411736 202.800629,30.2055523 204.089494,30.7343175 C205.378359,31.2630827 206.479937,32.0562186 207.39426,33.113749 C208.308583,34.1712795 208.986053,35.4876648 209.426691,37.0629444 C209.867329,38.6382241 210.087644,40.4833667 210.087644,42.5984276 Z M203.907732,42.267951 C203.907732,39.425838 203.59929,37.3493641 202.982397,36.038467 C202.365504,34.7275699 201.274942,34.0721312 199.710679,34.0721312 C198.609085,34.0721312 197.749854,34.3805729 197.132961,34.9974657 C196.516068,35.6143584 196.080945,36.52316 195.827579,37.7238977 C195.574212,38.9246353 195.447531,40.4833677 195.447531,42.4001416 C195.447531,45.352414 195.76148,47.5115062 196.389389,48.877483 C197.017298,50.2434598 198.124383,50.926438 199.710679,50.926438 C201.319006,50.926438 202.420584,50.2269362 203.015445,48.8279115 C203.610306,47.4288869 203.907732,45.2422553 203.907732,42.267951 Z M198.289629,10.343911 L170.760928,54.7269189 C170.055908,55.9386725 169.262772,56.5445402 168.381497,56.5445402 C167.874763,56.5445402 167.368038,56.3517641 166.861304,55.9662062 C166.354571,55.5806482 166.101208,55.0794304 166.101208,54.4625376 C166.101208,53.9998681 166.321524,53.4380635 166.762161,52.777107 L194.456101,8.03057482 C194.940802,7.21539512 195.36491,6.60401952 195.728436,6.19642967 C196.091962,5.78883982 196.615211,5.58504795 197.2982,5.58504795 C197.959156,5.58504795 198.493421,5.77782404 198.901011,6.16338201 C199.308601,6.54893997 199.512393,7.06117359 199.512393,7.70009822 C199.512393,8.16276777 199.104809,9.04402991 198.289629,10.343911 Z" id="%2" stroke="#19354F" stroke-width="4" fill="#19354F" transform="translate(182.806800, 31.064794) rotate(13.000000) translate(-182.806800, -31.064794) ">                   
+                                  </path>
+                                  <path d="M96.3931904,187.2848 C93.9464297,218.506397 94.2456466,240.118468 97.2681157,252.128503 C100.301948,264.134793 106.468088,270.501197 115.758961,271.208991 C125.182398,271.935511 132.303002,266.396739 137.135923,254.6114 C141.968844,242.822317 145.570809,221.697089 147.956969,191.23197 C150.350703,160.643269 150.055274,139.057413 147.070681,126.485636 C144.078512,113.90637 137.942672,107.262839 128.648012,106.547555 C119.357138,105.839761 112.270622,111.251204 107.396039,122.778142 C102.52903,134.312569 98.8551014,155.816036 96.3931904,187.2848 M223.014952,196.976714 C219.189521,245.822017 208.110922,280.97206 189.782942,302.423099 C171.451174,323.885372 145.222354,333.300161 111.100268,330.689935 C77.7432681,328.135883 53.5294269,314.350745 38.4511692,289.323285 C23.3766991,264.29957 17.6764283,228.370579 21.3427819,181.543801 C25.183363,132.443842 36.2733249,97.0765919 54.6240304,75.4345613 C72.9633733,53.7887858 99.1997689,44.2728835 133.321855,46.8831093 C166.550078,49.4221813 190.733618,63.2747286 205.861114,88.4332615 C220.992398,113.588049 226.711606,149.767952 223.014952,196.976714" id="Fill-5-Copy" fill="#19354F">
+                                    
+                                  </path>
+                                  <path d="M76.585512,185.029582 C74.1387512,216.251179 74.4379681,237.86325 77.4604373,249.873285 C80.4942691,261.879575 86.6604091,268.245979 95.9512823,268.953774 C105.37472,269.680293 112.495324,264.141521 117.328245,252.356183 C122.161165,240.567099 125.76313,219.441871 128.14929,188.976753 C130.543025,158.388051 130.247596,136.802195 127.263002,124.230418 C124.270833,111.651152 118.134994,105.007622 108.840333,104.292337 C99.5494599,103.584543 92.4629439,108.995987 87.5883602,120.522924 C82.7213516,132.057351 79.0474229,153.560819 76.585512,185.029582 M203.207274,194.721497 C199.381843,243.566799 188.303244,278.716842 169.975263,300.167881 C151.643496,321.630154 125.414675,331.044943 91.2925893,328.434717 C57.9355896,325.880665 33.7217485,312.095527 18.6434908,287.068067 C3.56902061,262.044352 -2.13125014,226.115361 1.53510341,179.288583 C5.3756845,130.188624 16.4656465,94.8213742 34.816352,73.1793437 C53.1556948,51.5335682 79.3920905,42.0176658 113.514176,44.6278917 C146.742399,47.1669636 170.92594,61.019511 186.053436,86.1780438 C201.184719,111.332832 206.903928,147.512734 203.207274,194.721497" id="Fill-5n" fill="#E60000"></path>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                </div>
+
+                <div class="coins-wrapper">
+                  
+                  <svg width="575" height="337" view-box="0 0 575 337" version="1.1" >
+                      <defs></defs>
+                      <g id="coins-main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="coins-inner" transform="translate(-692.000000, -506.000000)">
+                              <g id="coins" transform="translate(692.000000, 497.000000)">
+                                  <g id="Group1" transform="translate(494.000000, 180.000000)">
+                                      <g id="Group-1" transform="translate(0.000000, 1.000000)" fill="#D39A0A">
+                                          <path d="M2.5030625,0.110194118 L0.2211875,3.12419412 C0.2211875,3.12419412 -2.2363125,5.9939 9.2305625,15.2986059 C20.6974375,24.6026647 22.6143125,21.5051941 22.6143125,21.5051941 L24.7874375,18.6348412 L2.5030625,0.110194118 Z" id="Fill-1"></path>
+                                      </g>
+                                      <g id="Group-2" transform="translate(2.000000, 0.000000)" fill="#F2CF41">
+                                          <path d="M23.1821053,19.188129 C21.9631579,20.7765161 15.8873684,17.9913548 9.61010526,12.9661935 C3.33410526,7.94103226 -0.765473684,2.57974194 0.453473684,0.990709677 C1.67178947,-0.597677419 7.74821053,2.18812903 14.0248421,7.21329032 C20.3008421,12.2384516 24.4010526,17.5990968 23.1821053,19.188129" id="Fill-2"></path>
+                                      </g>
+                                  </g>
+                                  <g id="Group-Copy-3" transform="translate(0.000000, 137.000000)">
+                                      <g id="Group-3" transform="translate(0.000000, 1.000000)" fill="#D39A0A">
+                                          <path d="M2.5030625,0.110194118 L0.2211875,3.12419412 C0.2211875,3.12419412 -2.2363125,5.9939 9.2305625,15.2986059 C20.6974375,24.6026647 22.6143125,21.5051941 22.6143125,21.5051941 L24.7874375,18.6348412 L2.5030625,0.110194118 Z" id="Fill-3"></path>
+                                      </g>
+                                      <g id="Group-4" transform="translate(2.000000, 0.000000)" fill="#F2CF41">
+                                          <path d="M23.1821053,19.188129 C21.9631579,20.7765161 15.8873684,17.9913548 9.61010526,12.9661935 C3.33410526,7.94103226 -0.765473684,2.57974194 0.453473684,0.990709677 C1.67178947,-0.597677419 7.74821053,2.18812903 14.0248421,7.21329032 C20.3008421,12.2384516 24.4010526,17.5990968 23.1821053,19.188129" id="Fill-4"></path>
+                                      </g>
+                                  </g>
+                                  <g id="Group-Copy" transform="translate(559.641504, 243.118697) rotate(-58.000000) translate(-559.641504, -243.118697) translate(546.641504, 231.618697)">
+                                      <g id="Group-5" transform="translate(0.000000, 1.000000)" fill="#D39A0A">
+                                          <path d="M2.5030625,0.110194118 L0.2211875,3.12419412 C0.2211875,3.12419412 -2.2363125,5.9939 9.2305625,15.2986059 C20.6974375,24.6026647 22.6143125,21.5051941 22.6143125,21.5051941 L24.7874375,18.6348412 L2.5030625,0.110194118 Z" id="Fill-5"></path>
+                                      </g>
+                                      <g id="Group-6" transform="translate(2.000000, 0.000000)" fill="#F2CF41">
+                                          <path d="M23.1821053,19.188129 C21.9631579,20.7765161 15.8873684,17.9913548 9.61010526,12.9661935 C3.33410526,7.94103226 -0.765473684,2.57974194 0.453473684,0.990709677 C1.67178947,-0.597677419 7.74821053,2.18812903 14.0248421,7.21329032 C20.3008421,12.2384516 24.4010526,17.5990968 23.1821053,19.188129" id="Fill-6"></path>
+                                      </g>
+                                  </g>
+                                  <g id="Group-Copy-7" transform="translate(169.641504, 336.970684) rotate(-58.000000) translate(-169.641504, -336.970684) translate(156.641504, 325.470684)">
+                                      <g id="Group-7" transform="translate(0.000000, 1.000000)" fill="#D39A0A">
+                                          <path d="M2.5030625,0.110194118 L0.2211875,3.12419412 C0.2211875,3.12419412 -2.2363125,5.9939 9.2305625,15.2986059 C20.6974375,24.6026647 22.6143125,21.5051941 22.6143125,21.5051941 L24.7874375,18.6348412 L2.5030625,0.110194118 Z" id="Fill-7"></path>
+                                      </g>
+                                      <g id="Group-8" transform="translate(2.000000, 0.000000)" fill="#F2CF41">
+                                          <path d="M23.1821053,19.188129 C21.9631579,20.7765161 15.8873684,17.9913548 9.61010526,12.9661935 C3.33410526,7.94103226 -0.765473684,2.57974194 0.453473684,0.990709677 C1.67178947,-0.597677419 7.74821053,2.18812903 14.0248421,7.21329032 C20.3008421,12.2384516 24.4010526,17.5990968 23.1821053,19.188129" id="Fill-8"></path>
+                                      </g>
+                                  </g>
+                                  <g id="Group-Copy-5" transform="translate(224.641504, 17.118697) rotate(-58.000000) translate(-224.641504, -17.118697) translate(211.641504, 5.618697)">
+                                      <g id="Group-9" transform="translate(0.000000, 1.000000)" fill="#D39A0A">
+                                          <path d="M2.5030625,0.110194118 L0.2211875,3.12419412 C0.2211875,3.12419412 -2.2363125,5.9939 9.2305625,15.2986059 C20.6974375,24.6026647 22.6143125,21.5051941 22.6143125,21.5051941 L24.7874375,18.6348412 L2.5030625,0.110194118 Z" id="Fill-9"></path>
+                                      </g>
+                                      <g id="Group-10" transform="translate(2.000000, 0.000000)" fill="#F2CF41">
+                                          <path d="M23.1821053,19.188129 C21.9631579,20.7765161 15.8873684,17.9913548 9.61010526,12.9661935 C3.33410526,7.94103226 -0.765473684,2.57974194 0.453473684,0.990709677 C1.67178947,-0.597677419 7.74821053,2.18812903 14.0248421,7.21329032 C20.3008421,12.2384516 24.4010526,17.5990968 23.1821053,19.188129" id="Fill-10"></path>
+                                      </g>
+                                  </g>
+                                  <g id="Group-Copy-2" transform="translate(551.832033, 169.539140) rotate(-75.000000) translate(-551.832033, -169.539140) translate(543.832033, 162.539140)">
+                                      <g id="Group-11" transform="translate(0.000000, 0.584085)" fill="#D39A0A">
+                                          <path d="M1.46200114,0.0643627259 L0.12919229,1.82479477 C0.12919229,1.82479477 -1.30619648,3.50094679 5.39143266,8.93568548 C12.0890618,14.3700462 13.2086796,12.5608603 13.2086796,12.5608603 L14.4779692,10.8843303 L1.46200114,0.0643627259 Z" id="Fill-11"></path>
+                                      </g>
+                                      <g id="Group-12" transform="translate(1.168170, 0.000000)" fill="#F2CF41">
+                                          <path d="M13.5403188,11.2074974 C12.82835,12.1352504 9.27957282,10.5084796 5.61311787,7.57335854 C1.94740071,4.63823745 -0.44710166,1.50678844 0.264867155,0.578658614 C0.976467075,-0.349094387 4.52561317,1.27805324 8.19169923,4.21317433 C11.8574164,7.14829542 14.2522877,10.2793676 13.5403188,11.2074974" id="Fill-12"></path>
+                                      </g>
+                                  </g>
+                                  <g id="Group-Copy-8" transform="translate(359.606975, 334.397452) rotate(-75.000000) translate(-359.606975, -334.397452) translate(352.106975, 327.897452)">
+                                      <g id="Group-13" transform="translate(-0.000000, 0.000000)" fill="#D39A0A">
+                                          <path d="M1.46200114,0.0643627259 L0.12919229,1.82479477 C0.12919229,1.82479477 -1.30619648,3.50094679 5.39143266,8.93568548 C12.0890618,14.3700462 13.2086796,12.5608603 13.2086796,12.5608603 L14.4779692,10.8843303 L1.46200114,0.0643627259 Z" id="Fill-13"></path>
+                                      </g>
+                                      <g id="Group-14" transform="translate(1.000000, 0.000000)" fill="#F2CF41">
+                                          <path d="M13.5403188,11.2074974 C12.82835,12.1352504 9.27957282,10.5084796 5.61311787,7.57335854 C1.94740071,4.63823745 -0.44710166,1.50678844 0.264867155,0.578658614 C0.976467075,-0.349094387 4.52561317,1.27805324 8.19169923,4.21317433 C11.8574164,7.14829542 14.2522877,10.2793676 13.5403188,11.2074974" id="Fill-14"></path>
+                                      </g>
+                                  </g>
+                                  <g id="Group-Copy-6" transform="translate(167.832033, 17.539140) scale(-1, 1) rotate(-75.000000) translate(-167.832033, -17.539140) translate(159.832033, 10.539140)">
+                                      <g id="Group-15" transform="translate(0.000000, 0.584085)" fill="#D39A0A">
+                                          <path d="M1.46200114,0.0643627259 L0.12919229,1.82479477 C0.12919229,1.82479477 -1.30619648,3.50094679 5.39143266,8.93568548 C12.0890618,14.3700462 13.2086796,12.5608603 13.2086796,12.5608603 L14.4779692,10.8843303 L1.46200114,0.0643627259 Z" id="Fill-15"></path>
+                                      </g>
+                                      <g id="Group-16" transform="translate(1.168170, 0.000000)" fill="#F2CF41">
+                                          <path d="M13.5403188,11.2074974 C12.82835,12.1352504 9.27957282,10.5084796 5.61311787,7.57335854 C1.94740071,4.63823745 -0.44710166,1.50678844 0.264867155,0.578658614 C0.976467075,-0.349094387 4.52561317,1.27805324 8.19169923,4.21317433 C11.8574164,7.14829542 14.2522877,10.2793676 13.5403188,11.2074974" id="Fill-16"></path>
+                                      </g>
+                                  </g>
+                                  <g id="Group-Copy-4" transform="translate(48.832033, 127.539140) rotate(-75.000000) translate(-48.832033, -127.539140) translate(40.832033, 120.539140)">
+                                      <g id="Group-17" transform="translate(0.000000, 0.584085)" fill="#D39A0A">
+                                          <path d="M1.46200114,0.0643627259 L0.12919229,1.82479477 C0.12919229,1.82479477 -1.30619648,3.50094679 5.39143266,8.93568548 C12.0890618,14.3700462 13.2086796,12.5608603 13.2086796,12.5608603 L14.4779692,10.8843303 L1.46200114,0.0643627259 Z" id="Fill-17"></path>
+                                      </g>
+                                      <g id="Group-18" transform="translate(1.168170, 0.000000)" fill="#F2CF41">
+                                          <path d="M13.5403188,11.2074974 C12.82835,12.1352504 9.27957282,10.5084796 5.61311787,7.57335854 C1.94740071,4.63823745 -0.44710166,1.50678844 0.264867155,0.578658614 C0.976467075,-0.349094387 4.52561317,1.27805324 8.19169923,4.21317433 C11.8574164,7.14829542 14.2522877,10.2793676 13.5403188,11.2074974" id="Fill-18"></path>
+                                      </g>
+                                  </g>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                </div>
+               
+              </div>
+
+              <h2 class="description-block text">Следите за нашими новостями, чтобы не пропустить выгодные акции</h2>
+            </div>
+          </div>
+
+
+        </section> 
+
+        <section class="pageSection smallSection">
+          <div class="mcontainer">
+            <div class="content-wrapper">
+              <h2 class="title section-title">Узнать новости первым</h2>
+
+              <form action="#" class="subscribe-form">
+                <div class="formRow relative">
+                  <input class="border-decor" type="text" placeholder="Ваш email">
+                  <button class="standardButton black border-decor submitButton">Подписаться</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>  
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <div class="mcontainer relative scrollTopContainer">
+        <div id="scrollTopButton" class="icomoon standard-arrow-icon navigateIcon up"></div>
+      </div>
+
+    </div>
+    <!--  -->
+    
+    <!--  -->
+    <footer class="mainFooter">
+	<div class="mcontainer relative">
+		<div class="flex wrap spaceBetween">
+			<div class="footer-section social-block mcol-xs-12 mcol-sm-4">
+				<div class="capital-logo-container">
+					<a href="index.html" class="icomoon icon-logo-capital2"></a>
+				</div>
+
+				<ul class="social-media-list">
+					<li><a href="#" class="icomoon icon-envelope"></a></li>
+					<li><a href="#" class="icomoon icon-viber"></a></li>
+					<li><a href="#" class="icomoon icon-inst"></a></li>
+					<li><a href="#" class="icomoon icon-facebook"></a></li>
+					<li><a href="#" class="icomoon icon-youtube"></a></li>
+				</ul>
+			</div>
+
+			<div class="footer-section feedback-block mcol-xs-12 mcol-sm-7">
+				<div class="content-container relative">
+					
+					<div class="quote-icon top"><i class="icomoon icon-quote"></i></div>
+
+					<h4 class="title article-title">Отзывы клиентов</h4>
+
+					<div id="feedbackSlider" class="standardSlider feedbackSlider">
+						<div class="slide">
+							<div class="description">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos placeat harum fugiat architecto illum dolorum optio error quam cupiditate dolores earum, aperiam praesentium corporis laudantium neque inventore nulla, quaerat aliquid.</p>
+							</div>
+
+							<div class="info-block">
+								<div class="author semi-bold">Наталья Кутненко, Киев</div>
+								<div class="date">16 апреля 2018</div>
+							</div>
+							<div class="quote-icon bottom"><i class="icomoon icon-quote"></i></div>
+						</div>
+
+						<div class="slide">
+							<div class="description">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sunt blanditiis ut eius rem dicta?</p>
+							</div>
+
+							<div class="info-block">
+								<div class="author semi-bold">Наталья Кутненко, Киев</div>
+								<div class="date">17 апреля 2018</div>
+							</div>
+							<div class="quote-icon bottom"><i class="icomoon icon-quote"></i></div>
+						</div>
+					</div>
+
+					<div class="current-slide">
+						<span class="current">1</span>
+						<span class="all">5</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="developedBy">
+			<a href="#">
+				<span>Разработан в</span>
+				<span class="icomoon icon-logo_Z"></span>
+			</a>
+		</div>
+	</div>
+</footer>
+    <!--  -->
+  </div>
+  <!--  -->
+  <!--________SCRIPTS______-->
+
+<!-- <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script> -->
+
+<script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
+
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.colorbox.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery-ui.min.js"></script> -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.9/js/plugins/piexif.min.js" type="text/javascript"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" type="text/javascript"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.9/js/fileinput.min.js"></script> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.1/jquery.plugin.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.1/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="https://rawgit.com/aterrien/jQuery-Knob/master/dist/jquery.knob.min.js"></script>
+<!-- <script type="text/javascript" src="js/pekeUpload.min.js"></script> -->
+<script type="text/javascript" src="js/dropzone.min.js"></script>
+<script type="text/javascript" src="js/cleave.min.js"></script>
+
+
+
+<script type="text/javascript" src="js/index.min.js"></script>
+
+  <!--  -->
+</body>
+
+</html>

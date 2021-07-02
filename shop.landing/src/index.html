@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>title</title>
+    <!--  -->
+    @@include('templateHtml/head.html')
+    <!--  -->
+  </head>
+
+  <body>
+    <div class="mainWrapper">
+      <div class="contentWrapper">
+        <!--  -->
+        @@include('templateHtml/header.html', { "home": "active" })
+        <!--  -->
+        <div class="header-contant scroll--active">
+           <div class=" mcontainer">
+              <div class="video-block">    
+
+                <video class="video-banner" muted loop autoplay>
+                  <source type="video/mp4" autoplay src="/img/pexels.mp4"> 
+                </video> 
+                 <!-- <video class="video-banner-mobile" play="no" controls width="100%" height="100%" autoplay poster="./img/poster-baner.png">
+                  <source type="video/mp4" autoplay src="/img/production-mobile.mp4"> 
+                </video> -->
+  
+              </div>
+              <div class="banner-contant">
+                <div class="banner-text">
+                   <h1 class="banner-text_h1 banner__text--active visibility--check visible-viewportchecker">Ваш <span class="before-line">интернет-магазин</span> уже готов!</h1>
+                   <h2 class="banner-text_h2 animated mySlideInLeft visibility--check visible-viewportchecker">Мы сделали его именно для вас.</h2>
+                   <button class="button primary-btn button--active visibility--check visible-viewportchecker">
+                     <p>заказать сайт</p> 
+                     <img src="/img/multimedia-white.svg" alt="">
+                   </button>
+                </div>
+              </div>
+           </div>
+           <div class="arrow--animate">
+              <img src="/img/arrow-down-white.svg" alt="">
+           </div>
+        </div>
+
+        <div class="advantages-block">
+          <div class="mcontainer">
+            <div class="title section_title visibility--check visible-viewportchecker">Мы не <span class="advantages-before-line">конструктор шаблон!</span></div>
+            <table class="advantages-block-form">
+              <thead>
+                <tr class="advantages-form-title visibility--check visible-viewportchecker">
+                  <th class="form-title-data">Характеристики</th>
+                  <th class="form-title border-md">Конструктор-шаблон</th>
+                  <th class="form-title border-md">Наш сайт</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="advantages-form-item visibility--check visible-viewportchecker">
+                  <td class="head-item-form relative"> <span>01</span> Технологии</td>
+                  <td class="body-item-form"> 
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                  </td>
+                  <td class="body-item-form">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                  </td>
+                </tr>
+                <tr class="advantages-form-item visibility--check visible-viewportchecker">
+                  <td class="head-item-form relative"><span>02</span>Скорость работы</td>
+                  <td class="body-item-form"> 
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                  </td>
+                  <td class="body-item-form">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                  </td>
+                </tr>
+                <tr class="advantages-form-item visibility--check visible-viewportchecker">
+                  <td class="head-item-form relative"><span>03</span>Надежность</td>
+                  <td class="body-item-form"> 
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                  </td>
+                  <td class="body-item-form">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                  </td>
+                </tr>
+                <tr class="advantages-form-item visibility--check visible-viewportchecker">
+                  <td class="head-item-form relative"><span>04</span>Поддержка</td>
+                  <td class="body-item-form"> 
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                  </td>
+                  <td class="body-item-form">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                  </td>
+                </tr>
+                <tr class="advantages-form-item visibility--check visible-viewportchecker">
+                  <td class="head-item-form relative"><span>05</span>Универсальность</td>
+                  <td class="body-item-form"> 
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                  </td>
+                  <td class="body-item-form">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                  </td>
+                </tr>
+                <tr class="advantages-form-item visibility--check visible-viewportchecker">
+                  <td class="head-item-form relative"><span>06</span>Время разработки</td>
+                  <td class="body-item-form"> 
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                  </td>
+                  <td class="body-item-form">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                  </td>
+                </tr>
+                <tr class="advantages-form-item visibility--check visible-viewportchecker">
+                  <td class="head-item-form relative"><span>07</span>Цена</td>
+                  <td class="body-item-form"> 
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star-gray_icon.svg" alt="">
+                  </td>
+                  <td class="body-item-form">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                    <img class="form-star" src="/img/star_icon.svg" alt="">
+                  </td>
+                </tr>
+              </tbody>
+             
+            </table>
+          </div>
+        </div>
+
+        <div class="modern-preferred-section">
+          <div class="mcontainer">
+            <div class="title section_title visibility--check visible-viewportchecker">
+              Есть все, что нужно <span>соверменному магазину</span> 
+            </div>
+            <div class="modern-section_block-benefits visibility--check visible-viewportchecker">
+
+              <div class="modern-section-container">
+                <div class="modern-section_item active">
+                  <div class="modern-section_item-text ">
+                   <p> Удобный каталог со всеми возможными фильтрами и сортировкой </p>
+                  </div>
+                </div>
+                <div class="modern-section-img-hide">
+                  <img src="/img/poster-baner.png" alt="">
+                </div>
+              </div>
+
+              <div class="modern-section-container active">
+                <div class="modern-section_item">
+                  <div class="modern-section_item-text">
+                   <p> Удобный каталог со всеми возможными фильтрами и сортировкой </p>
+                  </div>
+                </div>
+                <div class="modern-section-img-hide">
+                  <img src="/img/iMacHDDM.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="modern-section-container">
+                <div class="modern-section_item">
+                  <div class="modern-section_item-text">
+                   <p> Удобный каталог со всеми возможными фильтрами и сортировкой </p>
+                  </div>
+                </div>
+                <div class="modern-section-img-hide ">
+                  <img src="/img/poster-baner.png" alt="">
+                </div>
+              </div>
+
+              <div class="modern-section-container">
+                <div class="modern-section_item">
+                  <div class="modern-section_item-text">
+                   <p> Удобный каталог со всеми возможными фильтрами и сортировкой </p>
+                  </div>
+                </div>
+                <div class="modern-section-img-hide">
+                  <img src="/img/iMacHDDM.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="modern-section-container">
+                <div class="modern-section_item">
+                  <div class="modern-section_item-text">
+                   <p> Удобный каталог со всеми возможными фильтрами и сортировкой </p>
+                  </div>
+                </div>
+                <div class="modern-section-img-hide">
+                  <img src="/img/poster-baner.png" alt="">
+                </div>
+              </div>
+
+              <div class="modern-section-container">
+                <div class="modern-section_item">
+                  <div class="modern-section_item-text">
+                   <p> Удобный каталог со всеми возможными фильтрами и сортировкой </p>
+                  </div>
+                </div>
+                <div class="modern-section-img-hide">
+                  <img src="/img/iMacHDDM.jpg" alt="">
+                </div>
+              </div>
+                 
+            </div>
+          </div>
+        </div>
+
+        <div class="consultation-section">
+          <div class="consultation-block">
+            <div class="consultation-block-info visibility--check visible-viewportchecker">
+              <div class="section-info-block">
+                <div class="title consultation-block-info_title">
+                  Нужна консультация?
+                </div>
+                <div class="consultation-block-info_subtitle">
+                  Мы с удовольстивем вам поможем!
+                </div>
+                <form action="#" class="consultation-block-info_form">
+                  <div class="block-info_form-input">
+                    <input type="tel">
+                  </div>
+                  <div class="block-info_form-btn section-wrap__button">
+                    <button class="button consultation-callback">
+                      <div class="form-btn_text">заказать консультацию</div>
+                     
+                     <div class="block-info_form-img">
+                      <img src="/img/multimedia-gray.svg" alt="">
+                     </div> 
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="consultation-block-img visibility--check visible-viewportchecker">
+              <img src="/img/nash.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="section-advantages-works">
+          <div class="mcontainer">
+            <div class="title advantages-works_title visibility--check visible-viewportchecker"> <span>Преимущества</span>  работы с нами</div>
+            <div class="advantages-item-wrap flex">
+
+              <!-- <div class="wrapper-flex flex"> -->
+                <div class="advantages-item mcol-xs-12 mcol-sm-4 visibility--check visible-viewportchecker">
+                  <div class="ad-item-icon">
+                    <img src="/img/opit.svg" alt="">
+                  </div>
+                  <div class="ad-item-title">Опыт</div>
+                  <div class="ad-item-inform">Более 3 лет: наша компания занималась созданием интернет 
+                    магазинов и знает “что такое хорошо, и что такое плохо” в e-commerce</div>
+                </div>
+                
+                <div class="advantages-item mcol-xs-12 mcol-sm-4 visibility--check visible-viewportchecker">
+                  <div class="ad-item-icon">
+                    <img src="/img/garant.svg" alt="">
+                  </div>
+                  <div class="ad-item-title">Гарантии</div>
+                  <div class="ad-item-inform">Даже вы нажмете “не туда” и вдруг “что-то пошло не так”, 
+                    наша команда все исправит и настроит в маскимально быстрые сроки</div>
+                </div>
+                
+                <div class="advantages-item mcol-xs-12 mcol-sm-4 visibility--check visible-viewportchecker">
+                  <div class="ad-item-icon">
+                    <img src="/img/tech.svg" alt="">
+                  </div>
+                  <div class="ad-item-title">Технологиии</div>
+                  <div class="ad-item-inform">Здесь нужно изложить о технологиях, оторые мы используем при разработке</div>
+                </div>
+                
+                <div class="advantages-item mcol-xs-12 mcol-sm-4 visibility--check visible-viewportchecker">
+                  <div class="ad-item-icon">
+                    <img src="/img/opit.svg" alt="">
+                  </div>
+                  <div class="ad-item-title">Опыт</div>
+                  <div class="ad-item-inform">Более 3 лет: наша компания занималась созданием интернет 
+                    магазинов и знает “что такое хорошо, и что такое плохо” в e-commerce</div>
+                </div>
+                
+                <div class="advantages-item mcol-xs-12 mcol-sm-4 visibility--check visible-viewportchecker">
+                  <div class="ad-item-icon">
+                    <img src="/img/prof.svg" alt="">
+                  </div>
+                  <div class="ad-item-title">Профессионализм</div>
+                  <div class="ad-item-inform">Разработчики нашей компании используют 
+                    внушительный стек технологий и постоянно прокачивает свои скиллы</div>
+                </div>
+                
+                <div class="advantages-item mcol-xs-12 mcol-sm-4 visibility--check visible-viewportchecker">
+                  <div class="ad-item-icon">
+                    <img src="/img/pod.svg" alt="">
+                  </div>
+                  <div class="ad-item-title">Поддержка 24/7</div>
+                  <div class="ad-item-inform">Живые люди помогут вам разобраться в платформе
+                     и настроить то, что нужно настроить. Или сделают это за вас.</div>
+                </div>
+              <!-- </div> -->
+              
+            </div>
+          </div>
+        </div>
+        
+        <div class="section-advantages_control-system">
+          <div class="mcontainer">
+            <div class="title control-system_title visibility--check visible-viewportchecker"> <span>Понятная и удобная</span>  система управления</div>
+            <div class="advantages_control-system-wrap flex">
+
+              <div class="control-system_item active">
+                <div class="control-system_item-inform visibility--check visible-viewportchecker">
+                  <div class="item-inform-number">
+                   01
+                  </div>
+                  <div class="item-inform-content">Заголовок первый</div>
+                </div>
+                <div class="control-system_img-hovers">
+                  <img src="/img/dashboard.png" alt="">
+                </div>
+              </div>
+
+              <div class="control-system_item">
+                <div class="control-system_item-inform visibility--check visible-viewportchecker">
+                  <div class="item-inform-number">
+                   02
+                  </div>
+                  <div class="item-inform-content">Заголовок второй</div>
+                </div>
+                <div class="control-system_img-hovers">
+                  <img src="/img/rerergvsgs.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="control-system_item">
+                <div class="control-system_item-inform visibility--check visible-viewportchecker">
+                  <div class="item-inform-number">
+                   03
+                  </div>
+                  <div class="item-inform-content">Заголовок третий</div>
+                </div>
+                <div class="control-system_img-hovers">
+                  <img src="/img/dashboard.png" alt="">
+                </div>
+              </div>
+
+              <div class="control-system_item">
+                <div class="control-system_item-inform visibility--check visible-viewportchecker">
+                  <div class="item-inform-number">
+                   04
+                  </div>
+                  <div class="item-inform-content">Заголовок четвертый</div>
+                </div>
+                <div class="control-system_img-hovers">
+                  <img src="/img/rerergvsgs.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="control-system_item">
+                <div class="control-system_item-inform visibility--check visible-viewportchecker">
+                  <div class="item-inform-number">
+                   05
+                  </div>
+                  <div class="item-inform-content">Заголовок пятый</div>
+                </div>
+                <div class="control-system_img-hovers">
+                  <img src="/img/dashboard.png" alt="">
+                </div>
+              </div>
+
+              <div class="control-system_item">
+                <div class="control-system_item-inform visibility--check visible-viewportchecker">
+                  <div class="item-inform-number">
+                   06
+                  </div>
+                  <div class="item-inform-content">Заголовок шестой</div>
+                </div>
+                <div class="control-system_img-hovers">
+                  <img src="/img/rerergvsgs.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="control-system_item">
+                <div class="control-system_item-inform">
+                  <div class="item-inform-number">
+                   07
+                  </div>
+                  <div class="item-inform-content">Заголовок седьмой</div>
+                </div>
+                <div class="control-system_img-hovers">
+                  <img src="/img/dashboard.png" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="section-advantages_one-price">
+          <div class="mcontainer">
+            <div class="proposal-block visibility--check visible-viewportchecker">
+              <div class="proposal-block-contant">
+                <div class="title proposal-block-contant_title">Всего одна цена</div>
+                <div class="proposal-list">
+                  <div class="proposal-item">
+                    <img src="/img/check.svg" alt="">
+                    <p class="proposal-item_text">Сайт</p>
+                  </div>
+                  <div class="proposal-item">
+                    <img src="/img/check.svg" alt="">
+                    <p class="proposal-item_text">Админка</p>
+                  </div>
+                  <div class="proposal-item">
+                    <img src="/img/check.svg" alt="">
+                    <p class="proposal-item_text">Хостинг</p>
+                  </div>
+                  <div class="proposal-item">
+                    <img src="/img/check.svg" alt="">
+                    <p class="proposal-item_text">Домен</p>
+                  </div>
+                </div>
+                <div class="proposal-price">999 <span>$</span></div>
+              </div>
+              <div class="proposal-block-footer">
+                <button class="button flex primary-btn">  
+                  <div class="proposal-block_button-info">оформить заказ</div>
+                  <div class="proposal-block_button-icon">
+                    <img src="/img/multimedia-white.svg" alt="">
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-popular-questions">
+          <div class="mcontainer">
+            <div class="title popular-questions_title visibility--check visible-viewportchecker"><span>Стесняетесь</span> спросить?</div>
+            <div class="popular-questions-wrap">
+
+              <div class="popular-questions_item visibility--check visible-viewportchecker">
+                <div class="popular-questions_item-header flex">
+                  <div class="popular-questions_item-title">Чем же мы все таки лучше шаблона?</div>
+                  <div class="popular-questions_item-icon-arrow"></div>
+                </div>
+                <div class="popular-questions_item-body">
+                  <div class="popular-questions_item-contant">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                </div>
+              </div>
+
+              <div class="popular-questions_item visibility--check visible-viewportchecker">
+                <div class="popular-questions_item-header flex">
+                  <div class="popular-questions_item-title">Чем же мы все таки лучше шаблона?</div>
+                  <div class="popular-questions_item-icon-arrow"></div>
+                </div>
+                <div class="popular-questions_item-body">
+                  <div class="popular-questions_item-contant">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                </div>
+              </div>
+
+              <div class="popular-questions_item visibility--check visible-viewportchecker">
+                <div class="popular-questions_item-header flex">
+                  <div class="popular-questions_item-title">Чем же мы все таки лучше шаблона?</div>
+                  <div class="popular-questions_item-icon-arrow"></div>
+                </div>
+                <div class="popular-questions_item-body">
+                  <div class="popular-questions_item-contant">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                </div>
+              </div>
+
+              <div class="popular-questions_item visibility--check visible-viewportchecker">
+                <div class="popular-questions_item-header flex">
+                  <div class="popular-questions_item-title">Чем же мы все таки лучше шаблона?</div>
+                  <div class="popular-questions_item-icon-arrow"></div>
+                </div>
+                <div class="popular-questions_item-body">
+                  <div class="popular-questions_item-contant">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                </div>
+              </div>
+
+              <div class="popular-questions_item visibility--check visible-viewportchecker">
+                <div class="popular-questions_item-header flex">
+                  <div class="popular-questions_item-title">Чем же мы все таки лучше шаблона?</div>
+                  <div class="popular-questions_item-icon-arrow"></div>
+                </div>
+                <div class="popular-questions_item-body">
+                  <div class="popular-questions_item-contant">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                </div>
+              </div>
+
+              <div class="popular-questions_item visibility--check visible-viewportchecker">
+                <div class="popular-questions_item-header flex">
+                  <div class="popular-questions_item-title">Чем же мы все таки лучше шаблона?</div>
+                  <div class="popular-questions_item-icon-arrow"></div>
+                </div>
+                <div class="popular-questions_item-body">
+                  <div class="popular-questions_item-contant">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                </div>
+              </div>
+
+              <div class="popular-questions_item visibility--check visible-viewportchecker">
+                <div class="popular-questions_item-header flex">
+                  <div class="popular-questions_item-title">Чем же мы все таки лучше шаблона?</div>
+                  <div class="popular-questions_item-icon-arrow"></div>
+                </div>
+                <div class="popular-questions_item-body">
+                  <div class="popular-questions_item-contant">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="elementtoScrollToID" class="section-contact-form">
+          <div class="mcontainer">
+            <div class="section-contact-form-wrap flex visibility--check visible-viewportchecker">
+              <div class="title contact-form_title">Наши контакты</div>
+              <div class="contact-form-block">
+                 <div class="contact-form_head-section">
+                      <div class="head-section_mail">hi@dontstop.shop</div>
+                      <div class="head-section_phone">+38 066 123 45 67</div>
+                 </div>
+                 <div class="questions-form">
+                      <div class="questions-form_title">Остались вопросы?</div>
+                      <div class="questions-form_subtitle">Наши специалисты всегда на связи, 
+                        чтобы оперативно проконсультировать вас!</div>
+                 </div>
+                 <form action="#" class="form-feedback">
+                   <label for="inputName"></label>
+                   <input class="cont-input-form" type="text" name="name" id="inputName" placeholder="Имя" autocomplete="off">
+  
+                   <label for="inputPhone"></label>
+                   <input class="cont-input-form" type="tel" name="tel" id="inputPhone" autocomplete="off">
+  
+                   <textarea name="textForm" id="" cols="30" placeholder="Комментарий"></textarea>
+                   <div class="contact-form__checkbox flex">
+                        <label for="checkbox">
+                          <input type="checkbox" id="checkbox">
+                          <span class="checkmark"></span>
+                          <p class="contact-form__checkbox-text">Даю согласие на обработку персональных данных</p>
+                        </label>
+                   </div>
+  
+                   <div class="section-wrap__button">
+                     <button class="button primary-btn">
+                       <div class="form-btn_text">заказать консультацию</div>
+                      
+                      <div class="block-info_form-img">
+                          <img src="/img/multimedia-white.svg" alt="">
+                      </div> 
+                     </button>
+                   </div>
+                 </form>
+              </div>  
+              <div class="contact-form-img">
+                <img src="/img/planet.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--  -->
+      
+      <!--  -->
+      @@include('templateHtml/modal.html') 
+      <!--  -->
+    </div>
+    <div class="scrollTop button">
+      <button class="icon-arrow">
+        <img src="/img/multimedia-primary.svg" alt="">
+      </button>
+    </div>
+    <!--  -->
+    @@include('templateHtml/scripts.html')
+  </body>
+</html>
+
+
+
+
+

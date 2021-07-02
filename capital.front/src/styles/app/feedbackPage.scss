@@ -1,0 +1,121 @@
+.feedbackPage {
+	.content-container {
+		max-width: 520px;
+		margin: 0 auto;
+		text-align: center;
+		box-sizing: border-box;
+		padding: 0 15px;
+	}
+
+	textarea {
+		height: auto;
+	}
+	
+	.standardButton {
+		width: 100%;
+	}
+
+	.pageSection:first-child {
+		padding: 65px 0 90px;
+		
+		@media (min-width: $collapseBefore) {
+			padding: 100px 0 90px;
+		}
+	}
+
+	.pageSection--big-padding {
+		padding: 220px 0 !important;
+	}
+}
+
+.feedback-review-item {
+	font-size: 20px;
+}
+
+.feedback-review-item + .feedback-review-item {
+	margin-left: 20px;
+}
+
+.feedback-review-item__img-container {
+	padding: 24px 20px;
+	
+	background-color: $fifthColor;
+	border-radius: 50%;
+}
+
+.phone-evaluation {
+	position: fixed;
+	bottom: 20px;
+	left: 15px;
+	z-index: 1000;
+
+	display: flex;
+	align-items: center;
+
+	cursor: pointer;
+	
+	button {
+		margin-left: 10px;
+		
+		color: $fifthColor;
+
+		font-weight: bold;
+	}
+}
+
+.phone-evaluation-descr {
+	position: absolute;
+	left: calc(100% + 20px);
+	min-width: 120px;
+	
+	padding: 10px;
+	border: 2px solid #eee;
+	
+	border-radius: 15px;
+	color: #000;
+	background-color: #fff;
+
+	text-align: left;
+
+	&:before {
+		content: "";
+
+		position: absolute;
+    left: -8px;
+    top: 22px;
+    transform: rotate(45deg);
+		
+    display: inline-block;
+    width: 12px;
+		height: 12px;
+		border-left: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+		
+    background-color: #fff;
+	}
+}
+
+.phone-icon-round-bg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 13px 16px;
+	width: 48px;
+
+	background-color: $fifthColor;
+	border-radius: 50%;
+	
+	font-size: 22px;
+}
+
+
+.feedback-review-item__img-container--bad {
+	background-color: $primaryColor;
+	transform: rotate(180deg);
+}
+
+.feedback-review-item__img-container + .feedback-review-item__descr {
+	display: inline-block;
+  margin-top: 5px;
+}

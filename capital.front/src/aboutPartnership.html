@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      @@include('templateHtml/header.html', { "about": "active", "partnership": "active" })
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="aboutPartnershipPage" class="aboutPartnershipPage page">
+
+        <section class="pageSection white-bg">
+          <div class="mcontainer">
+
+            <div class="sectionBlock">
+              <div class="sectionHeader">
+                <div class="animated-border-block section-title sectionHeaderItem">
+                  <div class="svg-container">
+                    <svg class="rect-container">
+                      <rect x="0" y="0" class="animatedBlock"/>
+                      <rect x="0" y="0" stroke-width="4" class="overlappingBlock"/>                
+                    </svg>
+                    <h1 class="title">Сотрудничество</h1>
+                  </div>
+                </div>
+
+                <ul class="breadcrumbs sectionHeaderItem">
+                  <li><a href="/index.html">Главная</a></li>
+                  <li ><a href="#">О компании</a></li>
+                  <li class="active"><a href="#">Сотрудничество</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="sectionBlock flex justifyCenter">
+
+              <div class="description mcol-xs-12 mcol-md-7 ">
+                <p>Если у вас есть предложения для нас, то обратитесь в нужный отдел:</p> 
+                
+
+                <p><b>Відділ маркетингу</b> (для пропозицій з розміщення реклами)</p>
+                <a href="#" class="link-with-icon"><i class="icomoon icon-envelope"></i> <span>vershnnyak.v@lombard.credit</span></a>
+
+                <p>Для успешной работы отдела маркетинга, с реализацией своих задач, ему нужно задать место и соответствующие полномочия в общей организационной структуре компании. Взаимодействие отдела маркетинга с остальными департаментами может быть организовано по нескольким принципам. Департаменты рекламы, маркетинга и продаж могут находиться под непосредственным руководством соответствующих директоров (по рекламе, маркетингу и продажам).  Другой вариант предполагает, что отдел рекламы и маркетинга находится под управлением директора по маркетингу, а департаментом продаж руководит директор по продажам.</p>
+
+                <p><b>Відділ розвитку</b> (для пропозицій з оренди приміщень)</p>
+                <a href="#" class="link-with-icon"><i class="icomoon icon-envelope"></i> <span>burkut.a@lombard.credit</span></a>
+
+                <p>Чем занимается отдел стратегического планирования?» - у каждого «бизнес-читателя» спонтанно проявится свой первый ассоциативный ответ на этот вопрос, также как в случае ответа на вопрос о самом известном русском поэте...  В статье предлагается соотнести свой первый спонтанный ответ с вариантами …  Возможно мнение, что подобные отделы занимаются вопросами не очень понятными, что, отчасти, справедливо…Например, Джек Уэлч просто разогнал отделы стратегического планирования в GE, когда был CEO.. Возможно иное мнение, что подобные подразделения нужны настолько, насколько помогают руководству выстраивать необходимую систему управления и т.п. ... Как определяется функциональность отдела стратегического планирования? -  Также как в случае любого другого подразделения, - от поставленных целей и задач, от организационного контекста (типа холдинга), масштабов бизнеса, «зрелости» управленческой практики, корпоративной культуры и т.п. </p>
+
+              </div>
+
+
+            </div>
+          </div>
+        </section>
+
+   
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      <div class="mcontainer relative scrollTopContainer">
+        <div id="scrollTopButton" class="icomoon standard-arrow-icon navigateIcon up"></div>
+      </div>
+
+    </div>
+    <!--  -->
+    <!-- @@include('templateHtml/modal.html') -->
+    <!--  -->
+    @@include('templateHtml/footer.html')
+    <!--  -->
+  </div>
+  <!--  -->
+  @@include('templateHtml/scripts.html')
+  <!--  -->
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+b,strong { font-weight: bold; }
+// i {font-style: italic;}
+
+// h1 { font-size: $h1FontSize; }
+// h2 { font-size: $h2FontSize; }
+// h3 { font-size: $h3FontSize; }
+
+img {width: 100%;}
+a > img {display: table;}
+
+ul.disc {
+	list-style-type: disc;
+	padding-left: 20px;
+}
+ol.decimal {
+	list-style-type: decimal;
+	padding-left: 20px;
+}
+
+.icomoon + span {margin-left: 5px;}
+
+.capitalize { text-transform: capitalize; }
+.uppercase { text-transform: uppercase; }
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.bold {font-weight: 700;}
+.semi-bold {font-weight: 600; }
+.medium {font-weight: 500;}
+.light {font-weight: 300; }
+.ultra-light {font-weight: 200;}
+
+.relative {position: relative;}
+
+.primaryColor {color: $primaryColor!important;}
+
+
+.title {
+	// font-weight: 700;
+	font-family: $titleFont;
+	& + * {	margin-top: 15px;	}
+}
+
+.sub-title {
+	margin-top: 10px;
+	font-size: 0.6em;
+}
+.page-title {	font-size: $titleFontSize; }
+.section-title { font-size: $sectionTitleFontSize; }
+.sectionBlock-title {	font-size: $sectionBlockTitleFontSize; }
+.article-title { font-size: $articleTitleFontSize; }
+.article-subtitle {	font-size: 17px;}
+.title-description { font-size: $descriptionTitleFontSize; }
+
+.list-title {
+	& + ul,
+	& + ol {margin: 10px 0 0 0;}
+
+	&.label {
+		& + ul,
+		& + ol {margin: 0 0 0 10px;}
+	}
+}
+
+.grey-highlight {color: #9e9e9e;}
+
+.icon-minus {
+	&:before {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		height: 2px;
+		background-color: #000;		
+		width: 8px;
+		margin-bottom: 2px;
+	}
+}
+
+.ellipsis {
+	white-space: nowrap;
+	max-width: 100%;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}

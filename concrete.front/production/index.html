@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>title</title>
+    <!--  -->
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Microsoft Tiles -->
+<meta name="msapplication-config" content="browserconfig.xml">
+
+<link rel="icon" type="image/png" href="favicon.ico">
+
+<!-- Font Awesome -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+<!-- Fonts -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> -->
+
+<link rel="stylesheet" href="css/main.min.css">
+
+<!-- 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <!--  -->
+  </head>
+
+  <body>
+    <div class="mainWrapper">
+      <div class="contentWrapper">
+
+        <div class="contact-us-modal">
+    
+        <div class="contact-us-contant">
+            <div class="us-contant-block">
+                <div class="contact-us-contant-header">
+                    <div class="contact-us_title">Have Any Questions?</div>
+                    <button type="button" class="modal-custom_buttom modal-custom__close-btn"></button>
+                </div>
+                <div class="contact-us-contant-body">
+                    <form action="#">
+                        
+                        <fieldset class="formRow">
+                            <div class="formRow--item contact-us_input">
+                              <label for="firstname" class="formRow--input-wrapper js-inputWrapper">
+                                <input type="text" class="formRow--input js-input" id="firstname" placeholder="Name">
+                              </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="contact-us_input">
+                            <label for="#"></label>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="contact-us_input">
+                            <label for="#"></label>
+                            <input type="mail" placeholder="Email">
+                        </div>
+                        <div class="contact-us_textarea">
+                            <label for="#"></label>
+                            <textarea type="text" rows="10" placeholder="Your Question"></textarea>
+                        </div>
+                        <div class="form-contact-us_button">
+                            <button disabled class="disabled_js">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="contact-us-overlay"></div>
+</div> 
+        <!--  -->
+        <header class="main-header">
+   
+      <div class="main-header-contant">
+         <div class="main-header_logo">
+            <a href="/index.html">
+               <p class="logo-title">concrete</p>
+               <p class="logo-subtitle">calculations</p>
+            </a>
+         </div>
+         <div class="contact-us">
+            <img src="/img/contact-us.svg" alt="">
+             <p class="btn-contact-us">Contact Us</p>
+         </div>
+      </div>
+   
+</header>
+
+
+
+        <!--  -->
+        <div class="section-calculator calculator-blocks-bg">
+            <div class="mcontainer">
+              <div class="calculator-blocks">
+  
+                <div class="calculator-blocks-title">Concrete Calculator</div>
+                <div class="calculator-blocks-subtitle">The Concrete Calculator is designed 
+                  to estimate the volume in cubic yardc of concrete necessary to cover a given area.</div>
+                  <div class="calculator-list">
+                    <div class="calculator-list_left-block">
+                      <div class="calculator-list-figure">
+                        <div class="drop-down">
+                          <div class="selected">
+                            <div class="sel">Slabs or Footings</div>
+                          </div>
+                          <div class="options">
+                              <div class="ul find-active_js">
+                                <div data-id="slabs" data-src="/img/slabs-def.png" class="value value-one active">Slabs or Footings</div>
+                                <div data-id="walls" data-src="/img/walls-def.png" class="value">Walls</div>
+                                <div data-id="columns" data-src="/img/round-def.png" class="value">Round Columns</div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="icon-popup"></div>
+                        <div class="calculator-list-figure_img">
+
+                           <img class="img-list slabs slabs-default" src="/img/slabs-def.png" alt="">
+                           <img class="img-list walls walls-default" src="/img/walls-def.png" alt="">
+                           <img class="img-list columns columns-default" src="/img/round-def.png" alt="">
+
+                           <div class="set-img"></div>
+                           
+                          </div>
+
+                      </div>
+
+                      <div class="calculator-list-forms">
+                        <form class="calculator-forms slabs slabs-input active">
+                          <div class="calculator-forms-header">
+                            <div class="forms-title">Slabs or Footings</div>
+                            <button class="forms-button-another">
+                              Another Calculation
+                            </button>
+                          </div>
+                          <div class="calculator-forms-body">
+                            <input hidden name="category_id" value="1" type="text">
+                            <fieldset class="data-inp-forms inp-feet">
+                              <legend>Length</legend>
+                              <label for="inp-l-v1"></label>
+                              <input name="length" type="text" data-img="/img/inp-l-v1.png" id="inp-l-v1" placeholder="0">
+                            </fieldset>
+                            <fieldset class="data-inp-forms inp-feet">
+                              <legend>Width</legend>
+                              <label for="inp-w-v1"></label>
+                              <input name="width" type="text" data-img="/img/inp-w-v1.png" id="inp-w-v1" placeholder="0">
+                            </fieldset>
+                            <fieldset class="data-inp-forms inp-inches">
+                              <legend>Thickness or Height</legend>
+                              <label for="inp-Th-v1"></label>
+                              <input name="height" type="text" data-img="/img/inp-Th-v1.png" id="inp-Th-v1" placeholder="0">
+                            </fieldset>
+                            <fieldset class="data-inp-forms">
+                              <legend>Quantity</legend>
+                              <label for="inp-Q-v1"></label>
+                              <input name="quantity" type="text" data-img="/img/slabs-def.png" id="inp-Q-v1" placeholder="0">
+                            </fieldset>
+
+                          </div>
+                          <div class="button-calculate">
+                            <button disabled type="submit" class="disabled_js">
+                              <div class="spinner spinner--search spinner--search-js"></div>
+                              Calculate
+                            </button>
+                          </div>
+                        </form>
+
+                        <form class="calculator-forms walls walls-input">
+                          <div class="calculator-forms-wrap">
+                            <div class="calculator-forms-container">
+                              <div class="calculator-forms-header">
+                                <div class="forms-title">Walls</div>
+                                <button class="forms-button-another">
+                                  Another Calculation
+                                </button>
+                              </div>
+                              <div class="calculator-forms-body ">
+    
+                                <fieldset class="data-inp-forms inp-feet">
+                                  <legend>Length</legend>
+                                  <label for="inp-l-v2"></label>
+                                  <input name="" type="text" data-img="/img/inp-l-v2.png" id="inp-l-v2" placeholder="0">
+                                </fieldset>
+                                <fieldset class="data-inp-forms inp-inches">
+                                  <legend>Width</legend>
+                                  <label for="inp-w-v2"></label>
+                                  <input name="" type="text" data-img="/img/inp-w-v2.png" id="inp-w-v2" placeholder="0">
+                                </fieldset>
+                                <fieldset class="data-inp-forms inp-feet">
+                                  <legend>Height</legend>
+                                  <label for="inp-Th-v2"></label>
+                                  <input name="" type="text" data-img="/img/inp-Th-v2.png" id="inp-Th-v2" placeholder="0">
+                                </fieldset>
+                                <fieldset class="data-inp-forms">
+                                  <legend>Quantity</legend>
+                                  <label for="inp-Q-v2"></label>
+                                  <input name="" type="text" data-img="/img/walls-def.png" id="inp-Q-v2" placeholder="0">
+                                </fieldset>
+    
+                              </div>
+                            </div>
+                            <div class="button-calculate">
+                              <button disabled type="submit" class="disabled_js">Calculate</button>
+                            </div>
+                          </div>
+                        </form>
+
+                        <form class="calculator-forms columns">
+                          <div class="calculator-forms-header">
+                            <div class="forms-title">Round Columns</div>
+                            <button class="forms-button-another">
+                              Another Calculation
+                            </button>
+                          </div>
+                          <div class="calculator-forms-body">
+
+                            <fieldset class="data-inp-forms inp-inches">
+                              <legend>Diameter</legend>
+                              <label for="inp-l-v3"></label>
+                              <input type="text" data-img="/img/inp-d-v3.png" id="inp-d-v3" placeholder="0">
+                            </fieldset>
+                            <fieldset class="data-inp-forms inp-feet">
+                              <legend>Depth or Height</legend>
+                              <label for="inp-Th-v3"></label>
+                              <input type="text" data-img="/img/inp-Dh-v3.png" id="inp-Dh-v3" placeholder="0">
+                            </fieldset>
+                            <fieldset class="data-inp-forms">
+                              <legend>Quantity</legend>
+                              <label for="inp-Q-v3"></label>
+                              <input type="text" data-img="/img/round-def.png" id="inp-Q-v3" placeholder="0">
+                            </fieldset>
+
+                          </div>
+                          <div class="button-calculate">
+                            <button disabled type="submit" class="disabled_js">Calculate</button>
+                          </div>
+                        </form>
+
+                       
+                      </div>
+                    </div>
+                    <div class="calculator-list_right-block">
+                      <div class="calculator-list-result">
+                        <div class="container-mr">
+                           <div class="result-header">
+                             <div class="button-mobile-hide-result"></div>
+                            <div class="result-header_title">Results</div>
+                            <div class="result-header_replace-title"> 
+                              <div class="title-total-result">
+                                <div class="result-header_data">0.00</div> 
+                                <div class="header_replace-yd">yd <sup>3</sup></div> 
+                              </div>
+                            <button class="clear-items">Clear All</button>
+                            </div>
+                          </div>
+                          <div class="result-body">
+                            <div class="result-body-list">
+
+                              <div class="body-list-item">
+                                  <div class="body-list_name">Slabs </div>
+                                  <div class="body-list_value">
+                                    <div class="result-value_data" data-value="6.57">6.57</div> 
+                                    <div class="value_replace-yd">yd <sup>3</sup></div> 
+                                  </div>
+                                  <button class="body-list_btn-close"></button>
+                              </div>
+
+                              <div class="body-list-item">
+                                  <div class="body-list_name">Walls</div>
+                                  <div class="body-list_value">
+                                    <div class="result-value_data" data-value="3.07">3.07</div> 
+                                    <div class="value_replace-yd">yd <sup>3</sup></div> 
+                                  </div>
+                                  <button class="body-list_btn-close"></button>
+                              </div>
+
+                            </div>
+                            <div class="result-body_total">
+                              <div class="">Total Volume</div>
+                              <div class="result-body_total-item">
+                                <p class="result-body_total-data" data-result="0.00">0.00</p>
+                                <p>yd<sup>3</sup></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="result-body_custom-overlay"></div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        
+        
+        <div class="modal-custom">
+  <div class="modal-custom__content" tabindex="-1" role="dialog">          
+    <div class="modal-custom_content">
+      <div class="modal-custom_header">
+        <p class="modal-text">Slabs or Footings</p>
+        <button type="button" class="modal-custom_buttom modal-custom__close-btn"></button>
+      </div>
+      <div class="modal-custom_footer">
+        <img class="modal-img" src="/img/slabs-def.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="modal-custom__overlay"></div>
+</div> 
+        <footer class="main-footer">
+	
+		<div class="footer-contant">
+			<div class="footer-contant_copirait">@ 2020 Concrete Calculations, All Rights Reserved</div>
+			<div class="footer-contant_info">
+				<ul class="footer-contant_info-list">
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms of Use</a></li>
+				</ul>
+			</div>
+		</div>
+	
+</footer>
+
+ 
+      <!--  -->
+      
+      <!--  -->
+    </div>
+    <!--  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+
+<!-- <script src="js/dropzone.min.js"></script> -->
+<script src="//code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+
+<script type="text/javascript" src="js/index.min.js"></script>
+
+  </body>
+</html>

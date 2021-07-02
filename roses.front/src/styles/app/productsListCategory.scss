@@ -1,0 +1,21 @@
+.productsListCategory {
+
+	
+
+	@media (min-width: 991px) {
+		.categories-filter {
+			border-right: 1px solid $borderColor;
+			margin-left: -1px;
+		}	
+	}
+
+	@media (min-width: 1440px) {
+		.main-list{
+			.product-item {
+				flex-basis: 25%;
+				width: 25%;
+				max-width: 25%; 
+			}
+		}
+	}
+}

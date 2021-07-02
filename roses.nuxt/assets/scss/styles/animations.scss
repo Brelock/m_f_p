@@ -1,0 +1,24 @@
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity .5s ease;
+}
+.component-fade-enter, .component-fade-leave-to
+/* .component-fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}
+
+.standard-fade-enter-active, .standard-fade-leave-active {
+  transition: opacity .1s ease;
+}
+.standard-fade-enter, .standard-fade-leave-to
+/* .component-fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}
+
+.slide-left-enter-active, .slide-left-leave-active {
+  transition: transform .5s ease;
+}
+.slide-left-enter, .slide-left-leave-to
+/* .component-fade-leave-active до версии 2.1.8 */ {
+	transform: translateX(100%);
+  // opacity: 0;
+}

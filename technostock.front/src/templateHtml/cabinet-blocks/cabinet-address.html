@@ -1,0 +1,128 @@
+<div id="cabinet-address">
+  <div class="title-forms">Адрес доставки</div>
+
+  <div class="cabinet-address-tabs tabsNav-secondary tabButtons">
+    <button type="button" data-target="cabinet-address-newpost" class="tab tabButton button-tab active button button--inverse button--inverse-gray button--small">
+      НОВАЯ ПОЧТА
+    </button>
+    <button type="button" data-target="cabinet-address-post" class="tab tabButton button-tab button button--inverse button--inverse-gray button--small">
+      УКРПОЧТА
+    </button>
+  </div>
+
+  <div class="cabinet-address-toggleBlocks">
+    <div id="cabinet-address-newpost" class="toggleBlock-delivery toggleBlock-secondary active">
+      <form action="#" class="form form-cabinet-address-newpost form-val-js">
+        <div class="form-row form-row--two-items">
+          <div class="form-item-wrap chosen-wrapper">
+            <label class="form-label">Город*</label>
+            <select
+              name="city"
+              class="form-item"
+              data-validate="required"
+              data-error-text="Необходимо заполнить поле"
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+
+          <div class="form-item-wrap chosen-wrapper">
+            <label class="form-label">Номер отделения*</label>
+            <select
+              name="department"
+              class="form-item"
+              data-validate="required"
+              data-error-text="Необходимо заполнить поле"
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="button button--small" type="submit">Сохранить</button>
+      </form>
+    </div>
+
+    <div id="cabinet-address-post" class="toggleBlock-delivery toggleBlock-secondary">
+      <form action="#" class="form form-cabinet-address-post form-val-js">
+        <div class="form-row form-row--two-items">
+          <div class="form-item-wrap">
+            <label for="up_region_id" class="form-label">Регион*</label>
+            <input
+              type="text"
+              name="up_region_id"
+              id="up_region_id"
+              class="form-item"
+              data-validate="required"
+              data-error-text="Необходимо заполнить поле"
+            >
+          </div>
+
+          <div class="form-item-wrap">
+            <label for="up_city_id" class="form-label"
+              >Город*</label
+            >
+            <input
+              type="text"
+              name="up_city_id"
+              id="up_city_id"
+              class="form-item"
+              data-validate="required"
+              data-error-text="Необходимо заполнить поле"
+            >            
+          </div>
+        </div>
+
+        <div class="form-row form-row--two-items">
+          <div class="form-item-wrap">
+            <label for="up_district_id" class="form-label">Номер отделения*</label>
+            <input
+              type="text"
+              name="up_district_id"
+              id="up_district_id"
+              class="form-item"
+              data-validate="required"
+              data-error-text="Необходимо заполнить поле"
+            >
+          </div>
+
+          <div class="form-item-wrap">
+            <label for="up_post_code" class="form-label"
+              >Почтовый индекс*</label
+            >
+            <input
+              type="text"
+              name="up_post_code"
+              id="up_post_code"
+              class="form-item"
+              data-validate="required"
+              data-error-text="Необходимо заполнить поле"
+            >            
+          </div>
+        </div>
+
+        <div class="form-row form-row--two-items">
+          <div class="form-item-wrap">
+            <label for="up_address" class="form-label">Домашний Адресс*</label>
+            <input
+              type="text"
+              name="up_address"
+              id="up_address"
+              class="form-item"
+              data-validate="required"
+              data-error-text="Необходимо заполнить поле"
+            >
+          </div>
+
+          <div class="form-item-wrap"></div>
+        </div>
+
+        <button class="button button--small" type="submit">Сохранить</button>
+      </form>
+    </div>
+  </div>
+</div>

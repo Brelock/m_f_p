@@ -1,0 +1,211 @@
+.cart-category {
+
+	.cart-table {
+		.tableRow {
+			background-color: #fff;
+			padding: 10px;
+			& + .tableRow {margin-top: 30px;}
+
+			& > .tableCell:nth-child(1) {display: none;}
+			& > .tableCell:nth-child(2) {width: 30%; max-width: 30%;}
+			& > .tableCell:nth-child(3) {width: 70%; max-width: 70%;}
+			& > .tableCell:nth-child(4) {width: 70%; max-width: 70%; margin-left: auto;}
+			& > .tableCell:nth-child(5) {width: 70%; max-width: 70%; margin-left: auto;}
+			& > .tableCell:nth-child(6) {width: 55%; max-width: 55%; margin-left: auto;}
+			& > .tableCell:nth-child(7) {width: 15%; max-width: 15%; text-align: right;}
+
+			.tableCell {font-weight: 500;	}
+
+			.image-cell {align-items: flex-start;}
+
+			.imgWrapper {	max-width: 120px;	}
+
+			.product-category {
+				color: $descriptionTextColor;
+				& + div {margin-top: 5px;}
+			}
+
+			.price {
+				font-size: 24px;
+				font-weight: bold;
+			}
+			.removeButton {
+				font-size: 11px;
+				color: $descriptionTextColor;
+			}
+
+
+		}
+	}
+	
+	.main-section-block {
+		& > div > .content-container {
+			background-color: #fff;
+				padding: 30px 25px;
+				box-sizing: border-box;
+
+			/* & > .form-section {
+			} */
+		}
+
+		.resultBlock {
+			margin-top: 20px;
+			& > .content-container {
+		
+				/* & > .form-section {
+					// padding: 30px 25px;				
+				} */
+			}
+		} 
+	}
+
+	.customCheckboxContainer {
+		.checkbox-label {
+			font-size: 14px;
+			color: #000;
+		}
+	}
+
+	.cart-list {
+		font-size: 12px;
+
+		.list-item {
+			.imgWrapper + div {margin-left: 10px;}
+
+			& + .list-item {
+				margin-top: 10px;
+				padding-top: 10px;
+				border-top: 1px solid $borderColor;
+			}
+		}
+
+		.result {
+			margin-top: 5px;
+			.items-quantity {color: $descriptionTextColor;}
+		}
+	}
+
+	.total-price {	font-size: 24px;}
+
+	.eulaBlock {
+		.checkbox-label {
+			font-size: 12px;
+			color: $descriptionTextColor;	
+			line-height: 18px;		
+		}
+
+		a {
+			color: $secondaryColor;
+			&:hover {text-decoration: underline;}
+		}
+	}
+
+	.limitedWidthWrapper {
+		text-align: center;
+		& > * {
+			width: 100%;
+			max-width: 300px;
+		}
+	}
+
+	.contactsTabsContainer {
+		padding: 0;
+
+		.column {
+			position: relative;
+			z-index: 5;
+		}
+
+		.blocks-delimenter {
+			color: $text-muted;
+			text-align: center;
+			width: 100%;
+			padding: 15px 0;
+
+			&:before, &:after {
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				border-bottom: 1px solid $text-muted;
+				width: 15px;
+				margin: 0 5px;
+			}
+		}
+	}
+
+	/*.remoteBlock {
+
+		.remoteRow {
+			max-width: 345px;
+		}
+		.description {
+			p {
+				font-size: $smaller;
+				color: $text-muted;
+			}
+		}
+
+		button {cursor: pointer;} 
+	}*/
+
+	@media (min-width: 767px) {
+		.cart-table {
+			.tableRow {
+				& > .tableCell:nth-child(2) {width: 13%; max-width: 13%;}
+				& > .tableCell:nth-child(3) {width: 32%; max-width: 32%;}
+				& > .tableCell:nth-child(4) {width: 15%; max-width: 15%; margin-left: 0;}
+				& > .tableCell:nth-child(5) {width: 10%; max-width: 10%; margin-left: 0;}
+				& > .tableCell:nth-child(6) {width: 25%; max-width: 25%; margin-left: 0; text-align: center;}
+				& > .tableCell:nth-child(7) {width: 5%; max-width: 5%; text-align: right;}
+			}
+		}
+
+		.contactsTabsContainer {
+			position: relative;
+			.blocks-delimenter {
+				position: absolute;
+				max-width: 96%;
+				&:before, &:after {width: 10px;}
+			}
+		}
+	}
+
+	@media (min-width: 991px) {
+		.main-section-block {
+			.resultBlock {
+				margin-top: 0;
+				padding-left: 30px;
+			}
+
+			& > div {
+				box-sizing: border-box;
+			}
+		}
+	}
+
+	@media (min-width: 1279px) {
+		.cart-table {
+			.tableRow {
+				& > .tableCell:nth-child(1) {
+					display: flex; align-items: center;
+					width: 3%; max-width: 3%;
+				}
+				& > .tableCell:nth-child(2) {width: 13%; max-width: 13%;}
+				& > .tableCell:nth-child(3) {width: 38%; max-width: 38%;}
+				& > .tableCell:nth-child(4) {width: 13%; max-width: 13%;}
+				& > .tableCell:nth-child(5) {width: 8%; max-width: 8%; }
+				& > .tableCell:nth-child(6) {width: 20%; max-width: 20%; margin-left: 0; text-align: center;}
+
+			}
+		}
+	}
+
+	@media (min-width: 1440px) {
+		.contactsTabsContainer {
+			.blocks-delimenter {
+				max-width: 88%;
+				&:before, &:after {width: 15px;}
+			}
+		}
+	}
+}
